@@ -1,0 +1,16 @@
+{
+  "title": "PivotChart",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivotchart",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    // "OLAP": {
+    //   "files": ["html", "js"]
+    // },
+    "chart Types": {
+      "files": ["html", "js"]
+    }
+  }
+}

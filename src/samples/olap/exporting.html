@@ -1,0 +1,11 @@
+<template>
+  <require from="./olap.css"></require>
+  <require from="../scripts/jquery.linq.js"></require>
+  <div>
+    <ej-pivot-grid id="export" ej-data-source.bind="pivotData">
+    </ej-pivot-grid>
+    <td style="float:left">
+    <div style="margin:25px 10px 10px 10px; float:left">Excel Export</div>
+    <button id="button" ej-button="ej-text.bind:textValue" ej-on-click.trigger="btnExportClick($event)" style="margin:15px 10px 10px 10px"></button>
+  </div>
+</template>

@@ -1,0 +1,21 @@
+<template>
+     <require from="./databinding-json.css"></require>
+    <div class="content-container-fluid">
+        <div class="row">
+		  <div class="rotators">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <ul id="sliderContent" ej-rotator="ej-slide-width.bind:slideWidth; 
+                    ej-frame-space.bind:frameSpace; 
+                    ej-slide-height.bind: slideHeight;
+                    ej-enabled:true;
+                    ej-show-caption: true;
+                    ej-show-play-button: true;
+                    ej-is-responsive:true;
+                     ej-data-source.bind: website;"></ul>
+                </div>
+            </div>
+        </div>
+	  </div>
+    </div>
+</template>

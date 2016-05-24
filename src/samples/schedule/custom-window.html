@@ -1,0 +1,87 @@
+<template>
+    <require from="./custom-window.css"></require>
+    <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="575px" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/04/2014"
+                     ej-on-appointment-window-open.trigger="onAppointmentWindowOpen($event)" ej-on-cell-click.trigger="onClick($event)">
+        </ej-schedule>
+    </div>
+    <div class="cwindow">
+        <ej-dialog id="customWindow" ej-target=".cwindow" ej-width="600px" ej-height="auto" ej-show-on-init="false" ej-enable-model="true" ej-title="Create Appointment" ej-enable-resize="false" ej-allow-keyboard-navigation="false" ej-on-close.trigger="clearFields()">
+        <form id="custom">
+            <table width="100%" cellpadding="5">
+                <tbody>
+                <tr style="display: none">
+                    <td>
+                        Id:
+                    </td>
+                    <td colspan="2">
+                        <input id="customId" type="text" name="Id"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Subject:
+                    </td>
+                    <td colspan="2">
+                        <input id="subject" type="text" value="" name="Subject" onfocus.trigger="temp()" style="width: 100%"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Description:
+                    </td>
+                    <td colspan="2">
+                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        StartTime:
+                    </td>
+                    <td>
+                        <input id="StartTime" type="text" value="" name="StartTime"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        EndTime:
+                    </td>
+                    <td>
+                        <input id="EndTime" type="text" value="" name="EndTime"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="customcheck">AllDay:</div>
+                        <div class="customcheck">
+                            <input id="allday" type="checkbox" name="AllDay" change.delegate="alldayEnable()"/>
+                        </div>
+                        <div class="customcheck">Recurrence:</div>
+                        <div>
+                            <input id="recurrence" type="checkbox" name="Recurrence" change.delegate="recurCheck()"/>  <!--on-change.trigger="recurCheck()"-->
+                        </div>
+                    </td>
+                </tr>
+                <tr class="recurrence" style="display: none">
+                    <td>
+                        Type:
+                    </td>
+                    <td>
+                        <select id="rType" name="freq">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <div>
+            <button type="submit" ej-button="" ej-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+            <button type="submit" ej-button="" ej-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+        </div>
+     </ej-dialog>  
+ </div>
+</template>

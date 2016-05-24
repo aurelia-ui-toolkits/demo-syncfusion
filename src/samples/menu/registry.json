@@ -1,0 +1,22 @@
+{
+  "title": "Menu",
+  "documentation":"http://help.syncfusion.com/js/api/ejMenu",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js", "css"]
+    },
+    "template": {
+        "files": ["html", "js", "css"]
+    },
+    "API": {
+        "files": ["html", "js"]
+    },
+    "events": {
+        "files": ["html", "js"]
+    },
+    "context-menu": {
+        "files": ["html", "js", "css"]
+    }
+  }
+}

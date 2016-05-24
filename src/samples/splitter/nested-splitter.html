@@ -1,0 +1,38 @@
+<template>
+    <require from="./nested-splitter.css"></require>
+   <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area splitter-width" style="width: 100%;">
+                <!----------------Splitter Control---------------->
+                <ej-splitter id="outterSplitter" ej-height="350" ej-width="100%" ej-orientation.bind="orientation" ej-properties.bind="properties" ej-enable-auto-resize="true">
+                    <div>
+                        <div class="content">
+                            <h3 class="h3">FRENCH CITIES </h3>
+                        </div>
+                    </div>
+                    <ej-splitter id="innerSplitter"  ej-width="100%" ej-properties.bind="innerProperties" ej-enable-auto-resize="true">
+                        <div>
+                            <div class="content">
+                                <h3 class="h3">PARIS </h3>
+                                Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h3 class="h3">CAMEMBERT </h3>
+                                The village in the Orne département of Normandy where the famous French cheese is originated from.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h3 class="h3">GRENOBLE </h3>
+                                The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.
+                            </div>
+                        </div>
+                    </ej-splitter>
+                </div>
+                <!------------------------------------------------->
+            </div>
+        </div>
+    </div>
+</template>

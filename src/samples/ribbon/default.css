@@ -1,0 +1,144 @@
+.e-pastetip{
+		   background-image: url("src/root/vendors/styles/web/common-images/ribbon/paste.png");
+		   background-repeat:no-repeat;
+		   height:64px;
+		   width:64px
+          }
+ .e-ribbon .e-Font:before {
+     font-family: 'ej-ribbonfont';
+     content: "\e159"; 
+	 font-size: 28px;
+	 line-height:35px;
+	 text-indent: -1.5px;
+    }
+   .e-ribbon .e-New:before {
+    font-family: 'ej-ribbonfont';
+     content: "\e166";
+	 font-size: 28px;
+	 line-height:35px;
+	 text-indent: -1.5px;
+    }
+  .e-ribbon .e-Actions:before {
+    font-family: 'ej-ribbonfont';
+    content: "\e177";
+	font-size: 28px;
+	line-height:35px;
+	text-indent: 7px;
+   }
+.e-blank{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/blank.png");
+	 }
+	 .e-project{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Project.png");
+	 }
+	 .e-gantt{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Gantt.png");
+	 }
+	 .e-diet{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Diet.png");
+	 }
+	 .e-sales{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Sales.png");
+	 }
+	 .e-infopageicon{
+	  background-repeat:no-repeat;
+	  height:150px;
+      width: 198px;
+	 }
+	 .e-accuser{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/User.jpg");
+	 }
+	 .e-protect{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Protect.png");
+	 }
+	 .e-browser{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Browser.png");
+	 }
+	 .e-check{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Check.png");
+	 }
+	 .e-version{
+	  background-image: url("src/root/vendors/styles/web/common-images/ribbon/Version.png");
+	 }
+	 .e-newpageicon{
+	  background-repeat:no-repeat;
+	  height: 42px;
+      width: 42px;
+	 }
+	 .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle{
+	  font-family: segoe ui; 
+	  border:1px solid #c9c9c9;
+	  background:#fdfdfd;
+	  color:#212121;
+	  }
+	 .e-ribbon .e-ribbonbackstagepage .e-bsnewbtnstyle{
+	  font-family: segoe ui; 
+	  color:#212121;
+	  background:#fdfdfd;
+	  margin-top:20px;
+	  }
+	 .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle:hover,
+	 .e-ribbon .e-ribbonbackstagepage .e-bsnewbtnstyle:hover{
+	  color:black;
+	 }
+	 .e-bssplbtn1 .e-split-btn-div{
+      text-indent: 40px;
+      top: 64px;
+	 }
+	 .e-bssplbtn2 .e-split-btn-div{
+      text-indent: 26px;
+      top: 64px;
+	 }
+	 .e-bssplbtn3 .e-split-btn-div{
+      text-indent: 34px;
+      top: 64px;
+	 }
+	 .e-bsinfobtnstyle .e-btntxt{
+      font-size:14px;
+	 }
+	 .e-bssplbtn1 .e-btntxt,.e-bssplbtn2 .e-btntxt{
+      position: relative;
+	  left: -6px;
+	 }
+	 .e-bssplbtn3 .e-btntxt{
+      position: relative;
+	  left: -8px;
+	 }
+	 .e-suggestsearch a{
+	  padding-left:7px;
+	 }
+	 .e-author{
+	  color:#939393;
+	 }
+	 .e-ribbonbackstagepage,.e-inspectcon{
+	  color:#565656;
+	 }
+	 .e-bsptitle{
+	  color:#000000;
+	 }
+	 .e-infoprop{
+	  color:#0072c6;
+	 }
+	 .e-inspectli{
+	  color:#aaaaaa;
+	 }
+	 .e-bssplbtn2 .e-newpageicon,.e-bssplbtn3 .e-newpageicon{
+      position: relative;
+      left: -5px;
+     }
+	.darktheme .e-ribbon .e-bsinfobtnstyle{
+	 font-family: segoe ui; 
+	 border:1px solid #303030;
+	 background:#1f1f1f;
+	 color:#c1c1c1;
+	}
+    .darktheme .e-ribbon .e-bsnewbtnstyle{
+	 font-family: segoe ui;
+	 background:#1f1f1f;
+	 color:#c1c1c1;
+    }
+	.e-ribbon .e-rbnquickaccessbar .e-ribbonpaste:before{
+		      font-size:27px !important;
+              left: -5px;
+              top: -6px;
+		}

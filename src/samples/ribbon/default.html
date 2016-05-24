@@ -1,0 +1,175 @@
+
+
+<template>
+<require from="./default.css"></require>
+<link href="src/root/vendors/styles/web/ribbon-css/ej.icons.css" rel="stylesheet" /> 
+  <div>
+     <ej-ribbon ej-width="100%" ej-expand-pin-settings.bind="ExpandPinSettings" ej-collapse-pin-settings.bind="CollapsePinSettings" ej-application-tab.bind="ApplicationTab" ej-tabs.bind="Tabs" ej-on-create.trigger="createControl()" >
+	 </ej-ribbon>
+  </div>
+  
+   <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div id="defaultRibbon"></div>
+	  <div id="infoCon">
+	<div style="display:table-cell;padding-top:10px">
+	<table> 
+	<tr>
+	<td> 
+	<button id="spltbutton1" class="e-bsinfobtnstyle e-bssplbtn1">Protect Workbook</button>
+     <ul id="Ul51">
+         <li><span>Mark as Final</span></li>
+         <li><span>Encrypt Password</span></li>
+     </ul>    
+	 </td>
+	 <td style="vertical-align: top;padding-left:10px">
+	<span class="e-bsptitle" style="font-size:18px">Protect Workbook</span>
+	<span style="display:block">Control what types of changes people can make to this workbook.</span>
+	</td>
+	</tr>
+	<tr>
+	<td style="padding-top:10px"> 
+	<button id="spltbutton2" class="e-bsinfobtnstyle e-bssplbtn2">Check for Issues</button>
+     <ul id="Ul52">
+         <li><span>Inspect Document</span></li>
+     </ul>   
+	 </td>
+	  <td style="vertical-align: top;padding-left:10px;padding-top:10px">
+	 <span class="e-bsptitle" style="font-size:18px">Inspect Workbook</span>
+	<span style="display:block">Before publishing this file,be aware that it contains:</span>
+	<ul><li style="list-style-type: square" class="e-inspectli"><span class="e-inspectcon">Author's name and absolute path</span></li></ul>
+	</td>
+	</tr>
+	<tr>
+	<td style="padding-top:10px"> 
+	<button id="spltbutton3" class="e-bsinfobtnstyle e-bssplbtn3" style="font-size:18px">Manage Versions</button>
+     <ul id="Ul53">
+         <li><span>Recover Workbooks</span></li>
+     </ul>       
+	 </td>
+	  <td style="vertical-align: top;padding-left:10px;padding-top:10px">
+	<span class="e-bsptitle" style="font-size:18px">Versions</span>
+	<span style="display:block">There are no previous versions of this file.</span>
+	</td>
+	</tr>
+	<tr>
+	<td style="padding-top:10px"> 
+	<button id="btnlast" class="e-bsinfobtnstyle">Browser view Options</button>           
+	 </td>
+	 <td style="vertical-align: top;padding-left:10px;padding-top:10px">
+	<span class="e-bsptitle" style="font-size:18px">Browser View Options</span>
+	<span style="display:block">Pick what users can see when this workbook is viewed on the Web.</span>
+	</td>
+	</tr>
+	</table>	
+	</div>
+	<div style="display:table-cell;padding-left:80px;vertical-align: top">
+	<table>
+	<tr><span class="e-bsptitle" style="font-size:17px">Properties</span></tr>
+	<tr>
+	<td style="width:125px">Size</td>
+	<td>Not saved yet</td>
+	</tr>
+	<tr>
+	<td style="width:125px">Tags</td>
+	<td>Add a title</td>
+	</tr>
+	<tr>
+	<td style="width:125px">Title</td>
+	<td>Add a tag</td>
+	</tr>
+	<tr>
+	<td style="width:125px">Categories</td>
+	<td>Add a category</td>
+	</tr>
+	</table>
+	
+	<div style="padding-top: 15px">
+    <div class="e-bsptitle" style="font-size:17px">Related Dates</div>
+	<div>Last Modified</div>
+	<div>Created</div>
+	<div>Last Printed</div>
+	</div>
+    
+	<div style="padding-top: 15px">
+	<span class="e-bsptitle" style="font-size:17px">Related People</span>
+	<table>
+	<tr>
+	<td style="width:125px">Author</td>
+	<td class="e-accuser e-newpageicon"></td>
+	<td>user</td>
+	</tr>
+	<tr>
+	<td colspan="3" style="text-align:right"><span class="e-author">Add an author</span></td>
+	</tr>
+	<tr>
+	<td style="width:126px">Last Modified by</td>
+	<td colspan="2">Not saved yet</td>
+	</tr>
+	<tr><td><a href="#" class="e-infoprop">Show All Properties</a><td></tr>
+	</table>
+	</div>
+	</div>
+	</div>
+	<div id="newCon">
+	<table>
+	<tr><td><input type="text" id="autocomplete" /></tr></td>
+	<tr><td class="e-suggestsearch" style="padding-top:5px">Suggested searches:
+	<a href="#">Business</a>
+	<a href="#">Personal</a>
+	<a href="#">Industrty</a>
+	<a href="#">Small Business</a>
+	<a href="#">Calculator</a>
+	<a href="#">Finance-Accounting</a>
+	<a href="#">Lists</a>
+	</td></tr>
+	<tr>
+	<td><button id="btn1" class="e-bsnewbtnstyle">Blank WorkBook</button><button id="btn2" class="e-bsnewbtnstyle">Project cost tracker</button><button id="btn3" class=" e-bsnewbtnstyle">Gantt project planner</button></td>
+	</tr>
+	<tr>
+	<td><button id="btn4" class="e-bsnewbtnstyle">Diet and exercise journal</button><button id="btn5" class="e-bsnewbtnstyle">Sales invoice tracker</button></td>
+	</tr>
+	<tr>
+	<td></td>
+	</tr>
+	</table>
+	</div>
+	
+	<div id="accountCon">
+	<div style="padding-top:20px"><span style="font-size:17px">User Information</span>
+	<div>
+	<div class="e-accuser e-newpageicon" style="display:table-cell"></div>
+	<div style="display:table-cell;vertical-align:middle">
+	 <div>user</div>
+	 <div>xyz@syncfusion.com</div>
+	</div>
+	</div>
+	</div>
+	<a href="#" style="font-size:11px">Sign out</a>
+	<a href="#" style="display:table;font-size:11px">Switch Account</a>
+	<div style="padding-top:20px;padding-bottom:10px">Background:</div>
+                        <input type="text" id="background" />
+                        <div id="backgroundList">
+                            <ul>
+                                <li>No Background</li>
+                                <li>Calligraphy</li>
+                                <li>Doodle Circles</li>
+                                <li>Geometry</li>
+                                <li>Stars</li>
+                            </ul>
+							</div>
+	<div style="padding-top:20px;padding-bottom:10px">Theme:</div>
+                        <input type="text" id="theme" />
+                        <div id="themeList">
+                            <ul>
+                                <li>White</li>
+                                <li>Light Gray</li>
+                                <li>Dark Gray</li>
+                            </ul>		
+							</div>
+	</div>
+    </div>
+	</div>
+	</div>
+</template>

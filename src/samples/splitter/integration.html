@@ -1,0 +1,54 @@
+<template>
+    <require from="./integration.css"></require>
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area splitter-width">
+                <!----------------Splitter Control---------------->
+                <ej-splitter id="outterSplitter"  ej-height="350" ej-width="100%" ej-properties.bind="properties" ej-enable-auto-resize="true">
+                    <div>
+                        <div class="cont">
+                            <h3 class="h3">FRENCH CITIES</h3>
+                            <ul id="treeView" class="visibleHide" ej-tree-view ej-on-node-select.trigger="treeClicked($event)">
+                                <li>PARIS
+                                        <ul>
+                                            <li id="paris" class="_child">Speciality</li>
+                                        </ul>
+                                </li>
+                                <li>CAMEMBERT
+                                            <ul>
+                                                <li id="camembert" class="_child">Speciality </li>
+                                            </ul>
+                                </li>
+                                <li>GRENOBLE
+                                            <ul>
+                                                <li id="grenoble" class="_child">Speciality</li>
+                                            </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cont">
+                            <div class="_content">
+                                Select any city from the tree to show the description.
+                            </div>
+                            <div class="paris spe">
+                                <h3>PARIS</h3>
+                                Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...
+                            </div>
+                            <div class="camembert spe">
+                                <h3>CAMEMBERT</h3>
+                                The village in the Orne département of Normandy where the famous French cheese is originated from.
+                            </div>
+                            <div class="grenoble spe">
+                                <h3>GRENOBLE</h3>
+                                The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.
+                            </div>
+                        </div>
+                    </div>
+                </ej-splitter>
+                <!------------------------------------------------->
+            </div>
+        </div>
+    </div>
+</template>

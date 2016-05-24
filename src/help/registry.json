@@ -1,0 +1,10 @@
+{
+  "Lorem": [{
+    "name": "1. Lorem",
+    "path": "help/docs/lorem.md"
+  }],
+  "Ipsum": [{
+    "name": "1. Ipsum",
+    "path": "help/docs/ipsum.md"
+  }]
+}

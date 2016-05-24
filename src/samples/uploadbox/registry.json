@@ -1,0 +1,22 @@
+{
+	"title": "Uploadbox",
+	"documentation": "http://help.syncfusion.com/js/api/ejuploadbox",
+	"samples": {
+		"basic-use": {
+			"default": true,
+			"files": ["html", "js", "css"]
+		},
+        "drag-and-drop": {
+            "files": ["html", "js", "css"]
+        },
+        "file-input": {
+            "files": ["html", "js", "css"]
+        },        
+        "API": {
+            "files": ["html", "js", "css"]
+        },
+        "events": {
+            "files": ["html", "js", "css"]
+        }
+	}
+}

@@ -1,0 +1,48 @@
+ .e-ddl-popup {
+            margin: 0 auto;
+        }
+
+        .ctrllabel {
+            font-weight: 600;
+            padding-bottom: 12px;
+        }
+
+        .eimg {
+            margin: 0;
+            padding: 3px 10px 3px 3px;
+            border: 0 none;
+            width: 60px;
+            height: 60px;
+            float: left;
+        }
+
+        .ename {
+            font-weight: bold;
+            padding: 6px 3px 1px 3px;
+        }
+
+        .desig, .cont {
+            font-size: smaller;
+            padding: 3px 3px -1px 0px;
+        }
+
+        #selectExperts li {
+            width: 200px;
+            height: 70px;
+            padding: 5px;
+        } 
+        .row [class*="cols-"]:first-child > div:first-child {
+    margin: 0 auto;
+}
+.listbox.frame {
+    display: table;
+    width: auto !important;
+    padding: 50px;
+}
+.frame {
+    border: 1px solid #BBBCBB;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 350px;
+    color: #5C5C5C;
+}

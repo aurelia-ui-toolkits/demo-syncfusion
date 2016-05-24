@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <input type="text" id="skillsets" ej-drop-down-list="ej-data-source.bind:dataSource;ej-fields.bind:fields;ej-watermark-text.bind:watermarkText;ej-show-checkbox.bind:checkBox" ej-on-create.trigger="create()" />
+    </div>
+     <div id="property-window" class="box wide">
+     <h4>Properties</h4>          
+     <div class="row">
+          <div class="col-md-12">
+              <input type="checkbox" id="btnchkunchk" class="e-togglebtn" ej-toggle-button="ej-default-text:Check All;ej-active-text:Uncheck All" ej-on-change.trigger="checkUncheckAll($event)" />
+          </div>
+      </div>
+     </div>
+</template>

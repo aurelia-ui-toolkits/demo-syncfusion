@@ -1,0 +1,35 @@
+<template>
+  <require from="./basic-use.css"></require>
+  <require from="../scripts/jquery.linq.js"></require>
+    <div>
+        <table><tr><td>
+        <ej-pivot-chart ej-data-source.bind="pivotData" ej-load.bind="loadTheme" ej-common-series-options.bind="commonSeries" ej-legend.bind="legend" ej-size.bind="size" ej-primary-y-axis.bind="primaryYAxis">
+        </ej-pivot-chart>
+        </td>
+        <td style="float:left">
+        <div style="margin: 10px 10px 10px 0px">Chart Type</div>
+        <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.bind:Type" ej-on-change.trigger="onChange($event)" id="selectChart" />
+        <div id="Type">
+            <ul>
+                <li>Line</li>
+                <li>Spline</li>
+                <li>Column</li>
+                <li>Area</li>
+                <li>SplineArea</li>
+                <li>StepLine</li>
+                <li>StepArea</li>
+                <li>Pie</li>
+                <li>Bar</li>
+                <li>StackingArea</li>
+                <li>StackingColumn</li>
+                <li>StackingBar</li>
+                <li>Pyramid</li>
+                <li>Funnel</li>
+                <li>Doughnut</li>
+                <li>Scatter</li>
+                <li>Bubble</li>
+            </ul>
+        </div>
+        </td></tr></table>       
+	</div>
+</template>

@@ -1,0 +1,28 @@
+{
+  "title": "Autocomplete",
+  "documentation":"http://help.syncfusion.com/js/api/ejautocomplete",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+     "template": {
+      "files": ["html", "js","css"]
+    },
+   "multiple-values":{
+     "files": ["html", "js","css"]
+   },
+   "grouping":{
+       "files": ["html", "js","css"]
+   },
+   "auto-fill":{
+     "files": ["html", "js","css"]
+   },
+   "data-binding-remote-data":{
+      "files": ["html", "js","css"]
+   },
+   "data-binding-local-data":{
+     "files": ["html", "js","css"]
+   }
+  }
+}

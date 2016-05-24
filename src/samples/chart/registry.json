@@ -1,0 +1,49 @@
+{
+  "title": "Chart",
+  "documentation":"http://help.syncfusion.com/js/api/ejchart",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+	"column":{
+	   "files": ["html", "js"]
+	},
+	"pie":{
+	   "files": ["html", "js"]
+	},
+	"bar":{
+	   "files": ["html", "js"]
+	},
+	"polar":{
+	   "files": ["html", "js"]
+	},
+	"3d-column":{
+	   "files": ["html", "js"]
+	},
+	"pyramid":{
+	   "files": ["html", "js"]
+	},
+	"combination":{
+	   "files": ["html", "js"]
+	},
+	"trackball":{
+	   "files": ["html", "js"]
+	},
+	"zooming":{
+	   "files": ["html", "js"]
+	},
+	"bubble":{
+	   "files": ["html", "js"]
+	},
+	"candle":{
+	   "files": ["html", "js"]
+	},
+	"3d-bar":{
+	   "files": ["html", "js"]
+	},
+	"live":{
+	   "files": ["html", "js"]
+	}
+  }
+}

@@ -1,0 +1,26 @@
+<template>
+     <require from="./basic-use.css"></require>
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area splitter-width" style="width:100%;">
+                <!----------------Splitter Control---------------->
+                <ej-splitter id="outterSpliter" ej-height="350" ej-orientation.bind="orientation" 
+                ej-properties.bind="properties"	ej-enable-auto-resize="true">
+                    <ej-splitter id="innerSpliter" ej-enable-auto-resize="true">
+                        <div>
+                            <div class="cont">Pane 1 </div>
+                        </div>
+                        <div>
+                            <div class="cont">Pane 2 </div>
+                        </div>
+                    </ej-splitter>
+                    <div>
+                        <div class="cont">Pane 3 </div>
+                    </div>
+                </ej-splitter>
+                <!------------------------------------------------->
+            </div>
+        </div>
+    </div>
+    
+</template>

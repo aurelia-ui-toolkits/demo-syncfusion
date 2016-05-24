@@ -1,0 +1,19 @@
+.tb6 {
+    width: 80px;
+    border-radius: 4px 4px 4px 4px;
+    line-height: normal;
+    height: 24px;
+    padding-left: 4px;
+}
+
+.leftalign #upbutton1.e-button.e-inpttxt, .leftalign #upbutton2.e-button.e-inpttxt {
+    padding: 2px 8px;
+}
+.control {
+    margin: 0 auto;
+    width:100px;
+    height:35px;
+}
+.posupload {
+    text-align:center;
+}

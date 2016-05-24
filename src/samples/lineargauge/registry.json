@@ -1,0 +1,25 @@
+{
+  "title": "LinearGauge",
+  "documentation":"http://help.syncfusion.com/js/api/ejlineargauge",
+  "samples": {
+    "basic-use": {
+	  "default" : true,
+      "files": ["html", "js"]
+    },
+	"indicators": {
+	  "files": ["html", "js"]
+    },
+	"range": {
+	  "files": ["html", "js"]
+    },
+	"thermometer": {
+	  "files": ["html", "js"]
+    },
+	"tooltip": {
+	  "files": ["html", "js"]
+    },
+	"user-interaction": {
+	  "files": ["html", "js"]
+    },
+  }
+}

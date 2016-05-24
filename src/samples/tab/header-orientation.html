@@ -1,0 +1,44 @@
+<template>
+    <div style="height:200px;">
+        <ej-tab id="directionTab" style="width: 550px" ej-height="200">
+            <ul>
+                <li><a href="#rome">Rome</a></li>
+                <li><a href="#paris">Paris</a></li>
+                <li><a href="#london">London</a></li>
+            </ul>
+            <div id="rome">
+                Rome is one of the world's most fascinating cities. The old adage that Rome was not built in a day — and that you won't see
+                it in one or even in three — is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+                But remember what the Romans say: "Even a lifetime isn't enough to see Rome."
+            </div>
+            <div id="paris">
+                Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes
+                from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
+                Even if you do not want to visit this world famous structure, you will see its top from all over Paris. The
+                tower rises 300 meters tall (984 ft); when it was completed at the end of the nineteenth century.
+            </div>
+            <div id="london">
+                London is one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has
+                an excellent public transportation system that allows visitors to see all the fantastic sights without spending
+                a ton of money on a rental car.London contains four World Heritage Sites: the Tower of London; Kew Gardens;
+                the site comprising the Palace of Westminster, Westminster Abbey, and St Margaret's Church.
+            </div>
+        </ej-tab>
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+                        <div class="col-md-6">
+                            Tab Direction
+                        </div>
+                        <div class="col-md-6">
+                            <select name="selectDirection" id="optDirection" ej-drop-down-list="ej-selected-index:0;ej-width.bind:width" ej-on-change.trigger="onTabDirectionChange($event)">
+                                <option value="top">Header Top</option>
+                                <option value="bottom">Header Bottom    </option>
+                                <option value="left">Header Left</option>
+                                <option value="right">Header Right</option>
+                            </select>
+                        </div>
+                    </div>
+    </div>
+</template>

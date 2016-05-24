@@ -1,0 +1,16 @@
+{
+  "title": "BulletGraph",
+  "documentation":"http://help.syncfusion.com/js/api/ejbulletgraph",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+	"local-data": {
+      "files": ["html", "js"]
+    },
+	"remote-data": {
+      "files": ["html", "js"]
+    }
+  }
+}

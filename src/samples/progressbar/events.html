@@ -1,0 +1,23 @@
+<template>
+    <require from="./events.css"></require>
+    <div class="frame">
+        <div class="control">
+            <div class="e-prodefault">
+                <div id="progressBar" ej-progress-bar="ej-height.bind:height;ej-value.bind:value;" ej-on-create.trigger="create($event)"
+                ej-on-start.trigger="start($event)" ej-on-change.trigger="change($event)" ej-on-complete.trigger="complete($event)"></div>
+            </div>
+        </div>
+        <div class="startButton">
+            <input type="checkbox" id="startButton" ej-toggle-button="ej-default-text:Start;ej-active-text:Pause;ej-size:small" ej-on-click.trigger="startProcess($event)"
+             />
+            <label for="startButton">Toggle</label>
+        </div>
+    </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+</template>

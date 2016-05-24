@@ -1,0 +1,130 @@
+<template>
+    <require from="./template.css"></require>
+    <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-views.bind="Views"
+                     ej-current-view="Month" ej-group.bind="Group" ej-resources.bind="Resources" ej-current-date="04/03/2014" ej-resource-header-template-id="#resTemplate"
+                     ej-work-cells-template-id="#workTemplate" ej-appointment-template-id="#apptemplate" ej-show-appointment-navigator="false" ej-time-zone="UTC -05:00">
+        </ej-schedule>
+    </div>
+    <div id="property-window" class="box wide">
+		<div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>Orientation</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <select ej-drop-down-list="ej-data-source.bind:orientation;ej-selected-index:0;width:100px" ej-on-select.trigger="onChange($event)" id="orientation">
+		        </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>Disable TimeScale</label>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <input ej-check-box="ej-checked.two-way:timeCheck" id="timeScale" ej-on-change.trigger="timeScale($event)"/>
+            </div>			
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>AllDayCells Customization</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <input ej-check-box="ej-checked.two-way:allDayCheck" id="allDay" ej-on-change.trigger="allDayTemplate($event)"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>DateHeader Customization</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <input ej-check-box="ej-checked.two-way:dateHeaderCheck" id="dateHeader" ej-on-change.trigger="dateHeaderTemplate($event)"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>WorkCells Customization</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <input ej-check-box="ej-checked.two-way:workCellCheck" id="workCells" ej-on-change.trigger="workCellsTemplate($event)"/>
+            </div>
+        </div>
+    </div>
+
+    <script id="apptemplate" type="text/x-jsrender">
+        <div style="height:100%">
+            <div style='float:left; width:50px;'>
+                {{:~format(StartTime)}}
+            </div>
+            <div>
+                <div>{{:Subject}}</div>
+            </div>
+        </div>
+    </script>
+    <script id="resTemplate" type="text/x-jsrender">
+        <div style="height:100%">
+            <div>
+                {{if classname == 'e-parentnode'}}
+                <div style="width:15px;height:15px;margin-right:5px;margin-top:3px;float:left;background:{{:color}};"></div>
+                <div>{{:text}}</div>
+                {{else}}
+                <div>{{:text}}</div>
+                {{/if}}
+            </div>
+        </div>
+    </script>
+    <script id="allDayTemplate" type="text/x-jsrender">
+        <div class="e-icon e-scheduleallday" style="opacity:0.5"></div>
+        <span style="opacity:0.5">AllDay</span>
+    </script>
+    <script id="dateTemplate" type="text/x-jsrender">
+        <div>{{:~dTemplate(date)}}</div>
+    </script>
+    <script id="workTemplate" type="text/x-jsrender">
+        {{if resource.classname == 'e-parentnode'}} {{:resource.text}} {{else}} {{if date.getDay() == 0 || date.getDay() == 6}}
+        <div class="image">
+            <img src='images/schedule/weekend.png' />
+            <br /><span class="caption">Weekend</span>
+        </div>
+        {{else}} {{if view == 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5}}
+        <div class="image">
+            <img src='images/schedule/meeting.png' />
+            <br /><span class="caption">Meeting</span>
+        </div>
+        {{else resource.text != 'Party Hall-B' && date.getDate() == 15}}
+        <div class="image">
+            <img src='images/schedule/holiday.png' />
+            <br /><span class="caption">Holiday</span>
+        </div>
+        {{else view != 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5 && date.getHours() == 10}}
+        <div class="image">
+            <img src='images/schedule/meeting.png' />
+            <br /><span class="caption">Meeting</span>
+        </div>
+        {{else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5}}
+        <div class="image">
+            <img src='images/schedule/conference.png' />
+            <br /><span class="caption">Conf.</span>
+        </div>
+        {{else resource.text == 'Party Hall-B' && date.getDate() == 16}}
+        <div class="image">
+            <img src='images/schedule/happyday.png' />
+            <br /><span class="caption">Happyday</span>
+        </div>
+        {{else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12}}
+        <div class="image">
+            <img src='images/schedule/conference.png' />
+            <br /><span class="caption">Conf.</span>
+        </div>
+        {{else date.getDate() == 10 && date.getMonth() == 11}}
+        <div class="image">
+            <img src='images/schedule/wednesday.png' />
+            <br /><span class="caption">Day Spl</span>
+        </div>
+        {{else date.getDate() == 25 && date.getMonth() == 11}}
+        <div class="image">
+            <img src='images/schedule/christmas.png' />
+            <br /><span class="caption">Christmas</span>
+        </div>
+        {{/if}} {{/if}} {{/if}}
+    </script>
+</template>

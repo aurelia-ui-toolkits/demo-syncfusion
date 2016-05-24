@@ -1,0 +1,22 @@
+{
+  "title": "PivotGrid",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivotgrid",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "kPI":{
+      "files":["html","js"]
+    },
+    "named Set":{
+      "files":["html","js"]
+    },
+    "grouping Bar":{
+      "files":["html","js"]
+    },
+     "exporting":{
+      "files":["html","js"]
+    }
+  }
+}

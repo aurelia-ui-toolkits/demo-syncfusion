@@ -1,0 +1,14 @@
+<template>
+  <require from="./default.css"></require>
+
+  <div>
+     <ej-kanban ej-data-source.bind="KanbanData" ej-key-Field="Status" ej-fields.bind="Field" ej-card-settings.bind="CardSettings" ej-allow-title="true">
+       
+       <ej-kanban-column  ej-header-text="Backlog" ej-key="Open"></ej-kanban-column>
+	   <ej-kanban-column  ej-header-text="In Progress" ej-key="InProgress"></ej-kanban-column>
+	   <ej-kanban-column  ej-header-text="Testing" ej-key="Testing"></ej-kanban-column>
+	   <ej-kanban-column  ej-header-text="Done" ej-key="Close"></ej-kanban-column>
+      
+    </ej-kanban>
+  </div>
+</template>

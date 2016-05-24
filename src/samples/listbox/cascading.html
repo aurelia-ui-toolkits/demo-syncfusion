@@ -1,0 +1,19 @@
+<template>
+    <require from="./cascading.css"></require>
+ <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="listbox frame">
+                    <div class="contents">
+                        <div class="ctrllabel">Select group</div>
+                        <ul id="groupsList" ej-list-box="ej-height.bind:height; ej-width.bind:width; ej-data-source.bind:groups;ej-fields.bind:fields;ej-cascade-to: countryList;"></ul>
+                    </div>
+                    <div class="contents">
+                        <div class="ctrllabel">Select country</div>
+                        <ul id="countryList" ej-list-box="ej-height.bind:height; ej-width.bind:width;ej-load-data-on-init: false;ej-data-source.bind:countries"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

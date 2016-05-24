@@ -1,0 +1,14 @@
+﻿<template>
+    <require from="./Column-Filtering.css"></require>
+    <div>
+        <ej-tree-grid id="Treegrid"
+                  ej-data-source.bind="ProjectData"                 
+                  ej-child-mapping="subtasks"
+                     ej-allow-filtering="true"
+                      ej-filter-settings.bind="filtersettings"
+                      ej-tree-column-index="1"
+                  ej-columns.bind="columns">
+        </ej-tree-grid>
+    </div>
+   
+</template>

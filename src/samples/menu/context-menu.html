@@ -1,0 +1,23 @@
+<template>
+    <require from="./context-menu.css"></require>
+    <div>
+        <div id="target" class="textarea">
+                    HTML is written in the form of HTML elements consisting of tags enclosed in angle
+                            brackets (like
+                            &lt;html&gt;
+                            ),within the web page content. HTML tags most commonly come in pairs like and ,although
+                            some tags, known as empty elements, are unpaired, for example
+                            &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+                            visible or audible web pages. The browser does not display the HTML tags, but uses
+                            the tags to interpret the content of the page.
+                </div>
+               <ul id="contextMenu" ej-menu="ej-menu-type.bind:type;ej-open-on-click:false;ej-context-menu-target.bind:target">
+                    <li><a>Cut</a></li>
+                    <li><a>Copy</a></li>
+                    <li class="e-separator"><a>Paste</a></li>
+                    <li><a>Comments</a></li>
+                    <li><a>Links</a></li>
+                    <li><a>Clear Formatting</a></li>
+                </ul>
+    </div>
+</template>

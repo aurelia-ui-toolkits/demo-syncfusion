@@ -1,0 +1,13 @@
+<template>
+  <div>
+       <label>Select Date</label>
+       <input id="datepick" ej-date-picker="ej-value.bind:dateValue;" ej-on-create.trigger="logger.log('Datepicker has been created')" ej-on-open.trigger="logger.log('DatePicker popup has been opened.')" ej-on-close.trigger="logger.log('DatePicker popup has been closed.')" ej-on-select.trigger="onSelect($event)" ></input>
+  </div>
+  <div id="Logger" class="box">
+    <h4>Event Trace</h4>
+     <logger view-model.ref="logger"></logger>
+       <div>
+           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+       </div>
+  </div>
+</template>

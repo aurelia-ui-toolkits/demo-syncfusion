@@ -1,0 +1,17 @@
+﻿<template>
+    <div>
+        <ej-gantt id="gantt" ej-data-source.bind="ProjectData" 
+		ej-task-id-mapping="TaskID" 
+		ej-task-name-mapping="TaskName"
+        ej-start-date-mapping="StartDate" 
+		ej-allow-drag-and-drop="true" 
+		ej-allow-gantt-chart-editing="true" 
+		ej-tree-column-index="1" 
+                  ej-is-responsive="true"
+                  ej-parent-task-id-mapping="parentID"
+                  ej-end-date-mapping="EndDate"
+                  ej-progress-mapping="Progress">
+
+        </ej-gantt>
+    </div>
+</template>

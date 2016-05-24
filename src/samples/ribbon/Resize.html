@@ -1,0 +1,29 @@
+<template>
+<require from="./default.css"></require>
+  <link href="src/root/vendors/styles/web/ribbon-css/ej.icons.css" rel="stylesheet" /> 
+  <div>
+     <ej-ribbon ej-width="50%" ej-expand-pin-settings.bind="ExpandPinSettings" ej-collapse-pin-settings.bind="CollapsePinSettings" ej-application-tab.bind="ApplicationTab" ej-tabs.bind="Tabs" ej-create-control.trigger="creatControl" ej-allow-resizing="true" >
+	 </ej-ribbon>
+	 
+  </div>
+  
+   <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div id="defaultRibbon"></div>
+               <ul id="ribbonmenu">
+				<li><a>FILE</a>
+                    <ul>
+                    <li><a>New</a></li>
+                    <li><a>Open</a></li>
+                    <li><a>Save</a></li>
+                    <li><a>Save As</a></li>
+                    <li><a>Print</a></li>
+			    	</ul>
+				</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	
+</template>

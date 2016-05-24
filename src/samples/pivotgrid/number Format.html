@@ -1,0 +1,42 @@
+<template>
+  <require from="./number Format.css"></require>
+  <require from="../scripts/jquery.linq.js"></require>
+    <div>
+        <table><tr><td>
+        <ej-pivot-grid ej-data-source.bind="pivotData">
+        </ej-pivot-grid>
+        </td>
+        <td style="float:left">
+        <div style="margin: 10px 10px 10px 0px">Amount</div>
+        <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.bind:Amount" ej-on-change.trigger="onChange($event)" id="selectAmount" />
+        <div id="Amount">
+            <ul>
+                <li>Decimal</li>
+                <li>Currency</li>
+                <li>Percentage</li>
+                <li>Number</li>
+                <li>Date</li>
+                <li>Time</li>
+                <li>Scientific</li>
+                <li>Accounting</li>
+                <li>Fraction</li>
+            </ul>
+        </div></br>
+        <div style="margin: 30px 10px 10px 0px">Quantity</div>
+        <input type="text" ej-drop-down-list="ej-target-id.bind:target1;ej-value.bind:Quantity" ej-on-change.trigger="onChange($event)" id="selectQuantity" />
+        <div id="Quantity">
+            <ul>
+                <li>Decimal</li>
+                <li>Currency</li>
+                <li>Percentage</li>
+                <li>Number</li>
+                <li>Date</li>
+                <li>Time</li>
+                <li>Scientific</li>
+                <li>Accounting</li>
+                <li>Fraction</li>
+            </ul>
+        </div> 
+        </td></tr></table>       
+	</div>
+</template>

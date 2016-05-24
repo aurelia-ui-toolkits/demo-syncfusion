@@ -1,0 +1,31 @@
+{
+  "title": "Diagram",
+  "documentation":"http://help.syncfusion.com/js/api/ejdiagram",
+  "samples": {
+    "default-functionalities": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+    "swimlane":{
+        "files": ["html", "js"]
+    },
+    "overview":{
+        "files": ["html", "js"]
+    },
+    "hierarchical-tree":{
+         "files": ["html", "js"]
+    },
+    "organizational-chart":{
+        "files": ["html", "js"]
+    },
+    "uml-diagram":{
+         "files": ["html", "js"]
+    },
+    "circuit-diagram":{
+         "files": ["html", "js"]
+    },
+    "local-databinding":{
+        "files": ["html", "js"]
+    }
+  }
+}

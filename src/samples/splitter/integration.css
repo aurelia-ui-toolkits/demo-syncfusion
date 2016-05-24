@@ -1,0 +1,34 @@
+ .e-splitter{
+        display: block;
+    }
+          .cont {
+            padding: 20px;
+            min-width: 50px;
+        }
+
+            .cont #treeView_Container {
+                margin-bottom: 0;
+                border: none;
+            }
+
+        .h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .spe {
+            display: none;
+        }
+
+@media (max-width: 1920px) and (min-width: 1024px){
+.row .cols-sample-area {
+    min-height: 406px;
+}
+}
+
+.row .cols-sample-area {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    min-width: 250px;
+}

@@ -1,0 +1,21 @@
+<template>
+    <require from="root/vendors/scripts/cultures/ej.culture.en-US.min.js"></require>
+    <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
+    <require from="root/vendors/scripts/cultures/ej.culture.vi-VN.min.js"></require>
+    <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/04/2014"
+        ej-locale="fr-FR">
+        </ej-schedule>
+    </div>
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop">
+                <label>Select Culture</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <select ej-drop-down-list="ej-data-source.bind:LocalizationList;ej-width:110;ej-selected-index:2" id="culture" ej-on-select.trigger="onChange($event)">
+		        </select>
+            </div>
+        </div>
+    </div>
+ </template>

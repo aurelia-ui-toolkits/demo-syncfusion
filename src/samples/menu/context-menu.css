@@ -1,0 +1,8 @@
+.textarea {
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    text-align: justify;
+    width: 463px;
+    color: gray;
+}

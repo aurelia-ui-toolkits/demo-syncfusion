@@ -1,0 +1,16 @@
+﻿<template>
+
+            <div>
+                <ej-gantt id="gantt"
+                          ej-data-source.bind="ProjectData"
+                          ej-task-id-mapping="taskID"
+                          ej-task-name-mapping="taskName"
+                          ej-start-date-mapping="startDate"
+                          ej-tree-column-index="1"
+                          ej-strip-lines.bind="striplines"
+                          ej-child-mapping="subtasks"
+                          ej-end-date-mapping="endDate">
+                </ej-gantt>
+            </div>
+    
+</template>

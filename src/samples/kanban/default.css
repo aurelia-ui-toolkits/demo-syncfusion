@@ -1,0 +1,23 @@
+  .e-templatetable {
+            width: 100%;
+        }
+        .details >table {
+            margin-left:2px;            
+			border-collapse: separate;
+            border-spacing: 2px;
+            width: 100%;
+        }
+	    .details td {
+	        vertical-align: top;
+	    }
+        .details {
+            padding: 8px 8px 10px 0;
+        }
+        .photo {
+            padding: 8px 6px 10px 6px;
+            text-align: center;
+        }
+        .CardHeader {
+            font-weight: bolder;
+            padding-right: 10px;
+        }

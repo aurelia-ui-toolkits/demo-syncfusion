@@ -1,0 +1,22 @@
+<template>
+  <div>
+     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size" ej-title.bind="title" ej-common-series-options.bind="commonSeriesOptions"
+	  ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis" ej-crosshair.bind="crosshair">
+	 
+	   <ej-series ej-data-source.bind="AverageSales" ej-x-name="xName" ej-y-name="yName" ej-name="John" >
+	   </ej-series>    
+	   
+       <ej-series ej-data-source.bind="AverageSales" ej-x-name="xName" ej-y-name="yName1" ej-name="Andrew" >
+	   </ej-series>   
+	   
+       <ej-series ej-data-source.bind="AverageSales" ej-x-name="xName" ej-y-name="yName2" ej-name="Thomas" >
+	   </ej-series>   
+	   
+	   <ej-series ej-data-source.bind="AverageSales" ej-x-name="xName" ej-y-name="yName3" ej-name="Hendry" >
+	   </ej-series> 
+       	
+	   <ej-series ej-data-source.bind="AverageSales" ej-x-name="xName" ej-y-name="yName4" ej-name="William" >
+	   </ej-series> 
+    </ej-chart>
+  </div>
+</template>

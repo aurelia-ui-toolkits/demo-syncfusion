@@ -1,0 +1,42 @@
+{
+  "title": "DatePicker",
+  "documentation":"http://help.syncfusion.com/js/api/ejdatepicker",
+  "samples": {
+    "Default-Functionalities": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+     "Date-Range": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+     "Date-Format": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "Display-lnline": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+     "Dates-In-Other-Months": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "Localization": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "API": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "Events": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "RTL": {
+      "default" : false,
+      "files": ["html", "js"]
+    }                                             
+  }
+}

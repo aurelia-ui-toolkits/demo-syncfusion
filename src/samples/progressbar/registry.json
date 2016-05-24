@@ -1,0 +1,16 @@
+{
+  "title": "ProgressBar",
+  "documentation":"http://help.syncfusion.com/js/api/ejprogressbar",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js", "css"]
+    },
+    "API": {
+        "files": ["html", "js", "css"]
+    },
+    "events": {
+        "files": ["html", "js", "css"]
+    }   
+  }
+}

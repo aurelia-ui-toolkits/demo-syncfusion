@@ -1,0 +1,22 @@
+{
+  "title": "Dialog",
+  "documentation":"http://help.syncfusion.com/js/api/ejdialog",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "icons":{
+      "files":["html","js","css"]
+    },
+    "rtl":{
+      "files":["html","js","css"]
+    },
+    "model-dialog":{
+      "files":["html","js","css"]
+    },
+    "multi-dialog":{
+       "files":["html","js","css"]
+    }
+  }
+}

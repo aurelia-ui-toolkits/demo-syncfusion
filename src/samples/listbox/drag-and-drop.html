@@ -1,0 +1,18 @@
+<template>
+    <require from="./drag-and-drop.css"></require>
+ <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="listbox frame">
+                    <div class="ctrllabel">Drag and drop skillsets</div>
+                    <div class="contents">
+                        <ul id="selectskills" ej-list-box="ej-data-source.bind: skillset;ej-fields.bind:fields; ej-allow-drag:true; ej-allow-drop:true; ej-width.bind:width;ej-height.bind:height;  "></ul>
+                    </div>
+                    <div class="contents">
+                        <ul id="selected" ej-list-box="ej-allow-drag-and-drop: true; ej-width.bind:width;ej-height.bind:height;ej-allow-drag:true; ej-allow-drop:true; "></ul>
+                    </div>
+                </div>
+            </div>
+  </div>
+   
+</template>

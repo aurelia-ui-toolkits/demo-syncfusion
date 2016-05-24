@@ -1,0 +1,25 @@
+ .e-splitter{
+        display: block;
+    }
+             .h3 {
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 15px;
+        }
+        .row [class*="cols-"]:first-child > div:first-child {
+    margin: 0 auto;
+}
+@media (max-width: 1920px) and (min-width: 1024px){
+.row .cols-sample-area {
+    min-height: 406px;
+}
+}
+
+.row .cols-sample-area {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    min-width: 250px;
+}

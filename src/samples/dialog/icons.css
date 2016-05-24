@@ -1,0 +1,23 @@
+      #dialogIcon span {
+            color: skyblue;
+        }
+
+        .control {
+            height: 500px;
+        }
+
+        .row .cols-sample-area {
+            padding: 0px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #dialogIcon {
+            padding: 10px;
+            text-align: justify;
+        }
+
+            #dialogIcon .cnt {
+                padding-top: 5px;
+            }

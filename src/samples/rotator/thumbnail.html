@@ -1,0 +1,54 @@
+<template>
+     <require from="./thumbnail.css"></require>
+     <div class="content-container-fluid">
+        <div class="row">
+		  <div class="rotators">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <ul id="sliderContent"  ej-rotator="ej-slide-width.bind:slideWidth; 
+                    ej-frame-space.bind:frameSpace; 
+                    ej-slide-height.bind: slideHeight;
+                    ej-enabled:true;
+                    ej-show-thumbnail:true;
+                    ej-thumbnail-source-id.bind: thumbElement;
+                    ej-show-pager: false;
+                    ej-show-caption: false;
+                    ej-show-play-button: true;
+                    ej-is-responsive:true;">
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/green.jpg" title="green" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/snow.jpg" title="snow" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/wheat.jpg" title="wheat" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/tablet.jpg" title="tablet" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/sea.jpg" title="sea" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/bread.jpg" title="bread" /></li>
+                        <li>
+                            <img class="image" src="http://js.syncfusion.com/demos/web/content/images/rotator/snowfall.jpg" title="snowfall" /></li>
+                    </ul>
+                    <ul id="thumbElement" style="display: none">
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/green.jpg" title="green" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/snow.jpg" title="snow" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/wheat.jpg" title="wheat" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/tablet.jpg" title="tablet" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/sea.jpg" title="sea" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/bread.jpg" title="bread" /></li>
+                        <li>
+                            <img src="http://js.syncfusion.com/demos/web/content/images/rotator/snowfall.jpg" title="snowfall" /></li>
+                    </ul>
+                </div>
+            </div>
+		  </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+.customcheck {
+    float: left;
+    margin-right: 10px;
+}
+
+.error {
+    background-color: #FF8A8A;
+}
+
+#custom table td {
+    padding: 5px;
+}

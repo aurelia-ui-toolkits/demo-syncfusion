@@ -1,0 +1,45 @@
+<template>
+<require from="./basic-use.css"></require>
+    <div>
+        <div>
+            <div>
+                <h4>PDF Viewer</h4>
+                <ej-pdf-viewer id="pdfviewer" ej-service-url="http://mvc.syncfusion.com/PDFViewer/pdfviewer.asmx/PostViewerAction" ej-pdf-service = "Remote" ej-on-document-load.trigger="documentLoad()" ej-on-page-change.trigger="pageChange()" mousemove.trigger="mousemovefunction($event)" style="height:500px;display:block"></ej-pdf-viewer>
+                <div id="magnificationDiv">
+                    <div style=" position:absolute;top:20px;">
+                        <button ej-button class=" e-pdfviewer-customtoolbar-icon e-pdfviewer-zoomin " id="viewer-zoomin" ej-on-click.trigger="callClientSideMethod('zoomin')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button>
+                    </div>
+                    <div style="position:absolute;top:70px;">
+                        <button ej-button class="e-pdfviewer-customtoolbar-icon e-pdfviewer-zoomout" id="viewer-zoomout" ej-on-click.trigger="callClientSideMethod('zoomout')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button>
+                    </div>
+                    <div style="position:absolute;top:120px;">
+                        <button ej-button class="e-pdfviewer-customtoolbar-icon  e-pdfviewer-fitpage " id="viewer-fitpage" ej-on-click.trigger="callClientSideMethod('fitpage')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button>
+                    </div>
+                    <div style="position:absolute;top:170px;">
+                        <button ej-button class="e-pdfviewer-customtoolbar-icon e-pdfviewer-fitwidth" id="viewer-fitwidth" ej-on-click.trigger="callClientSideMethod('fitwidth')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button>
+                    </div>
+                </div>
+                <div id="toolbarDiv" class="e-toolbar-pdfviewer" ej-toolbar>
+                    <div style="padding:16px;float:left">
+                        <span id="pdfName">${pdf}</span>
+                    </div>
+                    <div style="left:45%;position:absolute;padding:5px;">
+                        <table>
+                            <tr>
+                                <td><div><div ej-button class=" e-pdfviewer-customtoolbar-icon e-pdfviewer-gotoprevious" id="viewer-previous" ej-on-click.trigger="callClientSideMethod('previous')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></div></div></td>
+                                <td><input id="currentPage" class="e-pdfviewer-pagenumber e-pdfviewer-pagebox e-pdfviewer-elementalignments" type="text" data-role="none" value.bind="currentPageNumber" click.trigger="textboxOnclick()" keypress.trigger="keyPressValidation($event)" focus.trigger="focusIn()" blur.trigger="focusOut()" /></td>
+                                <td style="width:20px;"><span id="totalPageCount"> / ${TotalPage}</span></td>
+                                <td><div style="margin-left:8px;margin-top:3px"><button ej-button class=" e-pdfviewer-customtoolbar-icon e-pdfviewer-gotonext" id="viewer-next" ej-on-click.trigger="callClientSideMethod('next')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button></div></td>
+                            </tr>
+                        </table>
+                    </div>
+					<div>
+						<div style=" padding:5px;float:right;">
+						<button ej-button class="e-pdfviewer-customtoolbar-icon  e-pdfviewer-print" id="viewer-print" ej-on-click.trigger="callClientSideMethod('print')" mouseover.trigger="showTooltip($event)" mouseleave.trigger="hideTooltip()"></button>
+						</div>
+					</div>
+                </div>
+			</div>
+        </div>
+    </div>
+</template>

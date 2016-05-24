@@ -1,0 +1,15 @@
+<template>
+  <div>
+     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size"  ej-primary-y-axis.bind="primaryYAxis" ej-common-series-options.bind="commonSeriesOptions">
+	    <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName2" ej-name="Area" ej-draw-type="Area"  ej-fill="#E94649">
+	   </ej-series>
+	   
+	    <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName1" ej-name="Column" ej-draw-type="Column"  ej-z-order=1>
+	   </ej-series>
+	   
+	   <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName" ej-name="Line" ej-z-order=2 ej-fill="#6FAAB0">
+	   </ej-series>    
+	
+	</ej-chart>
+  </div>
+</template>

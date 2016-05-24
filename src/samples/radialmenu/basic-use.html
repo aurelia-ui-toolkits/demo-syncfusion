@@ -1,0 +1,55 @@
+<template>
+    
+      <div id="contentDiv">
+        <div id="radialtarget1" class="content-container-fluid">
+            <div class="row">
+                <div class="cols-sample-area">
+                    <textarea id="rteSample1"  style="height: 440px" ej-rte="ej-width.bind:width; ej-min-width:10; ej-show-toolbar: false; ej-show-context-menu:false;" ej-on-select.trigger="radialShow($event)" ej-on-change.trigger="rteChange($event)">
+Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
+Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
+The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
+
+A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).
+
+A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.
+
+A view requests from the model the information that it needs to generate an output representation to the user.
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div id="defaultradialmenu" ej-radial-menu="ej-auto-open:false;">
+            <ul>
+                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/font.png" data-ej-text="Bold" ej-on-click.trigger="bold($event)"></li>
+                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/f1.png" data-ej-text="Italic" data-ej-click.delegate="italic"></li>
+                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/redo.png" data-ej-text="Redo" data-ej-click="redo" data-ej-enabled="false"></li>
+                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/undo.png" data-ej-text="Undo" data-ej-click="undo" data-ej-enabled="false"></li>
+            </ul>
+        </div>
+    </div>
+<script type="text/javascript">
+     function bold(e) {
+         debugger
+       var rteObj = $("#rteSample1").data("ejRTE");
+            rteObj.executeCommand("bold");
+        }
+       function  italic(e) {
+           var rteObj = $("#rteSample1").data("ejRTE");
+            rteObj.executeCommand("italic");
+        }
+        function undo(e) {
+           debugger
+           var rteObj = $("#rteSample1").data("ejRTE");
+            rteObj.executeCommand("undo");
+            $("#defaultradialmenu").ejRadialMenu("disableItem", "Undo");
+            $("#defaultradialmenu").ejRadialMenu("enableItem", "Redo");
+        }
+        function redo(e) {
+           var rteObj = $("#rteSample1").data("ejRTE");
+            rteObj.executeCommand("redo");
+            $("#defaultradialmenu").ejRadialMenu("disableItem", "Redo");
+            $("#defaultradialmenu").ejRadialMenu("enableItem", "Undo");
+        }
+    </script>
+</template>

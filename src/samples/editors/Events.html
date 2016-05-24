@@ -1,0 +1,59 @@
+<template>
+   <require from="./Common.css"></require>
+   <div>    
+      <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <table class="editors">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Kilometers</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="numeric" type="text" ej-numeric-textbox="ej-value.bind:numericValue;ej-width.bind:cwidth;" ej-on-create.trigger="onNumericCreate($event)" ej-on-focus-in.trigger="numericFocusIn($event)" ej-on-focus-out.trigger="numericFocusOut($event)" ej-on-change.trigger="numericValChange($event)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Service Tax</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="percent" type="text" ej-percentage-textbox="ej-value.bind:percentValue;ej-width.bind:cwidth;" ej-on-create.trigger="onPercentageCreate($event)" ej-on-focus-in.trigger="percentFocusIn($event)" ej-on-focus-out.trigger="percentFocusOut($event)" ej-on-change.trigger="percentValChange($event)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Fare</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="currency" type="text" ej-currency-textbox="ej-value.bind:currencyValue;ej-width.bind:cwidth;" ej-on-create.trigger="onCurrencyCreate($event)" ej-on-focus-in.trigger="currencyFocusIn($event)" ej-on-focus-out.trigger="currencyFocusOut($event)" ej-on-change.trigger="currencyValChange($event)" />
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        <label>Mobile No</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="maskedit" type="text" ej-mask-edit="ej-value.bind:mvalue;ej-mask-format.bind:maskFormat;ej-width.bind:cwidth" ej-on-create.trigger="onMaskCreate($event)" ej-on-focus-in.trigger="maskFocusIn($event)" ej-on-focus-out.trigger="maskFocusOut($event)" ej-on-change.trigger="maskValueChange($event)" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div> 
+  
+  <div id="Logger" class="box">
+    <h4>Event Trace</h4>
+     <logger view-model.ref="logger"></logger>
+       <div>
+           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+       </div>
+  </div>
+</template>

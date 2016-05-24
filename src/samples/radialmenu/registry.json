@@ -1,0 +1,10 @@
+{
+  "title": "RadialMenu",
+  "documentation":"http://help.syncfusion.com/js/api/ejradialmenu",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  padding: 40px 40px;
+  text-shadow: 1px 1px 5px #999999;
+  background-color:#eae8e8;
+}
+pre {
+  background: none;
+  border: none;
+}
+
+.features li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#aurelia-syncfusion h4{
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}

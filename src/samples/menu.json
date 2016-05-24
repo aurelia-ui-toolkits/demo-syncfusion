@@ -1,0 +1,62 @@
+{
+    "Most popular": {
+        "Button": "button",
+        "Grid": "grid"
+    },
+    "Navigation": {
+        "Button": "button",
+        "Menu": "menu",
+        "Ribbon": "ribbon",
+        "Tab": "tab",
+        "ListBox": "listbox",
+        "Rotator": "rotator",
+		"Accordion": "accordion",
+        "NavigationDrawer":"navigationdrawer",
+       "RadialMenu":"radialmenu"
+    },
+    "LAYOUT": {
+        "Splitter": "splitter",
+        "ListView": "listview",
+        "Dialog": "dialog"
+    },
+    "DATA VISUALIZATION": {
+        "Schedule": "schedule",
+        "Kanban Board": "kanban",
+        "Barcode": "barcode",
+        "Diagram": "diagram",
+        "Gantt": "gantt",
+        "TreeGrid": "treegrid",
+        "Spreadsheet": "spreadsheet",
+        "Chart": "chart",
+        "Circular Gauge": "circulargauge",
+        "Linear Gauge": "lineargauge",
+        "Digital Gauge": "digitalgauge",
+        "Bullet Graph": "bulletgraph",
+        "Range Navigator": "rangenavigator"
+    },
+    "Editors": {
+        "DatePicker": "datepicker",
+        "TimePicker": "timepicker",
+        "DateTimePicker": "datetimepicker",
+        "TextBoxes":"editors",
+        "Autocomplete": "autocomplete",
+        "RadialSlider": "radialslider",
+		"DropDownList": "dropdownlist",
+        "Uploadbox": "uploadbox",
+        "Rating": "rating"
+    },
+    "File Formats": {
+        "PDF Viewer": "pdfviewer"
+    },
+    "PivotGrid": {
+        "Relational": "pivotgrid",
+        "OLAP": "olap",
+        "Common": "pivotgridcommon"
+    },
+    "PivotChart": {
+        "Pivot Chart": "pivotchart"
+    },
+	"Notification": {
+        "ProgressBar": "progressbar"
+    }
+}

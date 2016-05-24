@@ -1,0 +1,84 @@
+
+        .e-lv{
+            display: block;
+        }
+        .row [class*="cols-"]:first-child > ej-list-view:first-child {
+            margin: 0 auto;
+        }
+        .e-lv .e-list a{
+            box-sizing: content-box;
+        }
+
+       #templatelist .aboutstyle {
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            overflow: hidden;
+            padding-right: 23px;
+            position: relative;
+            text-align: justify;
+            word-wrap: break-word;
+        }
+
+        #templatelist .designationstyle {
+            float: right;
+            font-size: 12px;
+            padding-right: 13px;
+            padding-top: 4px;
+            position: relative;
+            right: 10px;
+        }
+
+        #templatelist .templatetext {
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+        }
+
+        .listrightdiv {
+            left: 10px;
+            position: relative;
+        }
+
+        .jacob, .grace, .erik, .claire, .brooke {
+            background-repeat: no-repeat;
+            border: 0px solid #e5e5e5;
+            float: left;
+            height: 60px;
+            padding-left: 8px;
+            width: 51px;
+            background-size: 100% 100%;
+        }
+
+        .cont-bg {
+            font-size: 17px;
+            height: 71px;
+            padding-left: 5px;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        .brooke {
+            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/6.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/6.png, sizingMethod='scale');
+        }
+
+        .claire {
+            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/9.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/9.png, sizingMethod='scale');
+        }
+
+        .erik {
+            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/7.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/7.png, sizingMethod='scale');
+        }
+
+        .grace {
+            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/8.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/8.png, sizingMethod='scale');
+        }
+
+        .jacob {
+            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/5.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/5.png, sizingMethod='scale');
+        }

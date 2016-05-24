@@ -1,0 +1,34 @@
+<template>
+  <require from="./summary Type.css"></require>
+  <require from="../scripts/jquery.linq.js"></require>
+    <div>
+        <table><tr><td>
+        <ej-pivot-grid ej-data-source.bind="pivotData">
+        </ej-pivot-grid>
+        </td>
+        <td style="float:left">
+        <div style="margin: 10px 10px 10px 0px">Amount</div>
+        <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.bind:Amount" ej-on-change.trigger="onChange($event)" id="selectAmount" />
+        <div id="Amount">
+            <ul>
+                <li>Sum</li>
+                <li>Average</li>
+                <li>Count</li>
+                <li>Min</li>
+                <li>Max</li>
+            </ul>
+        </div></br>
+        <div style="margin: 30px 10px 10px 0px">Quantity</div>
+        <input type="text" ej-drop-down-list="ej-target-id.bind:target1;ej-value.bind:Quantity" ej-on-change.trigger="onChange($event)" id="selectQuantity" />
+        <div id="Quantity">
+            <ul>
+                <li>Sum</li>
+                <li>Average</li>
+                <li>Count</li>
+                <li>Min</li>
+                <li>Max</li>
+            </ul>
+        </div>  
+        </td></tr></table>      
+	</div>
+</template>

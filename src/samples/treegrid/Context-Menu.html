@@ -1,0 +1,15 @@
+﻿<template>
+    <require from="./Default-Sample.css"></require>
+    <div>
+        <ej-tree-grid id="Treegrid"
+                      ej-data-source.bind="ProjectData"
+                      ej-child-mapping="subtasks"
+                      ej-is-responsive="true"
+                      ej-context-menu-settings.bind="contextmenuSettings"
+                      ej-edit-settings.bind="editsettings"
+                      ej-tree-column-index="1"
+                      ej-columns.bind="columns">
+        </ej-tree-grid>
+    </div>
+   
+</template>

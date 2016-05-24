@@ -1,0 +1,132 @@
+<template>
+  <require from="./external-drag-and-drop.css"></require>
+  <div>
+            <span class=""><b>Tutorials </b> </span>
+            <ul ej-tree-view="ej-allow-drag-and-drop:true;ej-width:170;ej-allow-drop-child:false;ej-allow-drop-sibling:false;e-allow-drag-and-drop-across-control:true;" ej-on-node-drag-start.trigger="onDragStart($event)" ej-on-node-dropped.trigger="onDropped($event)" id="treeViewDrag">
+              <li class="expanded" id="HTML">HTML
+                <ul>
+                  <li>Introduction</li>
+                  <li>Editors</li>
+                  <li>Styles</li>
+                  <li>Formatting</li>
+                  <li>Tables</li>
+                </ul>
+              </li>
+              <li id="CSS">CSS
+                <ul>
+                  <li>Introduction</li>
+                  <li>Syntax</li>
+                  <li>Tables</li>
+                  <li> Box Model</li>
+                  <li>Position</li>
+                </ul>
+              </li>
+              <li id="JAVASCRIPT">JAVA SCRIPT
+                <ul>
+                  <li>Introduction </li>
+                  <li>Statements </li>
+                  <li>Variables </li>
+                  <li>Data Types </li>
+                  <li>Functions </li>
+                  <li>Objects </li>
+                </ul>
+              </li>
+              <li id="SQL">SQL
+                <ul>
+                  <li>Introduction </li>
+                  <li>Distinct </li>
+                  <li>Oreder By </li>
+                  <li>Injection </li>
+                  <li>Primarykey </li>
+                </ul>
+              </li>
+              <li id="PHP">PHP
+                <ul>
+                  <li>Introduction </li>
+                  <li>Constants </li>
+                  <li>Operators </li>
+                  <li>Arrays </li>
+                  <li>Operators </li>
+                </ul>
+              </li>
+              <li id="BOOTSTRAP">BOOTSTRAP
+                <ul>
+                  <li>Getting Started </li>
+                  <li>Grid Basic </li>
+                  <li>Typography </li>
+                  <li>Images</li>
+                  <li>Jumbotron </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="Schedule1">
+            <span class=""><b> Training Scheduler Panel</b> </br></span>
+            <i>Note</i>: To Schedule classes, drag the topics from <b>Tutorials</b> and drop it over <b>Training Scheduler Panel</b>
+            <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-cell-width="40px" ej-show-current-time-navigator="false"
+            ej-orientation="horizontal" ej-views.bind="views" ej-current-view="workweek" ej-group.bind="Group" ej-resources.bind="Resources" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/03/2014">
+            </ej-schedule>
+          </div>
+        </div>
+        
+    <div id="customWindow" style="display: none">
+      <form id="custom">
+            <table width="100%" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td>
+                            Subject:
+                        </td>
+                        <td colspan="2">
+                            <input id="subject" type="text" value="" name="Subject" style="width: 100%" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description:
+                        </td>
+                        <td colspan="2">
+                            <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            StartTime:
+                        </td>
+                        <td>
+                            <input id="StartTime" type="text" value="" name="StartTime" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EndTime:
+                        </td>
+                        <td>
+                            <input id="EndTime" type="text" value="" name="EndTime" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Resource:
+                        </td>
+                        <td colspan="2">
+                            <input id="resource" type="text" value="" name="Resource" style="width: 100%" readonly/>
+                        </td>
+                    </tr>
+                    <tr style="display: none">
+                        <td>
+                            ownerId:
+                        </td>
+                        <td colspan="2">
+                            <input id="ownerId" type="text" name="ownerId" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+      <div>
+        <button type="submit" ej-button="ej-width:85px" ej-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+        <button type="submit" ej-button="ej-width:85px" ej-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+      </div>
+    </div>
+</template>

@@ -1,0 +1,19 @@
+{
+  "title": "Rating",
+  "documentation":"http://help.syncfusion.com/js/api/ejrating",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js", "css"]
+    },
+    "precision": {
+        "files": ["html", "js", "css"]
+    },
+    "API": {
+        "files": ["html", "js"]
+    },
+    "Events": {
+        "files": ["html", "js"]
+    }    
+  }
+}

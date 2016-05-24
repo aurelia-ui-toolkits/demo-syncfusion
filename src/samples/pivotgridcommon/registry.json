@@ -1,0 +1,22 @@
+{
+  "title": "PivotGrid",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivotgrid",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "hyperlink": {
+      "files": ["html", "js"]
+    },
+    "conditional Formatting": {
+      "files": ["html", "js"]
+    },
+    // "cell Selection": {
+    //   "files": ["html", "js"]
+    // },
+    "localization": {
+      "files": ["html", "js"]
+    }
+  }
+}

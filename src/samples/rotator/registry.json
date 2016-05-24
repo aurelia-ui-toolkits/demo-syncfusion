@@ -1,0 +1,19 @@
+{
+  "title": "Rotator",
+  "documentation":"http://help.syncfusion.com/js/api/ejRotator",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "databinding-json":{
+      "files": ["html", "js","css"]
+    },
+    "image-with-content":{
+      "files": ["html", "js","css"]
+    },
+    "thumbnail":{
+      "files": ["html", "js","css"]
+    }
+  }
+}

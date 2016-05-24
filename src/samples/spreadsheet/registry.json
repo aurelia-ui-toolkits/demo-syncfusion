@@ -1,0 +1,34 @@
+{
+  "title": "Spreadsheet",
+  "documentation":"http://help.syncfusion.com/js/api/ejspreadsheet",
+  "samples": {
+    "default": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+	 "conditional-format": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+	 "data-validation": {
+      "default" : false,
+      "files": ["html", "js"]
+	 },
+   "freezepane": {
+      "default" : false,
+      "files": ["html", "js"]
+	 },
+   "import-export": {
+      "default" : false,
+      "files": ["html", "js"]
+	 },
+   "movie-template": {
+      "default" : false,
+      "files": ["html", "js"]
+	 },
+   "pivot": {
+      "default" : false,
+      "files": ["html", "js"]
+	 }
+  }
+}

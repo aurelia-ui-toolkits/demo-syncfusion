@@ -1,0 +1,20 @@
+<template>
+    <require from="./events.css"></require>
+    <div>
+        <div class="posupload">Select a file to upload </div>
+        <div class="control">
+            <ej-uploadbox id="UploadEvents" ej-save-url.bind="saveURL" ej-remove-url.bind="removeURL" ej-on-create.trigger="create($event)"
+            ej-on-file-select.trigger="fileSelect($event)" ej-on-begin.trigger="begin($event)" ej-on-cancel.trigger="cancel($event)"
+            ej-on-in-progress.trigger="inProgress($event)" ej-on-complete.trigger="complete($event)" ej-on-remove.trigger="remove($event)"
+            ej-on-error.trigger="error($event)" ej-on-destroy.trigger="destroy($event)" ej-on-success.trigger="success($event)">
+            </ej-uploadbox>
+        </div>
+    </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<template>
+<div style="position: relative; left: 36px;">
+<ej-range-navigator id="navigator"    
+     ej-size-settings.bind="sizeSettings" ej-data-source.bind="dataSource" ej-x-name="XValue" ej-y-name="YValue"  
+	 ej-selected-range-settings.bind="selectedRangeSettings" ej-on-range-changed.trigger="onchartloaded($event)"> 
+</ej-range-navigator>
+</div>
+<div>
+<ej-chart id="chart" ej-on-load.trigger="onchartload($event)" ej-crosshair.bind="crosshair" ej-legend.bind="legend" ej-size.bind="size">
+  <ej-series ej-type="line" ej-tooltip.bind="tooltip" ej-style.bind="style">
+  </ej-series> 
+  <ej-series  ej-type="line" ej-tooltip.bind="tooltip" ej-style.bind="style">
+   </ej-series> 
+</ej-chart>
+</div> 
+
+</template>

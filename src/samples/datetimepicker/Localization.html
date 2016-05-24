@@ -1,0 +1,25 @@
+<template>
+  <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
+  <require from="root/vendors/scripts/cultures/ej.culture.zh-CN.min.js"></require>
+  <div> 
+      <label>Select DateTime</label>    
+      <input id="datetimepick" ej-date-time-picker="ej-value.bind:datetimeValue;ej-locale.bind:localeValue"></input>
+  </div>
+   <div id="property-window" class="box wide">
+     <div class="row">
+       <div class="col-sm-2">   
+          <div> Select Culture </div>               
+       </div>
+       <div class="col-sm-3">        
+           <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-watermark-text.bind:watermarkText;ej-value.two-way:updateLocale" id="selectLocale" />
+       <div id="localelist">
+            <ul>
+                <li>en-US</li>
+                <li>vi-VN</li>
+                <li>zh-CN</li>
+            </ul>
+        </div>   
+       </div>
+     </div>
+  </div>
+</template>

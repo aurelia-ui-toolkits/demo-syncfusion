@@ -1,0 +1,14 @@
+<template>
+  <require from="./icons.css"></require>
+ <div class="cols-sample-area"  style="height:500px;">
+ <button id="btnOpen" class="e-btn" ej-button="ej-text:Click to open dialog; size: medium, type: button, height: 30, width: 150" ej-on-click.trigger="onOpen()"></button>
+ <div class="control">
+                    <ej-dialog  id="dialogIcon" ej-title="Audi-R8"  ej-width="295" ej-action-buttons.bind="actionButtons" ej-enable-resize="false" ej-containment=".cols-sample-area" ej-on-close.trigger="onDialogClose()">
+                   <img src="http://js.syncfusion.com/demos/web/content/images/dialog/r8-coupe.png" />
+                        <div class="cnt">
+                            The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
+                        </div>
+                    </ej-dialog>
+ </div>
+ </div>
+</template>

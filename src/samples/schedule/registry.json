@@ -1,0 +1,102 @@
+{
+    "title": "Schedule",
+    "documentation": "http://help.syncfusion.com/js/api/ejschedule",
+    "samples": {
+        "default-functionalities": {
+            "default": true,
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "remote-data": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "load-on-demand": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "custom-work-hours": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "resource-grouping": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "time-scale": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "print-and-export": {
+            "files": [
+                "html",
+                "js",
+                "css"
+            ]
+        },
+        "cell-formatting": {
+            "files": [
+                "html",
+                "js",
+                "css"
+            ]
+        },
+        "external-drag-and-drop": {
+            "files": [
+                "html",
+                "js",
+                "css"
+            ]
+        },
+        "template": {
+            "files": [
+                "html",
+                "js",
+                "css"
+            ]
+        },
+        "localization": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "custom-window": {
+            "files": [
+                "html",
+                "js",
+                "css"
+            ]
+        },
+        "custom-view": {
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "validation":{
+            "files": [
+                "html",
+                "js"
+            ]
+        },
+        "api": {
+            "files": [
+                "html",
+                "js"
+            ]
+        }
+    }
+}

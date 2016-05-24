@@ -1,0 +1,10 @@
+{
+  "title": "PDF Viewer",
+  "documentation":"http://help.syncfusion.com/js/api/ejpdfviewer",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html","js","css"]
+    },
+  }
+}

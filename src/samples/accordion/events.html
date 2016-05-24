@@ -1,0 +1,31 @@
+<template>
+    <div>
+        <ej-accordion id="eventAccordion" style="width: 500px" ej-on-create.trigger="create()" ej-on-before-activate.trigger="beforeActivate($event)" ej-on-activate.trigger="onActivate($event)" ej-on-before-inactivate.trigger="beforeInactivate($event)" ej-on-in-activate.trigger="inActivate($event)" ej-on-ajax-before-load.trigger="ajaxBeforeLoad()" ej-on-ajax-load.trigger="ajaxLoad()" ej-on-ajax-success.trigger="ajaxSuccess()" ej-on-ajax-error="ajaxError()">
+            <h3><a href="#">ASP.NET</a></h3>
+            <div>
+                Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.
+                ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop
+                or mobile browser. ASP.NET pages use a compiled, event-driven programming model that improves performance
+                and enables the separation of application logic and user interface.
+            </div>
+            <h3><a href="#">ASP.NET MVC</a></h3>
+            <div>
+                The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the
+                view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern
+                for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework
+                that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master
+                pages and membership-based authentication.
+            </div>
+            <h3><a href="src/samples/accordion/jscontent.html">Javascript (Ajax Load)</a></h3>
+            <div>
+            </div>
+        </ej-accordion>
+    </div>
+    <div id="Logger" class="box">
+       <h4>Event Trace</h4>
+       <logger view-model.ref="logger"></logger>
+       <div>
+           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+       </div>
+      </div>
+</template>

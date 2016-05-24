@@ -1,0 +1,41 @@
+#Export
+    {
+       border: 1px solid #bbbcbb;
+       border-radius: 0 6px 6px 0;
+       float: right;
+       margin-top: 9px;
+       padding-top:5px;
+       box-sizing:border-box;
+    }
+    .upload
+    {
+        margin-top: 9px;
+        border: 1px solid #bbbcbb;
+        border-radius: 6px 0 0 6px;
+        width: 80px;
+        height: 30px;
+    }
+    #tabImp {
+        margin-left:45%;
+    }
+#reminder
+        {
+            width: 50px;
+            height: 40px;
+            margin-top: -38px;
+            margin-left:38%;
+        }
+        .reminder-icon
+        {
+            background-image: url("images/schedule/print.png") !important;
+            background-repeat:no-repeat !important;
+            background-position: 3px 3px !important;
+            border: 1px solid #BBBCBB !important;
+            height: 28px;
+            width: 28px;
+        }
+        .reminder-icon:hover
+        {
+            background-image: url("images/schedule/print-hover.png") !important; 		
+          
+        }

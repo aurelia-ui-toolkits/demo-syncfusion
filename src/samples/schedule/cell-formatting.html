@@ -1,0 +1,10 @@
+<template>
+    <require from="./cell-formatting.css"></require>
+  <div>
+      <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-current-view="day" ej-views.bind="Views" ej-show-next-prev-month="false" ej-work-hours.bind="WorkHours" ej-appointment-settings.bind="AppointmentList" ej-group.bind="Group" ej-resources.bind="Resources" ej-current-date="05/05/2014" ej-on-create.trigger="onCreate($event)" ej-on-appointment-window-open.trigger="onAppointmentWindowOpen($event)" 
+      ej-on-query-cell-info.trigger="check($event)">
+      </ej-schedule>
+  </div>
+  <input type="text" id="EventType"/>
+</template>
+                                                                                                                                                                                 

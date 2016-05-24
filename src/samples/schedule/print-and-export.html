@@ -1,0 +1,37 @@
+<template>
+  <require from="./print-and-export.css"></require>
+  <table id="tabImp" style="display:none">
+    <tr>
+      <td>
+        <div class="upload">
+        <ej-uploadbox id="UploadDefault" ej-save-url="http://js.syncfusion.com/ScheduleExport/api/JSScheduleExport/SaveDefault"
+                       ej-extensions-allow= ".ics" ej-height="30px" ej-auto-upload="true" ej-width="80px" ej-button-text.bind="buttonText"
+                       ej-show-file-details="false" ej-on-success.trigger="onComplete($event)" ej-dialog-action.bind="dialogAction"></ej-uploadbox>
+        </div>
+      </td>
+      <td>
+        <input ej-button="ej-text:Export;ej-height:30px;ej-width:80px" ej-on-click.trigger="onExportClick($event)" id="Export" />
+      </td>
+    </tr>
+  </table>
+  <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-current-view="month" ej-time-mode="12" ej-appointment-settings.bind="AppointmentList"
+        ej-current-date="05/05/2014" ej-on-create.trigger="onCreate($event)">
+        </ej-schedule>
+  </div>
+  <div id="reminder" style="display:none">
+                    <a class="pull-left" href="#" style="margin-top: 9px; outline: medium none;">
+                        <div class="reminder-icon e-btn e-select"></div>
+                    </a>
+                </div>
+  <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 columntop" style="top:5px">
+                <label>PDFExport</label>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <input ej-button="ej-text:Export;ej-height:30px;ej-width:80px" ej-on-click.trigger="onPDFExportClick($event)" id="btnExport"/>
+            </div>
+        </div>
+  </div>
+</template>

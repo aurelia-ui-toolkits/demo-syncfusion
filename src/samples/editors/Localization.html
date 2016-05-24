@@ -1,0 +1,64 @@
+<template>
+  <require from="./Common.css"></require>
+  <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
+  <require from="root/vendors/scripts/cultures/ej.culture.de-DE.min.js"></require>
+  <require from="root/vendors/scripts/cultures/ej.culture.zh-CN.min.js"></require>
+  <div>    
+      <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <table class="editors">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Kilometers</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="numeric" type="text" ej-numeric-textbox="ej-value.bind:numericValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Service Tax</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="percent" type="text" ej-percentage-textbox="ej-value.bind:percentValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Fare</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="currency" type="text" ej-currency-textbox="ej-value.bind:currencyValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                    </td>
+                                </tr>                              
+                            </tbody>
+                        </table>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div>   
+  <div id="property-window" class="box wide">
+     <div class="row">
+       <div class="col-sm-2">   
+          <div> Select Culture </div>               
+       </div>
+       <div class="col-sm-3">        
+          <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.two-way:updateLocale" id="selectLocale" />
+        <div id="localelist">
+            <ul>
+                <li>en-US</li>
+                <li>de-DE</li>
+                <li>fr-FR</li>
+                <li>zh-CN</li>
+            </ul>
+         </div>   
+       </div>
+     </div>
+  </div>
+</template>

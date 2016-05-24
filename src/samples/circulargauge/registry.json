@@ -1,0 +1,25 @@
+{
+  "title": "CircularGauge",
+  "documentation":"http://help.syncfusion.com/js/api/ejcirculargauge",
+  "samples": {
+    "basic-use": {
+	  "default" : true,
+      "files": ["html", "js"]
+    },
+	"clock": {
+	  "files": ["html", "js"]
+    },
+	"half-circular": {
+	  "files": ["html", "js"]
+    },
+	"pointer-image": {
+	  "files": ["html", "js"]
+    },
+	"unit-label": {
+	  "files": ["html", "js"]
+    },
+	"user-interaction": {
+	  "files": ["html", "js"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<template>
+<div>
+<ej-chart  id="container" ej-legend.bind="legend" ej-enable-3d="true" ej-enable-rotation= "true" ej-depth= "100" 
+ej-wall-size= "2"  ej-tilt= "0" ej-rotation= "34" ej-perspectiveAngle= "90" ej-side-by-side-series-placement="true" 
+ej-size.bind="size" ej-title.bind="title" ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis" 
+ej-common-series-options.bind="commonSeriesOptions">
+	 
+	   <ej-series ej-data-source.bind="SelfInsuredPlans" ej-x-name="xName" ej-y-name="yName" ej-name="California" ej-type="bar" >
+	   </ej-series>    
+	   
+       <ej-series ej-data-source.bind="SelfInsuredPlans" ej-x-name="xName" ej-y-name="yName1" ej-name="United States" ej-type="bar">
+	   </ej-series>
+	   
+</ej-chart>
+</div>
+</template>

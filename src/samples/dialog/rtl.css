@@ -1,0 +1,35 @@
+ .audi-q3 {
+            float: left;
+            margin: 0px;
+            height: 360px;
+            width: 267px;
+            margin-right: 17px;
+        }
+
+        .control {
+            height: 600px;
+        }
+
+        .row .cols-sample-area {
+            padding: 0px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: auto;
+        }
+
+        .cnt {
+            min-height: 356px;
+        }
+
+        .img {
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+        }
+
+        #rtlDialog {
+            text-align: justify;
+            padding: 15px;
+        }

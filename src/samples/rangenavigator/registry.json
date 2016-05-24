@@ -1,0 +1,16 @@
+{
+  "title": "RangeNavigator",
+  "documentation":"http://help.syncfusion.com/js/api/ejrangenavigator",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+	"numeric": {
+      "files": ["html", "js"]
+    },
+	"scrollbar": {
+      "files": ["html", "js"]
+    }
+  }
+}

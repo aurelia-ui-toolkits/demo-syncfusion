@@ -1,0 +1,96 @@
+  #navpane_listbox img.e-list-img {
+            padding-right: 10px;
+        }
+        .e-lv .e-list a{
+            box-sizing: content-box;
+        }
+#navpane{
+    display: block;
+}
+        body {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+       
+
+        .e-header {
+            padding-top: 8px;
+            padding-left: 0px;
+        }
+
+        #container {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .peopleimage {
+            background: none no-repeat scroll center center / 70px 70px rgba(0, 0, 0, 0);
+            height: 100px;
+            margin: auto;
+            width: 100px;
+            border: 1px solid #737373;
+        }
+
+        .profileimage {
+            background: none no-repeat scroll center center / 90px 90px rgba(0, 0, 0, 0);
+            height: 95px;
+            border: 1px solid #b3b3b3;
+            margin-right: 12px;
+            width: 95px;
+        }
+
+        #people td {
+            border: 1px solid #9f9f9f;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #photos td div {
+            background-position: center center;
+            background-size: 100% 100%;
+            border: 1px solid #b3b3b3;
+            margin-left: 14px;
+        }
+
+        .photoimage {
+            background: none no-repeat scroll center center / 140px 120px rgba(0, 0, 0, 0);
+            height: 125px;
+            margin: auto;
+            width: 145px;
+        }
+
+        .locationimage {
+            background: url("img/location.png") no-repeat scroll center center / 300px 200px rgba(0, 0, 0, 0);
+            height: 230px;
+            margin: auto;
+            padding: 10px;
+            width: 320px;
+        }
+
+        .drawericon {
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 32px;
+            width: 32px;
+            background-size: 100% 100%;
+			padding-right: 10px;
+        }
+
+        .subpage {
+            padding: 10px;
+            text-align: justify;
+        }
+
+        #navpane .subpage {
+            padding: 0px;
+        }
+
+        .drawericon:before {
+            content: "\e76b";
+            font-size: 28px;
+			height: 26px;
+        }

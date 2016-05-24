@@ -1,0 +1,10 @@
+{
+  "title": "RadialSlider",
+  "documentation":"http://help.syncfusion.com/js/api/ejRotator",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    }
+  }
+}

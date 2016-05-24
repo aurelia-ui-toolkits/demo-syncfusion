@@ -1,0 +1,27 @@
+<template>
+    <div class="frame">
+                    <table>
+                        <tr>
+                            <td valign="top">Full Precision :
+                            </td>
+                            <td>
+                                <input id="fullRating" type="text" class="rating" ej-rating="ej-value.bind:fullRatingValue" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Half Precision :
+                            </td>
+                            <td>
+                                <input id="halfRating" type="text" class="rating" ej-rating="ej-value.bind:halfRatingValue;ej-precision.bind:half" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Exact Precision :
+                            </td>
+                            <td>
+                                <input id="exactRating" type="text" class="rating" ej-rating="ej-value.bind:exactRatingValue;ej-precision.bind:exact" />
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+</template>

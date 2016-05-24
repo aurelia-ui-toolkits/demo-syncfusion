@@ -1,0 +1,22 @@
+{
+	"title": "DropDownList",
+	"documentation": "http://help.syncfusion.com/js/api/ejdropdownlist",
+	"samples": {
+		"basic-use": {
+			"default": true,
+			"files": ["html", "js"]
+		},
+        "checkbox": {
+            "files": ["html", "js"]
+        },
+        "API": {
+            "files": ["html", "js"]
+        },
+        "events": {
+            "files": ["html", "js"]
+        },
+        "template": {
+            "files": ["html", "js", "css"]
+        }
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "title": "PivotGrid",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivotgrid",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "exporting":{
+      "files":["html","js"]
+    },
+     "field List":{
+      "files":["html","js", "css"]
+    },
+    "number Format":{
+      "files":["html","js"]
+    },
+    "summary Type":{
+      "files":["html","js", "css"]
+    }
+  }
+}

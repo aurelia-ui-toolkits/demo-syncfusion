@@ -1,0 +1,34 @@
+{
+  "title": "DateTimePicker",
+  "documentation":"http://help.syncfusion.com/js/api/ejdatetimepicker",
+  "samples": {
+    "Default-Functionalities": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+     "Localization": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+     "API": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+     "Drilldown-Support": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+     "Meridian-Support": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "Events": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "RTL": {
+      "default" : false,
+      "files": ["html", "js"]
+    }                                             
+  }
+}

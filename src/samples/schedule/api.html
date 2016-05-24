@@ -1,0 +1,141 @@
+<template>
+    <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-start-hour="0" ej-end-hour="24" ej-time-mode="24" ej-priority-settings.bind="Priority"
+                     ej-appointment-settings.bind="AppointmentList" ej-categorize-settings.bind="CategorizeSettings" ej-context-menu-settings.bind="contextMenu"
+                     ej-current-date="04/03/2014">
+        </ej-schedule>
+    </div>
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    Orientation
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <select ej-drop-down-list="ej-data-source.bind:orientation;ej-selected-index:0;width:100px" ej-on-select.trigger="orientation($event)" id="orientation"></select>
+            </div>       
+            <div class="col-sm-2">
+                <label>
+                    Read Only
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:readOnly" ej-on-change.trigger="readOnlyMode($event)" id="readonly" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    Show/Hide AllDay row
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:allDay" ej-on-change.trigger="allDayRow($event)" id="alldayrow" />
+            </div>
+         </div>
+         <div class="row">      
+            <div class="col-sm-2">
+                <label>
+                    Show/Hide Appointment Priority
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:priority" ej-on-change.trigger="appointmentPriority($event)" class="nodetext" id="appointmentpriority" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    Enable Categorize
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:categorize" ej-on-change.trigger="appointmentCategorize($event)" id="appointmentCategorize" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    Enable ContextMenu
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:contextMenuEnable" ej-on-change.trigger="contextmenu($event)" class="nodetext" id="contextMenu" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    DisableAutoFit
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:autofit" ej-on-change.trigger="onAutoChange($event)" class="nodetext" id="disableAuto" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    Enable Tooltip
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:tooltip" id="enableToolTip" ej-on-change.trigger="onTooltipChange($event)" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    Enable Tooltip Template
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-check-box="ej-checked.two-way:tooltipTemp" id="enableToolTipTemp" ej-on-change.trigger="onTooltipTemp($event)" />
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    FirstDayOfWeek
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <select ej-drop-down-list="ej-data-source.bind:DropDownData;ej-fields.bind:fields;ej-width:110px;ej-selected-index:0" ej-on-change.trigger="onChange($event)"
+                        id="dayofweek" class="e-ddl"></select>
+            </div>  
+            <div class="col-sm-2">
+                <label>
+                    Start Hour
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:numeric;ej-value:0;ej-width:110px;ej-min-value.two-way:0;ej-max-value.two-way:24"
+                       id="stime" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    End Hour
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:numeric;ej-value:24;ej-width:110px;ej-min-value.two-way:0;ej-max-value.two-way:24"
+                       id="etime" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+                <button class="e-btn" ej-button="ej-width:80px;ej-height:25px" ej-on-click.trigger="changeTime()" id="submit ">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script id="tooltipTemp" type="text/x-jsrender">
+        <div style="width:300px">
+            <div>
+                <div style="padding-top:3px;">
+                    <div class="temphead" style="float:left;">Subject:&nbsp;</div>
+                    <div class="temp">{{:Subject.length>0 ? Subject:"NoTitle"}}</div>
+                </div>
+                <div style="padding-top:3px">
+                    <div class="temphead" style="float:left;">StartTime:&nbsp;</div>
+                    <div class="temp">{{:StartTime.toLocaleString()}}</div>
+                </div>
+                <div style="padding-top:3px;padding-bottom:2px">
+                    <div class="temphead" style="float:left;">EndTime:&nbsp;</div>
+                    <div class="temp">{{:EndTime.toLocaleString()}}</div>
+                </div>
+            </div>
+        </div>
+    </script>
+</template>

@@ -1,0 +1,16 @@
+{
+  "title": "splitter",
+  "documentation":"http://help.syncfusion.com/js/api/ejsplitter",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "integration":{
+      "files": ["html", "js","css"]
+    },
+    "nested-splitter":{
+       "files": ["html", "js","css"]
+    }
+  }
+}

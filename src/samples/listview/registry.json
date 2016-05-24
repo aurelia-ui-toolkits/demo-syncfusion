@@ -1,0 +1,20 @@
+{
+  "title": "ListView",
+  "documentation":"http://help.syncfusion.com/js/api/ejlistview",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "check-list":{
+         "files": ["html", "js","css"]
+    },
+    "data-binding-local":{
+      "files": ["html", "js","css"]
+    },
+    "template":{
+      "files": ["html", "js","css"]
+    }
+    
+  }
+}

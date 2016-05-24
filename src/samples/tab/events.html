@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <ej-tab id="eventTab" style="width: 500px" ej-selected-item-index="0" ej-on-ajax-before-load.trigger="onClientBeforeLoad($event)" ej-on-ajax-load.trigger="onClientLoad($event)" ej-on-create.trigger="onClientCreate($event)" ej-on-before-active.trigger="onClientBeforeActive($event)" ej-on-item-active.trigger="onClientActive($event)">
+            <ul>
+                        <li><a href="#asp">ASP.NET</a></li>
+                        <li><a href="#mvc">ASP.NET MVC</a></li>
+                        <li><a href="src/samples/tab/jscontent.html">Javascript</a></li>
+                    </ul>
+                    <div id="asp">
+                        Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled, event-driven programming model that improves performance and enables the separation of application logic and user interface.
+                    </div>
+                    <div id="mvc">
+                        The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentication.
+                    </div>
+        </ej-tab>
+    </div>
+    <div id="Logger" class="box">
+       <h4>Event Trace</h4>
+       <logger view-model.ref="logger"></logger>
+       <div>
+           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+       </div>
+      </div>
+</template>

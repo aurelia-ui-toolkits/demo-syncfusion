@@ -1,0 +1,29 @@
+{
+    "title": "Kanban Board",
+    "documentation": "http://help.syncfusion.com/js/api/ejkanban",
+    "samples": {
+        "default": {
+            "default": true,
+            "files": [ "html", "js"]
+        },
+        "swimlane": {
+            "files": [ "html", "js" ]
+        },
+        "card Customization": {
+            "files": [ "html", "js" ]
+        },
+         "card Template": {
+            "files": [ "html", "js" ]
+        },
+        "column Constraints": { "files": ["html","js" ] },
+        "context Menu": {
+            "files": [ "html", "js" ]
+        },
+        "dialog Editing": {
+           "files": [ "html", "js" ]
+        },
+        "filtering": {
+             "files": [ "html", "js" ]
+        }
+    }
+}

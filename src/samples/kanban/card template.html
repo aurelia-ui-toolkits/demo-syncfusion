@@ -1,0 +1,51 @@
+<template>
+  <require from="./default.css"></require>
+  <div>
+     <ej-kanban ej-data-source.bind="KanbanData" ej-key-Field="Status" ej-fields.bind="Field" ej-card-settings.bind="CardSettings" ej-allow-title="true" ej-tooltip-settings.bind="ToolTip" >
+       
+       <ej-kanban-column  ej-header-text="Backlog" ej-key="Open"></ej-kanban-column>
+	   <ej-kanban-column  ej-header-text="In Progress" ej-key="InProgress"></ej-kanban-column>
+	  
+	   <ej-kanban-column  ej-header-text="Done" ej-key="Close"></ej-kanban-column>
+      
+    </ej-kanban>
+  </div>
+  
+   <script id="cardtemplate" type="text/x-jsrender">             
+        <table class="e-templatetable">
+           <colgroup>
+               <col width="10%">
+               <col width="90%">
+          </colgroup>
+          <tbody>
+           <tr>
+            <td class="photo">
+                <img src="../../images/kanban/{{:Priority}}.png">
+            </td>            
+            <td class="details">
+                <table>
+                    <colgroup>
+                        <col width="10%">
+                        <col width="90%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="CardHeader">   Assignee: </td>
+                            <td>{{:Assignee}}</td>
+                        </tr>                      
+                        <tr>
+                            <td class="CardHeader">   Summary: </td>
+                            <td>{{:Summary}}</td>
+                        </tr>
+                        <tr>
+                            <td class="CardHeader">   Type: </td>
+                            <td>{{:Type}}</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </td>
+           </tr>
+        </tbody>
+    </table>     
+    </script>
+</template>

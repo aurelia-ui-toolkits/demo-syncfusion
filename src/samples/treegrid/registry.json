@@ -1,0 +1,35 @@
+﻿{
+    "title": "TreeGrid",
+    "documentation": "http://help.syncfusion.com/js/api/ejTreeGrid",
+    "samples": {
+        "Default-Sample": {
+            "default": true,
+            "files": [ "html", "js", "css" ]
+        },
+        "Self-Reference": {
+            "files": [ "html", "js" ]
+        },
+        "Editing": {
+            "files": [ "html", "js" ]
+        },
+        "Column-Filtering": {
+            "files": [ "html", "js" ]
+        },
+        "Frozen-Column": {
+            "files": [ "html", "js" ]
+        },
+        "Context-Menu": {
+            "files": [ "html", "js" ]
+        },
+        "Sorting": {
+            "files": [ "html", "js" ]
+        },
+         "Performance": {
+            "files": [ "html", "js" ]
+        },   
+        "Column-Chooser": {
+            "files": [ "html", "js" ]
+        }       
+
+    }
+}

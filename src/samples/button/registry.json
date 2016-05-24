@@ -1,0 +1,16 @@
+{
+  "title": "Button",
+  "documentation":"http://help.syncfusion.com/js/api/ejbutton",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+    "checkbox":{
+      "files":["html","js"]
+    },
+    "events":{
+      "files":["html","js"]
+    }
+  }
+}

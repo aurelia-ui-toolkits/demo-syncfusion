@@ -1,0 +1,21 @@
+{
+    "title": "Ribbon",
+    "documentation": "http://help.syncfusion.com/js/api/ejribbon",
+    "samples": {
+        "default": {
+            "default": true,
+            "files": [ "html", "js"]
+        },
+		"Resize": {
+            "files": [ "html", "js"]
+        },
+        "Custom ToolTip": {
+            "files": [ "html", "js"]
+        },
+		
+        "Quick Access Toolbar": {
+            "files": [ "html", "js"]
+        },
+        
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Barcode",
+  "documentation":"http://help.syncfusion.com/js/api/ejbarcode",
+  "samples": {
+    "qrbarcode": {
+      "default" : true,
+      "files": ["html"]
+    },
+	"codabar": {
+      "files": ["html"]
+    },
+	
+	"code11": {
+      "files": ["html"]
+    },
+	
+	"code32": {
+      "files": ["html"]
+    },
+	
+	"code39": {
+      "files": ["html"]
+    },
+	
+	"code39extended": {
+      "files": ["html"]
+    },
+	
+	"code93": {
+      "files": ["html"]
+    },
+	
+	"code93extended": {
+      "files": ["html"]
+    },
+	
+	"code128a": {
+      "files": ["html"]
+    },
+	
+	"code128b": {
+      "files": ["html"]
+    },
+	
+	"code128c": {
+      "files": ["html"]
+    },
+	
+	"datamatrix": {
+      "files": ["html"]
+    }
+  }
+}

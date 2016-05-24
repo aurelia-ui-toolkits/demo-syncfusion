@@ -1,0 +1,188 @@
+{
+    "Most popular": {
+        "Button": {
+            "status": "done",
+            "moduleId": "button"
+        },
+        "Grid": {
+            "status": "done",
+            "moduleId": "grid"
+        }
+    },
+    "Navigation": {
+        "Button": {
+            "status": "done",
+            "moduleId": "button"
+        },
+        "Menu": {
+            "status": "done",
+            "moduleId": "menu"
+        },
+        "Ribbon": {
+            "status": "done",
+            "moduleId": "ribbon"
+        },
+        "Tab": {
+            "status": "done",
+            "moduleId": "tab"
+        },
+        "Barcode": {
+            "status": "done",
+            "moduleId": "barcode"
+        },
+        "ListBox": {
+            "status": "done",
+            "moduleId": "listbox"
+        },
+        "Rotator": {
+            "status": "done",
+            "moduleId": "rotator"
+        },
+		"Accordion": {
+			"status": "done", 
+			"moduleId": "accordion"
+		},
+        "NavigationDrawer":{
+            "status" : "done", 
+            "moduleId" : "navigationdrawer"
+            },
+        "RadialMenu":{
+          "status" : "done", 
+          "moduleId" : "radialmenu"
+         }
+    },
+    "LAYOUT": {
+        "Splitter": {
+            "status": "done",
+            "moduleId": "splitter"
+        },
+        "ListView": {
+            "status": "done",
+            "moduleId": "listview"
+        },
+        "Dialog": {
+            "status": "done",
+            "moduleId": "dialog"
+        }
+    },
+    "Data Visualization": {
+        "Schedule": {
+            "status": "done",
+            "moduleId": "schedule"
+        },
+        "Kanban Board": {
+            "status": "done",
+            "moduleId": "kanban"
+        },
+        "Diagram": {
+            "status": "done",
+            "moduleId": "diagram"
+        },
+        "Gantt": {
+            "status": "done",
+            "moduleId": "gantt"
+        },
+        "TreeGrid": {
+            "status": "done",
+            "moduleId": "treegrid"
+        },
+        "Spreadsheet": {
+            "status": "done",
+            "moduleId": "spreadsheet"
+        },
+        "Chart": {
+            "status": "done",
+            "moduleId": "chart"
+        },
+        "Circular Gauge": {
+            "status": "done",
+            "moduleId": "circulargauge"
+        },
+        "Linear Gauge": {
+            "status": "done",
+            "moduleId": "lineargauge"
+        },
+        "Digital Gauge": {
+            "status": "done",
+            "moduleId": "digitalgauge"
+        },
+        "Bullet Graph": {
+            "status": "done",
+            "moduleId": "bulletgraph"
+        },
+        "Range Navigator": {
+            "status": "done",
+            "moduleId": "rangenavigator"
+        }
+    },
+    "Editors": {
+        "DatePicker": {
+            "status": "done",
+            "moduleId": "datepicker"
+        },
+        "TimePicker": {
+            "status": "done",
+            "moduleId": "timepicker"
+        },
+        "DateTimePicker": {
+            "status": "done",
+            "moduleId": "datetimepicker"
+        },
+        "TextBoxes":{
+            "status":"done",
+            "moduleId":"editors"
+        },
+        "Autocomplete": {
+            "status": "done",
+            "moduleId": "autocomplete"
+        },
+        "RadialSlider": {
+            "status": "done",
+            "moduleId": "radialslider"
+        },
+		"DropDownList": {
+			"status": "done", 
+			"moduleId": "dropdownlist"
+		},
+		"Uploadbox": {
+			"status": "done", 
+			"moduleId": "uploadbox"
+		},
+		"Rating": {
+			"status": "done",
+			"moduleId": "rating"
+		}
+    },
+    "File Formats": {
+        "PDF Viewer": {
+            "status": "done",
+            "moduleId": "pdfviewer"
+        }
+    },
+    "PivotGrid": {
+        "Relational": {
+            "status": "done",
+            "moduleId": "pivotgrid"
+        },
+        "OLAP": {
+            "status": "done",
+            "moduleId": "olap"
+        },
+        "Common": {
+            "status": "done",
+            "moduleId": "pivotgridcommon"
+        }
+    },
+    "PivotChart": {
+        "Pivot Chart": {
+            "status": "done",
+            "moduleId": "pivotchart"
+        }
+    },
+	"Notification": {
+		"ProgressBar": {
+			"status": "done", 
+			"moduleId": "progressbar"
+		}
+	}
+}

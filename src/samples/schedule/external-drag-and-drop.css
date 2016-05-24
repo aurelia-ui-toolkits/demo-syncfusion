@@ -1,0 +1,6 @@
+#custom table td{
+  padding:5px;
+}
+.e-icon.e-minus:before {
+  content: "\e676";
+}

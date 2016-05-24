@@ -1,0 +1,38 @@
+﻿{
+    "title": "Gantt",
+    "documentation": "http://help.syncfusion.com/js/api/ejGantt",
+    "samples": {
+        "Default-Funtionalities": {
+            "default": true,
+            "files": [ "html", "js" ]
+        },
+        "Performance": {
+            "files": [ "html", "js" ]
+        },
+        "Self-Reference": {
+            "files": [ "html", "js" ]
+        },
+        "Time-Scale-Extension": {
+            "files": [ "html", "js" ]
+        },
+        "Column-Chooser": {
+            "files": [ "html", "js" ]
+        },
+        "Context-Menu": {
+            "files": [ "html", "js" ]
+        },
+        "Editing": {
+            "files": [ "html", "js" ]
+        },
+        "Baseline": {
+            "files": [ "html", "js" ]
+        },
+        "Resources": {
+            "files": [ "html", "js" ]
+        },
+        "Strip-Lines": {
+            "files": [ "html", "js" ]
+        }
+
+    }
+}

@@ -1,0 +1,106 @@
+<template>
+    <div>
+        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-group.bind="Group"
+                     ej-resources.bind="Resources" ej-current-date="04/03/2014" ej-current-view="workWeek">
+        </ej-schedule>
+    </div>
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <label>
+                Nancy
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    Workweek Days
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-drop-down-list="ej-data-source.bind:WorkWeekData;ej-fields.bind:dropFields;ej-width:110px;ej-checked:true;ej-show-checkbox:true;ej-selected-indices.bind:nancySelectedItems" ej-on-change.trigger="onChange($event)" id="nancyworkdays" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours Start
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:nancyhourstart;ej-value:10;ej-min-value.two-way:0;ej-max-value.two-way:24;ej-width:110px" ej-on-change.trigger="onChange($event)" id="nancyhourstart" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours End
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:nancyhourend;ej-value:18;ej-min-value:0;ej-max-value:24;ej-width:110px;ej-decimal-places:0" ej-on-change.trigger="onChange($event)" id="nancyhourend" />
+            </div>
+        </div>
+        <div class="row">
+            <label>
+                Michael
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    Workweek Days
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-drop-down-list="ej-data-source.bind:WorkWeekData;ej-fields.bind:dropFields;ej-width:110px;ej-checked:true;ej-show-checkbox:true;ej-selected-indices.bind:michaelSelectedItems"
+                       ej-on-change.trigger="onChange($event)" id="michaelworkdays" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours Start
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:michalehourstart;ej-value:11;ej-min-value:0;ej-max-value:24;ej-width:110px;ej-decimal-places:0" ej-on-change.trigger="onChange($event)" id="michaelhourstart" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours End
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:michaelhourend;ej-value:15;ej-min-value:0;ej-max-value:24;ej-width:110px;ej-decimal-places:0"
+                       ej-on-change.trigger="onChange($event)" id="michaelhourend" />
+            </div>
+        </div>
+        <div class="row">
+            <label>
+                Steven
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>
+                    Workweek Days
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-drop-down-list="ej-data-source.bind:WorkWeekData;ej-fields.bind:dropFields;ej-width:110px;ej-checked:true;ej-show-checkbox:true;ej-selected-indices.bind:stevenSelectedItems"
+                       ej-on-change.trigger="onChange($event)" id="stevenworkdays" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours Start
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:stevenhourstart;ej-value:06;ej-min-value:0;ej-max-value:24;ej-width:110px;ej-decimal-places:0" ej-on-change.trigger="onChange($event)" id="stevenhourstart" />
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    WorkHours End
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <input ej-numeric-textbox="ej-name:stevenhourend;ej-value:10;ej-min-value:0;ej-max-value:24;ej-width:110px;ej-decimal-places:0"
+                       ej-on-change.trigger="onChange($event)" id="stevenhourend" />
+            </div>
+        </div>
+    </div>
+</template>

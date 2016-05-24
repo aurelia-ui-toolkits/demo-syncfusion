@@ -1,0 +1,13 @@
+<template>
+  <div>
+     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size" ej-title.bind="title" ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis" ej-common-series-options.bind="commonSeriesOptions">
+	 
+	   <ej-series ej-data-source.bind="UnemploymentList" ej-x-name="xName" ej-y-name="yName" ej-name="India" >
+	   </ej-series>    
+	   
+       <ej-series ej-data-source.bind="UnemploymentList" ej-x-name="xName" ej-y-name="yName1" ej-name="US">
+	   </ej-series>
+	   
+	 </ej-chart>
+  </div>
+</template>
