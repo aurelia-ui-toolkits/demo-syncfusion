@@ -1,4 +1,4 @@
-﻿export class DefaultFuntionalities {
+export class DefaultFuntionalities {
   constructor() {
     this.ProjectData = [
       {

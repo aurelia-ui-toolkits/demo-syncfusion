@@ -1,0 +1,14 @@
+<template>
+    <require from="./events.css"></require>
+    <div class="frame" id="custom" ej-tooltip="ej-content.bind:content;ej-width:200px;ej-position.bind:position;" ej-on-create.trigger="tipCreate($event)" ej-on-tracking.trigger="tipTrack($event)" ej-on-before-open.trigger="tipShown($event)" ej-on-associate.trigger="mouse($event)" ej-on-open.trigger="onShow($event)" ej-on-close.trigger="onHide($event)" ej-before-close.trigger="tipHide($event)">
+        <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-06.png" alt="Python Succinctly" >
+	    <div class="desc">Python Succinctly</div>
+    </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+</template>

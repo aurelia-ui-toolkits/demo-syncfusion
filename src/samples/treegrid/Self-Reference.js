@@ -1,4 +1,4 @@
-﻿export class SelfReference {
+export class SelfReference {
   constructor() {
     this.columns =  [
                     { field: 'TaskID', headerText: 'Task Id', width: '45' },

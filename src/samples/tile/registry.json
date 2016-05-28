@@ -1,0 +1,13 @@
+{
+	"title": "Tile",
+	"documentation": "http://help.syncfusion.com/js/api/ejtile",
+	"samples": {
+		"basic-use": {
+			"default": true,
+			"files": ["html", "js"]
+		},
+        "live-tile": {
+			"files": ["html", "js"]
+		}        
+	}
+}

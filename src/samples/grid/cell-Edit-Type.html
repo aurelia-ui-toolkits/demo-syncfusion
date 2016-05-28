@@ -1,13 +1,13 @@
-<template>  
-  <div>
-    <ej-grid ej-data-source.bind="CustomerList" ej-page-settings.bind ="page" ej-allow-paging = true ej-edit-settings.bind = "edit" ej-toolbar-settings.bind ="toolbar">
-      <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-is-primary-key=true ej-text-align="right" ej-width="85" ej-validation-rules.bind = "validorder" ></ej-column>
-      <ej-column ej-field="CustomerID" ej-header-text="Customer ID" ej-width="90" ej-validation-rules.bind = "validationcustomer" ></ej-column>
-      <ej-column ej-field="OrderDate" ej-header-text="Order Date" ej-width="100" ej-validation-rules.bind = "validationdate" ej-edit-type.bind = "datetimepicker"  ej-format.bind = "formatdate"></ej-column>
-      <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="80" ej-validation-rules.bind ="valid"></ej-column>
-      <ej-column ej-field="Freight" ej-header-text="Freight" ej-text-align="right" ej-width="80" ej-edit-type.bind = "numeric"  ej-edit-params.bind = "editparams" , ej-validation-rules.bind = "validationfreight" , ej-width = "80", ej-format.bind = "formatfreight" ></ej-column>
-      <ej-column ej-field="ShipCity" ej-header-text="Ship City" ej-width="100" ej-edit-type.bind = "dropdown" ></ej-column>
-      <ej-column ej-field="Verified" ej-header-text="Verified" ej-width="90" ej-edit-type.bind = "editboolean" ></ej-column>      
-    </ej-grid>
-  </div>
+<template>
+    <div>
+        <ej-grid ej-data-source.bind="CustomerList" ej-page-settings.bind="page" ej-allow-paging=true ej-edit-settings.bind="edit" ej-toolbar-settings.bind="toolbar">
+            <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-is-primary-key=true ej-text-align="right" ej-width="85" ej-validation-rules.bind="validorder"></ej-column>
+            <ej-column ej-field="CustomerID" ej-header-text="Customer ID" ej-width="90" ej-validation-rules.bind="validationcustomer"></ej-column>
+            <ej-column ej-field="OrderDate" ej-header-text="Order Date" ej-width="100" ej-validation-rules.bind="validationdate" ej-edit-type.bind="datetimepicker" ej-format.bind="formatdate"></ej-column>
+            <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="80" ej-validation-rules.bind="valid"></ej-column>
+            <ej-column ej-field="Freight" ej-header-text="Freight" ej-text-align="right" ej-width="80" ej-edit-type.bind="numeric" ej-edit-params.bind="editparams" , ej-validation-rules.bind="validationfreight" , ej-width="80" , ej-format.bind="formatfreight"></ej-column>
+            <ej-column ej-field="ShipCity" ej-header-text="Ship City" ej-width="100" ej-edit-type.bind="dropdown"></ej-column>
+            <ej-column ej-field="Verified" ej-header-text="Verified" ej-width="90" ej-edit-type.bind="editboolean"></ej-column>
+        </ej-grid>
+    </div>
 </template>

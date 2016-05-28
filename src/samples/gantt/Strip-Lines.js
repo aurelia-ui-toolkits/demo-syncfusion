@@ -1,4 +1,4 @@
-﻿export class StripLines {
+export class StripLines {
   constructor() {
     this.striplines = [
                     { day: '02/03/2014', label: 'Project Start', lineStyle: 'dotted', lineColor: 'Darkblue', lineWidth: 2 },

@@ -1,4 +1,4 @@
-﻿export class ColumnFiltering {
+export class ColumnFiltering {
   constructor() {
     this.filtersettings = { filterBarMode: 'immediate' };
     this.columns =  [

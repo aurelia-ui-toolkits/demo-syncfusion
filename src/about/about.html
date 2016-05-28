@@ -4,6 +4,7 @@
         <ej-tab>
             <ul>
                 <li><a href="#aurelia-syncfusion">What is Aurelia-Syncfusion Bridge</a></li>
+                <li><a href="#grid-example">GRID - example of an Aurelia-Syncfusion component</a></li>
             </ul>
             <div id="aurelia-syncfusion">
                 <section>
@@ -35,6 +36,55 @@
                      </h4>
                 </section>
             </div>
+            <div id="grid-example">
+                <section>
+                    <h4>Example</h4>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ej-grid ej-data-source.bind="EmployeesList" ej-page-settings.bind="page" ej-allow-paging=t rue>
+                                <ej-column ej-field="EmployeeImage" ej-header-text="Employee Image" ej-text-align="center" ej-width="110">
+                                    <ej-template>
+                                        <div><img style="width: 45px; height: 45px" src="../images/grid/Employees/${EmployeeID}.png" /> </div>
+                                    </ej-template>
+                                </ej-column>
+                                <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="90"></ej-column>
+                                <ej-column ej-field="FirstName" ej-header-text="First Name" ej-width="90"></ej-column>
+                                <ej-column ej-field="LastName" ej-header-text="Last Name" ej-width="90"></ej-column>
+                                <ej-column ej-field="BirthDate" ej-header-text="Birth Date" ej-format="{0:MM/dd/yyyy}" ej-text-align="right" ej-width="90"></ej-column>
+                                <ej-column ej-field="Country" ej-header-text="Country" ej-width="80"></ej-column>
+                            </ej-grid>
+                        </div>
+                    </div>
+                    
+                    <div class="row" style="margin-top: 10px">
+                        <div class="col-sm-12">
+                            <ej-tab id="codepreview-about" ej-allow-keyboard-navigation=false>
+                                <ul>
+                                    <li><a href="#ej-init">Without Bridge</a></li>
+                                    <li><a href="#aurelia-ej-init">With Bridge (View)</a></li>
+                                    <li><a href="#aurelia-ej-init-viewmodel">With Bridge (View-Model)</a></li>
+
+                                    <div id="ej-init">
+                                        <au-code language="markup" url="./src/about/ej-standard-init.html">
+                                        </au-code>
+                                    </div>
+
+                                    <div id="aurelia-ej-init">
+                                        <au-code language="markup" url="./src/about/ej-bridge-init.html">
+                                        </au-code>
+                                    </div>
+
+                                    <div id="aurelia-ej-init-viewmodel">
+                                        <au-code language="javascript" url="./src/about/ej-bridge-viewmodel.js">
+                                        </au-code>
+                                    </div>
+
+                                </ul>
+                            </ej-tab>
+                        </div>
+                    </div>            
+                </section>
+            </div>                
         </ej-tab>
     </div>
 </template>

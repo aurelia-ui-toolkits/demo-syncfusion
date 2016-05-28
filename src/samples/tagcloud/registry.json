@@ -1,0 +1,16 @@
+{
+  "title": "TagCloud",
+  "documentation":"http://help.syncfusion.com/js/api/ejtagcloud",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+    "remote-data": {
+        "files": ["html", "js"]
+    },
+    "events": {
+        "files": ["html", "js"]
+    }
+  }
+}

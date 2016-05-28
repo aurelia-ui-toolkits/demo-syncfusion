@@ -1,4 +1,4 @@
-﻿export class DefaultSample {
+export class DefaultSample {
   constructor() {
     this.columns =  [
                     { field: 'taskID', headerText: 'Task Id', width: '45' },

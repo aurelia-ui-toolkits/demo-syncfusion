@@ -1,4 +1,4 @@
-﻿export class Performance {
+export class Performance {
   constructor() {
     let data = [];
     this.columns =  [

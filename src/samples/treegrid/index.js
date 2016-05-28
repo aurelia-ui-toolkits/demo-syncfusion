@@ -1,4 +1,4 @@
-﻿import {useView, inject} from 'aurelia-framework';
+import {useView, inject} from 'aurelia-framework';
 import {Registry} from 'shared/registry';
 @useView('shared/showcase.html')
 @inject(Registry)

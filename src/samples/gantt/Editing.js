@@ -1,4 +1,4 @@
-﻿export class Editing {
+export class Editing {
   constructor() {
     this.toolbarsettings = {
       showToolbar: true,

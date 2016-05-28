@@ -10,11 +10,16 @@ export class BasicUse {
       let target;
       let radialRadius;
       let radialDiameter;
+      let iframeY;
+      let iframeX;
+      let xPos;
+      let yPos;
+      let x;
+      let y;
       target = $('#radialtarget1');
       radialRadius = 150;
       radialDiameter = 2 * radialRadius;
       $('#defaultradialmenu').ejRadialMenu({autoOpen: true});
-                // To get Iframe positions
       iframeY = target.offset().top + e.detail.event.clientY;
       iframeX = target.offset().left + e.detail.event.clientX;
       xPos = (iframeX > radialRadius ? iframeX - radialRadius : 0);
@@ -23,6 +28,37 @@ export class BasicUse {
       y = iframeY > (target.height() - radialRadius) ? (target.height() - radialDiameter) : yPos;
       $('#defaultradialmenu').ejRadialMenu('setPosition', x, y);
     }
+      itemsClick(e) {
+        let rteObj = $('#rteSample1').data('ejRTE');
+        if (e.detail.text && e.detail.text.toLowerCase() === 'bold') {
+          rteObj.executeCommand('bold');
+        }
+        if (e.detail.text && e.detail.text.toLowerCase() === 'italic') {
+          this.italic(e.detail.text);
+        }
+        if (e.detail.text && e.detail.text.toLowerCase() === 'undo') {
+          this.undo(e.detail.text);
+        }
+        if (e.detail.text && e.detail.text.toLowerCase() === 'redo') {
+          this.redo(e.detail.text);
+        }
+      }
+         italic(e) {
+           let rteObj = $('#rteSample1').data('ejRTE');
+           rteObj.executeCommand('italic');
+         }
+         undo(e) {
+           let rteObj = $('#rteSample1').data('ejRTE');
+           rteObj.executeCommand('undo');
+           $('#defaultradialmenu').ejRadialMenu('disableItem', 'Undo');
+           $('#defaultradialmenu').ejRadialMenu('enableItem', 'Redo');
+         }
+         redo(e) {
+           let rteObj = $('#rteSample1').data('ejRTE');
+           rteObj.executeCommand('redo');
+           $('#defaultradialmenu').ejRadialMenu('disableItem', 'Redo');
+           $('#defaultradialmenu').ejRadialMenu('enableItem', 'Undo');
+         }
 
 
 }

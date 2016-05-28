@@ -1,0 +1,35 @@
+<template>
+    
+    <div class="content-container-fluid">
+        <div class="row">
+		  <div class="tiles">
+            <div class="cols-sample-area">
+                <div id="scrollTarget">
+                    <div class="e-tile-group">
+                        <div class="e-tile-column">
+                            <ej-tile id="tile6"  ej-tile-size="medium"  ej-image-position="center"  ej-image-url='http://js.syncfusion.com/demos/web/content/images/tile/windows/games.png'  ej-caption.bind="caption1">
+                            </ej-tile>
+                            <div class="e-tile-small-col-2">
+                                <ej-tile id="tile2"  ej-image-position="center"  ej-tile-size="small"  ej-image-url='http://js.syncfusion.com/demos/web/content/images/tile/windows/alerts.png'>
+                                </ej-tile>
+                                <ej-tile id="tile3"  ej-image-position="center"  ej-live-tile.bind="liveTile1" ej-tile-size="small">
+                                </ej-tile>
+                                <ej-tile id="tile4"  ej-live-tile.bind="liveTile2" ej-tile-size="small">
+                                </ej-tile>
+                                <ej-tile id="tile5"  ej-tile-size="small"  ej-badge.bind="badge1"  ej-image-position="center"  ej-image-url='http://js.syncfusion.com/demos/web/content/images/tile/windows/messages.png'>
+                                </ej-tile>
+                            </div>
+                            <ej-tile id="tile6"  ej-tile-size="medium"  ej-image-position="fill"  ej-live-tile.bind="liveTile3"  ej-caption.bind="caption2">
+                            </ej-tile>
+                            <ej-tile id="tile7"  ej-tile-size="medium"  ej-image-position="center"  ej-live-tile.bind="liveTile4" ej-caption.bind="caption3">
+                            </ej-tile>
+                            <ej-tile id="tile8"  ej-tile-size="wide"  ej-image-position="center"  ej-live-tile.bind="liveTile5"  ej-caption.bind="caption4">
+                            </ej-tile>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		  </div>
+        </div>
+    </div>
+</template>

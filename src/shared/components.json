@@ -38,18 +38,31 @@
             "status": "done",
             "moduleId": "rotator"
         },
-		"Accordion": {
-			"status": "done", 
-			"moduleId": "accordion"
-		},
+        "TreeView": {
+            "status": "done",
+            "moduleId": "treeview"
+        },
+        "Accordion": {
+        "status": "done", 
+        "moduleId": "accordion"
+    },
         "NavigationDrawer":{
             "status" : "done", 
             "moduleId" : "navigationdrawer"
-            },
+        },
         "RadialMenu":{
-          "status" : "done", 
-          "moduleId" : "radialmenu"
-         }
+            "status" : "done", 
+            "moduleId" : "radialmenu"
+        },
+		"FileExplorer":{
+            "status" : "done", 
+            "moduleId" : "fileexplorer"
+        },
+		"Toolbar": {
+			"status": "done",
+			"moduleId": "toolbar"
+		}
+
     },
     "LAYOUT": {
         "Splitter": {
@@ -63,7 +76,19 @@
         "Dialog": {
             "status": "done",
             "moduleId": "dialog"
-        }
+        },
+        "ScrollBar": {
+            "status": "done",
+            "moduleId": "scrollbar"
+        },
+        "Tile": {
+            "status": "done",
+            "moduleId": "tile"
+        },
+		"Tooltip": {
+			"status": "done",
+			"moduleId": "tooltip"
+		}
     },
     "Data Visualization": {
         "Schedule": {
@@ -113,7 +138,11 @@
         "Range Navigator": {
             "status": "done",
             "moduleId": "rangenavigator"
-        }
+        },
+		"TagCloud": {
+			"status": "done",
+			"moduleId": "tagcloud"
+		}
     },
     "Editors": {
         "DatePicker": {
@@ -131,6 +160,10 @@
         "TextBoxes":{
             "status":"done",
             "moduleId":"editors"
+        },
+        "ColorPicker": {
+            "status": "done",
+            "moduleId": "colorpicker"
         },
         "Autocomplete": {
             "status": "done",
@@ -151,7 +184,16 @@
 		"Rating": {
 			"status": "done",
 			"moduleId": "rating"
+		},
+        "Slider":{
+            "status" :"done",
+            "moduleId":"slider"
+        },
+		"RTE": {
+			"status": "done",
+			"moduleId": "rte"
 		}
+        
     },
     "File Formats": {
         "PDF Viewer": {
@@ -183,6 +225,16 @@
 		"ProgressBar": {
 			"status": "done", 
 			"moduleId": "progressbar"
+		},
+		"WaitingPopup": {
+			"status": "done",
+			"moduleId": "waitingpopup"
+		}
+	},
+    "Reporting": {
+        "ReportViewer": {
+            "status": "done", 
+            "moduleId": "reportviewer"
 		}
 	}
 }

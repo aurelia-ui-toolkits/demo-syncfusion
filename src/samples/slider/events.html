@@ -1,0 +1,17 @@
+<template>
+    <div>
+        <div id="slider" ej-slider="ej-value.bind:slidervalue;ej-width.bind:width" ej-on-create.trigger="logger.log('Slider has been created')" ej-on-change.trigger="logger.log('Slider value changed.')" ej-on-slide.trigger="logger.log('slider value changed')" ej-on-start.trigger="logger.log('slider started ')" ej-on-stop.trigger="logger.log('slider stopped')"></div>
+    </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+     <style>
+        .e-slider-wrap {
+            margin:0 auto;
+        }
+    </style>
+</template>

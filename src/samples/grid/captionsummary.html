@@ -1,13 +1,13 @@
 <template>
-  <require from="./basic-use.css"></require>
-  <div>
-     <ej-grid ej-data-source.bind="OrdersList" ej-allow-paging = true ej-allow-sorting = true ej-allow-grouping = true 
-	   ej-group-settings.bind = "group" ej-show-summary =true ej-summary-rows.bind = "summary" ej-locale = "en-US">
-      <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-text-align = "right"></ej-column>
-       <ej-column ej-field="CustomerID" ej-header-text="Customer ID"></ej-column>
-	   <ej-column ej-field="ShipCity" ej-header-text="ShipCity"></ej-column>
-       <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align = "right"></ej-column>
-       <ej-column ej-field="Freight" ej-header-text="Freight" ej-format = "{0:C}" ej-text-align = "right"></ej-column>
-    </ej-grid>
-  </div>
+    <require from="./basic-use.css"></require>
+    <div>
+        <ej-grid ej-data-source.bind="OrdersList" ej-allow-paging=true ej-allow-sorting=true ej-allow-grouping=true
+                 ej-group-settings.bind="group" ej-show-summary=true ej-summary-rows.bind="summary" ej-locale="en-US">
+            <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-text-align="right"></ej-column>
+            <ej-column ej-field="CustomerID" ej-header-text="Customer ID"></ej-column>
+            <ej-column ej-field="ShipCity" ej-header-text="ShipCity"></ej-column>
+            <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right"></ej-column>
+            <ej-column ej-field="Freight" ej-header-text="Freight" ej-format="{0:C}" ej-text-align="right"></ej-column>
+        </ej-grid>
+    </div>
 </template>

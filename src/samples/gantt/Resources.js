@@ -1,4 +1,4 @@
-﻿export class Baseline {
+export class Baseline {
   constructor() {
     this.Resource = [
        { 'Id': 1, 'Name': 'Resource 1' },

@@ -1,11 +1,15 @@
 <template>
+    <require from="./Common.css"></require>
     <div class="row">
-        <div class="col-sm-3">   
-          <label>Start Date</label>
-      <input id="stdate" ej-date-picker="ej-value.bind:dtValue1;ej-min-date.bind:minDate1;ej-max-date.bind:maxDate1;" ej-on-select.trigger="onSelectDate1($event)"></input>        
-        </div>
-        <div class="col-sm-2">
-            <label>End Date</label>   
-      <input id="enddate" ej-date-picker="ej-value.bind:dtValue2;ej-min-date.bind:minDate2;ej-max-date.bind:maxDate2;" ej-on-select.trigger="onSelectDate2($event)"></input>
-        </div>        
+         <div class="frame">  
+            <div>   
+                <label class="dtlabel">Start Date</label>
+                <input id="stdate" ej-date-picker="ej-value.bind:dtValue1;ej-min-date.bind:minDate1;ej-max-date.bind:maxDate1;ej-width.bind:'100%'" ej-on-select.trigger="onSelectDate1($event)"></input>        
+            </div>
+            <div>
+                <label class="dtlabel">End Date</label>   
+                <input id="enddate" ej-date-picker="ej-value.bind:dtValue2;ej-min-date.bind:minDate2;ej-max-date.bind:maxDate2;ej-width.bind:'100%'" ej-on-select.trigger="onSelectDate2($event)"></input>
+            </div>
+         </div>    
+    </div>        
 </template>

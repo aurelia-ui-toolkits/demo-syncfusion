@@ -1,0 +1,47 @@
+.e-treeview-wrap{
+    margin-top : 50px;
+}
+.container {
+    padding-top: 40px;
+    box-sizing: border-box;
+    padding-left: 27px;
+    height: 120px;
+    width: 120px;
+    border: 1px solid;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.e-tooltip-wrap {
+    background-color: #ffcccc;
+}
+.e-arrowRightTop:after, .e-arrowRightCenter:after, .e-arrowRightBottom:after {
+    border-right-color: #ffcccc;
+}
+.e-arrowLeftTop:after, .e-arrowLeftCenter:after,.e-arrowLeftBottom:after{
+        border-left-color :#ffcccc;
+}
+.e-arrowBottomLeft:after, .e-arrowBottom:after, .e-arrowBottomRight:after{
+    border-bottom-color :#ffcccc;
+}
+.e-arrowTopLeft:after, .e-arrowTop:after, .e-arrowTopRight:after{
+    border-top-color :#ffcccc;
+}
+
+#axisValue{
+    display : none;
+}
+.logo{
+    float: left;
+    width: 45px;
+    height: 50px;
+    border: 2px dotted green;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.des{
+    color : grey;
+}
+.artists{
+    margin-bottom: 5px;
+}

@@ -1,4 +1,4 @@
-﻿
+
 
 export class Performance {
   constructor() {

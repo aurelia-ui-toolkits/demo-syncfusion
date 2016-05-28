@@ -1,0 +1,62 @@
+<template>
+    <div class='container-fluid'>
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>
+                <tr class='row'>
+                <th colspan="2"> TreeView With Context Menu</th>
+                </tr>
+                <tr class='row'>                    
+                    <td colspan="2">
+                        <ul id="treeView" ej-tree-view="ej-width:250">
+                            <li class="expanded">ASP.NET MVC Team
+                                <ul>
+                                    <li>Smith</li>
+                                    <li>Johnson</li>
+                                    <li>Anderson</li>
+                                </ul>
+                            </li>
+                            <li>Windows Team
+                                <ul>
+                                    <li>Clark</li>
+                                    <li>Wright</li>
+                                    <li>Lopez</li>
+                                </ul>
+                            </li>
+                            <li>Web Team
+                                <ul>
+                                    <li>Joshua </li>
+                                    <li>Matthew </li>
+                                    <li>David </li>
+                                </ul>
+                            </li>
+                            <li>Build Team
+                                <ul>
+                                    <li>Ryan </li>
+                                    <li>Justin </li>
+                                    <li>Robert </li>
+                                </ul>
+                            </li>
+                            <li>WPF Team
+                                <ul>
+                                    <li>Brown </li>
+                                    <li>Johnson </li>
+                                    <li>Miller </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <ul id="treeviewMenu" ej-menu="ej-menu-type:contextmenu;
+        ej-open-on-click:false;
+        ej-context-menu-target:#treeView" ej-on-click.trigger="onMenuClick($event)" ej-on-before-open.trigger="onBeforeOpen($event)" ej-on-close.trigger="onClose($event)">
+            <li><a href="#">Add New Item</a></li>
+            <li><a href="#">Remove Item</a></li>
+            <li><a href="#">Disable Item</a></li>
+            <li><a href="#">Enable Item</a></li>
+        </ul>
+    </div>                
+</template>

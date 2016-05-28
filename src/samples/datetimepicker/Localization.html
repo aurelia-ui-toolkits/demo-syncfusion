@@ -1,10 +1,14 @@
 <template>
   <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
   <require from="root/vendors/scripts/cultures/ej.culture.zh-CN.min.js"></require>
-  <div> 
-      <label>Select DateTime</label>    
-      <input id="datetimepick" ej-date-time-picker="ej-value.bind:datetimeValue;ej-locale.bind:localeValue"></input>
-  </div>
+  <require from="./Common.css"></require>
+  <div class="row">
+      <div class="frame"><div>
+        <label>Select DateTime</label>    
+        <input id="datetimepick" ej-date-time-picker="ej-value.bind:datetimeValue;ej-locale.bind:localeValue;ej-width.bind:'100%'"></input>
+      </div>
+    </div>
+  </div>  
    <div id="property-window" class="box wide">
      <div class="row">
        <div class="col-sm-2">   

@@ -1,8 +1,12 @@
 <template>
- <div>    
-     <label>Select DateTime</label> 
-     <input id="datetimepick" ej-date-time-picker="ej-value.two-way:datetimeValue;ej-enabled.bind:dtStatus" ej-on-open.trigger="onOpen()" ej-on-close.trigger="onClose()"></input>
- </div>
+<require from="./Common.css"></require>
+  <div class="row">
+      <div class="frame"><div>    
+          <label>Select DateTime</label> 
+          <input id="datetimepick" ej-date-time-picker="ej-value.two-way:datetimeValue;ej-enabled.bind:dtStatus;ej-width.bind:'100%'" ej-on-open.trigger="onOpen()" ej-on-close.trigger="onClose()"></input>
+      </div>
+    </div>
+  </div>  
  <div id="property-window" class="box wide">
     <div class="row">
        <div class="col-sm-2">         

@@ -1,4 +1,4 @@
-﻿export class Sorting {
+export class Sorting {
   constructor() {
     this.columns =  [
                     { field: 'taskID', headerText: 'Task Id', width: '45' },

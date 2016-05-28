@@ -1,0 +1,10 @@
+.sampleContent {
+    width: 700px;
+    padding: 15px;
+}
+.control{
+    border: 1px solid #bbbcbb;
+    color: gray;
+    width: 562px;
+    height: 302px;
+}

@@ -9,7 +9,7 @@
 	"local-data": {
       "files": ["html", "js"]
     },
-	"remote-data": {
+	"indicator": {
       "files": ["html", "js"]
     }
   }

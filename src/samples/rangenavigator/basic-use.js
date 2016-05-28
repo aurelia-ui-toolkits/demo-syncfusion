@@ -4,19 +4,19 @@ export class BasicUse {
     this.legend = {visible: false};
     this.style = {borderWidth: 2};
     this.crosshair = {visible: true, type: 'trackball', marker: {shape: 'circle', size: {height: 9, width: 9}, visible: true, border: {width: 1}}, line: {color: 'transparent'}};
-    this.tooltip = {visible: true, format: '#point.x#  :  ej.format(#point.y#, n2)'};
+    this.tooltip = {visible: true, format: '#point.x#  :  ej.format(#point.y#,n2)'};
     this.selectedRangeSettings = {start: '2010/5/1', end: '2011/10/1'};
     this.sizeSettings = {width: '950', height: '120'};
-    this.size = {width: '1000'};
+    this.size = {width: '1000', height: '300'};
   }
 
   onchartloaded(sender) {
     let chartobj = $('#chart').data('ejChart');
-    if (chartobj !== null) {
+    if (chartobj) {
       chartobj.model.primaryXAxis.zoomPosition = sender.detail.zoomPosition;
       chartobj.model.primaryXAxis.zoomFactor = sender.detail.zoomFactor;
+      $('#chart').ejChart('redraw');
     }
-    $('#chart').ejChart('redraw');
   }
   onchartload(sender) {
     let data = this.getdata();

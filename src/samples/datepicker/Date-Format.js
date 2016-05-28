@@ -1,13 +1,12 @@
-export class DateFormat{      
-    constructor() {   
-        this.dateValue = "5/18/2016";
-        this.dateFormat ="MM/dd/yyyy";  
+export class DateFormat {
+    constructor() {
+      this.dateValue = '5/18/2016';
+      this.dateFormat = 'MM/dd/yyyy';
     }
     get updateFormat() {
-        return this.dateFormat;
+      return this.dateFormat;
     }
     set updateFormat(value) {
-        this.dateFormat = value;
+      this.dateFormat = value;
     }
 }
-

@@ -1,0 +1,46 @@
+<template>
+    <require from="./API.css"></require>
+    <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="ctrl">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="back" ej-tooltip="ej-content.bind:backContent;ej-position.bind:backPosition">Back</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="go" ej-tooltip="ej-content.bind:goContent;ej-position.bind:goPosition">Go</button>
+                                <button class="btn btn-default" type="button" id="reload" ej-tooltip="ej-is-balloon:false;ej-content.bind:reloadContent;ej-position.bind:reloadPosition" ej-on-create.trigger="reloadCreate()">
+                                    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="property-window" class="box wide">
+            <h4>Properties</h4>
+            <div class="row">
+                        <div class="col-md-6"> Target Element </div>
+                        <div class="col-md-6">
+                            <select id="refresh" ej-drop-down-list="ej-selected-index:2;ej-width:110px;" ej-on-change.trigger="onEffectChange($event)">
+                                <option value="back">Back Button</option>
+                                <option value="go">Go Button</option>
+                                <option value="reload">Reload Button</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"> Disable\Enable </div>
+                        <div class="col-md-6">
+                            <input type="button" id="btnEnable" ej-button="ej-width:107px;ej-text:Disable;ej-show-rounded-corner:true;ej-enabled:false" ej-on-click.trigger="onEnableDisable($event)" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"> Show\Hide </div>
+                        <div class="col-md-6">
+                            <input type="button" id="hideButton" ej-button="ej-width:107px;ej-text:Show;ej-show-rounded-corner:true;" ej-on-click.trigger="onShowHide($event)" />
+                        </div>
+                    </div>
+        </div>
+</template>

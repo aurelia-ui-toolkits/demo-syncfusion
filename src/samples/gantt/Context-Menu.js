@@ -1,4 +1,4 @@
-﻿export class ContextMenu {
+export class ContextMenu {
   constructor() {
     this.editsettings = {
       allowEditing: true,

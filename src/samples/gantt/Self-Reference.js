@@ -1,4 +1,4 @@
-﻿export class RowDragAndDrop {
+export class RowDragAndDrop {
   constructor() {
     this.ProjectData =  [
              { 'TaskID': 1, 'TaskName': 'Parent Task 1', 'StartDate': '02/23/2014', 'EndDate': '02/27/2014', 'Progress': '40' },

@@ -1,0 +1,69 @@
+<template>
+    <require from="./Toggle-Buttons.css"></require>
+    <div>            
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>
+                <tr class='row'>
+                <th colspan="2" style="padding-left:28%"> Toggle Buttons </th>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Normal</td>
+                    <td class='col-md-4'>
+                        <input id="normalBtn" type="checkbox" 
+                        ej-toggle-button="ej-size.bind: normalBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-content-type: imageonly;
+                        ej-default-prefix-icon: e-mediaplay e-uiLight;
+                        ej-active-prefix-icon: e-mediapause e-uiLight"></input>
+                        <label for="normalBtn">Toggle</label>
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Mini</td>
+                    <td class='col-md-4'>
+                        <input id="miniBtn" type="checkbox"  ej-toggle-button="ej-size.bind: miniBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-default-text: Play;
+                        ej-active-text: Pause"></input>
+                        <label for="miniBtn">Toggle</label>
+                    </td>
+                </tr>
+
+                <tr class='row'>
+                    <td class='col-md-4'> Small</td>
+                    <td class='col-md-4'>
+                        <input id="smallBtn" type="checkbox"  ej-toggle-button="ej-size.bind: smallBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-default-text: Play;
+                        ej-active-text: Pause"></input>
+                        <label for="smallBtn">Toggle</label>
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Medium</td>
+                    <td class='col-md-4'>
+                        <input id="mediumBtn" type="checkbox"  ej-toggle-button="ej-size.bind: mediumBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-default-text: Play;
+                        ej-active-text: Pause"></input>
+                        <label for="mediumBtn">Toggle</label>
+                    </td>
+                </tr>
+
+                <tr class='row'>
+                    <td class='col-md-4'> Large</td>
+                    <td class='col-md-4'>
+                        <input id="largeBtn" type="checkbox"  ej-toggle-button="ej-size.bind: largeBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-content-type: textandimage;
+                        ej-default-prefix-icon: e-mediaplay e-uiLight;
+                        ej-active-prefix-icon: e-mediapause e-uiLight;
+                        ej-default-text: Play;
+                        ej-active-text: Pause"></input>
+                        <label for="largeBtn">Toggle</label>
+                    </td>
+                </tr>            
+            </tbody>
+        </table>      
+    </div>
+</template>

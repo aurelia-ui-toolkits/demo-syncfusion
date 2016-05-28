@@ -1,4 +1,5 @@
-export class validation {
+import 'jquery-validation';
+export class validationrule {
     constructor() {
       this.Categorize = {
         enable: true,

@@ -1,4 +1,4 @@
-﻿export class Baseline {
+export class Baseline {
   constructor() {
     this.ProjectData = [
       {

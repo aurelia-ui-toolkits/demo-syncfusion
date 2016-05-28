@@ -1,42 +1,42 @@
-export class API{   
-    constructor() {   
-        this.timeStatus = true;
-        this.timeValue = "2:00 AM";
+export class API {
+    constructor() {
+      this.timeStatus = true;
+      this.timeValue = '2:00 AM';
     }
-     onCreate(e) {
-         $(".e-togglebutton").mousedown(function (e) {
-                e.stopPropagation();
-            });
-        }
+    onCreate() {
+      $('.e-togglebutton').mousedown(function(e) {
+        e.stopPropagation();
+      });
+    }
     onClose() {
-        var tgleBtn = $("#showHide").ejToggleButton("instance");
-            tgleBtn.option('toggleState', false);
-        }
+      let tgleBtn = $('#showHide').ejToggleButton('instance');
+      tgleBtn.option('toggleState', false);
+    }
     onOpen() {
-        var tgleBtn = $("#showHide").ejToggleButton("instance");
-            tgleBtn.option('toggleState', true);
-        }
-    onEnable(args){        
-        if (args.detail.isChecked) {
-           this.timeStatus = false;
-           this.btnStatus = false;
-        }
-        else {
-           this.timeStatus = true;
-           this.btnStatus = true;
-        }
+      let tgleBtn = $('#showHide').ejToggleButton('instance');
+      tgleBtn.option('toggleState', true);
     }
-    getTime(){
-        var timeObj = $("#timepick").ejTimePicker("instance");
-        alert("Selected time is : " + timeObj.getValue());
+    onEnable(args) {
+      if (args.detail.isChecked) {
+        this.timeStatus = false;
+        this.btnStatus = false;
+      } else {
+        this.timeStatus = true;
+        this.btnStatus = true;
+      }
     }
-    updateTime(){
-        var timeObj = $("#timepick").ejTimePicker("instance");
-        timeObj.setCurrentTime();
+    getTime() {
+      let timeObj = $('#timepick').ejTimePicker('instance');
+      /*eslint-disable */
+      alert('Selected time is : ' + timeObj.getValue());
+      /*eslint-enable */
     }
-    onShow(args){
-        var timeObj = $("#timepick").ejTimePicker("instance");
-        args.detail.isChecked ? timeObj.show():timeObj.hide();        
+    updateTime() {
+      let timeObj = $('#timepick').ejTimePicker('instance');
+      timeObj.setCurrentTime();
+    }
+    onShow(args) {
+      let timeObj = $('#timepick').ejTimePicker('instance');
+      args.detail.isChecked ? timeObj.show() : timeObj.hide();
     }
 }
-

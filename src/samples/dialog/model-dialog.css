@@ -14,6 +14,11 @@
             margin-bottom: 50px;
             position: relative;
         }
+        #btnOpen {
+         position: absolute;
+         display: none;
+         margin: 10px;
+        }
 
         .acc {
             font-size: 12px;

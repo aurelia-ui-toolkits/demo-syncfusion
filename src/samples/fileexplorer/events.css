@@ -1,0 +1,12 @@
+.frame {
+    padding: 30px 20px;
+    color: #5C5C5C;
+    width:900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 440px){
+.frame{
+    width: auto !important;
+   }
+}

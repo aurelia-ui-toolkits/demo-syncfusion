@@ -1,4 +1,4 @@
-﻿export class Editing {
+export class Editing {
   constructor() {
     this.columns =  [
                     { field: 'taskID', headerText: 'Task Id', width: '45' },

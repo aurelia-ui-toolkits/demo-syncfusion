@@ -1,12 +1,12 @@
 <template>
-  <div>
-     <ej-grid ej-data-source.bind="OrdersList" ej-page-settings.bind ="page" ej-allow-paging = true>
-       <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-text-align="right" ej-width="75"></ej-column>
-       <ej-column ej-field="CustomerID" ej-header-text="Customer ID" ej-width="90"></ej-column>
-       <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="90"></ej-column>
-       <ej-column ej-field="Freight" ej-header-text="Freight" ej-format="{0:C2}" ej-text-align="right"  ej-width="75"></ej-column>
-       <ej-column ej-field="ShipCity" ej-header-text="Ship City" ej-width="100"></ej-column>
-       <ej-column ej-field="ShipCountry" ej-header-text="Ship Country" ej-width="100"></ej-column>
-    </ej-grid>
-  </div>
+    <div>
+        <ej-grid ej-data-source.bind="OrdersList" ej-page-settings.bind="page" ej-allow-paging=true>
+            <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-text-align="right" ej-width="75"></ej-column>
+            <ej-column ej-field="CustomerID" ej-header-text="Customer ID" ej-width="90"></ej-column>
+            <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="90"></ej-column>
+            <ej-column ej-field="Freight" ej-header-text="Freight" ej-format="{0:C2}" ej-text-align="right" ej-width="75"></ej-column>
+            <ej-column ej-field="ShipCity" ej-header-text="Ship City" ej-width="100"></ej-column>
+            <ej-column ej-field="ShipCountry" ej-header-text="Ship Country" ej-width="100"></ej-column>
+        </ej-grid>
+    </div>
 </template>

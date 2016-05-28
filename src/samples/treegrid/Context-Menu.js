@@ -1,4 +1,4 @@
-﻿export class ContextMenu {
+export class ContextMenu {
   constructor() {
     this.columns =  [
                     { field: 'taskID', headerText: 'Task Id', width: '45' },

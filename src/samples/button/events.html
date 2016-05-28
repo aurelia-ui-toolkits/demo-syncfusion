@@ -1,13 +1,90 @@
 <template>
-  <div>
-    <h4>Events</h4>
-        <button id="button" ej-button="ej-text:click;" ej-on-create.trigger="logger.log('Control created')"ej-on-click.trigger="logger.log('Clicked')"></button>
+    <require from="./Events.css"></require>
+    <div>
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>                
+                <tr class='row'>
+                    <td class='col-md-4'> Button</td>
+                    <td class='col-md-4'>
+                        <button id="btn" 
+                        ej-button="ej-size.bind: largeBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-width: 154px;
+                        ej-text: Play"
+                        ej-on-create.trigger="logger.log('Button has been Created')"
+                        ej-on-click.trigger="logger.log('Button has been Clicked')"></button>                        
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Toggle Button</td>
+                    <td class='col-md-4'>
+                        <input type="checkbox" id="ToggleBtn" ej-toggle-button="ej-size.bind: largeBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-active-text: Pause;
+                        ej-width: 154px;
+                        ej-default-text: Play"
+                        ej-on-create.trigger="logger.log('Toggle Button has been  Created')"
+                        ej-on-click.trigger="logger.log('Toggle has been Button Clicked')"
+                        ej-on-change.trigger="onToggleChange($event)"></input>
+                        <label for="ToggleBtn">Toggle</label>
+                    </td>
+                </tr>
+
+                <tr class='row'>
+                    <td class='col-md-4'> Split Button</td>
+                    <td class='col-md-4'>
+                        <button id="splitBtn" ej-split-button="ej-size.bind: largeBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-text: Play;
+                        ej-width: 154px;
+                        ej-target-id: subMenu"
+                        ej-on-create.trigger="logger.log('Split Button has been Created')"
+                        ej-on-click.trigger="logger.log('Split Button has been Clicked')"
+                        ej-on-open.trigger="logger.log('Popup Menu has been Opened')"
+                        ej-on-close.trigger="logger.log('Popup Menu has been Closed')"
+                        ej-on-before-open.trigger="logger.log('Popup Menu has been Before Opened')"
+                        ej-on-item-selected.trigger="onItemSelected($event)"
+                        ej-on-item-mouse-over.trigger="onItemHover($event)"
+                        ej-on-item-mouse-out.trigger="onItemBlur($event)"></button>
+                        <ul id="subMenu">
+                            <li><span>Pause</span></li>
+                            <li><span>Resume</span></li>
+                            <li><span>Forward</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Group Button</td>
+                    <td class='col-md-4'>                    
+                        <div id="groupButton" ej-group-button="ej-height: 40px;
+                        ej-width: 154px;
+                        ej-show-rounded-corner.bind: roundedCorner;"
+                        ej-on-create.trigger="logger.log('Group Button has been Created')"
+                        ej-on-select.trigger="onSelect($event)"
+                        ej-on-key-press.trigger="onKeyPress($event)"
+                        ej-on-before-select.trigger="onBeforeSelect($event)">
+                            <ul>
+                                <li>
+                                    Previous
+                                </li>
+                                <li>
+                                    Play
+                                </li>
+                                <li>
+                                    Next
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>           
+            </tbody>
+        </table> 
     </div>
-     <div id="Logger" class="box">
-       <h4>Event Trace</h4>
-       <logger view-model.ref="logger"></logger>
-       <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
-       </div>
-      </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+        </div>
+    </div>
 </template>

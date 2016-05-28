@@ -43,6 +43,6 @@ export class APIDropDownList {
     (event.detail.isChecked) ? this.target.option({'caseSensitiveSearch': true}) : this.target.option({'caseSensitiveSearch': false});
   }
   valueText(event) {
-    alert('Selected Item is ' + this.target.getValue());
+    alert('Selected Item is ' + this.target.getValue()); // eslint-disable-line no-alert
   }
 }

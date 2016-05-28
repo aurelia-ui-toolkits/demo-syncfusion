@@ -1,10 +1,14 @@
 <template>
+  <require from="./Common.css"></require>
   <require from="root/vendors/scripts/cultures/ej.culture.vi-VN.min.js"></require>
   <require from="root/vendors/scripts/cultures/ej.culture.zh-CN.min.js"></require>
-  <div>
-     <label>Select Time</label>     
-     <input id="timepick" ej-time-picker="ej-value.bind:timeValue;ej-locale.bind:localeValue"></input>
-  </div>
+  <div class="row">
+     <div class="frame"><div>
+        <label>Select Time</label>     
+        <input id="timepick" ej-time-picker="ej-value.bind:timeValue;ej-locale.bind:localeValue;ej-width.bind:'100%'"></input>
+      </div>
+    </div>
+  </div>  
   <div id="property-window" class="box wide">
      <div class="row">
         <div class="col-sm-2">   

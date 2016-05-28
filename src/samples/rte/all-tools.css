@@ -1,0 +1,18 @@
+#rteSample {
+    margin: 0 auto;
+}
+.customUnOrder,.customOrder{
+    height:25px;
+}
+.customUnOrder:after {
+    content: "\e7f1";
+    font-size:20px;
+    float:left;
+    padding: 0px 4px 0px 4px;
+}
+.customOrder:after {
+    content: "\e7f0";
+    font-size:20px;
+    float:left;
+    padding: 0px 4px 0px 4px;
+}

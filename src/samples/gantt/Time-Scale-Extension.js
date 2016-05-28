@@ -1,4 +1,4 @@
-﻿
+
 export class ScheduleMode {
   constructor() {
     this.toolbarSettings = {

@@ -2,12 +2,12 @@ import '../scripts/xljsondata.js';
 export class MovieTemplate {
   constructor() {
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: window.movieData, showHeader: 'true', startCell: 'B3'}];
-    this.import = {importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};
+    this.range = [{ dataSource: window.movieData, startCell: 'B3'}];
+    this.import = { importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};
   }
   loadcomplete(args) {
-    const xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
-    const xlFormat = xlObj.XLFormat;
+    let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
+    let xlFormat = xlObj.XLFormat;
     xlObj.setWidthToColumns([30, 55, 63, 120, 80, 215, 90, 98, 80, 85, 323 ]);
     xlFormat.format({ 'style': { 'background-color': '#000000', 'color': '#FFFFFF', 'font-size': '8pt' } }, 'A1:V40');
     xlFormat.format({ 'style': { 'background-color': '#ffcb0d' } }, 'A1:K1');

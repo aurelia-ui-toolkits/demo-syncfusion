@@ -5,17 +5,17 @@
             margin-left: 10px;
         }
 
-        .control {
-            height: 600px;
-        }
-
         .row .cols-sample-area {
             padding: 0px;
             margin-bottom: 50px;
         }
-
-        .cnt {
-            min-height: 356px;
+#btnOpen {
+    position: absolute;
+    display: none;
+    margin: 10px;
+}
+        .content {
+           min-height: 356px;
             text-align: justify;
         }
 

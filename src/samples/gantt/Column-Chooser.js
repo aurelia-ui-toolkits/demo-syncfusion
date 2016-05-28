@@ -1,4 +1,4 @@
-﻿export class ColumnChooser {
+export class ColumnChooser {
   constructor() {
     this.ProjectData = [
       {

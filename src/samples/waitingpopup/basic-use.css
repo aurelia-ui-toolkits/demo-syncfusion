@@ -1,0 +1,9 @@
+#target {
+    height: 320px;
+    width: 600px;
+}
+
+#target_WaitingPopup .e-image {
+    display: block;
+    height: 70px;
+}

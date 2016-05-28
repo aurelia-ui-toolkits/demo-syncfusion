@@ -1,0 +1,19 @@
+.row [class*="cols-"]:first-child > div:first-child {
+    margin: 0 auto;
+}
+
+.frame {
+    padding: 30px 20px;   
+    color: #5C5C5C;
+    width:300px;
+    margin: 0 auto;
+}
+
+.dtlabel{
+    padding: 10px 0px 0px;
+}
+@media (max-width: 440px){
+.frame{
+    width: auto !important;    
+   }
+}

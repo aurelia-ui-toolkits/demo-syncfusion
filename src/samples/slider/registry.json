@@ -1,0 +1,39 @@
+{
+  "title": "Slider",
+  "documentation":"http://help.syncfusion.com/js/api/ejslider",
+  "samples": {
+	"Default" : {
+	  "default" : true,
+	  "files" : ["html","js"]
+	  },
+	"Events"  : {
+	  "default" : false,
+	  "files" : ["html","js"]    
+  },
+  "RTL" : { 
+      "default" : false,
+	  "files" : ["html","js"]
+  },
+  
+   "Methods" : { 
+     "default" : false,
+	 "files" : ["html","js"]
+   },
+   "RangeSlider" : {
+   "default" : false,
+   "files" : ["html","js"]
+   },
+   "Vertical" : {
+   "default" : false,
+   "files" : ["html", "js"]
+   
+   }
+   
+	
+  
+}
+}
+
+
+
+  

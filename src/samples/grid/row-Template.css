@@ -1,36 +1,29 @@
-.photo img
-       {
-            width: 130px;
-            height: 115px;
-        }
+.photo img {
+    width: 130px;
+    height: 115px;
+}
 
-.photo, .details
-        {
-            border-color: #c4c4c4;
-            border-style: solid;
-        }
-.photo
-        {
-            border-width: 1px 0px 0px 0px;
-        }
+.photo, .details {
+    border-color: #c4c4c4;
+    border-style: solid;
+}
 
-.details
-        {
-            border-width: 1px 0px 0px 1px;
-        }
+.photo {
+    border-width: 1px 0px 0px 0px;
+}
 
-.details > table
-         {
-             width: 100%;
-         }
+.details {
+    border-width: 1px 0px 0px 1px;
+}
 
-.CardHeader
-        {
-            font-weight: bolder;
-        }
-     td
-       {
-	    padding: 2px 2px 3px 2px;
-       }
+    .details > table {
+        width: 100%;
+    }
 
-        
+.CardHeader {
+    font-weight: bolder;
+}
+
+td {
+    padding: 2px 2px 3px 2px;
+}

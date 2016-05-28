@@ -1,0 +1,49 @@
+.e-pdfviewer-tbdiv.e-pdfviewer-tooltip {
+    min-height: 0px;
+}
+
+.e-pdfviewer-pagebox {
+    border: none;
+    background-color: transparent;
+}
+
+.e-pdfviewer-contentspan {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.e-pdfviewer-customtoolbar-icon {
+    cursor: pointer;
+}
+.e-pdfviewer-customtoolbar-icon.e-btn.e-txt {
+    font-family: 'ej-webfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal !important;
+	font-size: 17px;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.e-toolbar-pdfviewer {
+    font-size: 16px;
+}
+
+.e-btn.e-pdfviewer-customtoolbar-icon {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+		
+.e-pdfviewer-customtoolbar-icon.e-pdfviewer-gotoprevious{
+	box-sizing:border-box;
+	padding-top:10px;
+	padding-right:10px;
+}

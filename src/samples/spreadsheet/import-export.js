@@ -1,13 +1,13 @@
-﻿import '../scripts/xljsondata.js';
+import '../scripts/xljsondata.js';
 export class ImportExport {
   constructor() {
-    let filteredData = ej.DataManager(window.importData).executeLocal(ej.Query().take(10).select('OrderID', 'CustomerID', 'EmployeeID', 'ShipName', 'ShipCity', 'ShipAddress'));
+    let filteredData = ej.DataManager(window.importData).executeLocal(ej.Query().take(10).select('OrderID', 'CustomerID', 'EmployeeID', 'ShipName', 'ShipCity', 'ShipAddress'));//eslint-disable-line new-cap
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: filteredData, showHeader: 'true'}];
+    this.range = [{ dataSource: filteredData, startCell: 'A3', showHeader: 'true'}];
     this.import = {importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};
     this.export = { excelUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel',
                     csvUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv',
-					pdfUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf' };
+					          pdfUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf' };
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');

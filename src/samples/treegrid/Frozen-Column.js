@@ -1,4 +1,4 @@
-﻿export class FrozenColumn {
+export class FrozenColumn {
   constructor() {
     this.columns =  [
                     { field: 'taskID', headerText: 'Task Id', width: '45', isFrozen: true, allowFreezing: false },

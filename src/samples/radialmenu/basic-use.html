@@ -19,37 +19,13 @@ A view requests from the model the information that it needs to generate an outp
                 </div>
             </div>
         </div>
-        <div id="defaultradialmenu" ej-radial-menu="ej-auto-open:false;">
-            <ul>
-                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/font.png" data-ej-text="Bold" ej-on-click.trigger="bold($event)"></li>
-                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/f1.png" data-ej-text="Italic" data-ej-click.delegate="italic"></li>
-                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/redo.png" data-ej-text="Redo" data-ej-click="redo" data-ej-enabled="false"></li>
-                <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/undo.png" data-ej-text="Undo" data-ej-click="undo" data-ej-enabled="false"></li>
-            </ul>
-        </div>
+        <ej-radial-menu id="defaultradialmenu" ej-auto-open="false" ej-on-click.trigger="itemsClick($event)">            
+                <ej-item ej-image-url="images/RadialMenu/font.png" ej-text="Bold"></ej-item>
+                <ej-item ej-image-url="images/RadialMenu/f1.png" ej-text="Italic"></ej-item>
+                <ej-item ej-image-url="images/RadialMenu/redo.png" ej-text="Redo" ej-enabled="false"></ej-item>
+                <ej-item ej-image-url="images/RadialMenu/undo.png" ej-text="Undo" ej-enabled="false"></ej-item>     
+        </ej-radial-menu>
     </div>
-<script type="text/javascript">
-     function bold(e) {
-         debugger
-       var rteObj = $("#rteSample1").data("ejRTE");
-            rteObj.executeCommand("bold");
-        }
-       function  italic(e) {
-           var rteObj = $("#rteSample1").data("ejRTE");
-            rteObj.executeCommand("italic");
-        }
-        function undo(e) {
-           debugger
-           var rteObj = $("#rteSample1").data("ejRTE");
-            rteObj.executeCommand("undo");
-            $("#defaultradialmenu").ejRadialMenu("disableItem", "Undo");
-            $("#defaultradialmenu").ejRadialMenu("enableItem", "Redo");
-        }
-        function redo(e) {
-           var rteObj = $("#rteSample1").data("ejRTE");
-            rteObj.executeCommand("redo");
-            $("#defaultradialmenu").ejRadialMenu("disableItem", "Redo");
-            $("#defaultradialmenu").ejRadialMenu("enableItem", "Undo");
-        }
-    </script>
+    
+
 </template>

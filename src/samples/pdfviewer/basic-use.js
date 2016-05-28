@@ -110,7 +110,7 @@ mousemovefunction(event) {
   }
 }
 showCustomToolbar() {
-  $('#magnificationDiv').css({ 'left': '0', 'position': 'absolute', 'display': 'block', 'height': 300 + 'px', 'top': (this.height - 350) + 'px' }).animate({ 'left': 100 + 'px', 'z-index': '10', 'display': 'block' }, 'slow');
+  $('#magnificationDiv').css({ 'left': '0', 'position': 'absolute', 'display': 'block', 'height': 300 + 'px', 'top': (this.height - 350) + 'px' }).animate({ 'left': 120 + 'px', 'z-index': '10', 'display': 'block' }, 'slow');
   $('#toolbarDiv').css({ 'left': '10', width: '91.2%', 'border': 'transparent', 'top': 0 + 'px', 'position': 'absolute', 'display': 'block' }).animate({ 'height': 56 + 'px', top: 87, 'border': 'transparent', width: '91.2%', 'z-index': '10', 'display': 'block' }, 'slow');
   this.toolbarInView = true;
   this.updatePageNavigation();

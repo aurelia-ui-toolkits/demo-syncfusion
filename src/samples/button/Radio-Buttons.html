@@ -1,0 +1,34 @@
+<template>
+    <require from="./Radio-Buttons.css"></require>
+    <div class='container-fluid'>    
+        <h4>Radio Button</h4>
+        <div class="radioalign">
+            <br />
+            Category<br />
+            <br />
+            <table>
+                <tr>
+                    <td class="chkrad">
+                        <input type="radio" name="small" ej-radio-button="ej-checked.bind: checked" id="Radio1" /><label for="Radio1" class="clslab">Fresher</label></td>
+                    <td class="chkrad" colspan="2">
+                        <input type="radio" name="small" ej-radio-button id="Radio3" /><label for="Radio3" class="clslab">Experienced</label></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            Experienced<br />
+            <br />
+            <table>
+                <tr>
+                    <td class="chkrad">
+                        <input type="radio" name="medium" ej-radio-button="ej-size.bind: mediumSize;ej-checked.bind: checked" id="Radio2" /><label for="Radio2" class="clslab">1+ years</label></td>
+                    <td class="chkrad">
+                        <input type="radio" name="medium" ej-radio-button="ej-size.bind: mediumSize" id="Radio4" /><label for="Radio4" class="clslab">2.5+years</label></td>
+                    <td class="chkrad">
+                        <input type="radio" name="medium" ej-radio-button="ej-size.bind: mediumSize" id="Radio5" /><label for="Radio5" class="clslab">5+years</label></td>
+                </tr>
+            </table>
+            <br />
+        </div>
+    </div>
+</template>

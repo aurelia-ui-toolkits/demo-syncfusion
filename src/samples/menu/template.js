@@ -1,1 +1,1 @@
-export class TemplateMenu {}
+export class TemplateMenu { }

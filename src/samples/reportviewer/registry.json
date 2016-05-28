@@ -1,0 +1,17 @@
+{
+  "title": "ReportViewer",
+  "documentation":"http://help.syncfusion.com/js/api/ejreportviewer",
+  "samples": {
+    "Territory-Sales": {
+      "default" : true,
+      "files": ["html","css"]
+    },
+	"Grouping-Aggregate": {
+      "files": ["html","css"]
+    },
+	"Area-Chart": {
+      "files": ["html", "js","css"]
+    }
+  }
+}
+

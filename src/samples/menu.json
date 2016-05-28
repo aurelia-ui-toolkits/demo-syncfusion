@@ -10,14 +10,20 @@
         "Tab": "tab",
         "ListBox": "listbox",
         "Rotator": "rotator",
-		"Accordion": "accordion",
+        "TreeView":"treeview",
+        "Accordion": "accordion",
         "NavigationDrawer":"navigationdrawer",
-       "RadialMenu":"radialmenu"
+        "RadialMenu":"radialmenu",
+		"FileExplorer":"fileexplorer",
+        "Toolbar": "toolbar"
     },
     "LAYOUT": {
         "Splitter": "splitter",
         "ListView": "listview",
-        "Dialog": "dialog"
+        "Dialog": "dialog",
+        "ScrollBar":"scrollbar",
+        "Tile":"tile",
+        "Tooltip": "tooltip"
     },
     "DATA VISUALIZATION": {
         "Schedule": "schedule",
@@ -32,18 +38,22 @@
         "Linear Gauge": "lineargauge",
         "Digital Gauge": "digitalgauge",
         "Bullet Graph": "bulletgraph",
-        "Range Navigator": "rangenavigator"
+        "Range Navigator": "rangenavigator",
+        "TagCloud": "tagcloud"
     },
     "Editors": {
         "DatePicker": "datepicker",
         "TimePicker": "timepicker",
         "DateTimePicker": "datetimepicker",
         "TextBoxes":"editors",
+        "ColorPicker":"colorpicker",
         "Autocomplete": "autocomplete",
         "RadialSlider": "radialslider",
 		"DropDownList": "dropdownlist",
         "Uploadbox": "uploadbox",
-        "Rating": "rating"
+        "Rating": "rating",
+        "Slider" :"slider",
+		"RTE": "rte"
     },
     "File Formats": {
         "PDF Viewer": "pdfviewer"
@@ -57,6 +67,10 @@
         "Pivot Chart": "pivotchart"
     },
 	"Notification": {
-        "ProgressBar": "progressbar"
+        "ProgressBar": "progressbar",
+        "WaitingPopup": "waitingpopup"
+    },
+    "Reporting": {
+        "ReportViewer": "reportviewer"
     }
 }

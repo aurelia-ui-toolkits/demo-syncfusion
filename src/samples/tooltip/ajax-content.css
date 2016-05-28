@@ -1,0 +1,38 @@
+.frame {
+    width: 550px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.frame table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid grey;
+    box-sizing : border-box;
+}
+
+.frame th, .frame td {
+    text-align: left;
+    padding: 8px;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 114px;
+}
+
+.frame tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.frame th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.des {
+    width: 230px;
+    float: right;
+    line-height: 24px;
+}
