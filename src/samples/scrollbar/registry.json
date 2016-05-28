@@ -1,0 +1,10 @@
+{
+  "title": "ScrollBar",
+  "documentation":"http://help.syncfusion.com/js/api/ejscroller",
+  "samples": {
+    "Default-Functionalities": {
+      "default" : true,
+      "files": ["html","css"]
+    }    
+  }
+}

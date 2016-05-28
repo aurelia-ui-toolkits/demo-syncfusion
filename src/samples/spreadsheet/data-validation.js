@@ -4,11 +4,11 @@ export class Datavalidation {
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
     this.range = [{ dataSource: window.validationData, startCell: 'A1'}];
   }
-  loadcomplete(event) {
-    const xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
+  loadcomplete(args) {
+    let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
     let values = [];
-    const xlFormat = xlObj.XLFormat;
-    const xlValidate = xlObj.XLValidate;
+    let xlFormat = xlObj.XLFormat;
+    let xlValidate = xlObj.XLValidate;
     xlObj.setWidthToColumns([120, 40, 210, 40, 160, 40, 85, 40, 190, 40, 200 ]);
     xlFormat.format({ 'style': { 'font-weight': 'bold', 'text-align': 'center' } }, 'A1:K1');
     xlFormat.format({ 'type': 'currency' }, 'E2:E15');
@@ -31,6 +31,6 @@ export class Datavalidation {
     values = ['GreaterOrEqual', '11:23:23'];
     xlValidate.applyDVRules('K2:K15', values, 'time', true, true);
     xlValidate.highlightInvalidData('K2:K15');
-    xlObj.performSelection('A2');			
+    xlObj.performSelection('A2');
   }
 }

@@ -1,14 +1,10 @@
-        .frame {
-            height: 230px;
-        }
+
 
         .control {
             width: 100%;
-            display: inline-block;
-            float: left;
         }
 
-            .control:first-child {
+            .multipleValue:first-child {
                 margin-bottom: 15px;
             }
 

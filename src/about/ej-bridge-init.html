@@ -1,0 +1,14 @@
+<template>
+    <ej-grid ej-data-source.bind="EmployeesList" ej-page-settings.bind="page" ej-allow-paging=t rue>
+    <ej-column ej-field="EmployeeImage" ej-header-text="Employee Image" ej-text-align="center" ej-width="110">
+        <ej-template>
+            <div><img style="width: 45px; height: 45px" src="images/grid/Employees/${EmployeeID}.png" /> </div>
+        </ej-template>
+    </ej-column>
+    <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="90"></ej-column>
+    <ej-column ej-field="FirstName" ej-header-text="First Name" ej-width="90"></ej-column>
+    <ej-column ej-field="LastName" ej-header-text="Last Name" ej-width="90"></ej-column>
+    <ej-column ej-field="BirthDate" ej-header-text="Birth Date" ej-format="{0:MM/dd/yyyy}" ej-text-align="right" ej-width="90"></ej-column>
+    <ej-column ej-field="Country" ej-header-text="Country" ej-width="80"></ej-column>
+</ej-grid>
+</template>

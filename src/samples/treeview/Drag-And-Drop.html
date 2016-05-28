@@ -1,0 +1,95 @@
+<template>
+    <div class='container-fluid'>
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>
+                <tr class='row'>
+                    <th colspan="2" style="padding-left:28%"> TreeView with Drag & Drop </th>
+                </tr>
+                <tr class='row'>                    
+                    <td>
+                        <div style="display:inline-block">
+                            <ul id="treeViewDrag" ej-tree-view="ej-width:250;
+                            ej-allow-drag-and-drop:true;
+                            ej-allow-drop-child:true;
+                            ej-allow-drop-sibling:true;
+                            ej-allow-drag-and-drop-across-control:true">
+                                <li class="expanded">
+                                    ASP.NET MVC Team
+                                    <ul>
+                                        <li>Smith</li>
+                                        <li>Johnson</li>
+                                        <li>Anderson</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Windows Team
+                                    <ul>
+                                        <li>Clark</li>
+                                        <li>Wright</li>
+                                        <li>Lopez</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Web Team
+                                    <ul>
+                                        <li>Joshua </li>
+                                        <li>Matthew </li>
+                                        <li>David </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Build Team
+                                    <ul>
+                                        <li>Ryan </li>
+                                        <li>Justin </li>
+                                        <li>Robert </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    WPF Team
+                                    <ul>
+                                        <li>Brown </li>
+                                        <li>Johnson </li>
+                                        <li>Miller </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="display:inline-block;float:left">
+                            <ul id="treeViewDrop"ej-tree-view="ej-width:250;
+                            ej-allow-drag-and-drop:true;
+                            ej-allow-drop-child:true;
+                            ej-allow-drop-sibling:true;
+                            ej-allow-drag-and-drop-across-control:true">
+                                <li class="expanded">
+                                    WinRT Team
+                                    <ul>
+                                        <li>Valentina</li>
+                                        <li>Williams </li>
+                                        <li>Jones </li>
+                                    </ul>
+                                </li>
+                                <li id="test">
+                                    Website Team
+                                    <ul>
+                                        <li>Thomas</li>
+                                        <li>Rodriguez</li>
+                                        <li>Michael </li>
+                                    </ul>
+                                </li>
+                                <li id="net">
+                                    Support Team
+                                    <ul>
+                                        <li>Christopher </li>
+                                        <li>Williams Smith</li>
+                                        <li>Jack</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>                
+            </tbody>
+        </table> 
+    </div>                
+</template>

@@ -1,8 +1,12 @@
 <template>
-  <div>
+  <require from="./Common.css"></require>
+  <div class="row">
+     <div class="frame "><div> 
        <label>Select Date</label>
-       <input id="datepick" ej-date-picker="ej-value.bind:dateValue;" ej-on-create.trigger="logger.log('Datepicker has been created')" ej-on-open.trigger="logger.log('DatePicker popup has been opened.')" ej-on-close.trigger="logger.log('DatePicker popup has been closed.')" ej-on-select.trigger="onSelect($event)" ></input>
-  </div>
+       <input id="datepick" ej-date-picker="ej-value.bind:dateValue;ej-width.bind:'100%'" ej-on-create.trigger="logger.log('Datepicker has been created')" ej-on-open.trigger="logger.log('DatePicker popup has been opened.')" ej-on-close.trigger="logger.log('DatePicker popup has been closed.')" ej-on-select.trigger="onSelect($event)" ></input>
+    </div> 
+   </div>        
+ </div>   
   <div id="Logger" class="box">
     <h4>Event Trace</h4>
      <logger view-model.ref="logger"></logger>

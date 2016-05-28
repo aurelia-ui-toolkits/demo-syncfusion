@@ -20,3 +20,7 @@ pre {
     padding-top: 20px;
     padding-bottom: 20px;    
 }
+
+#codepreview-about.e-tab .e-activetop{
+  border: 1px solid #cccccc;
+}

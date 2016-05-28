@@ -1,8 +1,12 @@
 <template>
-  <div>
-      <label>Select Time</label> 
-      <input id="timepick" ej-time-picker="ej-value.bind:timeValue;" ej-on-create.trigger="logger.log('TimePicker has been created')" ej-on-focusIn.trigger="logger.log('TimePicker is in focus.')" ej-on-focusOut.trigger="logger.log('TimePicker is out of focus.')" ej-on-change.trigger="onChange($event)" ></input>
-  </div>
+  <require from="./Common.css"></require>
+  <div class="row">
+     <div class="frame"><div>
+        <label>Select Time</label> 
+        <input id="timepick" ej-time-picker="ej-value.bind:timeValue;ej-width.bind:'100%'" ej-on-create.trigger="logger.log('TimePicker has been created')" ej-on-focusIn.trigger="logger.log('TimePicker is in focus.')" ej-on-focusOut.trigger="logger.log('TimePicker is out of focus.')" ej-on-change.trigger="onChange($event)" ></input>
+     </div>
+   </div>
+  </div>  
   <div id="Logger" class="box">
      <h4>Event Trace</h4>
      <logger view-model.ref="logger"></logger>

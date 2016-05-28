@@ -1,0 +1,29 @@
+﻿<template>
+    <require from="./Localization.css"></require>
+     <require from="root/vendors/scripts/cultures/ej.culture.de-DE.min.js"></require>
+  <require from="root/vendors/scripts/cultures/ej.culture.ar-SA.min.js"></require>
+    <div class="row">
+        <div class="frame">
+            <div>
+                <ej-file-explorer id="fileexplorer" ej-path.bind="path" ej-ajax-action.bind="ajaxAction" ej-locale.bind="localeValue" ej-width.bind="width" ej-height.bind="height" style="display:block"></ej-file-explorer>
+            </div>
+        </div>
+    </div>
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-2">
+                <div> Select Culture </div>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.two-way:updateLocale" ej-on-change.trigger="onChange($event)" id="selectLocale" />
+                <div id="localelist">
+                    <ul>
+                        <li>en-US</li>
+                        <li>de-DE</li>
+                        <li>ar-SA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

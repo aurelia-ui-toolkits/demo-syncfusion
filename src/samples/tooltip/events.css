@@ -1,0 +1,22 @@
+.frame{
+    box-sizing: border-box;
+    border: 1px solid #ccc !important;
+    border-radius: 0px;
+    padding: 0px;
+    text-align: center;
+    width : 160px;
+}
+.frame img{
+    width : 100%;
+}
+@media (max-width: 440px){
+    .frame{
+        width : 160px !important;
+    }
+}
+.circle {
+    color: white;
+    background: #1dabce;
+    border-radius: 10px;
+    padding: 2px;
+}

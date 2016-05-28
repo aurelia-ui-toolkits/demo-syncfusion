@@ -2,7 +2,7 @@ export class BasicUse {
   constructor() {
     this.primaryXAxis = {majorGridLines: {visible: false}, valueType: 'datetime', labelFormat: 'dd, hh:mm'};
     this.primaryYAxis = {range: {min: 1000, max: 1006, interval: 1}};
-    this.size = {height: '600', width: '1000'};
+    this.size = {height: '550px', width: '900px'};
     this.legend = {visible: false};
   }
 

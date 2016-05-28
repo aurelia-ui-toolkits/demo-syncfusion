@@ -1,8 +1,9 @@
 <template>
+<label id="lbl">Loan Amount = $ 5 Lakhs</label>
 <div>
 <ej-linear-gauge id="verticalgauge" ej-label-color="#8c8c8c" ej-width="900" ej-read-only="false" ej-scales.bind="scales"
-ej-orientation="horizontal" ej-enable-animation="false" ej-height="150" ej-draw-labels.trigger="DrawLabel($event)"
-ej-draw-marker-pointers.trigger="DrawMarkerPointers($event)" ej-draw-indicators.trigger="DrawIndicators($event)">
+ej-orientation="horizontal" ej-enable-animation="false" ej-height="150" ej-on-draw-labels.trigger="drawlabel($event)"
+ej-on-draw-marker-pointers.trigger="drawmarkerpointers($event)" ej-on-draw-indicators.trigger="drawindicators($event)">
 </ej-linear-gauge>
 </div>  
 </template>

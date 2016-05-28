@@ -9,9 +9,9 @@ export class Pivot {
 					          pdfUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf'};
   }
   loadcomplete(args) {
-    const xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
+    let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
     if (!xlObj.isImport) {
-      const settings = {
+      let settings = {
         rows: [{ fieldName: 'Country'}, { fieldName: 'State'}],
         columns: [{ fieldName: 'Product'}],
         values: [{ fieldName: 'Amount' }, { fieldName: 'Quantity'}],

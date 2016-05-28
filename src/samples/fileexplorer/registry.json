@@ -1,0 +1,26 @@
+{
+  "title": "FileExplorer",
+  "documentation":"http://help.syncfusion.com/js/api/ejfileexplorer",
+  "samples": {
+    "Default-Functionalities": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+	"Events" : {
+	   "default" : false,
+	   "files" : ["html" ,"js","css"]
+	},
+	"Methods" : {
+	 "default" : false ,
+	 "files" : ["html","js", "css"]
+	 },
+    "RTL" : {
+    "default" : false,
+	"files" : ["html","js","css"]
+  },
+  "Localization" : {
+    "default" : false,
+    "files" : ["html","js","css"]
+  }
+}
+}

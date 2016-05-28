@@ -1,0 +1,41 @@
+<template>
+    <require from="./events.css"></require>
+<div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <div id="toolbarEvents" ej-toolbar="ej-orientation:horizontal;ej-width:100%" ej-on-create.trigger="toolbarLoad()" ej-on-click.trigger="toolbarClick()" ej-on-item-hover.trigger="toolbarChecked()" ej-on-item-leave.trigger="toolbarUnChecked()">
+                            <ul>
+                                <li title="Mail">
+                                    <div class="mailtools movetofolder" />
+                                </li>
+                                <li title="Scheduler">
+                                    <div class="mailtools categorize" />
+                                </li>
+                                <li title="Calculator">
+                                    <div class="mailtools flag" />
+                                </li>
+                                <li title="Sticky Notes">
+                                    <div class="mailtools forward" />
+                                </li>
+                                <li title="Calendar">
+                                    <div class="mailtools newmail" />
+                                </li>
+                                <li title="Notes">
+                                    <div class="mailtools reply" />
+                                </li>
+                                <li title="Delete">
+                                    <div class="mailtools done" />
+                                    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+</template>

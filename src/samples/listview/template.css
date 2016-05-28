@@ -59,26 +59,26 @@
         }
 
         .brooke {
-            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/6.png");
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/6.png, sizingMethod='scale');
+            background-image: url("images/Employees/6.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=images/Employees/6.png, sizingMethod='scale');
         }
 
         .claire {
-            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/9.png");
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/9.png, sizingMethod='scale');
+            background-image: url("images/Employees/9.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=images/Employees/9.png, sizingMethod='scale');
         }
 
         .erik {
-            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/7.png");
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/7.png, sizingMethod='scale');
+            background-image: url("images/Employees/7.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=images/Employees/7.png, sizingMethod='scale');
         }
 
         .grace {
-            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/8.png");
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/8.png, sizingMethod='scale');
+            background-image: url("images/Employees/8.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=images/Employees/8.png, sizingMethod='scale');
         }
 
         .jacob {
-            background-image: url("http://js.syncfusion.com/demos/web/content/images/Employees/5.png");
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=http://js.syncfusion.com/demos/web/content/images/Employees/5.png, sizingMethod='scale');
+            background-image: url("images/Employees/5.png");
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=images/Employees/5.png, sizingMethod='scale');
         }

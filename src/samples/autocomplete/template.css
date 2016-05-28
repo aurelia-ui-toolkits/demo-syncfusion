@@ -21,7 +21,7 @@
         
           /* Sprite css for country flags */
         .flag {
-            background: url("http://js.syncfusion.com/demos/web/content/images/autocomplete/flags.png") no-repeat;
+            background: url("images/autocomplete/flags.png") no-repeat;
             float: left;
             height: 15px;
             margin-right: 10px;

@@ -1,0 +1,25 @@
+<template>
+  <div>            
+      <table class='container-fluid'>
+          <tbody class='container-fluid'>              
+              <tr class='row'>                  
+                  <td class='col-md-4' colspan="2">
+                      <input id="colorPicker" ej-color-picker="ej-value: #278787"
+                      ej-on-create.trigger="logger.log('Colorpicker has been created')" 
+                      ej-on-open.trigger="logger.log('ColorPicker popup has been opened.')" 
+                      ej-on-close.trigger="logger.log('ColorPicker popup has been closed.')" 
+                      ej-on-select.trigger="onSelect($event)"
+                      ej-on-change.trigger="onChange($event)"></input>
+                  </td>
+              </tr>               
+          </tbody>
+      </table>      
+    </div>  
+  <div id="Logger" class="box">
+    <h4>Event Trace</h4>
+     <logger view-model.ref="logger"></logger>
+       <div>
+           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+       </div>
+  </div>
+</template>

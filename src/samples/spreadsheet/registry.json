@@ -26,6 +26,10 @@
       "default" : false,
       "files": ["html", "js"]
 	 },
+   "chart": {
+      "default" : false,
+      "files": ["html", "js"]
+	 },
    "pivot": {
       "default" : false,
       "files": ["html", "js"]

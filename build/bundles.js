@@ -9,9 +9,7 @@ var nonSampleBundle = [
   "[installation/*.js]",
   "installation/*.html!text",
   "[about/*.js]",
-  "about/*.html!text",
-  "[theme-selector/*.js]",
-  "theme-selector/*.html!text"
+  "about/*.html!text"
 ];
 
 var aureliaBundle = [

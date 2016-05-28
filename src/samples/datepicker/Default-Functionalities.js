@@ -1,6 +1,5 @@
-export class Default{      
-    constructor() {   
-        this.dateValue = new Date();
+export class Default {
+    constructor() {
+      this.dateValue = new Date();
     }
 }
-

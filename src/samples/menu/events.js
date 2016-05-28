@@ -7,7 +7,7 @@ export class EventsMenu {
   }
   mouseOver(event) {
     let args = event.detail;
-    if(args.ID) {
+    if (args.ID) {
       this.logger.log('Menu item id "' + args.ID + '" has been hovered-in.');
     } else {
       this.logger.log('Menu item has been hovered-in.');
@@ -15,7 +15,7 @@ export class EventsMenu {
   }
   mouseOut(event) {
     let args = event.detail;
-    if(args.ID) {
+    if (args.ID) {
       this.logger.log('Menu item id "' + args.ID + '" has been hovered-out.');
     } else {
       this.logger.log('Menu item has been hovered-out.');
@@ -23,7 +23,7 @@ export class EventsMenu {
   }
   menuClick(event) {
     let args = event.detail;
-    if(args.ID) {
+    if (args.ID) {
       this.logger.log('Menu item id "' + args.ID + '" is clicked.');
     } else {
       this.logger.log('Menu item is clicked.');
@@ -31,7 +31,7 @@ export class EventsMenu {
   }
   keyDown(event) {
     let args = event.detail;
-    if(args.ID) {
+    if (args.ID) {
       this.logger.log('Menu item id "' + args.ID + '" has been changed by keys.');
     } else {
       this.logger.log('Menu item has been changed by keys.');

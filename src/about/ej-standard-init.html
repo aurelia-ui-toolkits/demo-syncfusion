@@ -1,0 +1,22 @@
+<div id="example">
+    <script type="text/x-jsrender" id="columnTemplate">
+        <img style="width: 45px; height: 45px" src="../content/images/grid/Employees/{{:EmployeeID}}.png" alt="{{: EmployeeID }}"/>
+    </script>
+    <div id="Grid"></div>
+    <script>
+        $(document).ready(function () {
+           $("#Grid").ejGrid({
+                // the datasource "window.employeeView" is referred from jsondata.min.js
+                dataSource: ej.DataManager(window.employeeView).executeLocal(ej.Query().take(8)),
+                allowPaging: true,
+                pageSettings: { pageSize: 4 },
+                columns: [ { headerText: "Employee Image", template: true, templateID: "#columnTemplate", textAlign: "center", width: 110}, 
+                           { field: "EmployeeID", headerText: "Employee ID", isPrimarykey: true, editType: ej.Grid.EditingType.NumericEdit, textAlign: ej.TextAlign.Right, width: 90 }, 
+                           { field: "FirstName", headerText: "First Name", width: 90 }, { field: "LastName", headerText: "Last Name", width: 90 }, 
+                           { field: "BirthDate", headerText: "Birth Date", width: 90, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right }, 
+                           { field: "Country", headerText: "Country", width: 80 } 
+                         ]
+            });
+        });
+    </script>
+</div>

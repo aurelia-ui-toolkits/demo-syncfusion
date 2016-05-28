@@ -17,7 +17,7 @@ export class APIRating {
   getValue(event) {
     if (this.ratingObj.model) {
       let val = this.ratingObj.getValue();
-      alert('Current Value : ' + val);
+      alert('Current Value : ' + val); // eslint-disable-line no-alert
     }
   }
   reset(event) {

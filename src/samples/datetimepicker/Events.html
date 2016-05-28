@@ -1,8 +1,12 @@
 <template>
-  <div>
-     <label>Select DateTime</label> 
-     <input id="datetimepick" ej-date-time-picker="ej-value.bind:datetimeValue;" ej-on-create.trigger="logger.log('DateTimepicker has been created')" ej-on-open.trigger="logger.log('DateTimePicker popup has been opened.')" ej-on-close.trigger="logger.log('DateTimePicker popup has been closed.')" ej-on-change.trigger="onChange($event)" ></input>
-   </div>
+<require from="./Common.css"></require>
+  <div class="row">
+      <div class="frame"><div>
+        <label>Select DateTime</label> 
+        <input id="datetimepick" ej-date-time-picker="ej-value.bind:datetimeValue;ej-width.bind:'100%'" ej-on-create.trigger="logger.log('DateTimepicker has been created')" ej-on-open.trigger="logger.log('DateTimePicker popup has been opened.')" ej-on-close.trigger="logger.log('DateTimePicker popup has been closed.')" ej-on-change.trigger="onChange($event)" ></input>
+      </div>
+    </div>
+  </div>  
    <div id="Logger" class="box">
       <h4>Event Trace</h4>
        <logger view-model.ref="logger"></logger>

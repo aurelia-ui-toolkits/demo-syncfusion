@@ -1,7 +1,7 @@
 System.config({
-  defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
+  "defaultJSExtensions": true,
+  "transpiler": "babel",
+  "babelOptions": {
     "optional": [
       "runtime",
       "optimisation.modules.system",
@@ -9,7 +9,7 @@ System.config({
       "es7.classProperties"
     ]
   },
-  paths: {
+  "paths": {
     "*": "src/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*",
@@ -17,14 +17,12 @@ System.config({
     "datavisualization/ej.*": "vendors/scripts/datavisualization/ej.*.js",
     "ej.*": "vendors/scripts/web/ej.*.js"
   },
-
-  meta: {
+  "meta": {
     "showdown/dist/showdown.js": {
       "format": "global"
     }
   },
-
-  map: {
+  "map": {
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.2",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0",
@@ -66,6 +64,8 @@ System.config({
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.2",
+      "jquery-validation": "npm:jquery-validation@1.15.0",
+      "jquery-validation-unobtrusive": "npm:jquery-validation-unobtrusive@3.2.6",
       "jsrender": "npm:jsrender@0.9.75"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -448,4 +448,4 @@ System.config({
       "y18n": "npm:y18n@3.2.1"
     }
   }
-});
+})

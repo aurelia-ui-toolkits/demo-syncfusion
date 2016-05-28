@@ -2,7 +2,7 @@
             color: skyblue;
         }
 
-        .control {
+        .dialogIcons {
             height: 500px;
         }
 
@@ -12,7 +12,11 @@
             position: relative;
             overflow: hidden;
         }
-
+       #btnOpen {
+         position: absolute;
+         display: none;
+         margin: 10px;
+        }
         #dialogIcon {
             padding: 10px;
             text-align: justify;

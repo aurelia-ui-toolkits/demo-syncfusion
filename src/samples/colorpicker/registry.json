@@ -1,0 +1,38 @@
+{
+  "title": "ColorPicker",
+  "documentation":"http://help.syncfusion.com/js/api/ejcolorpicker",
+  "samples": {
+    "Default-Functionalities": {
+      "default" : true,
+      "files": ["html"]
+    },    
+    "Display-lnline": {
+      "default" : false,
+      "files": ["html"]
+    },     
+    "Presets": {
+      "default" : false,
+      "files": ["html", "js", "css"]
+    },
+     "Color-Palette": {
+      "default" : false,
+      "files": ["html"]
+    },
+     "Custom-Palette": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+    "API": {
+      "default" : false,
+      "files": ["html", "js", "css"]
+    },
+    "Events": {
+      "default" : false,
+      "files": ["html", "js"]
+    },
+      "Keyboard-Interaction": {
+      "default" : false,
+      "files": ["html", "js","css"]
+    }                                           
+  }
+}

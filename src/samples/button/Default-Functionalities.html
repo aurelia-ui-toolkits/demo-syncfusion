@@ -1,0 +1,58 @@
+<template>
+    <require from="./Default-Functionalities.css"></require>
+    <div>            
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>
+                <tr class='row'>
+                <th colspan="2" style="padding-left:28%"> Buttons </th>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Normal</td>
+                    <td class='col-md-4'>
+                        <button id="normalBtn" 
+                        ej-button="ej-size.bind: normalBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-content-type: imageonly;
+                        ej-prefix-icon: e-uiLight e-handup"></button>
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Mini</td>
+                    <td class='col-md-4'>
+                        <button id="miniBtn" ej-button="ej-size.bind: miniBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-text: login"></button>
+                    </td>
+                </tr>
+
+                <tr class='row'>
+                    <td class='col-md-4'> Small</td>
+                    <td class='col-md-4'>
+                        <button id="smallBtn" ej-button="ej-size.bind: smallBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-text: login"></button>
+                    </td>
+                </tr>
+                <tr class='row'>
+                    <td class='col-md-4'> Medium</td>
+                    <td class='col-md-4'>
+                        <button id="mediumBtn" ej-button="ej-size.bind: mediumBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-text: login"></button>
+                    </td>
+                </tr>
+
+                <tr class='row'>
+                    <td class='col-md-4'> Large</td>
+                    <td class='col-md-4'>
+                        <button id="largeBtn" ej-button="ej-size.bind: largeBtnValue;
+                        ej-show-rounded-corner.bind: roundedCorner;
+                        ej-content-type: textandimage;
+                        ej-prefix-icon: e-uiLight e-handup;
+                        ej-text: login"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>      
+    </div>
+</template>

@@ -2,7 +2,7 @@ export class BasicUse {
   constructor() {
      // declaration
     this.width = '240px';
-    this.template = '<div><img class="eimg" src="http://js.syncfusion.com/demos/web/content/images/Employees/${eimg}.png" alt="employee"/>' +
+    this.template = '<div><img class="eimg" src="images/Employees/${eimg}.png" alt="employee"/>' +
                          '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>';
     this.empList = [
               { text: 'Erik Linden', eimg: '3', desig: 'Representative', country: 'England' }, { text: 'John Linden', eimg: '6', desig: 'Representative', country: 'Norway' },

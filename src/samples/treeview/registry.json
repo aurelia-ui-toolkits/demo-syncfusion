@@ -1,0 +1,49 @@
+{
+  "title": "ScrollBar",
+  "documentation":"http://help.syncfusion.com/js/api/ejtreeview",
+  "samples": {
+    "Default-Functionalities": {
+       "default" : true,
+      "files": ["html"]
+    },
+"Icons": {
+      "files": ["html", "css" ]
+    }, 
+"Checkboxes": {
+      "files": ["html"]
+    }, 
+"Node-Editing": {
+      "files": ["html"]
+    }, 
+"Drag-And-Drop": {
+      "files": ["html"]
+    },
+"Data-Binding-Local": {
+      "files": ["html", "js" ]
+    }, 
+"Data-Binding-Remote": {
+      "files": ["html", "js" ]
+    }, 
+"Load-On-Demand": {
+      "files": ["html", "js" ]
+    },
+"Context-Menu": {
+      "files": ["html", "js" ]
+    }, 
+"State-Maintenance": {
+      "files": ["html"]
+    }, 
+"API": {
+      "files": ["html", "js" ]
+    }, 
+"Events": {
+      "files": ["html", "js" ]
+    }, 
+"RTL": {
+      "files": ["html"]
+    }, 
+"Keyboard-Interaction": {
+      "files": ["html", "js","css" ]
+    }
+  }
+}

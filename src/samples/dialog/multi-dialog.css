@@ -1,4 +1,4 @@
-        .control {
+        .multi-control {
             height: 500px;
         }
 
@@ -15,3 +15,4 @@
         #Dialog1, #Dialog2, #Dialog3 {
             padding: 10px;
         }
+       

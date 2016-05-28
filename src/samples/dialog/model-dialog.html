@@ -2,9 +2,9 @@
     <require from="./model-dialog.css"></require>
  <div class="cols-sample-area">
  <button id="btnOpen" class="e-btn" ej-button="ej-text:Click to open dialog; size: medium, type: button, height: 30, width: 150" ej-on-click.trigger="onOpen()"></button>
- <div class="control" style="height:500px;">
-                    <ej-dialog  id="lognForm" ej-title="Login Form" ej-enable-modal="true" ej-enable-resize ="false"  ej-width="291" ej-min-width="310" ej-min-height="215" ej-target=".control" ej-on-close.trigger="onDialogClose()">
-                       <table>
+ <div class="model-control" style="height:500px;">
+                    <ej-dialog  id="lognForm" ej-title="Login Form" ej-enable-modal="true" ej-enable-resize ="false"  ej-width="291" ej-min-width="310" ej-min-height="215" ej-target=".model-control" ej-on-close.trigger="onDialogClose()">
+                       <table style="width:100%;">
                             <tr>
                                 <td>
                                     <p class="top">Please enter your username and password<p>
@@ -13,7 +13,7 @@
                             <tr>
                                 <td>
                                     Username <p class="reqired">*</p>
-                                    <input type="text" id="txtName" class="ejinputtext" required /><br />
+                                    <input  type="text" id="txtName" class="ejinputtext" required /><br />
                                 </td>
                             </tr>
                             <tr>
@@ -31,7 +31,7 @@
                                 <td align="center">
                                     <br />
                                     
-                                    <button id="btnOpen" class="e-btn" ej-button="ej-text:LOGIN; ej-size: medium; ej-type: submit; ej-height: 30; ej-width: 150;"></button>
+                                    <button id="btnlogin" class="e-btn" ej-button="ej-text:LOGIN; ej-size: medium; ej-type: submit; ej-height: 30; ej-width: 150;"></button>
                                     
                                 </td>
                             </tr>

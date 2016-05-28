@@ -8,15 +8,16 @@ gulp.task('deploy-gh-pages', function() {
   return gulp.src([
     './src/**/*',
     './styles/*.*',
-    './images/*.*',
+    './images/**/*',
     './doc/*.*',
     './jspm_packages/*.js', // include system.js
     './jspm_packages/github/twbs/bootstrap@*/fonts/*',
     './jspm_packages/npm/font-awesome@*/**/*',
     './jspm_packages/npm/font-awesome*.js',
-	'jspm_packages/npm/bluebird@*/js/browser/bluebird.min.js',
-	'vendors/**/*',
-	//'./jspm_packages/github/syncfusion/**/*',
+	  'jspm_packages/npm/bluebird@*/js/browser/bluebird.min.js',
+	  'vendors/**/*',
+	  './jspm_packages/npm/jquery-validation*.js',
+	  './jspm_packages/npm/jquery-validation*/**/*',
     './jspm_packages/github/PrismJS/prism*/themes/*.css',
     './jspm_packages/github/google/code-prettify*/loader/**/*',
     './jspm_packages/npm/babel-runtime*/**/*',
@@ -24,8 +25,8 @@ gulp.task('deploy-gh-pages', function() {
     './favicon.ico',
     './config.js'
   ], { base: '.' })
-    .pipe(gulp.dest('./dist')); // for local deployment
-   // .pipe(ghPages()); // to publish as GitHub pages
+    // .pipe(gulp.dest('./dist')); // for test purposes
+   .pipe(ghPages()); // to publish as GitHub pages
 });
 
 

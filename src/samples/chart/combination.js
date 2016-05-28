@@ -8,7 +8,7 @@ export class BasicUse {
     this.tooltip1 = {format: '#point.x# <br/> Profit :  #point.y# <br/>'};
     this.marker = {shape: 'circle', size: {height: 8, width: 8}, visible: true};
     this.border = {width: 2};
-    this.size = {width: '900px', height: '600px'};
+    this.size = {width: '900px', height: '550px'};
     this.title = {text: 'Sales Report '};
     this.legend = {visible: true, font: {size: '15px'}, shape: 'seriesType', position: 'Top', itemStyle: {width: 15, height: 15}};
   }

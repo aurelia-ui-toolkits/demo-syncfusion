@@ -112,3 +112,25 @@ window.pivotData = [
     { Amount: 250, Country: 'United States', Date: 'FY 2008', Product: 'Car', Quantity: 3, State: 'North Carolina' },
     { Amount: 300, Country: 'United States', Date: 'FY 2007', Product: 'Van', Quantity: 4, State: 'South Carolina' }
 ];
+window.chartData = [
+    { Name: "VINET", Average: 90, Grade: "S" },
+	{ Name: "TOMSP", Average: 83, Grade: "A" },
+	{ Name: "HANAR", Average: 80, Grade: "A" },
+	{ Name: "VICTE", Average: 93, Grade: "S" },
+	{ Name: "SUPRD", Average: 60, Grade: "D" },
+	{ Name: "CHOPS", Average: 71, Grade: "C" },
+	{ Name: "WELLI", Average: 88, Grade: "A" },
+	{ Name: "HILLA", Average: 95, Grade: "S" },
+	{ Name: "ERNSH", Average: 69, Grade: "D" },
+	{ Name: "CENTC", Average: 77, Grade: "C" },
+	{ Name: "OTTIK", Average: 95, Grade: "S" },
+	{ Name: "RATTC", Average: 85, Grade: "A" },
+	{ Name: "FOLKO", Average: 90, Grade: "A" },
+	{ Name: "BLONP", Average: 97, Grade: "S" }
+];
+function openfailure(args) {
+  let xlObj = $("#Spreadsheet1").data("ejSpreadsheet");
+  let alertDlg = $("#" + xlObj._id + "_alertdlg");
+  xlObj._renderAlertDlgContent(alertDlg, "Alert", args.detail.statusText);
+  alertDlg.ejDialog("open");
+}

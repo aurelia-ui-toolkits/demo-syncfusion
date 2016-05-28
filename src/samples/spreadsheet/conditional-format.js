@@ -4,7 +4,7 @@ export class ConditionalFormat {
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
     this.range = [{ dataSource: window.conditionalData, startCell: 'A1'}];
   }
-  loadcomplete(event) {
+  loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
     let xlFormat = xlObj.XLFormat;
     let xlCFormat = xlObj.XLCFormat;

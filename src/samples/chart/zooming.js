@@ -1,7 +1,7 @@
 export class BasicUse {
   constructor() {
     this.commonSeriesOptions = {enableAnimation: true, name: 'Server', type: 'line'};
-    this.size = {width: '900px', height: '600px'};
+    this.size = {width: '900px', height: '550px'};
     this.title = {text: 'Server CPU Load'};
     this.legend = {visible: true};
     this.zooming = {enable: true, type: 'x, y', enableMouseWheel: true, enableScrollbar: true};

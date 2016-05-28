@@ -5,7 +5,7 @@ export class BasicUse {
     this.primaryXAxis = {title: {text: 'Year'}, axisLine: {visible: false}, majorGridLines: {visible: false}};
     this.primaryYAxis = {title: {text: 'Revenue'}, labelFormat: '{value}K', majorTickLines: {visible: false}, range: {min: 20, max: 120, interval: 20}, axisLine: {visible: false}};
     this.crosshair = {visible: true, type: 'trackball'};
-    this.size = {width: '900px', height: '600px'};
+    this.size = {width: '900px', height: '550px'};
     this.title = {text: 'Web Site Visitor'};
     this.legend = {visible: true};
   }

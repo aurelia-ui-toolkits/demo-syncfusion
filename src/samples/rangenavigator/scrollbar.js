@@ -6,15 +6,15 @@ export class BasicUse {
     this.primaryXAxis = {crosshairLabel: {visible: true}};
     this.primaryYAxis = {crosshairLabel: {visible: true}, range: {min: 80, max: 130, interval: 10}};
     this.crosshair = {visible: true};
-    this.tooltip = {format: '#point.x#  :  ej.format(#point.y#, n2)'};
+    this.tooltip = {format: '#point.x#  :  #point.y#'};
     this.selectedRangeSettings = {start: '2009/5/11', end: '2009/8/1'};
     this.scrollRangeSettings = {start: '2009/1/1', end: '2014/2/31'};
     this.sizeSettings = {width: '950', height: '120'};
-    this.size = {width: '1000'};
+    this.size = {width: '1000', height: '300'};
   }
   onScrollStart(sender) {
-    $('#navigator').ejWaitingPopup();
-    $('#navigator').ejWaitingPopup('show');
+    $('#wait').ejWaitingPopup();
+    $('#wait').ejWaitingPopup('show');
   }
   onScrollchange(sender) {
     let rangeobj = $('#navigator').data('ejRangeNavigator');
@@ -22,8 +22,8 @@ export class BasicUse {
       $('#navigator').ejWaitingPopup();
       $('#navigator').ejWaitingPopup('hide');
     } else {
-      $('#navigator').ejWaitingPopup();
-      $('#navigator').ejWaitingPopup('show');
+      $('#wait').ejWaitingPopup();
+      $('#wait').ejWaitingPopup('show');
     }
   }
   onScrollbarChanged(sender) {
@@ -31,12 +31,12 @@ export class BasicUse {
     let startRange;
     let endRange;
     let data;
-    $('#navigator').ejWaitingPopup();
-    $('#navigator').ejWaitingPopup('hide');
+    $('#wait').ejWaitingPopup();
+    $('#wait').ejWaitingPopup('hide');
     data = sender.detail.data;
     startRange = Date.parse(data.newRange.start);
     endRange = Date.parse(data.newRange.end);
-    data = getdata(new Date(startRange), new Date(endRange));
+    data = this.getdata(new Date(startRange), new Date(endRange));
     range.model.series[0].dataSource = data.Open;
     range.model.series[0].xName = 'XValue';
     range.model.series[0].yName = 'YValue';
@@ -71,7 +71,7 @@ export class BasicUse {
         value -= Math.random();
       }
       point1 = { XValue: new Date(date), YValue: value };
-      new Date(start.setDate(start.getDate() + 1));
+      start = new Date(start.setDate(start.getDate() + 1));
       series1.push(point1);
     }
     data1 = { Open: series1 };

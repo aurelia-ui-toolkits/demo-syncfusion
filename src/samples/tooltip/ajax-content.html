@@ -1,0 +1,34 @@
+<template>
+    <require from="./ajax-content.css"></require>
+<div class="cols-sample-area">
+                    <div class="frame table-responsive" ej-tooltip="ej-target.bind:target;ej-width:350px;ej-height:128px;ej-position.bind:position" ej-on-create.trigger="create()" ej-on-before-open.trigger="onOpen($event)">
+                        <table id="details table">
+                            <tr>
+                                <th>EmployeeID</th>
+                                <th>Name</th>
+                                <th>Designation</th>
+                            </tr>
+                            <tr>
+                                <td>SF6089</td>
+                                <td><a href="#" class="e-info" title="Davolio">Davolio</a></td>
+                                <td>Software Engineer</td>
+                            </tr>
+                            <tr>
+                                <td>SF6073</td>
+                                <td> <a href="#" class="e-info" title="Leverling">Leverling </a> </td>
+                                <td>Tester</td>
+                            </tr>
+                            <tr>
+                                <td>SF6073</td>
+                                <td> <a href="#" class="e-info" title="Suyama"> Suyama </a> </td>
+                                <td>Content Writer</td>
+                            </tr>
+                            <tr>
+                                <td>SF7896</td>
+                                <td> <a href="#" class="e-info" title="Buchanan"> Buchanan </a> </td>
+                                <td>Graphics Designer</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+</template>

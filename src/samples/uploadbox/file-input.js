@@ -10,7 +10,7 @@ export class FileInputUploadbox {
   }
 
   error(event) {
-    alert(event.detail.error);
+    alert(event.detail.error); // eslint-disable-line no-alert
   }
 
   allowFileType(event) {

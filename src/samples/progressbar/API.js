@@ -17,6 +17,6 @@ export class ApiProgressBar {
   }
 
   onGetPercentage() {
-    alert('Progress percentage : ' + this.progressBar.getPercentage());
+    alert('Progress percentage : ' + this.progressBar.getPercentage()); // eslint-disable-line no-alert
   }
 }

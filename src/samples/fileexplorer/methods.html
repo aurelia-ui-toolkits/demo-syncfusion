@@ -1,0 +1,48 @@
+﻿<template>
+    <require from="./methods.css"></require>
+    <div class="row">
+        <div class="frame">
+            <div>
+                <ej-file-explorer id="fileexplorer" ej-path.bind="path" ej-ajax-action.bind="ajaxAction" ej-width.bind="width" ej-height.bind="height" style="display:block"></ej-file-explorer>
+            </div>
+        </div>
+    </div>
+   
+
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:adjustSize" ej-on-click.trigger="adjustSize()"></button>
+            </div>
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:disableMenuItem" ej-on-click.trigger="DisableMenuitem()"></button>
+            </div>
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:disableToolbarItem" ej-on-click.trigger="disableToolbarItem()"></button>
+            </div>
+
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:enableMenuItem" ej-on-click.trigger="enableMenuItem()"></button>
+            </div>
+
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:enableToolbarItem" ej-on-click.trigger="enableToolbarItem()"></button>
+            </div>
+
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:refresh" ej-on-click.trigger="refresh()"></button>
+            </div>
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="ej-text:removeToolbarItem" ej-on-click.trigger="removeToolbarItem()"></button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <style>
+        #propbutton{
+            margin-top: 10px;
+        }
+        </style>
+</template>
