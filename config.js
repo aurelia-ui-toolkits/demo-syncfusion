@@ -449,7 +449,7 @@ System.config({
     }
   },
   "bundles": {
-    "app-build-046df17189": [
+    "app-build-199901fed3": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "about/ej-bridge-init.html!github:systemjs/plugin-text@0.0.4",
