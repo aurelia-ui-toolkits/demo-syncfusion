@@ -24,8 +24,8 @@ gulp.task('deploy-gh-pages', function() {
     './index.html',
     './error.html',
     './images/favicon.ico',
-    './config.js',
-	'./web.config' // to include the mime type for  the md files
+    './config.js'
+	//'./web.config' // to include the mime type for  the md files
   ], { base: '.' })
     // .pipe(gulp.dest('./dist')); // for test purposes
    .pipe(ghPages()); // to publish as GitHub pages
