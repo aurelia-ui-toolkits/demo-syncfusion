@@ -2,21 +2,21 @@
   "title": "Tab",
   "documentation":"http://help.syncfusion.com/js/api/ejtab",
   "samples": {
-    "basic-use": {
+    "default-functionalities": {
       "default" : true,
-      "files": ["html", "js", "css"]
+      "files": ["html", "css"]
     },
     "scrollable-tab": {
-        "files": ["html", "js"]
+        "files": ["html", "js", "css"]
     },
-    "API": {
+    "API's": {
         "files": ["html", "js"]
     },
     "events": {
         "files": ["html", "js"]
     },
     "header-orientation": {
-        "files": ["html", "js"]
+        "files": ["html", "js", "css"]
     }
   }
 }

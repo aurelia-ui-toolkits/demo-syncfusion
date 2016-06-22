@@ -4,19 +4,19 @@
     <tr>
       <td>
         <div class="upload">
-        <ej-uploadbox id="UploadDefault" ej-save-url="http://js.syncfusion.com/ScheduleExport/api/JSScheduleExport/SaveDefault"
-                       ej-extensions-allow= ".ics" ej-height="30px" ej-auto-upload="true" ej-width="80px" ej-button-text.bind="buttonText"
-                       ej-show-file-details="false" ej-on-success.trigger="onComplete($event)" ej-dialog-action.bind="dialogAction"></ej-uploadbox>
+        <ej-uploadbox id="UploadDefault" e-save-url="http://js.syncfusion.com/ScheduleExport/api/JSScheduleExport/SaveDefault"
+                       e-extensions-allow= ".ics" e-height="30px" e-auto-upload="true" e-width="80px" e-button-text.bind="buttonText"
+                       e-show-file-details="false" e-on-success.trigger="onComplete($event)" e-dialog-action.bind="dialogAction"></ej-uploadbox>
         </div>
       </td>
       <td>
-        <input ej-button="ej-text:Export;ej-height:30px;ej-width:80px" ej-on-click.trigger="onExportClick($event)" id="Export" />
+        <input ej-button="e-text:Export;e-height:30px;e-width:80px" e-on-click.trigger="onExportClick($event)" id="Export" />
       </td>
     </tr>
   </table>
   <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-current-view="month" ej-time-mode="12" ej-appointment-settings.bind="AppointmentList"
-        ej-current-date="05/05/2014" ej-on-create.trigger="onCreate($event)">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-current-view="month" e-time-mode="12" e-read-only="true" e-appointment-settings.bind="AppointmentList"
+        e-current-date="05/05/2014" e-on-create.trigger="onCreate($event)">
         </ej-schedule>
   </div>
   <div id="reminder" style="display:none">
@@ -30,7 +30,7 @@
                 <label>PDFExport</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <input ej-button="ej-text:Export;ej-height:30px;ej-width:80px" ej-on-click.trigger="onPDFExportClick($event)" id="btnExport"/>
+                <input ej-button="e-text:Export;e-height:30px;e-width:80px" e-on-click.trigger="onPDFExportClick($event)" id="btnExport"/>
             </div>
         </div>
   </div>

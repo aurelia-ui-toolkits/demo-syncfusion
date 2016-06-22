@@ -1,23 +1,18 @@
 <template>
-<div style="position: relative; left: 36px;">
-<ej-chart id="chart" ej-on-load.trigger="onchartload($event)" ej-crosshair.bind="crosshair" ej-legend.bind="legend" 
-ej-size.bind="size" ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis">
-  <ej-series ej-type="line" ej-tooltip.bind="tooltip" ej-style.bind="style">
-  </ej-series> 
- 
-</ej-chart>
-</div> 
-<div id="wait" style="position: relative; left: 40px; top:55px">    
-</div>
-
-<div style="position: relative; left: 36px;">
-<ej-range-navigator id="navigator"    
-     ej-size-settings.bind="sizeSettings" ej-data-source.bind="dataSource" ej-x-name="XValue" ej-y-name="YValue"  
-	 ej-selected-range-settings.bind="selectedRangeSettings" ej-enable-scrollbar="true" ej-scroll-range-settings.bind="scrollRangeSettings"
-	 ej-on-range-changed.trigger="onchartloaded($event)" ej-on-scroll-start.trigger="onScrollStart($event)" 
-	 ej-0n-scroll-changed.trigger="onScrollchange($event)" ej-on-scroll-end.trigger="onScrollbarChanged($event)" > 
-</ej-range-navigator>
-</div>
-
-
+    <div style="position: relative; left: 36px;">
+        <ej-chart id="chart" e-on-load.trigger="onchartload($event)" e-crosshair.bind="crosshair" e-legend.bind="legend" e-size.bind="size"
+                  e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis">
+            <ej-series e-type="line" e-tooltip.bind="tooltip" e-style.bind="style">
+            </ej-series>
+        </ej-chart>
+    </div>
+    <div id="wait" style="position: relative; left: 40px; top:55px">
+    </div>
+    <div style="position: relative; left: 36px;">
+        <ej-range-navigator id="navigator" e-size-settings.bind="sizeSettings" e-data-source.bind="dataSource" e-x-name="XValue"
+                            e-y-name="YValue" e-selected-range-settings.bind="selectedRangeSettings" e-enable-scrollbar="true" e-scroll-range-settings.bind="scrollRangeSettings"
+                            e-on-range-changed.trigger="onchartloaded($event)" e-on-scroll-start.trigger="onScrollStart($event)" e-0n-scroll-changed.trigger="onScrollchange($event)"
+                            e-on-scroll-end.trigger="onScrollbarChanged($event)" >
+        </ej-range-navigator>
+    </div>
 </template>

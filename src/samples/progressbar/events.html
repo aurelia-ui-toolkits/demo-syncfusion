@@ -1,14 +1,14 @@
 <template>
     <require from="./events.css"></require>
-    <div class="frame">
-        <div class="control">
+    <div class="events-progress-bar-frame">
+        <div class="events-progress-bar-control">
             <div class="e-prodefault">
-                <div id="progressBar" ej-progress-bar="ej-height.bind:height;ej-value.bind:value;" ej-on-create.trigger="create($event)"
-                ej-on-start.trigger="start($event)" ej-on-change.trigger="change($event)" ej-on-complete.trigger="complete($event)"></div>
+                <div id="progressBar" ej-progress-bar="e-height.bind:height;e-value.bind:value;" e-on-create.trigger="create($event)"
+                e-on-start.trigger="start($event)" e-on-change.trigger="change($event)" e-on-complete.trigger="complete($event)"></div>
             </div>
         </div>
         <div class="startButton">
-            <input type="checkbox" id="startButton" ej-toggle-button="ej-default-text:Start;ej-active-text:Pause;ej-size:small" ej-on-click.trigger="startProcess($event)"
+            <input type="checkbox" id="startButton" ej-toggle-button="e-default-text:Start;e-active-text:Pause;e-size:small" e-on-click.trigger="startProcess($event)"
              />
             <label for="startButton">Toggle</label>
         </div>
@@ -17,7 +17,7 @@
         <h4>Event Trace</h4>
         <logger view-model.ref="logger"></logger>
         <div>
-            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+            <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
 </template>

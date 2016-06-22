@@ -6,9 +6,9 @@
       "default" : true,
       "files": ["html", "js","css"]
     },
-    // "OLAP": {
-    //   "files": ["html", "js"]
-    // },
+    "OLAP": {
+      "files": ["html", "js"]
+    },
     "chart Types": {
       "files": ["html", "js"]
     }

@@ -1,10 +1,10 @@
 <template>
-    <require from="root/vendors/scripts/cultures/ej.culture.en-US.min.js"></require>
-    <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
-    <require from="root/vendors/scripts/cultures/ej.culture.vi-VN.min.js"></require>
+	<require from ="syncfusion-javascript/scripts/i18n/ej.culture.en-US.min.js"></require>
+	<require from ="syncfusion-javascript/scripts/i18n/ej.culture.fr-FR.min.js"></require>
+	<require from ="syncfusion-javascript/scripts/i18n/ej.culture.vi-VN.min.js"></require>
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/04/2014"
-        ej-locale="fr-FR">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-appointment-settings.bind="AppointmentList" e-current-date="04/04/2014"
+        e-locale="fr-FR">
         </ej-schedule>
     </div>
     <div id="property-window" class="box wide">
@@ -13,7 +13,7 @@
                 <label>Select Culture</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <select ej-drop-down-list="ej-data-source.bind:LocalizationList;ej-width:110;ej-selected-index:2" id="culture" ej-on-select.trigger="onChange($event)">
+                <select ej-drop-down-list="e-data-source.bind:LocalizationList;e-width:110;e-selected-index:2" id="culture" e-on-select.trigger="onChange($event)">
 		        </select>
             </div>
         </div>

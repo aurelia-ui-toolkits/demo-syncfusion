@@ -1,18 +1,17 @@
 <template>
+  <require from="./help.css"></require>
   <require from="./doc"></require>
   <section>
-    <h3>Components Catalog Help</h3>
-
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#componentDocs">Components Docs</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="componentDocs">
-        <div style="height: 790px;">
+    <h4>Components Catalog Help</h4>
+     <ej-tab e-allow-keyboard-navigation=false>
+       <ul>
+        <li><a href="#componentDocs">Components Docs</a></li>  
+       </ul>
+       <div id="componentDocs">
+        <div>
           <doc></doc>
         </div>
       </div>
-    </div>
+     </ej-tab>
   </section>
 </template>

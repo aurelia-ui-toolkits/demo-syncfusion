@@ -15,7 +15,6 @@
 		
         "Quick Access Toolbar": {
             "files": [ "html", "js"]
-        },
-        
+        }        
     }
 }

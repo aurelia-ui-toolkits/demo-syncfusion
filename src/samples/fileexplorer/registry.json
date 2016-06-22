@@ -4,23 +4,24 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js"]
     },
 	"Events" : {
 	   "default" : false,
-	   "files" : ["html" ,"js","css"]
+	   "files" : ["html" ,"js"]
 	},
-	"Methods" : {
+	"API's" : {
 	 "default" : false ,
-	 "files" : ["html","js", "css"]
+	 "title" : "API's",
+	 "files" : ["html","js"]
 	 },
     "RTL" : {
     "default" : false,
-	"files" : ["html","js","css"]
+	"files" : ["html","js"]
   },
   "Localization" : {
     "default" : false,
-    "files" : ["html","js","css"]
+    "files" : ["html","js"]
   }
 }
 }

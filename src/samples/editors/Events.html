@@ -13,7 +13,7 @@
                                         <label>Kilometers</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="numeric" type="text" ej-numeric-textbox="ej-value.bind:numericValue;ej-width.bind:cwidth;" ej-on-create.trigger="onNumericCreate($event)" ej-on-focus-in.trigger="numericFocusIn($event)" ej-on-focus-out.trigger="numericFocusOut($event)" ej-on-change.trigger="numericValChange($event)" />
+                                        <input id="numeric" type="text" ej-numeric-textbox="e-value.bind:numericValue;e-width.bind:cwidth;" e-on-create.trigger="onNumericCreate($event)" e-on-focus-in.trigger="numericFocusIn($event)" e-on-focus-out.trigger="numericFocusOut($event)" e-on-change.trigger="numericValChange($event)" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -21,7 +21,7 @@
                                         <label>Service Tax</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="percent" type="text" ej-percentage-textbox="ej-value.bind:percentValue;ej-width.bind:cwidth;" ej-on-create.trigger="onPercentageCreate($event)" ej-on-focus-in.trigger="percentFocusIn($event)" ej-on-focus-out.trigger="percentFocusOut($event)" ej-on-change.trigger="percentValChange($event)" />
+                                        <input id="percent" type="text" ej-percentage-textbox="e-value.bind:percentValue;e-width.bind:cwidth;" e-on-create.trigger="onPercentageCreate($event)" e-on-focus-in.trigger="percentFocusIn($event)" e-on-focus-out.trigger="percentFocusOut($event)" e-on-change.trigger="percentValChange($event)" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -29,7 +29,7 @@
                                         <label>Fare</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="currency" type="text" ej-currency-textbox="ej-value.bind:currencyValue;ej-width.bind:cwidth;" ej-on-create.trigger="onCurrencyCreate($event)" ej-on-focus-in.trigger="currencyFocusIn($event)" ej-on-focus-out.trigger="currencyFocusOut($event)" ej-on-change.trigger="currencyValChange($event)" />
+                                        <input id="currency" type="text" ej-currency-textbox="e-value.bind:currencyValue;e-width.bind:cwidth;" e-on-create.trigger="onCurrencyCreate($event)" e-on-focus-in.trigger="currencyFocusIn($event)" e-on-focus-out.trigger="currencyFocusOut($event)" e-on-change.trigger="currencyValChange($event)" />
                                     </td>
                                 </tr>
                                  <tr>
@@ -37,7 +37,7 @@
                                         <label>Mobile No</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="maskedit" type="text" ej-mask-edit="ej-value.bind:mvalue;ej-mask-format.bind:maskFormat;ej-width.bind:cwidth" ej-on-create.trigger="onMaskCreate($event)" ej-on-focus-in.trigger="maskFocusIn($event)" ej-on-focus-out.trigger="maskFocusOut($event)" ej-on-change.trigger="maskValueChange($event)" />
+                                        <input id="maskedit" type="text" ej-mask-edit="e-value.bind:mvalue;e-mask-format.bind:maskFormat;e-width.bind:cwidth" e-on-create.trigger="onMaskCreate($event)" e-on-focus-in.trigger="maskFocusIn($event)" e-on-focus-out.trigger="maskFocusOut($event)" e-on-change.trigger="maskValueChange($event)" />
                                     </td>
                                 </tr>
                             </tbody>
@@ -53,7 +53,7 @@
     <h4>Event Trace</h4>
      <logger view-model.ref="logger"></logger>
        <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+           <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger = "logger.clear()" ></button>
        </div>
   </div>
 </template>

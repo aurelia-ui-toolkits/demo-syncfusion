@@ -18,9 +18,6 @@ export class BasicUse {
         {
           measures: [
             {
-              fieldName: '[Measures].[Internet Sales Amount]'
-            },
-            {
               fieldName: '[Measures].[Growth in Customer Base Trend]'
             }
           ],

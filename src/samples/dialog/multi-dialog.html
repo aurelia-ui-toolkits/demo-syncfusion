@@ -1,25 +1,28 @@
 <template>
     <require from="./multi-dialog.css"></require>
- <div class="cols-sample-area">
- <div class="multi-control" style="height:500px;">
-                    <ej-dialog  id="Dialog1" ej-title="London" ej-min-width="215" ej-min-height="135" ej-target=".cols-sample-area" ej-position.bind="dialog1Position">
-                      <p>
-                            London, one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has an excellent public transportation system that allows visitors to see all the fantastic sights without spending a ton of money on a rental car.
-							London contains four World Heritage Sites.
-                        </p>
-                    </ej-dialog>
-                    <ej-dialog  id="Dialog2" ej-title="Paris" ej-min-width="215" ej-min-height="135" ej-target=".cols-sample-area" ej-position.bind="dialog2Position">
-                      <p>
-                            Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
-							Even if you do not want to visit this world famous structure, you will see its top from all over Paris.
-                        </p>
-                    </ej-dialog>
-                    <ej-dialog  id="Dialog3" ej-title="Rome"  ej-min-width="215" ej-min-height="135" ej-target=".cols-sample-area" ej-position.bind="dialog3Position">
-                      <p>
-                           Rome, one of the world's most fascinating cities. The old adage that Rome was not built in a day - and that you won't see it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
-							But remember what the Romans say: Even a lifetime isn't enough to see Rome.
-                        </p>
-                    </ej-dialog>
- </div>
- </div>
+    <div class="cols-sample-area">
+        <div class="multi-control" style="height:500px;">
+            <ej-dialog id="Dialog1" e-title="London" e-min-width="215" e-min-height="135" e-containment=".cols-sample-area" e-position.bind="dialog1Position">
+                <p>
+                    London, one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has
+                    an excellent public transportation system that allows visitors to see all the fantastic sights without spending
+                    a ton of money on a rental car. London contains four World Heritage Sites.
+                </p>
+            </ej-dialog>
+            <ej-dialog id="Dialog2" e-title="Paris" e-min-width="215" e-min-height="135" e-containment=".cols-sample-area" e-position.bind="dialog2Position">
+                <p>
+                    Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes
+                    from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
+                    Even if you do not want to visit this world famous structure, you will see its top from all over Paris.
+                </p>
+            </ej-dialog>
+            <ej-dialog id="Dialog3" e-title="Rome" e-min-width="215" e-min-height="135" e-containment=".cols-sample-area" e-position.bind="dialog3Position">
+                <p>
+                    Rome, one of the world's most fascinating cities. The old adage that Rome was not built in a day - and that you won't see
+                    it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+                    But remember what the Romans say: Even a lifetime isn't enough to see Rome.
+                </p>
+            </ej-dialog>
+        </div>
+    </div>
 </template>

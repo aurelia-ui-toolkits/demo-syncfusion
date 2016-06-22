@@ -1,12 +1,12 @@
 <template>
     <require from="./custom-window.css"></require>
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="575px" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/04/2014"
-                     ej-on-appointment-window-open.trigger="onAppointmentWindowOpen($event)" ej-on-cell-click.trigger="onClick($event)">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="575px" e-appointment-settings.bind="AppointmentList" e-current-date="04/04/2014"
+                     e-on-appointment-window-open.trigger="onAppointmentWindowOpen($event)" e-on-cell-click.trigger="onClick($event)">
         </ej-schedule>
     </div>
     <div class="cwindow">
-        <ej-dialog id="customWindow" ej-target=".cwindow" ej-width="600px" ej-height="auto" ej-show-on-init="false" ej-enable-model="true" ej-title="Create Appointment" ej-enable-resize="false" ej-allow-keyboard-navigation="false" ej-on-close.trigger="clearFields()">
+        <ej-dialog id="customWindow" e-target=".cwindow" e-width="600px" e-height="auto" e-show-on-init="false" e-enable-model="true" e-title="Create Appointment" e-enable-resize="false" e-allow-keyboard-navigation="false" e-on-close.trigger="clearFields()">
         <form id="custom">
             <table width="100%" cellpadding="5">
                 <tbody>
@@ -79,8 +79,8 @@
             </table>
         </form>
         <div>
-            <button type="submit" ej-button="" ej-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
-            <button type="submit" ej-button="" ej-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+            <button type="submit" ej-button="" e-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+            <button type="submit" ej-button="" e-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
         </div>
      </ej-dialog>  
  </div>

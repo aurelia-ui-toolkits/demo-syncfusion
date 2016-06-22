@@ -1,19 +1,13 @@
 <template>
-  
-  <div>
-     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size" ej-title.bind="title" 
-	 ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis" 
-	 ej-common-series-options.bind="commonSeriesOptions">
-	 
-	   <ej-series ej-data-source.bind="CountriesList" ej-x-name="xName" ej-y-name="yName" ej-name="India" >
-	   </ej-series>    
-	   
-       <ej-series ej-data-source.bind="CountriesList" ej-x-name="xName" ej-y-name="yName1" ej-name="Germany">
-	   </ej-series>
-	   
-       <ej-series ej-data-source.bind="CountriesList" ej-x-name="xName" ej-y-name="yName2" ej-name="England">		 
-	   </ej-series> 	
-	   
-    </ej-chart>
-  </div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-primary-x-axis.bind="primaryXAxis"
+                  e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeriesOptions">
+            <ej-series e-data-source.bind="CountriesList" e-x-name="xName" e-y-name="yName" e-name="India">
+            </ej-series>
+            <ej-series e-data-source.bind="CountriesList" e-x-name="xName" e-y-name="yName1" e-name="Germany">
+            </ej-series>
+            <ej-series e-data-source.bind="CountriesList" e-x-name="xName" e-y-name="yName2" e-name="England">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

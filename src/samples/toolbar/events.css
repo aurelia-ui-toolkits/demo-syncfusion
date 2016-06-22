@@ -1,17 +1,17 @@
-.darktheme .cols-sample-area .e-tooltxt .mailtools {
-    background-image: url('http://js.syncfusion.com/demos/web/content/images/toolbar/maild.png');
+.darktheme .toolbar-events-cols-sample-area .e-tooltxt .mailtools {
+    background-image: url('images/toolbar/maild.png');
 }
 
-.cols-sample-area .e-tooltxt .mailtools {
+.toolbar-events-cols-sample-area .e-tooltxt .mailtools {
     display: block;
-    background-image: url('http://js.syncfusion.com/demos/web/content/images/toolbar/maill.png');
+    background-image: url('images/toolbar/maill.png');
     height: 24px;
     width: 24px;
     background-repeat: no-repeat;
 }
 
-.e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
-    background-image: url('http://js.syncfusion.com/demos/web/content/images/toolbar/mailh.png');
+.e-tooltxt:hover .mailtools, .darktheme .toolbar-events-cols-sample-area .e-tooltxt:hover .mailtools {
+    background-image: url('images/toolbar/mailh.png');
 }
 
 .mailtools.done {

@@ -1,0 +1,13 @@
+#markdownCol{
+    border-left: 1px solid #cccccc;
+}
+#markdownCol img{
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+ej-accordion.help_accdn .e-content {
+    padding: 0px;
+    border: none;
+}

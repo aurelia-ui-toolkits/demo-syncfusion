@@ -1,0 +1,10 @@
+{
+  "title": "Sparkline",
+  "documentation":"http://help.syncfusion.com/js/api/ejsparkline",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js"]
+    }
+  }
+}

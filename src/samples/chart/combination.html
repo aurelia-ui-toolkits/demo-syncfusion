@@ -1,13 +1,13 @@
 <template>
-  <div>
-     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size" ej-title.bind="title" ej-common-series-options.bind="commonSeriesOptions"
-	 ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis">
-	   <ej-series ej-data-source.bind="data" ej-x-name="xName" ej-y-name="yName" ej-name="Unit Sold" ej-type="column"
-	    ej-enable-animation="true" ej-tooltip.bind="tooltip" ej-fill="#69D2E7">
-	   </ej-series>  
-	   <ej-series ej-data-source.bind="data" ej-x-name="xName" ej-y-name="yName1" ej-name="Total Transaction" ej-type="line" 
-	    ej-enable-animation="true" ej-tooltip.bind="tooltip1" ej-marker.bind="marker" ej-border.bind="border">
-	   </ej-series>  
-	</ej-chart>
-  </div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions"
+                  e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis">
+            <ej-series e-data-source.bind="data" e-x-name="xName" e-y-name="yName" e-name="Unit Sold" e-type="column" e-enable-animation="true"
+                       e-tooltip.bind="tooltip" e-fill="#69D2E7">
+            </ej-series>
+            <ej-series e-data-source.bind="data" e-x-name="xName" e-y-name="yName1" e-name="Total Transaction" e-type="line" e-enable-animation="true"
+                       e-tooltip.bind="tooltip1" e-marker.bind="marker" e-border.bind="border">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

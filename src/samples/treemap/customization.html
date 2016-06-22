@@ -1,0 +1,11 @@
+<template>
+	<require from="./customization.css"></require>
+<div>
+<ej-tree-map id="container"  e-weight-value-path="TotalMedals" e-color-value-path="GoldMedals" e-data-source.bind="medal_data" e-border-brush="white" e-border-thickness="1" e-uni-color-mapping.bind="unicolormapping" e-leaf-item-settings.bind="leafitemsettings" >	 	    	    
+	          
+</ej-tree-map>	
+</div>
+  <script id="imageTemplate" type="application/jsrender">
+            <div style="border:1px solid white;background:url({{:Data.GameImage}}) no-repeat center center;height:{{:ItemHeight}}px;width:{{:ItemWidth}}px;" />
+      </script>
+</template>

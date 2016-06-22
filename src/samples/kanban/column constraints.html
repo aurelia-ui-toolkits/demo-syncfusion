@@ -1,11 +1,11 @@
 <template>
   <require from="./default.css"></require>
   <div>
-     <ej-kanban ej-data-source.bind="KanbanData" ej-key-Field="Status" ej-fields.bind="Field"  ej-allow-title="true" ej-allow-selection="false" >
+     <ej-kanban e-data-source.bind="KanbanData" e-key-Field="Status" e-fields.bind="Field"  e-allow-title="true" e-allow-selection="false" >
        
-       <ej-kanban-column  ej-header-text="Backlog" ej-key="Open"></ej-kanban-column>
-	   <ej-kanban-column  ej-header-text="In Progress" ej-key="InProgress" ej-constraints.bind="Constraints"></ej-kanban-column>
-	   <ej-kanban-column  ej-header-text="Done" ej-key="Close"></ej-kanban-column>
+       <ej-kanban-column  e-header-text="Backlog" e-key="Open"></ej-kanban-column>
+	   <ej-kanban-column  e-header-text="In Progress" e-key="InProgress" e-constraints.bind="Constraints"></ej-kanban-column>
+	   <ej-kanban-column  e-header-text="Done" e-key="Close"></ej-kanban-column>
       
     </ej-kanban>
   </div>

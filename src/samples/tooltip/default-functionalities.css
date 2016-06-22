@@ -1,0 +1,10 @@
+.default-frame u {
+    color: #00b8e6;
+}
+.default-frame {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 28px;
+    text-align : "justify";
+    font-family: "Times New Roman", Times, serif;
+}

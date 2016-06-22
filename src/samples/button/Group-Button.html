@@ -1,21 +1,27 @@
 <template>
-  <div>            
       <table class='container-fluid'>
         <tbody class='container-fluid'>
             <tr class='row'>
-              <th colspan="2" style="padding-left:28%"> Group Button </th>
-            </tr>
-            <tr class='row'>                
-                <td>
-                    <div id="groupBtn" 
-                    ej-group-button="ej-width:100%;
-                    ej-show-rounded-corner.bind:roundedCorner;
-                    ej-group-button-mode:radiobutton;
-                    ej-height:40px;
-                    ej-data-source.bind:localData"></button>
+                <td class='col-md-4'>
+                    <div id="groupButton" ej-group-button="e-show-rounded-corner.bind: roundedCorner;
+                        e-enable-rtl.bind: rtl;e-height: 40px">
+                        <ul>
+                            <li>
+                                Previous
+                            </li>
+                            <li>
+                                Next
+                            </li>
+                            <li>
+                                Play
+                            </li>
+                            <li>
+                                Pause
+                            </li>
+                        </ul>
+                    </div>
                 </td>
-            </tr>            
+            </tr>         
           </tbody>
       </table>      
-  </div>
 </template>

@@ -1,9 +1,4 @@
 ej-pivot-chart {
     display: block;
-    min-height: 275px;
     height: 460px;
-    width: 950px;
-    min-width: 525px; 
-    float:left;
-    margin: 20px 0px 0px 20px;
 }

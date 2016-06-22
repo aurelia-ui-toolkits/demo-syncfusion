@@ -4,7 +4,7 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js"]
     },
     "kPI":{
       "files":["html","js"]

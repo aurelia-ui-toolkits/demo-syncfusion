@@ -1,7 +1,7 @@
 import '../scripts/xljsondata.js';
 export class ImportExport {
   constructor() {
-    let filteredData = ej.DataManager(window.importData).executeLocal(ej.Query().take(10).select('OrderID', 'CustomerID', 'EmployeeID', 'ShipName', 'ShipCity', 'ShipAddress'));//eslint-disable-line new-cap
+    let filteredData = ej.DataManager(window.importData).executeLocal(ej.Query().take(20).select('Order ID', 'Customer ID', 'Employee ID', 'Ship Name', 'Ship City', 'Ship Address'));//eslint-disable-line new-cap
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
     this.range = [{ dataSource: filteredData, startCell: 'A3', showHeader: 'true'}];
     this.import = {importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};

@@ -4,7 +4,7 @@ export class BasicUse {
     this.size = {width: '900px', height: '550px'};
     this.title = {text: 'Server CPU Load'};
     this.legend = {visible: true};
-    this.zooming = {enable: true, type: 'x, y', enableMouseWheel: true, enableScrollbar: true};
+    this.zooming = {enable: true, type: 'x,y', enableMouseWheel: true, enableScrollbar: true};
     this.primaryXAxis = {title: {text: 'Date'}, valueType: 'datetime'};
     this.primaryYAxis = {title: {text: 'CPU Load'}, labelFormat: '{value}%'};
   }

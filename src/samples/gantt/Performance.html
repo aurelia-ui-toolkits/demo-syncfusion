@@ -1,23 +1,24 @@
 <template>
+ <require from="./Default-Sample.css"></require>
     <div>
-        <ej-gantt id="gantt" ej-data-source.bind="projectData"
-                  ej-task-id-mapping="TaskId"
-                  ej-task-name-mapping="TaskName"
-                  ej-start-date-mapping="StartDate"
-                  ej-duration-mapping="Duration"
-                  ej-progress-mapping="Status"
-                  ej-tree-column-index="1"
-                  ej-child-mapping="Child"
-                  ej-allow-column-resize="true"
-                  ej-allow-sorting="true"
-                  ej-allow-selection="true"
-                  ej-schedule-start-date="01/01/2013"
-                  ej-schedule-end-date="04/28/2014"
-                  ej-high-light-weekends="true"
-                  ej-include-weekend="false"
-                  ej-enable-virtualization="true"
-                  ej-allow-gantt-chart-editing="false"
-                  ej-is-responsive="true">
+        <ej-gantt id="gantt" e-data-source.bind="projectData"
+                  e-task-id-mapping="TaskId"
+                  e-task-name-mapping="TaskName"
+                  e-start-date-mapping="StartDate"
+                  e-duration-mapping="Duration"
+                  e-progress-mapping="Status"
+                  e-tree-column-index="1"
+                  e-child-mapping="Child"
+                  e-allow-column-resize="true"
+                  e-allow-sorting="true"
+                  e-allow-selection="true"
+                  e-schedule-start-date="01/01/2013"
+                  e-schedule-end-date="04/28/2014"
+                  e-high-light-weekends="true"
+                  e-include-weekend="false"
+                  e-enable-virtualization="true"
+                  e-allow-gantt-chart-editing="false"
+                  e-is-responsive="true">
 
         </ej-gantt>
     </div>

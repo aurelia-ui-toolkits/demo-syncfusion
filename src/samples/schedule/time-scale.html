@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-time-scale.bind="TimeInterval"
-                     ej-current-date="04/04/2014">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-appointment-settings.bind="AppointmentList" e-time-scale.bind="TimeInterval"
+                     e-current-date="04/04/2014">
         </ej-schedule>
     </div>
     <div id="property-window" class="box wide">
@@ -12,7 +12,7 @@
                 </label>
             </div>
             <div class="col-sm-2">
-                <input id="minorslot" ej-drop-down-list="ej-target-i-d:minorslotlist;ej-width:110px;ej-selected-index:4" />
+                <input id="minorslot" ej-drop-down-list="e-target-id.bind:minorSlotTimings;e-width:110px;e-selected-index:4" />
                 <div id="minorslotlist">
                     <ul>
                         <li>1</li>
@@ -34,7 +34,7 @@
                 </label>
             </div>
             <div class="col-sm-2">
-                <input id="majorslot" ej-drop-down-list="ej-target-i-d:majorslotlist;ej-width:110px;ej-selected-index:0" />
+                <input id="majorslot" ej-drop-down-list="e-target-id.bind:majorSlotTimings;e-width:110px;e-selected-index:0" />
                 <div id="majorslotlist">
                     <ul>
                         <li>60</li>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-sm-2" style="top:5px">
-                <button ej-button="ej-width:80px;ej-height:25px" ej-on-click.trigger="changeTime()" id="submit">Submit</button>
+                <button ej-button="e-width:80px;e-height:25px" e-on-click.trigger="changeTime()" id="submit">Submit</button>
             </div>
         </div>
     </div>

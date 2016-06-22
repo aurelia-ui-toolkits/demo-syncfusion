@@ -1,0 +1,57 @@
+<template>
+  <require from="./CheckBox.css"></require>
+  <div class='container-fluid' style="margin-left:350px">    
+    <div class="chkalign">
+        <br />
+       <label> Hobbies</label>
+        <br />
+        
+        <table>
+            <tr>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-checked.bind: checked;" id="check1" />
+                    <label for="check1" class="clslab">Music</label></td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-checked.bind: checked;" id="Checkbox3" />
+                    <label for="Checkbox3" class="clslab">Sports</label></td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-checked.bind: unChecked;" id="Checkbox4" />
+                    <label for="Checkbox4" class="clslab">Bike Riding</label></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+       <label>Favorite Search Engines<br /></label>
+        <br />
+        <table>
+            <tr>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-size.bind: mediumSize;" id="Checkbox1" /><label for="Checkbox1" class="clslab">Google</label>
+                </td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-size.bind: mediumSize;" id="Checkbox5" /><label for="Checkbox5" class="clslab">Yahoo</label>
+                </td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-checked.bind: checked;e-size.bind: mediumSize;" id="Checkbox6" /><label for="Checkbox6" class="clslab">Bing</label></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <label>Favorite Social networks<br /></label>
+        <br />
+        <table>
+            <tr>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-size.bind: mediumSize;e-enable-tri-state.bind: triState" id="Checkbox2" /><label for="Checkbox2" class="clslab">Facebook</label>
+                </td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-checked.bind: checked;e-size.bind: mediumSize;e-enable-tri-state.bind: triState" id="Checkbox7" /><label for="Checkbox7" class="clslab">GPlus</label>
+                </td>
+                <td class="chkrad">
+                    <input type="checkbox" ej-check-box="e-size.bind: mediumSize;e-enable-tri-state.bind: triState" id="Checkbox8" /><label for="Checkbox8" class="clslab">Twitter</label></td>
+            </tr>
+        </table>
+        <br />
+    </div>
+  </div>
+</template>

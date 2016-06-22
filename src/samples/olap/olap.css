@@ -5,6 +5,7 @@ ej-pivot-grid {
     overflow: auto;
     float:left;
     margin: 20px 0px 0px 20px;
+    position: relative !important;
 }
 ej-pivot-grid#export {
     display: block;

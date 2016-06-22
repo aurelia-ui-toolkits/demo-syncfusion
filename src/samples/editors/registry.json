@@ -10,8 +10,9 @@
       "default" : false,
       "files": ["html", "js"]
     },
-    "API": {
+    "API's": {
       "default" : false,
+         "title" : "API's",
       "files": ["html", "js"]
     },
     "Events": {

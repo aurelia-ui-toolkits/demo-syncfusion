@@ -1,7 +1,8 @@
 {
-    "Most popular": {
-        "Button": "button",
-        "Grid": "grid"
+    "Grids": {
+        "Grid": "grid",
+        "TreeGrid": "treegrid",
+        "Spreadsheet": "spreadsheet"
     },
     "Navigation": {
         "Button": "button",
@@ -10,30 +11,31 @@
         "Tab": "tab",
         "ListBox": "listbox",
         "Rotator": "rotator",
-        "TreeView":"treeview",
+        "TreeView": "treeview",
         "Accordion": "accordion",
-        "NavigationDrawer":"navigationdrawer",
-        "RadialMenu":"radialmenu",
-		"FileExplorer":"fileexplorer",
+        "NavigationDrawer": "navigationdrawer",
+        "RadialMenu": "radialmenu",
+        "FileExplorer": "fileexplorer",
         "Toolbar": "toolbar"
     },
-    "LAYOUT": {
+    "Layout": {
         "Splitter": "splitter",
         "ListView": "listview",
         "Dialog": "dialog",
-        "ScrollBar":"scrollbar",
-        "Tile":"tile",
+        "ScrollBar": "scrollbar",
+        "Tile": "tile",
         "Tooltip": "tooltip"
     },
-    "DATA VISUALIZATION": {
+    "Data Visualization": {
         "Schedule": "schedule",
         "Kanban Board": "kanban",
         "Barcode": "barcode",
         "Diagram": "diagram",
+        "Map": "map",
+        "TreeMap": "treemap",
         "Gantt": "gantt",
-        "TreeGrid": "treegrid",
-        "Spreadsheet": "spreadsheet",
         "Chart": "chart",
+		"Sparkline": "sparkline",
         "Circular Gauge": "circulargauge",
         "Linear Gauge": "lineargauge",
         "Digital Gauge": "digitalgauge",
@@ -45,28 +47,31 @@
         "DatePicker": "datepicker",
         "TimePicker": "timepicker",
         "DateTimePicker": "datetimepicker",
-        "TextBoxes":"editors",
-        "ColorPicker":"colorpicker",
+        "TextBoxes": "editors",
+        "ColorPicker": "colorpicker",
         "Autocomplete": "autocomplete",
         "RadialSlider": "radialslider",
-		"DropDownList": "dropdownlist",
+        "DropDownList": "dropdownlist",
         "Uploadbox": "uploadbox",
         "Rating": "rating",
-        "Slider" :"slider",
-		"RTE": "rte"
+        "Slider": "slider",
+        "RTE": "rte"
     },
-    "File Formats": {
+    "File Viewer": {
         "PDF Viewer": "pdfviewer"
     },
-    "PivotGrid": {
+    "Pivot Grid": {
         "Relational": "pivotgrid",
         "OLAP": "olap",
         "Common": "pivotgridcommon"
     },
-    "PivotChart": {
-        "Pivot Chart": "pivotchart"
+    "Pivot Chart": {
+        "PivotChart": "pivotchart"
     },
-	"Notification": {
+    "Pivot Gauge": {
+        "PivotGauge": "pivotgauge"
+    },
+    "Notification": {
         "ProgressBar": "progressbar",
         "WaitingPopup": "waitingpopup"
     },

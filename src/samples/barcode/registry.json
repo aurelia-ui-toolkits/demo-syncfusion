@@ -4,6 +4,7 @@
   "samples": {
     "qrbarcode": {
       "default" : true,
+	  "title" : "QR Barcode",
       "files": ["html"]
     },
 	"codabar": {
@@ -11,42 +12,52 @@
     },
 	
 	"code11": {
+	  "title" : "Code 11",
       "files": ["html"]
     },
 	
 	"code32": {
+	  "title" : "Code 32",
       "files": ["html"]
     },
 	
 	"code39": {
+	  "title" : "Code 39",
       "files": ["html"]
     },
 	
 	"code39extended": {
+	  "title" : "Code 39 Extended",
       "files": ["html"]
     },
 	
 	"code93": {
+	  "title" : "Code 93",
       "files": ["html"]
     },
 	
 	"code93extended": {
+	  "title" : "Code 93 Extended",
       "files": ["html"]
     },
 	
 	"code128a": {
+	  "title" : "Code 128 A",
       "files": ["html"]
     },
 	
 	"code128b": {
+	  "title" : "Code 128 B",
       "files": ["html"]
     },
 	
 	"code128c": {
+	  "title" : "Code 128 C",
       "files": ["html"]
     },
 	
 	"datamatrix": {
+	  "title" : "DataMatrix",
       "files": ["html"]
     }
   }

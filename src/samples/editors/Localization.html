@@ -1,8 +1,8 @@
 <template>
   <require from="./Common.css"></require>
-  <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
-  <require from="root/vendors/scripts/cultures/ej.culture.de-DE.min.js"></require>
-  <require from="root/vendors/scripts/cultures/ej.culture.zh-CN.min.js"></require>
+  <require from="syncfusion-javascript/scripts/i18n/ej.culture.fr-FR.min.js"></require>
+  <require from="syncfusion-javascript/scripts/i18n/ej.culture.de-DE.min.js"></require>
+  <require from="syncfusion-javascript/scripts/i18n/ej.culture.zh-CN.min.js"></require>
   <div>    
       <div class="content-container-fluid">
         <div class="row">
@@ -16,7 +16,7 @@
                                         <label>Kilometers</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="numeric" type="text" ej-numeric-textbox="ej-value.bind:numericValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                        <input id="numeric" type="text" ej-numeric-textbox="e-value.bind:numericValue;e-locale.bind:localeValue;e-watermark-text.bind:watermark;e-width.bind:cwidth" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -24,7 +24,7 @@
                                         <label>Service Tax</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="percent" type="text" ej-percentage-textbox="ej-value.bind:percentValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                        <input id="percent" type="text" ej-percentage-textbox="e-value.bind:percentValue;e-locale.bind:localeValue;e-watermark-text.bind:watermark;e-width.bind:cwidth" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -32,7 +32,7 @@
                                         <label>Fare</label>
                                     </td></tr> <tr>
                                     <td>
-                                        <input id="currency" type="text" ej-currency-textbox="ej-value.bind:currencyValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-width.bind:cwidth" />
+                                        <input id="currency" type="text" ej-currency-textbox="e-value.bind:currencyValue;e-locale.bind:localeValue;e-watermark-text.bind:watermark;e-width.bind:cwidth" />
                                     </td>
                                 </tr>                              
                             </tbody>
@@ -49,7 +49,7 @@
           <div> Select Culture </div>               
        </div>
        <div class="col-sm-3">        
-          <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.two-way:updateLocale" id="selectLocale" />
+          <input type="text" ej-drop-down-list="e-target-id.bind:target;e-value.two-way:updateLocale" id="selectLocale" />
         <div id="localelist">
             <ul>
                 <li>en-US</li>

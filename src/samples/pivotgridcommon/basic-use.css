@@ -1,7 +1,11 @@
 ej-pivot-grid {
-    height: 350px;
+    display: block;
+    height: 450px;
     width: 100%; 
     overflow: auto;
+    float:left;
+    margin: 20px 0px 0px 20px;
+    position: relative !important;
 }
 .e-pivotgrid .hyperlinkValueCell {
   text-decoration: underline;
@@ -10,7 +14,4 @@ ej-pivot-grid {
 .e-pivotgrid .hyperlinkHeaderCell {
   text-decoration: underline;
   cursor: pointer;
-}
-.e-ddl{
-  width: 190px !important;
 }

@@ -3,27 +3,17 @@
     <div class="row">
         <div class="col-md-3">
             <br>
-
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-              <div class="panel panel-default" repeat.for="category of categories">
-                <div class="panel-heading">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#${category.id}" aria-expanded="true" aria-controls="${category.id}">
-                    ${category.name}
-                  </a>
-                </div>
-
-                <div class="collapse" id="${category.id}">
-                  <div class="well">
-                    <ul>
-                        <li style="cursor: pointer" class="${file.path === activeDoc ? 'active' : ''}" repeat.for="file of category.files" click.delegate="routeToPage(file.name, category.name)">${file.name}</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div repeat.for="category of categories">
+                <ej-accordion id="help_acc_${category.id}" class="help_accdn" e-collapsible=true e-allow-keyboard-navigation=false>
+                    <h3><a> ${category.name}</a></h3>
+                    <div>
+                        <ul id="help_listbox_${category.id}" ej-list-box="e-width:100%;" style="min-width:270px;">
+                            <li style="cursor: pointer" class="${file.path === activeDoc ? 'active' : ''}" repeat.for="file of category.files" click.delegate="routeToPage(file.name, category.name)">${file.name}</li>
+                        </ul>
+                    </div>
+                </ej-accordion>
+            </div>            
         </div>
-
         <div class="col-md-9" ref="markdownCol" id="markdownCol">
             <au-markdown url.bind="activeDoc" loaded.delegate="scrollToTarget()">
             </au-markdown>

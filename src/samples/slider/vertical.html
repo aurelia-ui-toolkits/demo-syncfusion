@@ -1,16 +1,21 @@
 <template>
-    <div class="col-sm-1">
-        <div id="slider" class="txt" ej-slider="ej-orientation:vertical;ej-width.bind:width;ej-height.bind:height;ej-value.bind:value"></div>
+     <require from="./Common.css"></require>
+    <div class="frame">
+       <div class="control">
+        <div id="slider" ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;e-value.bind:value"></div>
+       </div>
+    <div class="control">
+        <div id="rangeslider"  ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;
+        e-slider-type:range;e-values.bind:values"></div>
     </div>
 
-    <div class="col-sm-1">
-        <div id="rangeslider" class="txt" ej-slider="ej-orientation:vertical;ej-width.bind:width;ej-height.bind:height;ej-slider-type:range;ej-values.bind:values"></div>
-
+    <div class="control">
+        <div id="minrangeslider" ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;
+        e-slider-type:minrange;e-value.bind:value"></div>
     </div>
-
-    <div class="col-sm-1">
-        <div id="minrangeslider" class="txt" ej-slider="ej-orientation:vertical;ej-width.bind:width;ej-height.bind:height;ej-slider-type:minrange;ej-value.bind:value"></div>
-    </div>
-   
+   </div>
+    <style>
+    
+    </style>
     
 </template>

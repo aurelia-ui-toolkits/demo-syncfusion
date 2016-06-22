@@ -1,25 +1,21 @@
 <template>
-  <div>            
       <table class='container-fluid'>
           <tbody class='container-fluid'> 
-              <tr class='row'>
-                    <th colspan="2" style="padding-left:28%"> Events </th>
-                </tr>             
               <tr class='row'>                  
                   <td colspan="2">
-                      <ul id="treeView"ej-tree-view="ej-width:250;
-                        ej-allow-drag-and-drop:true;
-                        ej-allow-drop-child:true;
-                        ej-allow-drop-sibling:true;
-                        ej-show-checkbox:true;
-                        ej-allow-editing:true" ej-on-create.trigger="logger.log('TreeView has been created')"
-                        ej-on-node-expand.trigger="nodeExpand($event)" ej-on-node-collapse.trigger="nodeCollapse($event)"
-                        ej-on-before-expand.trigger="beforeExpand($event)" ej-on-before-collapse.trigger="beforeCollapse($event)"
-                        ej-on-node-select.trigger="nodeSelect($event)" ej-on-node-check.trigger="nodeCheck($event)"
-                        ej-on-node-uncheck.trigger="nodeUncheck($event)" ej-on-node-drag-start.trigger="nodeDragStart($event)"
-                        ej-on-node-drag.trigger="nodeDrag($event)" ej-on-node-drag-stop.trigger="nodeDragStop($event)"
-                        ej-on-node-dropped.trigger="nodeDropped($event)" ej-on-before-edit.trigger="beforeEdit($event)"
-                        ej-on-node-edit.trigger="nodeEdit($event)">                        
+                      <ul id="treeView"ej-tree-view="e-width:250;
+                        e-allow-drag-and-drop:true;
+                        e-allow-drop-child:true;
+                        e-allow-drop-sibling:true;
+                        e-show-checkbox:true;
+                        e-allow-editing:true" e-on-create.trigger="logger.log('TreeView has been created')"
+                        e-on-node-expand.trigger="nodeExpand($event)" e-on-node-collapse.trigger="nodeCollapse($event)"
+                        e-on-before-expand.trigger="beforeExpand($event)" e-on-before-collapse.trigger="beforeCollapse($event)"
+                        e-on-node-select.trigger="nodeSelect($event)" e-on-node-check.trigger="nodeCheck($event)"
+                        e-on-node-uncheck.trigger="nodeUncheck($event)" e-on-node-drag-start.trigger="nodeDragStart($event)"
+                        e-on-node-drag.trigger="nodeDrag($event)" e-on-node-drag-stop.trigger="nodeDragStop($event)"
+                        e-on-node-dropped.trigger="nodeDropped($event)" e-on-before-edit.trigger="beforeEdit($event)"
+                        e-on-node-edit.trigger="nodeEdit($event)">                        
                         <li class="expanded">
                             Cricket
                             <ul>
@@ -54,12 +50,11 @@
               </tr>               
           </tbody>
       </table>      
-    </div>  
   <div id="Logger" class="box">
     <h4>Event Trace</h4>
      <logger view-model.ref="logger"></logger>
        <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+           <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger = "logger.clear()" ></button>
        </div>
   </div>
 </template>

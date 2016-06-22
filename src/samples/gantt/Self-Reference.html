@@ -1,17 +1,17 @@
 <template>
+ <require from="./Default-Sample.css"></require>
     <div>
-        <ej-gantt id="gantt" ej-data-source.bind="ProjectData" 
-		ej-task-id-mapping="TaskID" 
-		ej-task-name-mapping="TaskName"
-        ej-start-date-mapping="StartDate" 
-		ej-allow-drag-and-drop="true" 
-		ej-allow-gantt-chart-editing="true" 
-		ej-tree-column-index="1" 
-                  ej-is-responsive="true"
-                  ej-parent-task-id-mapping="parentID"
-                  ej-end-date-mapping="EndDate"
-                  ej-progress-mapping="Progress">
-
+        <ej-gantt id="gantt" e-data-source.bind="ProjectData" 
+            e-task-id-mapping="TaskID" 
+            e-task-name-mapping="TaskName"
+            e-start-date-mapping="StartDate" 
+            e-allow-drag-and-drop="true" 
+            e-allow-gantt-chart-editing="true" 
+            e-tree-column-index="1" 
+            e-is-responsive="true"
+            e-parent-task-id-mapping="parentID"
+            e-end-date-mapping="EndDate"
+            e-progress-mapping="Progress">
         </ej-gantt>
     </div>
 </template>

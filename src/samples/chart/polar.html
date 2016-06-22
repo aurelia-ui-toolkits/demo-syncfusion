@@ -1,18 +1,14 @@
 <template>
-  <div>
-     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size"  ej-primary-y-axis.bind="primaryYAxis" ej-common-series-options.bind="commonSeriesOptions">
-	    <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName2" ej-name="Area" ej-draw-type="Area"
-		 ej-marker.bind="marker" ej-fill="#E94649">
-	   </ej-series>
-	   
-	    <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName1" ej-name="Column" ej-draw-type="Column"  
-		 ej-z-order=1>
-	    </ej-series>
-	   
-	   <ej-series ej-data-source.bind="dataList" ej-x-name="xName" ej-y-name="yName" ej-name="Line" ej-z-order=2 
-	    ej-marker.bind="marker" ej-fill="#6FAAB0">
-	   </ej-series>    
-	
-	</ej-chart>
-  </div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeriesOptions">
+            <ej-series e-data-source.bind="dataList" e-x-name="xName" e-y-name="yName2" e-name="Area" e-draw-type="Area" e-marker.bind="marker"
+                       e-fill="#E94649">
+            </ej-series>
+            <ej-series e-data-source.bind="dataList" e-x-name="xName" e-y-name="yName1" e-name="Column" e-draw-type="Column" e-z-order=1>
+            </ej-series>
+            <ej-series e-data-source.bind="dataList" e-x-name="xName" e-y-name="yName" e-name="Line" e-z-order=2 e-marker.bind="marker"
+                       e-fill="#6FAAB0">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

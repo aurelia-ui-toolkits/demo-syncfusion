@@ -1,16 +1,12 @@
 <template>
-<div>
-<ej-chart  id="container" ej-legend.bind="legend" ej-enable3-d= "true" ej-enable-rotation= "true" ej-depth= "100" 
-ej-wall-size= "2"  ej-tilt= "0" ej-rotation= "34" ej-perspective-angle= "90" ej-side-by-side-series-placement="true" 
-ej-size.bind="size" ej-title.bind="title" ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis" 
-ej-common-series-options.bind="commonSeriesOptions" >
-	 
-	   <ej-series ej-data-source.bind="FruitsList" ej-x-name="xName" ej-y-name="yName" ej-name="Minerals Content in Apple" >
-	   </ej-series>    
-	   
-       <ej-series ej-data-source.bind="FruitsList" ej-x-name="xName" ej-y-name="yName1" ej-name="Minerals Content in Banana">
-	   </ej-series>
-	   
-</ej-chart>
-</div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-enable3-d="true" e-enable-rotation="true" e-depth="100" e-wall-size="2"
+                  e-tilt="0" e-rotation="34" e-perspective-angle="90" e-side-by-side-series-placement="true" e-size.bind="size" e-title.bind="title"
+                  e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeriesOptions">
+            <ej-series e-data-source.bind="FruitsList" e-x-name="xName" e-y-name="yName" e-name="Minerals Content in Apple">
+            </ej-series>
+            <ej-series e-data-source.bind="FruitsList" e-x-name="xName" e-y-name="yName1" e-name="Minerals Content in Banana">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

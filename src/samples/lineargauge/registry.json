@@ -20,6 +20,6 @@
     },
 	"user-interaction": {
 	  "files": ["html", "js"]
-    },
+    }
   }
 }

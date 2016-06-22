@@ -54,7 +54,7 @@ export class BasicUse {
       ]
     };
     this.primaryYAxis = {title: {text: 'Amount'}};
-    this.size = {height: '460px', width: '950px'};
+    this.size = {height: '460px', width: '750px'};
     this.legend = {visible: true};
     this.loadTheme = 'laodTheme';
     this.commonSeries = {

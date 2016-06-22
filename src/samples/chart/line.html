@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <ej-chart id="container" e-legend-visible=true e-size.bind="size" e-title.bind="title" e-primary-x-axis.bind="primaryXAxis"
+                  e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeries">
+            <ej-series e-data-source.bind="EfficiencyList" e-x-name="Year" e-y-name="yName" e-name="India">
+            </ej-series>
+            <ej-series e-data-source.bind="EfficiencyList" e-x-name="Year" e-y-name="yName1" e-name="Germany">
+            </ej-series>
+            <ej-series e-data-source.bind="EfficiencyList" e-x-name="Year" e-y-name="yName2" e-name="England">
+            </ej-series>
+            <ej-series e-data-source.bind="EfficiencyList" e-x-name="Year" e-y-name="yName3" e-name="France">
+            </ej-series>
+        </ej-chart>
+    </div>
+</template>

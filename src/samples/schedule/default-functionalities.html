@@ -1,7 +1,6 @@
-<template>
-    <require from="root/vendors/styles/web/responsive-css/ej.responsive.css"></require>
+<template>    
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="575px" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/03/2014">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="575px" e-appointment-settings.bind="AppointmentList" e-current-date="04/03/2014">
         </ej-schedule>
     </div>
     <div id="property-window" class="box wide">
@@ -10,7 +9,7 @@
                 <label>Orientation</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <select ej-drop-down-list="ej-data-source.bind:orientation;ej-selected-index:0;width:100px" ej-on-select.trigger="onChange($event)" id="orientation" />
+                <select ej-drop-down-list="e-data-source.bind:orientation;e-selected-index:0;width:100px" e-on-select.trigger="onChange($event)" id="orientation" />
             </div>
         </div>
     </div>

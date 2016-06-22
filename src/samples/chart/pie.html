@@ -1,12 +1,8 @@
 <template>
-  
-  <div>
-     <ej-chart  id="container" ej-legend.bind="legend" ej-size.bind="size" ej-title.bind="title" 
-	 ej-common-series-options.bind="commonSeriesOptions">
-	 
-	   <ej-series ej-data-source.bind="ExpendituresList" ej-x-name="xName" ej-y-name="yName" >
-	   </ej-series>   	
-	   
-    </ej-chart>
-  </div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions">
+            <ej-series e-data-source.bind="ExpendituresList" e-x-name="xName" e-y-name="yName">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

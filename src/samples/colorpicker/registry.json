@@ -6,13 +6,13 @@
       "default" : true,
       "files": ["html"]
     },    
-    "Display-lnline": {
+    "Display-Inline": {
       "default" : false,
       "files": ["html"]
     },     
     "Presets": {
       "default" : false,
-      "files": ["html", "js", "css"]
+      "files": ["html", "js"]
     },
      "Color-Palette": {
       "default" : false,
@@ -22,17 +22,14 @@
       "default" : false,
       "files": ["html", "js"]
     },
-    "API": {
+    "API's": {
       "default" : false,
-      "files": ["html", "js", "css"]
+      "title" : "API's",
+      "files": ["html", "js"]
     },
     "Events": {
       "default" : false,
       "files": ["html", "js"]
-    },
-      "Keyboard-Interaction": {
-      "default" : false,
-      "files": ["html", "js","css"]
-    }                                           
+    }                                          
   }
 }

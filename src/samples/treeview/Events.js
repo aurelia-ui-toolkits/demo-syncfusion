@@ -1,9 +1,9 @@
 export class Events {
     nodeExpand(args) {
-      this.logger.log($.trim(args.detail.value) + ' node is Expanded');
+      this.logger.log($.trim(args.detail.value) + ' node is expanded');
     }
     nodeCollapse(args) {
-      this.logger.log($.trim(args.detail.value) + ' node is Collapsed');
+      this.logger.log($.trim(args.detail.value) + ' node is collapsed');
     }
     beforeExpand(args) {
       this.logger.log('BeforeExpand event is fired for ' + $.trim(args.detail.value) + ' node.');
@@ -37,6 +37,6 @@ export class Events {
       this.logger.log('BeforeEdit event is fired for ' + $.trim(args.detail.currentElement.text()) + ' node.');
     }
     nodeEdit(args) {
-      this.logger.log('Edit event is fired for ' + $.trim(args.detail.currentElement.text()) + ' node.');
+      this.logger.log($.trim(args.detail.oldText) +'Node has been edited to ' + $.trim(args.detail.newText));
     }
 }

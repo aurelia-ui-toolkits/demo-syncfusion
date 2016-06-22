@@ -4,7 +4,7 @@
         <div id="radialtarget1" class="content-container-fluid">
             <div class="row">
                 <div class="cols-sample-area">
-                    <textarea id="rteSample1"  style="height: 440px" ej-rte="ej-width.bind:width; ej-min-width:10; ej-show-toolbar: false; ej-show-context-menu:false;" ej-on-select.trigger="radialShow($event)" ej-on-change.trigger="rteChange($event)">
+                    <textarea id="rteSample1"  style="height: 440px" ej-rte="e-width.bind:width; e-min-width:10; e-show-toolbar: false; e-show-context-menu:false;" e-on-select.trigger="radialShow($event)" e-on-change.trigger="rteChange($event)">
 Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
 Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
@@ -19,11 +19,11 @@ A view requests from the model the information that it needs to generate an outp
                 </div>
             </div>
         </div>
-        <ej-radial-menu id="defaultradialmenu" ej-auto-open="false" ej-on-click.trigger="itemsClick($event)">            
-                <ej-item ej-image-url="images/RadialMenu/font.png" ej-text="Bold"></ej-item>
-                <ej-item ej-image-url="images/RadialMenu/f1.png" ej-text="Italic"></ej-item>
-                <ej-item ej-image-url="images/RadialMenu/redo.png" ej-text="Redo" ej-enabled="false"></ej-item>
-                <ej-item ej-image-url="images/RadialMenu/undo.png" ej-text="Undo" ej-enabled="false"></ej-item>     
+        <ej-radial-menu id="defaultradialmenu" e-auto-open="false" e-on-click.trigger="itemsClick($event)">            
+                <ej-item e-image-url="images/RadialMenu/font.png" e-text="Bold"></ej-item>
+                <ej-item e-image-url="images/RadialMenu/f1.png" e-text="Italic"></ej-item>
+                <ej-item e-image-url="images/RadialMenu/redo.png" e-text="Redo" e-enabled="false"></ej-item>
+                <ej-item e-image-url="images/RadialMenu/undo.png" e-text="Undo" e-enabled="false"></ej-item>     
         </ej-radial-menu>
     </div>
     

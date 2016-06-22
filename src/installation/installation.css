@@ -1,0 +1,15 @@
+au-markdown p{
+    font-size: 15px;
+    font-weight: 400;
+}
+#installation-tab .e-content.e-content-item{
+    padding: 0px 20px;
+}
+
+#installation-tab .prettyprint.linenums li{
+    display: list-item !important;
+    border: none;
+}
+#installation-tab.e-tab .e-activetop{
+  border: 1px solid #cccccc;
+}

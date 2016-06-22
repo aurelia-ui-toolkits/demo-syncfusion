@@ -1,13 +1,11 @@
 <template>
-    <div class='container-fluid'>
         <table class='container-fluid'>
             <tbody class='container-fluid'>
                 <tr class='row'>
-                <th colspan="2"> TreeView With Context Menu</th>
                 </tr>
                 <tr class='row'>                    
                     <td colspan="2">
-                        <ul id="treeView" ej-tree-view="ej-width:250">
+                        <ul id="treeView" ej-tree-view="e-width:250">
                             <li class="expanded">ASP.NET MVC Team
                                 <ul>
                                     <li>Smith</li>
@@ -48,11 +46,10 @@
                 </tr>                
             </tbody>
         </table>
-    </div>
     <div>
-        <ul id="treeviewMenu" ej-menu="ej-menu-type:contextmenu;
-        ej-open-on-click:false;
-        ej-context-menu-target:#treeView" ej-on-click.trigger="onMenuClick($event)" ej-on-before-open.trigger="onBeforeOpen($event)" ej-on-close.trigger="onClose($event)">
+        <ul id="treeviewMenu" ej-menu="e-menu-type:contextmenu;
+        e-open-on-click:false;
+        e-context-menu-target:#treeView" e-on-click.trigger="onMenuClick($event)" e-on-before-open.trigger="onBeforeOpen($event)" e-on-close.trigger="onClose($event)">
             <li><a href="#">Add New Item</a></li>
             <li><a href="#">Remove Item</a></li>
             <li><a href="#">Disable Item</a></li>

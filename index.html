@@ -2,12 +2,11 @@
 <html>
   <head>
     <title>Aurelia Catalog</title>
-    <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/styles/web/bootstrap-theme/ej.web.all.min.css">
-	<link rel="stylesheet"  href="vendors/styles/web/responsive-css/ej.responsive.css " />
+    <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-	<meta charset="UTF-8">
+	  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
 
   <body aurelia-app="main">
@@ -15,6 +14,17 @@
       <div class="message">Aurelia Syncfusion Components Catalog</div>
       <i class="fa fa-spinner fa-spin"></i>
     </div>
+ <script>
+      function validateBrowser() {        
+        var uaValidate = navigator.userAgent.match(/(MSIE |Trident.*rv[ :])([0-9]+)/);
+        if(uaValidate != null)
+          return uaValidate[2]; 
+        return null;
+      }
+      var ieVer = validateBrowser();
+      if (ieVer != null && ieVer < 11)
+        location.replace("error.html");
+    </script>
    <script src="jspm_packages/npm/bluebird@3.3.4/js/browser/bluebird.min.js"></script>
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>

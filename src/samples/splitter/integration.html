@@ -4,11 +4,12 @@
         <div class="row">
             <div class="cols-sample-area splitter-width">
                 <!----------------Splitter Control---------------->
-                <ej-splitter id="outterSplitter"  ej-height="350" ej-width="100%" ej-properties.bind="properties" ej-enable-auto-resize="true">
+                <ej-splitter id="outterSplitter"  e-height="350" e-width="100%" e-properties.bind="properties"
+                 e-enable-auto-resize="true">
                     <div>
                         <div class="cont">
                             <h3 class="h3">FRENCH CITIES</h3>
-                            <ul id="treeView" class="visibleHide" ej-tree-view ej-on-node-select.trigger="treeClicked($event)">
+                            <ul id="treeView" class="visibleHide" ej-tree-view="" e-on-node-select.trigger="treeClicked($event)">
                                 <li>PARIS
                                         <ul>
                                             <li id="paris" class="_child">Speciality</li>

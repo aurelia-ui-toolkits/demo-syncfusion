@@ -2,14 +2,11 @@
   "title": "Menu",
   "documentation":"http://help.syncfusion.com/js/api/ejMenu",
   "samples": {
-    "basic-use": {
+    "default-functionalities": {
       "default" : true,
-      "files": ["html", "js", "css"]
-    },
-    "template": {
-        "files": ["html", "js", "css"]
-    },
-    "API": {
+      "files": ["html"]
+    },    
+    "API's": {
         "files": ["html", "js"]
     },
     "events": {

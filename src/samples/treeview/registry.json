@@ -1,5 +1,5 @@
 {
-  "title": "ScrollBar",
+  "title": "TreeView",
   "documentation":"http://help.syncfusion.com/js/api/ejtreeview",
   "samples": {
     "Default-Functionalities": {
@@ -33,7 +33,8 @@
 "State-Maintenance": {
       "files": ["html"]
     }, 
-"API": {
+"API's": {
+     "title" : "API's",
       "files": ["html", "js" ]
     }, 
 "Events": {
@@ -41,9 +42,6 @@
     }, 
 "RTL": {
       "files": ["html"]
-    }, 
-"Keyboard-Interaction": {
-      "files": ["html", "js","css" ]
     }
   }
 }

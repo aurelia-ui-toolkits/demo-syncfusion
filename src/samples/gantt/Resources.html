@@ -1,20 +1,21 @@
 <template>
+ <require from="./Default-Sample.css"></require>
     <div>
         <ej-gantt id="gantt"
-                  ej-data-source.bind="ProjectData"
-                  ej-task-id-mapping="TaskId"
-                  ej-task-name-mapping="TaskName"
-                  ej-start-date-mapping="StartDate"
-                  ej-duration-mapping="Duration"
-                  ej-progress-mapping="Progress"
-                  ej-predecessor-mapping="Predecessor"
-                  ej-resource-info-mapping="Resources"
-                  ej-resource-name-mapping="Name"
-                  ej-resource-id-mapping="Id"
-                  ej-resources.bind="Resource"
-                  ej-tree-column-index="1"
-                  ej-is-responsive="true"
-                  ej-child-mapping="Children">
+                  e-data-source.bind="ProjectData"
+                  e-task-id-mapping="TaskId"
+                  e-task-name-mapping="TaskName"
+                  e-start-date-mapping="StartDate"
+                  e-duration-mapping="Duration"
+                  e-progress-mapping="Progress"
+                  e-predecessor-mapping="Predecessor"
+                  e-resource-info-mapping="Resources"
+                  e-resource-name-mapping="Name"
+                  e-resource-id-mapping="Id"
+                  e-resources.bind="Resource"
+                  e-tree-column-index="1"
+                  e-is-responsive="true"
+                  e-child-mapping="Children">
         </ej-gantt>
     </div>
 </template>

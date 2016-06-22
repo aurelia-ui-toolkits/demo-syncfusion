@@ -79,13 +79,13 @@ export class Template {
             Description: '',
             AllDay: false,
             Recurrence: true,
-            RecurrenceRule: 'FREQ=DAILY;INTERVAL=2;COUNT=10',
+            RecurrenceRule: 'FREQ=WEEKLY;COUNT=10;INTERVAL=1;BYDAY=WE',
             categoryId: 1, roomId: '2', ownerId: '3'
           }, {
             Id: 101,
             Subject: 'Hello Sea Gold',
-            StartTime: '2014/4/2 04:00:00',
-            EndTime: '2014/4/2 05:00:00',
+            StartTime: '2014/4/3 04:00:00',
+            EndTime: '2014/4/3 05:00:00',
             StartTimeZone: 'UTC +05:30',
             EndTimeZone: 'UTC +05:30',
             Description: '',
@@ -95,14 +95,14 @@ export class Template {
           }, {
             Id: 105,
             Subject: 'Daily Planet',
-            StartTime: '2014/4/5 05:00:00',
-            EndTime: '2014/4/5 06:30:00',
+            StartTime: '2014/4/7 05:00:00',
+            EndTime: '2014/4/7 06:30:00',
             StartTimeZone: 'UTC +05:30',
             EndTimeZone: 'UTC +05:30',
             Description: '',
             AllDay: false,
             Recurrence: true,
-            RecurrenceRule: 'FREQ=DAILY;INTERVAL=2;COUNT=10',
+            RecurrenceRule: 'FREQ=WEEKLY;COUNT=10;INTERVAL=1;BYDAY=MO,TH',
             categoryId: 1, roomId: '1', ownerId: '1'
           }, {
             Id: 106,
@@ -119,8 +119,8 @@ export class Template {
           }, {
             Id: 109,
             Subject: 'MayDay',
-            StartTime: '2014/3/30 06:30:00',
-            EndTime: '2014/3/30 07:30:00',
+            StartTime: '2014/3/31 06:30:00',
+            EndTime: '2014/3/31 07:30:00',
             StartTimeZone: 'UTC +05:30',
             EndTimeZone: 'UTC +05:30',
             Description: '',

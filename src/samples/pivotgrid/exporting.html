@@ -1,10 +1,9 @@
 <template>
   <require from="./basic-use.css"></require>
-  
   <div>
-    <ej-pivot-grid ej-data-source.bind="pivotData">
+    <ej-pivot-grid e-data-source.bind="pivotData">
     </ej-pivot-grid>
     <div style="margin:25px 10px 10px 10px; float:left">Excel Export</div>
-    <button id="button" ej-button="ej-text.bind:textValue" ej-on-click.trigger="btnExportClick($event)" style="margin:15px 10px 10px 10px"></button>
+    <button id="button" ej-button="e-text.bind:textValue" e-on-click.trigger="btnExportClick($event)" style="margin:15px 10px 10px 10px"></button>
   </div>
 </template>

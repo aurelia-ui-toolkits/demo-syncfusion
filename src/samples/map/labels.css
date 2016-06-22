@@ -1,0 +1,23 @@
+ej-map {
+    height: inherit;
+    z-index: 0;
+    min-height:435px;    
+    display: block;
+}
+
+   p.small {line-height:70%;}
+            p.big {line-height:110%;}
+
+ .tip {
+                    border: 1px solid #4D4D4D;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                    border-radius: 7px;
+                    margin-right: 25px;
+                    min-width: 110px;
+                    padding-top: 9px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    width: auto;
+                    height: auto;
+                    background: #4D4D4D;
+                }       

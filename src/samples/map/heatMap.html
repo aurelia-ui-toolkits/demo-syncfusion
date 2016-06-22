@@ -1,0 +1,24 @@
+<template>
+	<require from="./heatMap.css"></require>
+<div>
+ 	<ej-map e-enable-animation="true" e-enable-resize="false" >
+		 <ej-layer e-layer-type="geometry" e-enable-selection="false" e-enable-mouse-hover="true" e-show-map-items="false" e-shape-settings.bind="shapesettings" e-shape-data.bind="usMap" e-show-tooltip="true" e-tooltip-template="template" e-shape-data-path="name" e-shape-property-path="name" e-data-source.bind="USA_State_PopulationData" e-legend-settings.bind="legendsettings" e-shape-settings-color-mappings="colormappings" ></ej-layer>
+	</ej-map>			
+	
+</div>
+
+<script  id="template" type="application/jsrender">		
+        
+    <div style="margin-left:17px;margin-top:-45px;">             
+	    <div class="tip">	
+            <p class="small" style="margin-top:8px">
+                <label  style="color:white;font-size:14px;font-weight:normal;">{{:name}}</label>
+            </p>
+            <p class="big">
+                <label style="color:white;font-size:11px;font-weight:normal;">Population : {{:population}}</label>
+            </p>
+		</div> 
+    </div>               
+</script>         
+
+</template>

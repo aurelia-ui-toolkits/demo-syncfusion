@@ -1,0 +1,13 @@
+{
+  "title": "PivotGauge",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivotgauge",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    },
+    "OLAP": {
+      "files": ["html", "js"]
+    }
+  }
+}

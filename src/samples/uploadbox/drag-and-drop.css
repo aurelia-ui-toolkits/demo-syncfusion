@@ -1,8 +1,8 @@
-.control {
+.uploadbox-drag-and-drop-control {
     width: 40%;
     height: 100%;
 }
 
-#UploadDefault_SelectButton{
+#UploadDragAndDrop .e-selectpart{
     height: 35px;
 }

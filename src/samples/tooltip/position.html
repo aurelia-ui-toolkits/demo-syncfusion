@@ -1,45 +1,49 @@
 <template>
     <require from="./position.css"></require>
-<div class="cols-sample-area">
-                <div style="width: 250px">
-                    <ul id="treeView" ej-tree-view="" ej-on-create.trigger="onCreate()">
-                        <li class="expanded" title="Fiction Book Lists">Fiction Book Lists
+    <div class="row">
+<div class="tree-view-tooltip">
+                <div class="tree-view-tooltip-frame">
+                    <ul id="treeView" ej-tree-view="" ej-tooltip="e-width:230px;e-height:65px;e-target.bind:tooltipTarget;e-position.bind:tooltipPosition" e-on-create.trigger="onCreate()" e-on-before-open.trigger="onOpen($event)" 
+                    e-on-tracking.trigger="onOpen($event)" >
+                        <li class="expanded">Fiction Book Lists
 							<ul>
-                                <li title="To Kill a Mockingbird">To Kill a Mockingbird</li>
-                                <li title="Pride and Prejudice">Pride and Prejudice</li>
-                                <li title="Harry Potter"> Harry Potter</li>
-                                <li title="The Hobbit"> The Hobbit</li>
+                                <li>To Kill a Mockingbird</li>
+                                <li>Pride and Prejudice</li>
+                                <li> Harry Potter</li>
+                                <li> The Hobbit</li>
                             </ul>
                         </li>
-						<li class="expanded" title="Mystery Book Lists"> Mystery Book Lists
+						<li class="expanded"> Mystery Book Lists
                             <ul>
-                                <li title="And Then There Where None">And Then There Where None</li>
-                                <li title="Angles & Demons">Angles & Demons</li>
-                                <li title="In Cold Blood">In Cold Blood</li>
-                                <li title="The Name of the Rose">The Name of the Rose</li>
+                                <li>And Then There Where None</li>
+                                <li>Angles & Demons</li>
+                                <li>In Cold Blood</li>
+                                <li>The Name of the Rose</li>
                             </ul>
 						</li>
                     </ul>
                 </div>
             </div>
+            </div>
         <div id="property-window" class="box wide">
             <h4>Properties</h4>
             <div class="row">
-                        <div class="col-md-6"> Associate </div>
-                        <div class="col-md-6">
-                            <select id="associate" ej-drop-down-list="ej-selected-index:0;ej-width:110px" ej-on-change.trigger="associateChange($event)">
+                        <div class="col-md-6 top-margin"> Associate </div>
+                        <div class="col-md-6 top-margin">
+                            <select id="associate" ej-drop-down-list="e-selected-index:0;e-width:110px" e-on-change.trigger="associateChange($event)">
                                 <option value="target">Target</option>
                                 <option value="window">Window</option>
-                                <option value="mouse">Mouse</option>
+                                <option value="mousefollow">Mouse Follow</option>
+								<option value="mouseenter">Mouse Enter</option>
                                 <option value="axis">Axis</option>
                             </select>
                         </div>
                     </div>
 					
                     <div class="row targetValue">
-                        <div class="col-md-6"> Target Position</div>
-                        <div class="col-md-6">
-                            <select id="targetHorizontal" ej-drop-down-list="ej-selected-index:0;ej-width:110px" ej-on-change.trigger="targetHorizontalChange($event)">
+                        <div class="col-md-6 top-margin"> Target Position</div>
+                        <div class="col-md-6 top-margin">
+                            <select id="targetHorizontal" ej-drop-down-list="e-selected-index:0;e-width:110px" e-on-change.trigger="targetHorizontalChange($event)">
                                 <option value="right-center">Right Center</option>
 								<option value="right-top">Right Top</option>
 								<option value="right-bottom">Right Bottom</option>
@@ -54,9 +58,9 @@
                     </div>
                     
                     <div class="row stemValue">
-                        <div class="col-md-6"> Tooltip Position</div>
-                        <div class="col-md-6">
-                            <select id="stemHorizontal" ej-drop-down-list="ej-selected-index:0;ej-width:110px" ej-on-change.trigger="stemHorizontalChange($event)">
+                        <div class="col-md-6 top-margin"> Tooltip Position</div>
+                        <div class="col-md-6 top-margin">
+                            <select id="stemHorizontal" ej-drop-down-list="e-selected-index:0;e-width:110px" e-on-change.trigger="stemHorizontalChange($event)">
                                 <option value="left-center">Left Center</option>
 								<option value="left-top">Left Top</option>
 								<option value="left-bottom">Left Bottom</option>
@@ -70,13 +74,13 @@
                         </div>
                     </div>
                     <div class="row" id="axisValue">
-                        <div class="col-md-6"> x-Axis </div>
-                        <div class="col-md-6">
-                            <input type="text" id="xAxis" ej-numeric-textbox="ej-value:110;ej-width:100%;ej-decimal-places:0" ej-on-change.trigger="change($event)" />
+                        <div class="col-md-6 top-margin"> x-Axis </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="text" id="xAxis" ej-numeric-textbox="e-value:400;e-width:100%;e-decimal-places:0" e-on-change.trigger="change($event)" />
                         </div>
-                        <div class="col-md-6"> y-Axis </div>
-                        <div class="col-md-6">
-                            <input type="text" id="yAxis" ej-numeric-textbox="ej-value:110;ej-width:100%;ej-decimal-places:0" ej-on-change.trigger="change($event)" />
+                        <div class="col-md-6 top-margin"> y-Axis </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="text" id="yAxis" ej-numeric-textbox="e-value:110;e-width:100%;e-decimal-places:0" e-on-change.trigger="change($event)" />
                         </div>
                     </div>
         </div>

@@ -1,12 +1,12 @@
 <template>
     <div>        
-        <input type="text" id="skillsets" ej-drop-down-list="ej-data-source.bind:dataSource;ej-fields.bind:fields;ej-watermark-text.bind:watermarkText;ej-show-checkbox.bind:checkBox;ej-enable-filter-search:true;ej-enable-popup-resize:true" ej-on-create.trigger="create()" ej-on-popup-hide.trigger="popupHide()" ej-on-popup-shown.trigger="popupShown()" ej-on-before-popup-shown.trigger="beforePopupShown()" ej-on-change.trigger="change($event)" ej-on-select.trigger="select($event)" ej-on-action-complete.trigger="actionComplete()" ej-on-action-failure.trigger="actionFailure()" ej-on-action-success.trigger="actionSuccess()" ej-on-data-bound.trigger="dataBound()" ej-on-search.trigger="search($event)" ej-on-popup-resize-start.trigger="popupResizeStart()" ej-on-popup-resize.trigger="popupResize()" ej-on-popup-resize-stop.trigger="popupResizeStop()" />
+        <input type="text" id="skillsets" ej-drop-down-list="e-data-source.bind:dataSource;e-fields.bind:fields;e-watermark-text.bind:watermarkText;e-show-checkbox.bind:checkBox;e-enable-filter-search:true;e-enable-popup-resize:true" e-on-create.trigger="create()" e-on-popup-hide.trigger="popupHide()" e-on-popup-shown.trigger="popupShown()" e-on-before-popup-shown.trigger="beforePopupShown()" e-on-change.trigger="change($event)" e-on-select.trigger="select($event)" e-on-action-complete.trigger="actionComplete()" e-on-action-failure.trigger="actionFailure()" e-on-action-success.trigger="actionSuccess()" e-on-data-bound.trigger="dataBound()" e-on-search.trigger="search($event)" e-on-popup-resize-start.trigger="popupResizeStart()" e-on-popup-resize.trigger="popupResize()" e-on-popup-resize-stop.trigger="popupResizeStop()" />
     </div>
-     <div id="Logger" class="box">
+     <div id="Logger" class="box wide">
        <h4>Event Trace</h4>
        <logger view-model.ref="logger"></logger>
        <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+           <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger = "logger.clear()" ></button>
        </div>
       </div>
 </template>

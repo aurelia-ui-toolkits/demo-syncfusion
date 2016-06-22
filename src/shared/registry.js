@@ -2,10 +2,7 @@ export class Registry {
   load(config, control) {
     return System.import(`samples/${control}/registry.json!json`)
     .then(registry => {
-      config.title = registry.title;
-
       let map = [];
-
       let samples = Object.keys(registry.samples);
       samples.forEach(_sample => {
         let sample = registry.samples[_sample];
@@ -18,7 +15,7 @@ export class Registry {
         sample.title = sample.title || this.getTitleFromRoute(_sample);
         sample.moduleId = sample.moduleId || 'sample-runner';
         sample.nav = sample.nav || true;
-        sample.files = sample.files || ['html', 'js'];
+        sample.files = sample.files || ['html'];
         sample.files.forEach(extension => {
           sample[extension] = `${sample.path}.${extension}`;
         });
@@ -46,7 +43,9 @@ export class Registry {
   }
 
   getTitleFromRoute(route) {
-    route = route.replace(/-/g, ' ');
+    route = route.replace(/-(.)/g, function(match, text) {
+      return ' ' + text.toUpperCase();
+    });
     route = route.charAt(0).toUpperCase() + route.slice(1);
     return route;
   }

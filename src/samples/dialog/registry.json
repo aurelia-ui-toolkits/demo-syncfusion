@@ -10,6 +10,7 @@
       "files":["html","js","css"]
     },
     "rtl":{
+      "title":"RTL",
       "files":["html","js","css"]
     },
     "model-dialog":{

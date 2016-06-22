@@ -1,12 +1,16 @@
 {
-    "Most popular": {
-        "Button": {
-            "status": "done",
-            "moduleId": "button"
-        },
+    "Grids": {
         "Grid": {
             "status": "done",
             "moduleId": "grid"
+        },
+        "TreeGrid": {
+            "status": "done",
+            "moduleId": "treegrid"
+        },
+        "Spreadsheet": {
+            "status": "done",
+            "moduleId": "spreadsheet"
         }
     },
     "Navigation": {
@@ -43,28 +47,27 @@
             "moduleId": "treeview"
         },
         "Accordion": {
-        "status": "done", 
-        "moduleId": "accordion"
+            "status": "done",
+            "moduleId": "accordion"
+        },
+        "NavigationDrawer": {
+            "status": "done",
+            "moduleId": "navigationdrawer"
+        },
+        "RadialMenu": {
+            "status": "done",
+            "moduleId": "radialmenu"
+        },
+        "FileExplorer": {
+            "status": "done",
+            "moduleId": "fileexplorer"
+        },
+        "Toolbar": {
+            "status": "done",
+            "moduleId": "toolbar"
+        }
     },
-        "NavigationDrawer":{
-            "status" : "done", 
-            "moduleId" : "navigationdrawer"
-        },
-        "RadialMenu":{
-            "status" : "done", 
-            "moduleId" : "radialmenu"
-        },
-		"FileExplorer":{
-            "status" : "done", 
-            "moduleId" : "fileexplorer"
-        },
-		"Toolbar": {
-			"status": "done",
-			"moduleId": "toolbar"
-		}
-
-    },
-    "LAYOUT": {
+    "Layout": {
         "Splitter": {
             "status": "done",
             "moduleId": "splitter"
@@ -85,10 +88,10 @@
             "status": "done",
             "moduleId": "tile"
         },
-		"Tooltip": {
-			"status": "done",
-			"moduleId": "tooltip"
-		}
+        "Tooltip": {
+            "status": "done",
+            "moduleId": "tooltip"
+        }
     },
     "Data Visualization": {
         "Schedule": {
@@ -107,17 +110,21 @@
             "status": "done",
             "moduleId": "gantt"
         },
-        "TreeGrid": {
+		"Map": {
             "status": "done",
-            "moduleId": "treegrid"
+            "moduleId": "map"
         },
-        "Spreadsheet": {
+		"TreeMap": {
             "status": "done",
-            "moduleId": "spreadsheet"
+            "moduleId": "treemap"
         },
         "Chart": {
             "status": "done",
             "moduleId": "chart"
+        },
+		"Sparkline": {
+            "status": "done",
+            "moduleId": "sparkline"
         },
         "Circular Gauge": {
             "status": "done",
@@ -139,10 +146,10 @@
             "status": "done",
             "moduleId": "rangenavigator"
         },
-		"TagCloud": {
-			"status": "done",
-			"moduleId": "tagcloud"
-		}
+        "TagCloud": {
+            "status": "done",
+            "moduleId": "tagcloud"
+        }
     },
     "Editors": {
         "DatePicker": {
@@ -157,9 +164,9 @@
             "status": "done",
             "moduleId": "datetimepicker"
         },
-        "TextBoxes":{
-            "status":"done",
-            "moduleId":"editors"
+        "TextBoxes": {
+            "status": "done",
+            "moduleId": "editors"
         },
         "ColorPicker": {
             "status": "done",
@@ -173,35 +180,34 @@
             "status": "done",
             "moduleId": "radialslider"
         },
-		"DropDownList": {
-			"status": "done", 
-			"moduleId": "dropdownlist"
-		},
-		"Uploadbox": {
-			"status": "done", 
-			"moduleId": "uploadbox"
-		},
-		"Rating": {
-			"status": "done",
-			"moduleId": "rating"
-		},
-        "Slider":{
-            "status" :"done",
-            "moduleId":"slider"
+        "DropDownList": {
+            "status": "done",
+            "moduleId": "dropdownlist"
         },
-		"RTE": {
-			"status": "done",
-			"moduleId": "rte"
-		}
-        
+        "Uploadbox": {
+            "status": "done",
+            "moduleId": "uploadbox"
+        },
+        "Rating": {
+            "status": "done",
+            "moduleId": "rating"
+        },
+        "Slider": {
+            "status": "done",
+            "moduleId": "slider"
+        },
+        "RTE": {
+            "status": "done",
+            "moduleId": "rte"
+        }
     },
-    "File Formats": {
+    "File Viewer": {
         "PDF Viewer": {
             "status": "done",
             "moduleId": "pdfviewer"
         }
     },
-    "PivotGrid": {
+    "Pivot Grid": {
         "Relational": {
             "status": "done",
             "moduleId": "pivotgrid"
@@ -215,26 +221,32 @@
             "moduleId": "pivotgridcommon"
         }
     },
-    "PivotChart": {
-        "Pivot Chart": {
+    "Pivot Chart": {
+        "PivotChart": {
             "status": "done",
             "moduleId": "pivotchart"
         }
     },
-	"Notification": {
-		"ProgressBar": {
-			"status": "done", 
-			"moduleId": "progressbar"
-		},
-		"WaitingPopup": {
-			"status": "done",
-			"moduleId": "waitingpopup"
-		}
-	},
+	"Pivot Gauge": {
+        "PivotGauge": {
+            "status": "done",
+            "moduleId": "pivotgauge"
+        }
+    },
+    "Notification": {
+        "ProgressBar": {
+            "status": "done",
+            "moduleId": "progressbar"
+        },
+        "WaitingPopup": {
+            "status": "done",
+            "moduleId": "waitingpopup"
+        }
+    },
     "Reporting": {
         "ReportViewer": {
-            "status": "done", 
+            "status": "done",
             "moduleId": "reportviewer"
-		}
-	}
+        }
+    }
 }

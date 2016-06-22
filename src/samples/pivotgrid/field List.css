@@ -5,9 +5,11 @@ ej-pivot-grid#fieldlist {
     overflow: auto;
     float:left;
     margin: 20px 0px 0px 20px;
+    position: relative !important;
 }
 ej-pivot-schema-designer{
     height: 650px;
     width: 40% !important;
     margin-top: 20px;
+    position: relative !important;
 }

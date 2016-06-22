@@ -1,19 +1,19 @@
 <template>
-   
+    <require from="./Default-Sample.css"></require>
             <div>
                 <ej-gantt id="GanttContainer"
-                          ej-data-source.bind="ProjectData"
-                          ej-task-id-mapping="taskID"
-                          ej-task-name-mapping="taskName"
-                          ej-start-date-mapping="startDate"
-                          ej-allow-drag-and-drop="true"
-                          ej-allow-gantt-chart-editing="true"
-                          ej-tree-column-index="1"
-                          ej-child-mapping="subtasks"
-                          ej-end-date-mapping="endDate"
-                          ej-progress-mapping="progress"
-                          ej-toolbar-settings.bind="toolbarSettings"
-                          ej-enable-altrow="false">
+                          e-data-source.bind="ProjectData"
+                          e-task-id-mapping="taskID"
+                          e-task-name-mapping="taskName"
+                          e-start-date-mapping="startDate"
+                          e-allow-drag-and-drop="true"
+                          e-allow-gantt-chart-editing="true"
+                          e-tree-column-index="1"
+                          e-child-mapping="subtasks"
+                          e-end-date-mapping="endDate"
+                          e-progress-mapping="progress"
+                          e-toolbar-settings.bind="toolbarSettings"
+                          e-enable-altrow="false">
                 </ej-gantt>
             </div>
 </template>

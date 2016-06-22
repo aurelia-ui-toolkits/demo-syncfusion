@@ -83,6 +83,8 @@
         .subpage {
             padding: 10px;
             text-align: justify;
+			overflow-x: auto;
+            overflow-y: auto;
         }
 
         #navpane .subpage {

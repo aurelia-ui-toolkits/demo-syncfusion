@@ -1,0 +1,21 @@
+<template>
+	<require from="./selection.css"></require>
+<div>
+ 	<ej-map ej-enable-animation="true">
+		 <ej-layer e-layer-type="geometry" e-enable-selection="true" e-enable-mouse-hover="true" e-show-map-items="false" e-shape-settings.bind="shapesettings" e-shape-data.bind="usMap" e-show-tooltip="true" e-tooltip-template="template" e-shape-data-path="State" e-shape-property-path="name" e-data-source.bind="electiondata"></ej-layer>
+	</ej-map>			
+	
+</div>
+
+<script  id="template" type="application/jsrender">
+		<div class="tip">				
+			<p class="small" style="margin-top:8px">
+				<label  style="color:white;font-size:12px;font-weight:normal;">State : {{:State}}</label>
+            </p>
+            <p class="big">
+                <label style="color:white;font-size:12px;font-weight:normal;">Winner : {{:Candidate}}</label>
+            </p>
+		</div>         
+</script>        
+
+</template>

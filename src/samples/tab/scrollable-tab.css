@@ -1,0 +1,9 @@
+#scrollTab {
+    width: 600px;
+    display: block;
+}
+@media (max-width: 700px) {
+    #scrollTab.e-tab.e-js.e-widget {
+        width: auto !important;
+    }
+}

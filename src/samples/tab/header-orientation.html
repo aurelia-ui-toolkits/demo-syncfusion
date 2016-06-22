@@ -1,6 +1,7 @@
 <template>
+    <require from="./header-orientation.css"></require>
     <div style="height:200px;">
-        <ej-tab id="directionTab" style="width: 550px" ej-height="200">
+        <ej-tab id="directionTab" e-height="200">
             <ul>
                 <li><a href="#rome">Rome</a></li>
                 <li><a href="#paris">Paris</a></li>
@@ -32,7 +33,7 @@
                             Tab Direction
                         </div>
                         <div class="col-md-6">
-                            <select name="selectDirection" id="optDirection" ej-drop-down-list="ej-selected-index:0;ej-width.bind:width" ej-on-change.trigger="onTabDirectionChange($event)">
+                            <select name="selectDirection" id="optDirection" ej-drop-down-list="e-selected-index:0;e-width.bind:width" e-on-change.trigger="onTabDirectionChange($event)">
                                 <option value="top">Header Top</option>
                                 <option value="bottom">Header Bottom    </option>
                                 <option value="left">Header Left</option>

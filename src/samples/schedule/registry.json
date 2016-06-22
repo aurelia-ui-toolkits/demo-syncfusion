@@ -92,7 +92,8 @@
                 "js"
             ]
         },
-        "api": {
+        "api's": {
+            "title" : "API's",
             "files": [
                 "html",
                 "js"

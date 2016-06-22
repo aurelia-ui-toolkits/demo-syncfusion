@@ -2,17 +2,17 @@
 	"title": "RTE",
 	"documentation": "http://help.syncfusion.com/js/api/ejRTE",
 	"samples": {
-		"basic-use": {
+		"default-functionalities": {
 			"default": true,
-			"files": ["html", "js"]
+			"files": ["html"]
 		},
 		"all-tools": {
 			"files": ["html", "js", "css"]
 		},
 		"custom-tools": {
-			"files": ["html", "js"]
+			"files": ["html", "js", "css"]
 		},
-		"API": {
+		"API's": {
 			"files": ["html", "js"]
 		},
 		"events": {

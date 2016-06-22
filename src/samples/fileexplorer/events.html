@@ -3,7 +3,7 @@
     <div class="row">
         <div class="frame">
             <div>
-                <ej-file-explorer id="fileexplorer" ej-path.bind="path" ej-ajax-action.bind="ajaxAction" ej-width.bind="width" ej-height.bind="height" ej-on-select.trigger="logger.log('folder has been selected')" ej-on-cut.trigger="logger.log('folder has been cut')" ej-on-copy.trigger="logger.log('folder has been copied')" ej-on-paste.trigger="logger.log('folder has been pasted')" ej-on-open.trigger="logger.log('folder has been opened')" ej-on-layout-change.trigger="logger.log('Layout has been changed.')" ej-on-remove.trigger="logger.log('file explorer has been removed')" ej-on-create-folder.trigger="console.log('new folder has been created')" style="display:block"></ej-file-explorer>
+                <ej-file-explorer id="fileexplorer" e-layout="tile" e-path.bind="path"  e-is-responsive=true e-width="100%" e-min-width="214px" e-ajax-action.bind="ajaxAction" e-height.bind="height" e-on-select.trigger="logger.log('folder has been selected')" e-on-cut.trigger="logger.log('folder has been cut')" e-on-copy.trigger="logger.log('folder has been copied')" e-on-paste.trigger="logger.log('folder has been pasted')" e-on-open.trigger="logger.log('folder has been opened')" e-on-layout-change.trigger="logger.log('Layout has been changed.')" e-on-remove.trigger="logger.log('file explorer has been removed')" e-on-create-folder.trigger="console.log('new folder has been created')" style="display:block"></ej-file-explorer>
             </div>
         </div>
     </div>
@@ -11,7 +11,7 @@
         <h4>Event Trace</h4>
         <logger view-model.ref="logger"></logger>
         <div>
-            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+            <button class="logger-button"ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
     

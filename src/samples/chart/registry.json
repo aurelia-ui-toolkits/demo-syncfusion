@@ -2,7 +2,7 @@
   "title": "Chart",
   "documentation":"http://help.syncfusion.com/js/api/ejchart",
   "samples": {
-    "basic-use": {
+    "line": {
       "default" : true,
       "files": ["html", "js"]
     },
@@ -19,6 +19,11 @@
 	   "files": ["html", "js"]
 	},
 	"3d-column":{
+		"title" : "3D Column",
+	   "files": ["html", "js"]
+	},
+	"3d-pie":{
+		"title" : "3D Pie",
 	   "files": ["html", "js"]
 	},
 	"pyramid":{
@@ -37,9 +42,6 @@
 	   "files": ["html", "js"]
 	},
 	"candle":{
-	   "files": ["html", "js"]
-	},
-	"3d-bar":{
 	   "files": ["html", "js"]
 	},
 	"live":{
