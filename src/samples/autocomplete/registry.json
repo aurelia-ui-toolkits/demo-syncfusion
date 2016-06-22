@@ -19,9 +19,11 @@
      "files": ["html", "js","css"]
    },
    "data-binding-remote-data":{
+     "title" : "Data Binding - Remote",
       "files": ["html", "js","css"]
    },
    "data-binding-local-data":{
+     "title": "Data Binding - Local",
      "files": ["html", "js","css"]
    }
   }

@@ -12,9 +12,6 @@
     "conditional Formatting": {
       "files": ["html", "js"]
     },
-    // "cell Selection": {
-    //   "files": ["html", "js"]
-    // },
     "localization": {
       "files": ["html", "js"]
     }

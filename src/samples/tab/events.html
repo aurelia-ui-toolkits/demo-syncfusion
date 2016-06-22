@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-tab id="eventTab" style="width: 500px" ej-selected-item-index="0" ej-on-ajax-before-load.trigger="onClientBeforeLoad($event)" ej-on-ajax-load.trigger="onClientLoad($event)" ej-on-create.trigger="onClientCreate($event)" ej-on-before-active.trigger="onClientBeforeActive($event)" ej-on-item-active.trigger="onClientActive($event)">
+        <ej-tab id="eventTab" style="width: 500px" e-selected-item-index="0" e-on-ajax-before-load.trigger="onClientBeforeLoad($event)" e-on-ajax-load.trigger="onClientLoad($event)" e-on-create.trigger="onClientCreate($event)" e-on-before-active.trigger="onClientBeforeActive($event)" e-on-item-active.trigger="onClientActive($event)">
             <ul>
                         <li><a href="#asp">ASP.NET</a></li>
                         <li><a href="#mvc">ASP.NET MVC</a></li>
@@ -18,7 +18,7 @@
        <h4>Event Trace</h4>
        <logger view-model.ref="logger"></logger>
        <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+           <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger = "logger.clear()" ></button>
        </div>
       </div>
 </template>

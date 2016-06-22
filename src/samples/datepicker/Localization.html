@@ -1,11 +1,11 @@
 <template>
   <require from="./Common.css"></require>
-  <require from="root/vendors/scripts/cultures/ej.culture.fr-FR.min.js"></require>
-  <require from="root/vendors/scripts/cultures/ej.culture.vi-VN.min.js"></require>
+  <require from="syncfusion-javascript/scripts/i18n/ej.culture.fr-FR.min.js"></require>
+  <require from="syncfusion-javascript/scripts/i18n/ej.culture.vi-VN.min.js"></require>
   <div class="row">
         <div class="frame "><div>  
               <label>Select Date</label>  
-               <input id="datepick" ej-date-picker="ej-value.bind:dateValue;ej-locale.bind:localeValue;ej-watermark-text.bind:watermark;ej-button-text.bind:buttonTxt;ej-width.bind:'100%'"></input>
+               <input id="datepick" ej-date-picker="e-value.bind:dateValue;e-locale.bind:localeValue;e-watermark-text.bind:watermark;e-button-text.bind:buttonTxt;e-width.bind:'100%'"></input>
         </div> 
      </div>        
   </div>    
@@ -15,7 +15,7 @@
           <div> Select Culture </div>               
        </div>
        <div class="col-sm-3">        
-          <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-watermark-text.bind:watermarkText;ej-value.two-way:updateLocale" id="selectLocale" />
+          <input type="text" ej-drop-down-list="e-target-id.bind:target;e-watermark-text.bind:watermarkText;e-value.two-way:updateLocale" id="selectLocale" />
         <div id="localelist">
             <ul>
                 <li>en-US</li>

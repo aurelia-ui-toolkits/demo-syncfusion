@@ -1,7 +1,7 @@
 export class FileInputUploadbox {
   constructor() {
-    this.save = 'http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx';
-    this.remove = 'http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx';
+    this.save = 'http://mvc.syncfusion.com/Services/FileUpload/UploadBox/saveFiles';
+    this.remove = 'http://mvc.syncfusion.com/Services/FileUpload/UploadBox/removeFiles';
     this.multipleFiles = true;
   }
 

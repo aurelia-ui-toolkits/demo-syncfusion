@@ -2,15 +2,15 @@
 <template>
    <require from="./swimlane.css"></require>
    <div style="float:left;">
-       <ej-symbol-palette id="symbolpalette" ej-diagram-id="diagram" ej-width="250px" ej-height="600px" 
-        ej-palettes.bind="palettes" ej-palette-item-width="50" ej-palette-item-height="50" ej-preview-width="100"
-        ej-preview-height="100" ej-show-palette-item-text="false" >
+       <ej-symbol-palette id="symbolpalette" e-diagram-id="diagram" e-width="250px" e-height="600px" 
+        e-palettes.bind="palettes" e-palette-item-width="50" e-palette-item-height="50" e-preview-width="100"
+        e-preview-height="100" e-show-palette-item-text="false" >
         </ej-symbol-palette>
    </div>
    <div style="float:left">
-        <ej-diagram id="diagram" ej-width="700px" ej-height="600px" ej-nodes.bind="nodes" 
-            ej-connectors.bind="connectors" ej-page-settings.bind="pageSettings" ej-default-settings.bind="defaultSettings" 
-            ej-selected-items.bind="selectedItems" ej-enable-auto-scroll="false">
+        <ej-diagram id="diagram" e-width="700px" e-height="600px" e-nodes.bind="nodes" 
+            e-connectors.bind="connectors" e-page-settings.bind="pageSettings" e-default-settings.bind="defaultSettings" 
+            e-selected-items.bind="selectedItems" e-enable-auto-scroll="false">
         </ej-diagram>
    </div>
 </template>

@@ -1,12 +1,12 @@
 <template>
-    <div class="frame">
-        <input id="eventRating" type="text" class="rating" ej-rating="" ej-on-create.trigger="create()" ej-on-click.trigger="click()"  ej-on-mouseover.trigger="mouseOver()" ej-on-mouseout.trigger="mouseOut()" ej-on-change.trigger="change($event)"/>
+    <div class="rating-events-frame">
+        <input id="eventRating" type="text" class="rating" ej-rating="" e-on-create.trigger="create()" e-on-click.trigger="click()"  e-on-mouseover.trigger="mouseOver()" e-on-mouseout.trigger="mouseOut()" e-on-change.trigger="change($event)"/>
     </div>
     <div id="Logger" class="box">
         <h4>Event Trace</h4>
         <logger view-model.ref="logger"></logger>
         <div>
-            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+            <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
 </template>

@@ -1,0 +1,21 @@
+<template>
+	<require from="./labels.css"></require>
+<div>
+ 	<ej-map e-enable-animation="true" e-enable-pan="false" >
+		 <ej-layer e-layer-type="geometry" e-enable-selection="true" e-enable-mouse-hover="true" e-show-map-items="false" e-shape-settings.bind="shapesettings" e-shape-data.bind="usMap" e-show-tooltip="true" e-tooltip-template="template" e-shape-data-path="name" e-shape-property-path="name" e-data-source.bind="USA_State_PopulationData" e-label-settings.bind="labelsettings" ></ej-layer>
+	</ej-map>			
+	
+</div>
+
+<script  id="template" type="application/jsrender">
+				 <div class="tip" >				
+				    <p class="small">
+                                <label  style="color:white;font-size:11px;font-weight:normal;">State : {{:name}}</label>
+                    </p>
+                    <p class="big">
+                                <label style="color:white;font-size:11px;font-weight:normal;">Count : {{:population}}</label>
+                    </p>
+				</div> 
+</script>       
+
+</template>

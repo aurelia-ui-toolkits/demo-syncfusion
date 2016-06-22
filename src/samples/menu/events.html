@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ul id="menuEvents" ej-menu="ej-menu-type.bind:type;ej-width:100%" ej-on-create.trigger="create()" ej-on-mouseover.trigger="mouseOver($event)"
-        ej-on-mouseout.trigger="mouseOut($event)" ej-on-click.trigger="menuClick($event)" ej-on-key-down.trigger="keyDown($event)">
+        <ul id="menuEvents" ej-menu="e-menu-type.bind:type;e-width:100%" e-on-create.trigger="create()" e-on-mouseover.trigger="mouseOver($event)"
+        e-on-mouseout.trigger="mouseOut($event)" e-on-click.trigger="menuClick($event)" e-on-key-down.trigger="keyDown($event)">
             <li><a>File</a>
                 <ul>
                     <li id="submenu"><a>New</a></li>
@@ -54,7 +54,7 @@
         <h4>Event Trace</h4>
         <logger view-model.ref="logger"></logger>
         <div>
-            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+            <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
 </template>

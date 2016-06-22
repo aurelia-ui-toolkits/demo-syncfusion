@@ -1,37 +1,38 @@
 {
-  "title": "Button",
-  "documentation":"http://help.syncfusion.com/js/api/ejbutton",
-  "samples": {
-    "Default-Functionalities": {
-      "default" : true,
-      "files": ["html", "js","css"]
-    },
-    "Toggle-Buttons":{
-      "files":["html","js","css"]
-    },
-    "Split-Buttons":{
-      "files":["html","js","css"]
-    },
-    "Group-Button":{
-      "files":["html","js"]
-    },
-    "Repeat-Button":{
-      "files":["html","js"]
-    },
-    "CheckBoxes":{
-      "files":["html","js","css"]
-    },
-    "Radio-Buttons":{
-      "files":["html","js","css"]
-    },               
-    "API":{
-      "files":["html","js","API"]
-    },
-    "Events":{
-      "files":["html","js","css"]
-    },  
-    "RTL":{
-      "files":["html","js","css"]
+    "title": "Button",
+    "documentation": "http://help.syncfusion.com/js/api/ejbutton",
+    "samples": {
+        "Default-Functionalities": {
+            "default": true,
+            "files": [ "html", "js" ]
+        },
+        "Toggle-Buttons": {
+            "files": [ "html", "js"]
+        },
+        "Split-Buttons": {
+            "files": [ "html", "js"]
+        },
+        "Group-Button": {
+            "files": [ "html" ]
+        },
+        "Repeat-Button": {
+            "files": [ "html", "js" ]
+        },
+        "CheckBox": {
+            "files": [ "html", "js"]
+        },
+        "Radio-Buttons": {
+            "files": [ "html", "js"]
+        },
+        "API's": {
+            "title" : "API's",
+            "files": [ "html", "js" ]
+        },
+        "Events": {
+            "files": [ "html", "js"]
+        },
+        "RTL": {
+            "files": [ "html", "js"]
+        }
     }
-  }
 }

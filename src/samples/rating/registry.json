@@ -2,14 +2,14 @@
   "title": "Rating",
   "documentation":"http://help.syncfusion.com/js/api/ejrating",
   "samples": {
-    "basic-use": {
+    "default-functionalities": {
       "default" : true,
       "files": ["html", "js", "css"]
     },
     "precision": {
         "files": ["html", "js", "css"]
     },
-    "API": {
+    "API's": {
         "files": ["html", "js"]
     },
     "Events": {

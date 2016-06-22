@@ -1,13 +1,11 @@
 <template>
-    <require from="./basic-use.css"></require>
     <div>
-        <ej-grid ej-data-source.bind="OrdersList" ej-allow-paging=true ej-allow-sorting=true>
-            <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-text-align="right"></ej-column>
-            <ej-column ej-field="CustomerID" ej-header-text="Customer ID"></ej-column>
-            <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right"></ej-column>
-            <ej-column ej-field="Freight" ej-header-text="Freight" ej-format="{0:C}" ej-text-align="right"></ej-column>
-            <ej-column ej-field="OrderDate" ej-header-text="Order Date" ej-format="{0:MM/dd/yyyy}" ej-text-align="right"></ej-column>
-            <ej-column ej-field="ShipCity" ej-header-text="ShipCity"></ej-column>
+        <ej-grid e-data-source.bind="OrdersList" e-allow-paging=true e-allow-sorting=true>
+            <ej-column e-field="OrderID" e-header-text="Order ID" e-text-align="right"></ej-column>
+            <ej-column e-field="CustomerID" e-header-text="Customer ID"></ej-column>
+            <ej-column e-field="EmployeeID" e-header-text="Employee ID" e-text-align="right"></ej-column>
+            <ej-column e-field="Freight" e-header-text="Freight" e-format="{0:C}" e-text-align="right"></ej-column>
+            <ej-column e-field="OrderDate" e-header-text="Order Date" e-format="{0:MM/dd/yyyy}" e-text-align="right"></ej-column>
         </ej-grid>
     </div>
 </template>

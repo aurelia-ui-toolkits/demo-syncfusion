@@ -1,0 +1,82 @@
+<template>
+    <table style="width:100%;">
+        <tr>
+            <td align="center"><i>Mean Working Hours for year</i></td>
+            <td>
+                <div>
+                    <ej-sparkline id="line" e-type="line" e-data-source.bind="line" e-tooltip.bind="tooltip" e-size.bind="size">
+                    </ej-sparkline>
+                </div>
+            </td>
+        <tr>
+            <td align="center"><i>Revenue Status</i></td>
+            <td>
+                <div>
+                    <ej-sparkline id="column" e-type="column" e-negative-point-color="red" e-high-point-color="blue" e-data-source.bind="column" 
+					e-size.bind="size1" e-tooltip.bind="tooltip">
+                    </ej-sparkline>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><i>Project Status Tracing</i></td>
+            <td>
+                <div>
+                    <ej-sparkline id="area" e-type="area" e-marker-settings.bind="markerSettings" e-high-point-color="blue" e-low-point-color="orange" e-data-source.bind="area" 
+					e-size.bind="size1" e-marker-settings.bind="markerSettings" e-tooltip.bind="tooltip">
+                    </ej-sparkline>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><i>Profit Comparison for each months</i></td>
+            <td>
+                <div>
+                    <ej-sparkline id="winloss" e-type="winloss"  e-data-source.bind="winloss" e-size.bind="size1">
+                    </ej-sparkline>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><i>Expenditure for a year</i></td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <ej-sparkline id="pie1" e-type="pie" e-data-source.bind="quarter1" e-size.bind="size2" e-tooltip.bind="tooltip">
+                                </ej-sparkline>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <ej-sparkline id="pie2" e-type="pie" e-data-source.bind="quarter2" e-size.bind="size2" e-tooltip.bind="tooltip">
+                                </ej-sparkline>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <ej-sparkline id="pie3" e-type="pie" e-data-source.bind="quarter3" e-size.bind="size2" e-tooltip.bind="tooltip">
+                                </ej-sparkline>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <ej-sparkline id="pie4" e-type="pie" e-data-source.bind="quarter4" e-size.bind="size2" e-tooltip.bind="tooltip">
+                                </ej-sparkline>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Q1</td>
+                        <td align="center"> Q2</td>
+                        <td align="center"> Q3</td>
+                        <td align="center"> Q4</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div>
+    </div>
+</template>

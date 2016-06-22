@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-enable3-d="true" e-enable-rotation="true" e-depth="30"
+                  e-tilt="-30" e-rotation="-30" e-perspective-angle="90" e-is-responsive="true" e-size.bind="size" e-title.bind="title"
+                  e-common-series-options.bind="commonSeriesOptions">
+            <ej-series e-data-source.bind="Expenditure" e-x-name="xName" e-y-name="yName"  e-type="pie" e-explode-index="0"
+			e-border.bind="seriesborder" e-label-position="outside" e-start-angle="145">
+            </ej-series>
+		</ej-chart>
+    </div>
+</template>

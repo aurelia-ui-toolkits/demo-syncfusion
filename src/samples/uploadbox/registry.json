@@ -2,7 +2,7 @@
 	"title": "Uploadbox",
 	"documentation": "http://help.syncfusion.com/js/api/ejuploadbox",
 	"samples": {
-		"basic-use": {
+		"default-functionalities": {
 			"default": true,
 			"files": ["html", "js", "css"]
 		},
@@ -12,7 +12,7 @@
         "file-input": {
             "files": ["html", "js", "css"]
         },        
-        "API": {
+        "API's": {
             "files": ["html", "js", "css"]
         },
         "events": {

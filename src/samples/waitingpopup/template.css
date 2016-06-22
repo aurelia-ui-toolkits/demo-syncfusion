@@ -3,12 +3,12 @@
     width: 600px;
 }
 
-.block {
+#content .block {
     height: 76px;
 }
 
-.logo {
-    background-image: url("http://js.syncfusion.com/demos/web/content/images/waitingpopup/js_logo.png");
+#content .logo {
+    background-image: url("images/waitingpopup/js_logo.png");
     background-repeat: no-repeat;
     float: left;
     height: 100%;
@@ -16,25 +16,25 @@
     margin-right: 15px;
 }
 
-.txt {
+#content .txt {
     float: left;
     font-size: 17px;
     height: 100%;
     text-align: left;
 }
 
-    .txt p {
-        margin: 0;
-    }
+#content .txt p {
+    margin: 0;
+}
 
-.loader {
-    background: url("http://js.syncfusion.com/demos/web/content/images/waitingpopup/load_light.gif") no-repeat scroll -5px 18px transparent;
+#content .loader {
+    background: url("images/waitingpopup/load_light.gif") no-repeat scroll -5px 18px transparent;
     height: 40px;
     width: 100%;
 }
 
 .darktheme .loader {
-    background-image: url("http://js.syncfusion.com/demos/web/content/images/waitingpopup/load_dark.gif");
+    background-image: url("images/waitingpopup/load_dark.gif");
 }
 
 #content {

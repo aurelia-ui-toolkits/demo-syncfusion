@@ -2,7 +2,7 @@
   "title": "Spreadsheet",
   "documentation":"http://help.syncfusion.com/js/api/ejspreadsheet",
   "samples": {
-    "default": {
+    "default-functionalities": {
       "default" : true,
       "files": ["html", "js"]
     },
@@ -14,7 +14,7 @@
       "default" : false,
       "files": ["html", "js"]
 	 },
-   "freezepane": {
+   "freeze-pane": {
       "default" : false,
       "files": ["html", "js"]
 	 },
@@ -22,7 +22,7 @@
       "default" : false,
       "files": ["html", "js"]
 	 },
-   "movie-template": {
+   "movie-list": {
       "default" : false,
       "files": ["html", "js"]
 	 },

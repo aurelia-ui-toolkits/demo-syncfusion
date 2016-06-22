@@ -1,8 +1,8 @@
 <template>
   <require from="./basic-use.css"></require>  
   <div>
-    <ej-pivot-grid id="fieldList" ej-data-source.bind="pivotData" ej-on-render-success.trigger="renderFieldList($event)">
+    <ej-pivot-grid id="fieldList" e-data-source.bind="pivotData" e-on-render-success.trigger="renderFieldList($event)">
     </ej-pivot-grid>
-    <ej-pivot-schema-designer ej-olap-settings.bind="olapSettings"></ej-pivot-schema-designer>
+    <ej-pivot-schema-designer e-olap-settings.bind="olapSettings"></ej-pivot-schema-designer>
   </div>
 </template>

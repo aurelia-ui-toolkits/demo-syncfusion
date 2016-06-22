@@ -1,0 +1,144 @@
+<template>
+     <require from="./Common.css"></require>
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>                           
+                <tr class='row'>                  
+                    <td colspan="2">
+                        <ul id="treeView" ej-tree-view="e-width:250px;
+                        e-show-checkbox:true">
+                            <li>Cricket
+                                <ul>
+                                    <li>Princeton Club</li>
+                                    <li>Harvard Club</li>
+                                    <li>St.Columba's Club</li>
+                                    <li>Dartmouth Club</li>
+                                    <li>Middlebury Club</li>
+                                </ul>
+                            </li>
+                            <li>Football
+                                <ul>
+                                    <li>A.F.C. Blackpool</li>
+                                    <li>A.F.C. Emley</li>
+                                    <li>Bedford</li>
+                                    <li>Celtic Nation</li>
+                                    <li>Farsley</li>
+                                    <li>Gresley</li>
+                                    <li>London Colney</li>
+                                </ul>
+                            </li>
+                            <li>Basketball
+                                <ul>
+                                    <li>AGE Halkida </li>
+                                    <li>Iraklio </li>
+                                    <li>Sporting Athens</li>
+                                    <li>Pagrati Athens</li>
+                                </ul>
+                            </li>
+                            <li>Volleyball
+                                <ul>
+                                    <li>CV Elche</li>
+                                    <li>Jusan Canarias</li>
+                                    <li>Unicaja Arukasur</li>
+                                    <li>Voleibol Benidorm</li>
+                                </ul>
+                            </li>
+                            <li>Tennis
+                                <ul>
+                                    <li>Ryoma Echizen</li>
+                                    <li>Kaoru Kaidoh</li>
+                                    <li>Rokkaku</li>
+                                    <li>Higa</li>
+                                    <li>Yamabuki</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>               
+            </tbody>
+        </table>      
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-md-3 top-margin">   
+                <div>Expand / Collapse All </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <input type="checkbox" id="expandAll" ej-toggle-button="e-size: large;
+                                e-show-rounded-corner: true;
+                                e-height:34px;
+                                e-active-text: Collapse All;
+                                e-default-text: Expand All" e-on-change.trigger="expandAll($event)"></input>
+                                <label for="expandAll">Toggle</label>
+            </div>   
+            <div class="col-md-3 top-margin">   
+                <div>Check / Uncheck All </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <input type="checkbox" id="checkAll" ej-toggle-button="e-size: large;
+                                e-show-rounded-corner: true;
+                                e-height:34px;
+                                e-active-text: UnCheck All;
+                                e-default-text: Check All" e-on-change.trigger="checkAll($event)"></input>
+                                <label for="checkAll">Toggle</label>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Selected Node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="expand" ej-button="e-width: 130px" e-on-click.trigger='nodeExpand($event)'>Expand</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Selected Node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="collapse" ej-button="e-width: 130px" e-on-click.trigger='nodeCollpase($event)'>Collapse</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Selected Node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="check" ej-button="e-width: 130px" e-on-click.trigger='nodeChecked($event)'>Check</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Selected Node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="unCheck" ej-button="e-width: 130px" e-on-click.trigger='nodeUnchecked($event)'>Uncheck</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Selected Node</div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="disableNode" ej-button="e-width: 130px" e-on-click.trigger='nodeDisable($event)'>Disable</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Disable Node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="enableNode" ej-button="e-width: 130px" e-on-click.trigger='nodeEnable($event)'>Enable</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Add New node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="newNode" ej-button="e-width: 130px" e-on-click.trigger='addNewNode($event)'>Add New Node</button>
+            </div>  
+            <div class="col-md-3 top-margin">   
+                <div>Remove node </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <button id="removeNode" ej-button="e-width: 130px" e-on-click.trigger='removeNode($event)'>Remove Node</button>
+            </div>    
+            <div class="col-md-3 top-margin">   
+                <div>Destroy </div>               
+            </div>
+            <div class="col-md-3 top-margin">
+                <input type="checkbox" id="destroy" ej-toggle-button="e-size:large;
+                                e-show-rounded-corner: true;
+                                e-height:34px;
+                                e-active-text: Restore;
+                                e-default-text: Destroy" e-on-change.trigger="onDestroy($event)"></input>
+                                <label for="destroy">Toggle</label>
+            </div>    
+        </div>
+    </div>
+   </template>

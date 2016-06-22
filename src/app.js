@@ -1,6 +1,6 @@
 export class App {
   configureRouter(config, router) {
-    config.title = 'Aurelia Skeleton Bridge App';
+    config.title = 'Syncfusion Aurelia Catalog Application';
 
     config.map([
       { name: 'about',            route: ['', 'about'],                moduleId: 'about/about',                 title: 'About' },

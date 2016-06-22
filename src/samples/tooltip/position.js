@@ -1,54 +1,22 @@
 export class PositionTooltip {
-  onCreate() {
-    let firstHead = $('.e-treeview-wrap> #treeView > .first').find('a');
-    let firstTitle = $('.e-treeview-wrap> #treeView > .first').attr('title');
-    $('.e-treeview-wrap> #treeView > .first').removeAttr('title');
-    $(firstHead).attr('title', firstTitle);
-    let secondHead = $('.e-treeview-wrap> #treeView > .last').find('a');
-    let secondTitle = $('.e-treeview-wrap> #treeView > .last').attr('title');
-    $('.e-treeview-wrap> #treeView > .last').removeAttr('title');
-    $(secondHead).attr('title', secondTitle);
-    let firstElement = $('.e-treeview-wrap> #treeView > .first > .e-treeview-ul').find('li');
-    let secondElement = $('.e-treeview-wrap> #treeView > .last > .e-treeview-ul').find('li');
-    this.onCopy(firstElement);
-    this.onCopy(secondElement);
-
-    this.target = $('#treeView').ejTooltip(
-      {
-        width: '230px',
-        height: '65px',
-        target: '.CanSelect',
-        containment: '.cols-sample-area',
-        position: { stem: {
-          horizontal: 'left',
-          vertical: 'center'
-        },
-        target: {
-          horizontal: 'right',
-          vertical: 'center'
-        }
-        },
-        beforeOpen: 'onOpen',
-        hover: 'onHover',
-        tracking: 'onOpen'
-
-      }).data('ejTooltip');
+  constructor() {
+    this.tooltipTarget = '.CanSelect';
+    this.tooltipPosition = {
+      stem: {
+        horizontal: 'left',
+        vertical: 'center'
+      },
+      target: {
+        horizontal: 'right',
+        vertical: 'center'
+      }
+    };
   }
-
-  onCopy(element) {
-    for (let i = 0; i < element.length; i++) {
-      let content = $(element[i]).attr('title');
-      $(element[i]).removeAttr('title');
-      let target = $(element[i]).find('a');
-      $(target).attr('title', content);
-    }
+  onCreate() {
+    this.target = $('#treeView').data('ejTooltip');
   }
 
   onOpen(event) {
-    this.contentFormation(event);
-  }
-
-  onHover(event) {
     this.contentFormation(event);
   }
 
@@ -66,12 +34,12 @@ export class PositionTooltip {
     ];
     let template;
     for (let i = 0; i < 8; i++) {
-      if (args.model.content === emp[i].book) {
-        template = '<div class="main"> <img class="logo" src="http://js.syncfusion.com/demos/web/images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category:' + emp[i].category + '</div><div class="song">' + emp[i].book + '</div></div> </div>';
-      } else if (args.model.content === 'Fiction Book Lists') {
-        template = '<div class="main"> <img class="logo" src="http://js.syncfusion.com/demos/web/images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category&nbsp;:&nbsp; Fiction </div><div class="song"> Please choose your books</div></div> </div>';
-      } else if (args.model.content === 'Mystery Book Lists') {
-        template = '<div class="main"> <img class="logo" src="http://js.syncfusion.com/demos/web/images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category&nbsp;:&nbsp; Mystery </div><div class="song"> Please choose your books</div></div> </div>';
+      if ($(args.event.target).text().trim() === emp[i].book) {
+        template = '<div class="main"> <img class="logo" src="images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category:' + emp[i].category + '</div><div class="song">' + emp[i].book + '</div></div> </div>';
+      } else if ($(args.event.target).text().trim() === 'Fiction Book Lists') {
+        template = '<div class="main"> <img class="logo" src="images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category&nbsp;:&nbsp; Fiction </div><div class="song"> Please choose your books</div></div> </div>';
+      } else if ($(args.event.target).text().trim() === 'Mystery Book Lists') {
+        template = '<div class="main"> <img class="logo" src="images/tooltip/book.png" /> <div class="des"> <div class="artists"> Category&nbsp;:&nbsp; Mystery </div><div class="song"> Please choose your books</div></div> </div>';
       }
     }
     this.target.setModel({ content: template });
@@ -123,6 +91,10 @@ export class PositionTooltip {
       $('.stemValue').hide();
       $('#axisValue').hide();
       $('.targetValue').show();
+    } else if (this.associate === 'mouseenter' || this.associate === 'mousefollow') {
+      $('.targetValue').hide();
+      $('#axisValue').hide();
+      $('.stemValue').show();
     } else {
       $('#axisValue').hide();
       $('.targetValue').show();

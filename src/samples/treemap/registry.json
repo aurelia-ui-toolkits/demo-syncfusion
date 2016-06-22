@@ -1,0 +1,16 @@
+{
+  "title": "TreeMap",
+  "documentation":"http://help.syncfusion.com/js/api/ejtreemap",
+  "samples": {    
+	"flatCollection":{
+	   "default": true,
+	   "files": ["html", "js", "css"]
+	},
+	"customization":{
+	   	   "files": ["html", "js", "css"]
+	},
+	"hierarchical":{	   
+	   "files": ["html", "js", "css"]
+	}
+  }
+}

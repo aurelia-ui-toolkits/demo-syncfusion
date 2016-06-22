@@ -1,0 +1,19 @@
+{
+  "title": "Map",
+  "documentation":"http://help.syncfusion.com/js/api/ejmap",
+  "samples": {    
+	"dataMarkers":{
+	   "default": true,
+	   "files": ["html", "js","css"]
+	},
+  "heatMap":{	   
+	   "files": ["html", "js","css"]
+	},
+  "labels":{	   
+	   "files": ["html", "js","css"]
+	},
+  "selection":{	   
+	   "files": ["html", "js","css"]
+	}  
+  }
+}

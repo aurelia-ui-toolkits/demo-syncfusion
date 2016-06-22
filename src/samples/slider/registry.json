@@ -15,8 +15,9 @@
 	  "files" : ["html","js"]
   },
   
-   "Methods" : { 
+   "API's" : { 
      "default" : false,
+	 "title" : "API's",
 	 "files" : ["html","js"]
    },
    "RangeSlider" : {

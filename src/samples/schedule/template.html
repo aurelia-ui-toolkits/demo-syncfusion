@@ -1,9 +1,9 @@
 <template>
     <require from="./template.css"></require>
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-views.bind="Views"
-                     ej-current-view="Month" ej-group.bind="Group" ej-resources.bind="Resources" ej-current-date="04/03/2014" ej-resource-header-template-id="#resTemplate"
-                     ej-work-cells-template-id="#workTemplate" ej-appointment-template-id="#apptemplate" ej-show-appointment-navigator="false" ej-time-zone="UTC -05:00">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-appointment-settings.bind="AppointmentList" e-views.bind="Views"
+                     e-current-view="Month" e-group.bind="Group" e-resources.bind="Resources" e-current-date="04/03/2014" e-resource-header-template-id="#resTemplate"
+                     e-work-cells-template-id="#workTemplate" e-appointment-template-id="#apptemplate" e-show-appointment-navigator="false" e-time-zone="UTC -05:00">
         </ej-schedule>
     </div>
     <div id="property-window" class="box wide">
@@ -12,7 +12,7 @@
                 <label>Orientation</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <select ej-drop-down-list="ej-data-source.bind:orientation;ej-selected-index:0;width:100px" ej-on-select.trigger="onChange($event)" id="orientation">
+                <select ej-drop-down-list="e-data-source.bind:orientation;e-selected-index:0;width:100px" e-on-select.trigger="onChange($event)" id="orientation">
 		        </select>
             </div>
         </div>
@@ -21,7 +21,7 @@
                 <label>Disable TimeScale</label>
             </div>
             <div class="col-sm-3 col-md-3">
-                <input ej-check-box="ej-checked.two-way:timeCheck" id="timeScale" ej-on-change.trigger="timeScale($event)"/>
+                <input ej-check-box="e-checked.two-way:timeCheck" id="timeScale" e-on-change.trigger="timeScale($event)"/>
             </div>			
         </div>
         <div class="row">
@@ -29,7 +29,7 @@
                 <label>AllDayCells Customization</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <input ej-check-box="ej-checked.two-way:allDayCheck" id="allDay" ej-on-change.trigger="allDayTemplate($event)"/>
+                <input ej-check-box="e-checked.two-way:allDayCheck" id="allDay" e-on-change.trigger="allDayTemplate($event)"/>
             </div>
         </div>
         <div class="row">
@@ -37,7 +37,7 @@
                 <label>DateHeader Customization</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <input ej-check-box="ej-checked.two-way:dateHeaderCheck" id="dateHeader" ej-on-change.trigger="dateHeaderTemplate($event)"/>
+                <input ej-check-box="e-checked.two-way:dateHeaderCheck" id="dateHeader" e-on-change.trigger="dateHeaderTemplate($event)"/>
             </div>
         </div>
         <div class="row">
@@ -45,7 +45,7 @@
                 <label>WorkCells Customization</label>
             </div>
             <div class="col-sm-9 col-md-9">
-                <input ej-check-box="ej-checked.two-way:workCellCheck" id="workCells" ej-on-change.trigger="workCellsTemplate($event)"/>
+                <input ej-check-box="e-checked.two-way:workCellCheck" id="workCells" e-on-change.trigger="workCellsTemplate($event)"/>
             </div>
         </div>
     </div>

@@ -1,48 +1,53 @@
 <template>
     <require from="./model-dialog.css"></require>
- <div class="cols-sample-area">
- <button id="btnOpen" class="e-btn" ej-button="ej-text:Click to open dialog; size: medium, type: button, height: 30, width: 150" ej-on-click.trigger="onOpen()"></button>
- <div class="model-control" style="height:500px;">
-                    <ej-dialog  id="lognForm" ej-title="Login Form" ej-enable-modal="true" ej-enable-resize ="false"  ej-width="291" ej-min-width="310" ej-min-height="215" ej-target=".model-control" ej-on-close.trigger="onDialogClose()">
-                       <table style="width:100%;">
-                            <tr>
-                                <td>
-                                    <p class="top">Please enter your username and password<p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Username <p class="reqired">*</p>
-                                    <input  type="text" id="txtName" class="ejinputtext" required /><br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Password <p class="reqired">*</p>
-                                    <input type="password" id="txtPassword" class="ejinputtext" required />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" ej-check-box="ej-text:Remember me;" id="txtRember" class="ejinputtext top" required />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center">
-                                    <br />
-                                    
-                                    <button id="btnlogin" class="e-btn" ej-button="ej-text:LOGIN; ej-size: medium; ej-type: submit; ej-height: 30; ej-width: 150;"></button>
-                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="acc">
-                                    Don't have an account ? <a href="#">Signup</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </ej-dialog>
- </div>
-  </div>
+    <div class="cols-sample-area">
+        <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
+            e-on-click.trigger="onOpen()"></button>
+        <div class="model-control" style="height:500px;">
+            <ej-dialog id="lognForm" e-title="Login Form" e-enable-modal="true" e-enable-resize="false" e-width="291" e-min-width="310"
+                e-min-height="215" e-containment=".model-control" e-on-close.trigger="onDialogClose()">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <p class="top">Please enter your username and password
+                                <p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Username
+                            <p class="reqired">*</p>
+                            <input type="text" id="txtName" class="ejinputtext" required /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                            <p class="reqired">*</p>
+                            <input type="password" id="txtPassword" class="ejinputtext" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" ej-check-box="e-text:Remember me;" id="txtRember" class="ejinputtext top" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <br />
+
+                            <button id="btnlogin" class="e-btn" ej-button="e-text:LOGIN; e-size: medium; e-type: submit; e-height: 30; e-width: 150;"></button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="acc">
+                            Don't have an account ? <a href="#/samples/dialog/model-dialog">Signup</a>
+                        </td>
+                    </tr>
+                </table>
+            </ej-dialog>
+        </div>
+    </div>
   
 </template>

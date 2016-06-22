@@ -1,0 +1,10 @@
+﻿<template>
+	<require from="./spreadsheet.css"></require>
+	<div class ="e-main-panel">
+		<ej-spreadsheet id="Spreadsheet1" e-scroll-settings.bind = "scroll" e-allow-formula-bar = "false" e-show-ribbon = "false"
+         e-enable-context-menu = "false" e-on-load-complete.trigger = "loadcomplete($event)">
+			<ej-sheet e-range-settings.bind = "range" e-sheet-name = "FreezePanes">
+			</ej-sheet>
+		</ej-spreadsheet>
+	</div>
+</template>

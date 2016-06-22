@@ -2,18 +2,14 @@
   <require from="./basic-use.css"></require>
   
   <div>
-    <table>
-      <tr>
-        <td>
-    <ej-pivot-grid ej-data-source.bind="pivotData" ej-enable-conditional-formatting="true">
+    <div style="width: 75%">
+    <ej-pivot-grid e-data-source.bind="pivotData" e-enable-conditional-formatting="true">
     </ej-pivot-grid>
-    </td>
-    <td style="float:left; margin-left: 40px">
+    </div>
+    <div style="float:left; margin-left: 20px;">
     <div>Conditional Formatting</div>
-    <button id="button" ej-button="ej-text.bind:textValue1" ej-on-click.trigger="ApplyChanges($event)" style="margin-top: 10px"></button>
-    <button id="button" ej-button="ej-text.bind:textValue2" ej-on-click.trigger="Reset($event)" style="margin-top: 10px"></button>
-    </td>
-    </tr>
-    </table>
+    <button id="button" ej-button="e-text.bind:textValue1" e-on-click.trigger="ApplyChanges($event)" style="margin-top: 10px"></button>
+    <button id="button" ej-button="e-text.bind:textValue2" e-on-click.trigger="Reset($event)" style="margin-top: 10px"></button>
+    </div>
   </div>
 </template>

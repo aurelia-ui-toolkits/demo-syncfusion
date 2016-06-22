@@ -1,11 +1,10 @@
 <template>
-  <div>
-     <ej-chart  id="verticalchart" ej-legend.bind="legend" ej-columnDefinitions.bind="columnDefinitions" ej-size.bind="size" 
-	 ej-on-load.trigger="onchartload($event)" ej-title.bind="title" ej-primary-x-axis.bind="primaryXAxis" 
-	 ej-primary-y-axis.bind="primaryYAxis" ej-common-series-options.bind="commonSeriesOptions" ej-background="transparent"
-     ej-enable-canvas-rendering="true"> 
-      <ej-series ej-type="line" ej-enable-animation="false" ej-fill="#E46455" ej-opacity="0.8"></ej-series>
-	  <ej-series ej-type="line" ej-enable-animation="false"  ej-opacity="0.8"></ej-series>
-    </ej-chart>
-  </div>
+    <div>
+        <ej-chart id="verticalchart" e-legend.bind="legend" e-size.bind="size" e-on-load.trigger="onchartload($event)"
+                  e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis" 
+                  e-background="transparent" e-enable-canvas-rendering="true">
+            <ej-series e-type="line" e-enable-animation="false" e-fill="#E46455" e-opacity="0.8"></ej-series>
+            <ej-series e-type="line" e-enable-animation="false" e-opacity="0.8"></ej-series>
+        </ej-chart>
+    </div>
 </template>

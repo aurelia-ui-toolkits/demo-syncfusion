@@ -1,10 +1,10 @@
 
 
-<template>
-  <link href="src/root/vendors/styles/web/ribbon-css/ej.icons.css" rel="stylesheet" /> 
+<template>  
+  <require from="syncfusion-javascript/css/web/ribbon-css/ej.icons.css!"></require>
   <require from="./default.css"></require>
   <div>
-     <ej-ribbon ej-width="100%" ej-expand-pin-settings.bind="ExpandPinSettings" ej-collapse-pin-settings.bind="CollapsePinSettings" ej-application-tab.bind="ApplicationTab" ej-tabs.bind="Tabs" ej-on-create.trigger="createControl()" >
+     <ej-ribbon e-width="100%" e-expand-pin-settings.bind="ExpandPinSettings" e-collapse-pin-settings.bind="CollapsePinSettings" e-application-tab.bind="ApplicationTab" e-tabs.bind="Tabs" e-on-create.trigger="createControl()" >
 	 </ej-ribbon>
   </div>
    <div class="content-container-fluid">

@@ -1,6 +1,7 @@
 {
   "list": [
     "index.html",
+    "error.html",
     "config.js",
     "favicon.ico",
     "LICENSE",

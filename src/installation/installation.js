@@ -1,1 +1,3 @@
-export class Installation {}
+export class Installation {
+
+}

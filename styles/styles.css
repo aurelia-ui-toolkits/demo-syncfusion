@@ -170,7 +170,14 @@ div.au-stagger {
     background-color: rgba(20,53,80,0.038);
     border: 1px solid rgba(20,53,80,0.05);
 }
-
+.box.wide {
+  padding: 3em;
+}
+@media (max-width: 767px) {
+  .console div{
+    overflow: hidden;
+  }
+}
 .console div
 {
     background-position: 6px -95px;
@@ -267,10 +274,21 @@ div#list_container.e-ddl-popup.e-scroller{
 #Logger .logger-button {
   float:right;
 }
-/** Code Preview **/
-#codepreview.e-tab .e-activetop, #codepreview.e-tab .e-activebottom{
-  border: none;
+
+.top-margin {
+    margin-top: 15px;
 }
-#codepreview.e-tab .e-header.e-addborderbottom{
-  border-bottom: none;
-} 
+.bottom-margin {
+    margin-bottom: 15px;
+}
+/*sample Listbox customize*/
+.sample-list-box .e-listbox li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/** Responsive toolbar **/
+.toolbar-navigation .e-toolbar .e-icon.e-toolbar-res-arrow:before {
+  margin-top: 10px;
+}

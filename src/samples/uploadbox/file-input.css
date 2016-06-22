@@ -9,7 +9,7 @@
 .leftalign #upbutton1.e-button.e-inpttxt, .leftalign #upbutton2.e-button.e-inpttxt {
     padding: 2px 8px;
 }
-.control {
+.uploadbox-file-input-control {
     margin: 0 auto;
     width:100px;
     height:35px;

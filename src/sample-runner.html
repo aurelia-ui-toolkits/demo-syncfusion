@@ -2,47 +2,46 @@
     <section>
 
         <collapse-panel title.bind="sample.title">
-         <div class="buttons" style="display: inline;float: right;">
-            <a href.bind="sample.documentation" style="text-decoration:none"  target="_blank" ej-button="ej-height:20">API</a>
+         <div class="buttons" style="display: inline;float: right;position:relative;top:-3px;">
+            <a href.bind="sample.documentation" style="text-decoration:none;vertical-align:middle:line-height:21px;"  target="_blank" ej-button="e-height:18">API</a>
           </div>
             <div id="exampleWrap">
                 <compose view-model.bind="sample.path"></compose>
             </div>
         </collapse-panel>
         <collapse-panel title="Code Preview">
-            <ej-tab id="codepreview" ej-allow-keyboard-navigation=false>
+            <ej-tab id="codepreview" e-allow-keyboard-navigation=false>
                 <ul>
                     <li show.bind="sample.html"><a href="#html">HTML</a></li>
                     <li show.bind="sample.js"><a href="#javascript">Javascript</a></li>
                     <li show.bind="sample.css"><a href="#css">CSS</a></li>
                     <li show.bind="sample.json"><a href="#json">JSON</a></li>
                     <li show.bind="sample.md"><a href="#md">Documentation</a></li>
-                    <div id="html">
-                        <au-code language="markup" url.bind="sample.html">
-                        </au-code>
-                    </div>
-
-                    <div id="javascript">
-                        <au-code language="javascript" url.bind="sample.js">
-                        </au-code>
-                    </div>
-
-                    <div id="css">
-                        <au-code language="css" url.bind="sample.css">
-                        </au-code>
-                    </div>
-
-                    <div id="json">
-                        <au-code language="javascript" url.bind="sample.json">
-                        </au-code>
-                    </div>
-
-                    <div class="tab-pane fade" id="md">
-                        <au-markdown url.bind="sample.md">
-                        </au-markdown>
-                    </div>
-
                 </ul>
+                <div id="html">
+                    <au-code language="markup" url.bind="sample.html">
+                    </au-code>
+                </div>
+
+                <div id="javascript">
+                    <au-code language="javascript" url.bind="sample.js">
+                    </au-code>
+                </div>
+
+                <div id="css">
+                    <au-code language="css" url.bind="sample.css">
+                    </au-code>
+                </div>
+
+                <div id="json">
+                    <au-code language="javascript" url.bind="sample.json">
+                    </au-code>
+                </div>
+
+                <div class="tab-pane fade" id="md">
+                    <au-markdown url.bind="sample.md">
+                    </au-markdown>
+                </div>            
             </ej-tab>
         </collapse-panel>
     </section>

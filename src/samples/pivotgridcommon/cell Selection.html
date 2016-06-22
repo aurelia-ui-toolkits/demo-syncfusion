@@ -2,8 +2,8 @@
   <require from="./basic-use.css"></require>
   
   <div>
-    <ej-pivot-grid ej-data-source.bind="pivotData" ej-enable-cell-selection="true" ej-on-cell-selection.trigger="valueCellClick($event)">
+    <ej-pivot-grid e-data-source.bind="pivotData" e-enable-cell-selection="true" e-on-cell-selection.trigger="valueCellClick($event)">
     </ej-pivot-grid>
-    <ej-chart id="container" ej-load.bind="loadTheme" ej-common-series-options.bind="commonSeries"></ej-chart>
+    <ej-chart id="container" e-load.bind="loadTheme" e-common-series-options.bind="commonSeries"></ej-chart>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-appointment-settings.bind="AppointmentList" ej-views.bind="Views"
-ej-current-view="customView" ej-render-dates.bind="RenderDates" ej-current-date="04/04/2014"></ej-schedule>
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-appointment-settings.bind="AppointmentList" e-views.bind="Views"
+e-current-view="customView" e-render-dates.bind="RenderDates" e-current-date="04/04/2014"></ej-schedule>
    </div>
 
 <div id="property-window" class="box wide">
@@ -10,24 +10,24 @@ ej-current-view="customView" ej-render-dates.bind="RenderDates" ej-current-date=
             <label>Select View</label>
         </div>
         <div class="col-sm-2">
-            <select ej-drop-down-list="ej-data-source.bind:dropDownData;ej-width:110px;ej-selected-index:5" ej-on-change.trigger="onChange($event)" id="ddlView"></select>
+            <select ej-drop-down-list="e-data-source.bind:dropDownData;e-width:110px;e-selected-index:5" e-on-change.trigger="onChange($event)" id="ddlView"></select>
         </div>
         <div class="col-sm-2" style="top: 5px">
             <label>StartDate</label>
         </div>
         <div class="col-sm-2">
-            <input ej-date-picker="ej-width:110;ej-value:2014/04/07" id="customstartdate" />
+            <input ej-date-picker="e-width:110;e-value:2014/04/07" id="customstartdate" />
         </div>
         <div class="col-sm-2" style="top: 5px">
             <label>EndDate</label>
         </div>
         <div class="col-sm-2">
-            <input ej-date-picker="ej-width:110;ej-value:2014/05/10" id="customenddate" />
+            <input ej-date-picker="e-width:110;e-value:2014/05/10" id="customenddate" />
         </div>
     </div>
     <div class="row">
         <div class="col-sm-1">
-            <button ej-button="ej-width:80px;ej-height:25px" ej-on-click.trigger="changeDate($event)" id="submit">Submit</button>
+            <button ej-button="e-width:80px;e-height:25px" e-on-click.trigger="changeDate($event)" id="submit">Submit</button>
         </div>
     </div>
 </div>

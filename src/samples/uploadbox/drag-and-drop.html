@@ -1,9 +1,9 @@
 <template>
     <require from="./drag-and-drop.css"></require>
-    <div class="control" style="width:40%;height:100%">
+    <div class="uploadbox-drag-and-drop-control" style="width:40%;height:100%">
         <div>
-        <ej-uploadbox id="UploadDefault" ej-save-url.bind="save" ej-remove-url.bind="remove" ej-allow-drag-and-drop.bind="dragAndDrop"
-        ej-multiple-files-selection.bind="multipleFiles"></ej-uploadbox>
+        <ej-uploadbox id="UploadDragAndDrop" e-save-url.bind="save" e-remove-url.bind="remove" e-allow-drag-and-drop.bind="dragAndDrop"
+        e-multiple-files-selection.bind="multipleFiles"></ej-uploadbox>
         </div>
     </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
     <require from="./events.css"></require>
-<div class="cols-sample-area">
-                <div class="frame">
-                    <div class="control">
-                        <div id="toolbarEvents" ej-toolbar="ej-orientation:horizontal;ej-width:100%" ej-on-create.trigger="toolbarLoad()" ej-on-click.trigger="toolbarClick()" ej-on-item-hover.trigger="toolbarChecked()" ej-on-item-leave.trigger="toolbarUnChecked()">
+<div class="toolbar-events-cols-sample-area">
+                <div class="toolbar-events-frame">
+                    <div class="toolbar-events-control">
+                        <div id="toolbarEvents" ej-toolbar="e-orientation:horizontal;e-width:100%" e-on-create.trigger="toolbarLoad()" e-on-click.trigger="toolbarClick()" e-on-item-hover.trigger="toolbarChecked()" e-on-item-leave.trigger="toolbarUnChecked()">
                             <ul>
                                 <li title="Mail">
                                     <div class="mailtools movetofolder" />
@@ -35,7 +35,7 @@
         <h4>Event Trace</h4>
         <logger view-model.ref="logger"></logger>
         <div>
-            <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger="logger.clear()"></button>
+            <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
 </template>

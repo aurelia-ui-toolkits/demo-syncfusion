@@ -1,9 +1,9 @@
 <template>
-  <div>
-     <ej-chart  id="container" ej-legend.bind="legend" ej-zooming.bind="zooming" ej-size.bind="size" ej-title.bind="title" ej-common-series-options.bind="commonSeriesOptions"
-	 ej-on-load.trigger="onchartload($event)" ej-primary-x-axis.bind="primaryXAxis" ej-primary-y-axis.bind="primaryYAxis">
-	   <ej-series ej-data-source.bind="cpuload" ej-x-name="xName" ej-y-name="yName" ej-name="Website" >
-	   </ej-series>    
-	</ej-chart>
-  </div>
+    <div>
+        <ej-chart id="container" e-legend.bind="legend" e-zooming.bind="zooming" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions"
+                  e-on-load.trigger="onchartload($event)" e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis">
+            <ej-series e-data-source.bind="cpuload" e-x-name="xName" e-y-name="yName" e-name="Website">
+            </ej-series>
+        </ej-chart>
+    </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <require from="./about.css"></require>
-    <div class="container-fluid"> <br/>
-        <ej-tab>
+    <div class="container-fluid user-select about"> <br/>
+        <ej-tab e-allow-keyboard-navigation=false>
             <ul>
                 <li><a href="#aurelia-syncfusion">What is Aurelia-Syncfusion Bridge</a></li>
                 <li><a href="#grid-example">GRID - example of an Aurelia-Syncfusion component</a></li>
@@ -15,25 +15,32 @@
                             <!--<span>Version 0.6.2</span>-->
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-no-padding">
                         <div class="col-xs-12 col-sm-4 text-center">
-                            <a href="http://aurelia.io" target="_blank"><img src="images/aurelia-logo-04.png" /></a>
+                            <div class="logo-circle aurelia">
+                                <a draggable="false" href="http://aurelia.io" target="_blank"><img draggable="false" src="images/aurelia-logo-04.png" /></a>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 text-center">
-                            <img src="images/bridge.png">
+                            <div class="logo-circle bridge rotate90">
+                                <div class="bridge-icon">
+                                    <img draggable="false" src="images/aurelia-syncfusion-connect.png">
+                                </div>                                                            
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 text-center">
-                            <a href="http://js.syncfusion.com/" target="_blank"><img src="images/syncfusion_logo.png" /></a>
+                            <div class="logo-circle syncfusion">
+                                <a draggable="false" href="http://js.syncfusion.com/" target="_blank"><img draggable="false" src="images/syncfusion_logo.png" /></a>
+                            </div>
                         </div>
-                    </div>
-                    
-                     <h4 class="text-center">
+                    </div>                   
+                   <div class="feature-wrap">
                         <ul class="features">                            
-                            <li>Use Syncfusion JavaScript UI components in your Aurelia application <i style="text-decoration:underline">without writing any wrapper code</i></li>
-                            <li>Powerful binding expressions <i>directly in your markup</i></li>
-                            <li>Full support for Aurelia's templating system in Syncfusion JavaScript Widgets templates</li>                            
+                            <li>Use Syncfusion JavaScript UI components in your Aurelia application <b>without writing any wrapper code</b></li>
+                            <li>Powerful binding expressions directly in your markup</li>
+                            <li></span>Full support for Aurelia's templating system in <span class="highlight">Syncfusion JavaScript Widgets templates<span></li>                            
                         </ul>
-                     </h4>
+                    </div>
                 </section>
             </div>
             <div id="grid-example">
@@ -41,24 +48,24 @@
                     <h4>Example</h4>
                     <div class="row">
                         <div class="col-sm-12">
-                            <ej-grid ej-data-source.bind="EmployeesList" ej-page-settings.bind="page" ej-allow-paging=t rue>
-                                <ej-column ej-field="EmployeeImage" ej-header-text="Employee Image" ej-text-align="center" ej-width="110">
+                            <ej-grid id="about_grid" e-data-source.bind="EmployeesList" e-page-settings.bind="page" e-allow-paging=t rue>
+                                <ej-column e-field="EmployeeImage" e-header-text="Employee Image" e-text-align="center" e-width="110">
                                     <ej-template>
                                         <div><img style="width: 45px; height: 45px" src="images/grid/Employees/${EmployeeID}.png" /> </div>
                                     </ej-template>
                                 </ej-column>
-                                <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="90"></ej-column>
-                                <ej-column ej-field="FirstName" ej-header-text="First Name" ej-width="90"></ej-column>
-                                <ej-column ej-field="LastName" ej-header-text="Last Name" ej-width="90"></ej-column>
-                                <ej-column ej-field="BirthDate" ej-header-text="Birth Date" ej-format="{0:MM/dd/yyyy}" ej-text-align="right" ej-width="90"></ej-column>
-                                <ej-column ej-field="Country" ej-header-text="Country" ej-width="80"></ej-column>
+                                <ej-column e-field="EmployeeID" e-header-text="Employee ID" e-text-align="right" e-width="90"></ej-column>
+                                <ej-column e-field="FirstName" e-header-text="First Name" e-width="90"></ej-column>
+                                <ej-column e-field="LastName" e-header-text="Last Name" e-width="90"></ej-column>
+                                <ej-column e-field="BirthDate" e-header-text="Birth Date" e-format="{0:MM/dd/yyyy}" e-text-align="right" e-width="90"></ej-column>
+                                <ej-column e-field="Country" e-header-text="Country" e-width="80"></ej-column>
                             </ej-grid>
                         </div>
                     </div>
                     
                     <div class="row" style="margin-top: 10px">
                         <div class="col-sm-12">
-                            <ej-tab id="codepreview-about" ej-allow-keyboard-navigation=false>
+                            <ej-tab id="codepreview-about" e-allow-keyboard-navigation=false>
                                 <ul>
                                     <li><a href="#ej-init">Without Bridge</a></li>
                                     <li><a href="#aurelia-ej-init">With Bridge (View)</a></li>

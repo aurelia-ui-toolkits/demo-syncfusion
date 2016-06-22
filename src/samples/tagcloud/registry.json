@@ -2,7 +2,7 @@
   "title": "TagCloud",
   "documentation":"http://help.syncfusion.com/js/api/ejtagcloud",
   "samples": {
-    "basic-use": {
+    "default-functionalities": {
       "default" : true,
       "files": ["html", "js"]
     },

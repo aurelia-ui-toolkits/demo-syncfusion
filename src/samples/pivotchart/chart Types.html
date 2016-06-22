@@ -1,14 +1,15 @@
 <template>
-  <require from="./basic-use.css"></require>
-  
+    <require from="./chart Types.css"></require>  
     <div>
-        <table><tr><td>
-        <ej-pivot-chart ej-data-source.bind="pivotData" ej-load.bind="loadTheme" ej-common-series-options.bind="commonSeries" ej-legend.bind="legend" ej-size.bind="size" ej-primary-y-axis.bind="primaryYAxis">
+        <div style="width: 780px; float:left">
+        <ej-pivot-chart e-data-source.bind="pivotData" e-load.bind="loadTheme" e-common-series-options.bind="commonSeries" e-legend.bind="legend"
+            e-size.bind="size" e-primary-y-axis.bind="primaryYAxis">
         </ej-pivot-chart>
-        </td>
-        <td style="float:left">
+        </div>
+        <div style="float:left">
         <div style="margin: 10px 10px 10px 0px">Chart Type</div>
-        <input type="text" ej-drop-down-list="ej-target-id.bind:target;ej-value.bind:Type" ej-on-change.trigger="onChange($event)" id="selectChart" />
+        <input type="text" ej-drop-down-list="e-target-id.bind:target;e-value.bind:Type" e-on-change.trigger="onChange($event)"
+            id="selectChart" />
         <div id="Type">
             <ul>
                 <li>Line</li>
@@ -30,6 +31,6 @@
                 <li>Bubble</li>
             </ul>
         </div>
-        </td></tr></table>       
-	</div>
+        </div>
+    </div>
 </template>

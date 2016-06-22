@@ -1,4 +1,4 @@
-.frame{
+.events-frame{
     box-sizing: border-box;
     border: 1px solid #ccc !important;
     border-radius: 0px;
@@ -6,11 +6,11 @@
     text-align: center;
     width : 160px;
 }
-.frame img{
+.events-frame img{
     width : 100%;
 }
 @media (max-width: 440px){
-    .frame{
+    .events-frame{
         width : 160px !important;
     }
 }

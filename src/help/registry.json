@@ -1,10 +1,41 @@
 {
-  "Lorem": [{
-    "name": "1. Lorem",
-    "path": "help/docs/lorem.md"
-  }],
-  "Ipsum": [{
-    "name": "1. Ipsum",
-    "path": "help/docs/ipsum.md"
-  }]
+    "About this application":
+    [
+      {
+        "name": "1. Introduction",
+        "path": "help/docs/about-this-application/introduction.md"
+      },
+      {
+        "name": "2. Navigation guide",
+        "path": "help/docs/about-this-application/navigation.md"
+      },
+      {
+        "name": "3. Components catalog",
+        "path": "help/docs/about-this-application/components-catalog.md"
+      },
+      {
+        "name": "4. Installation",
+        "path": "help/docs/about-this-application/installation.md"
+      },
+
+      {
+        "name": "5. Project Status",
+        "path": "help/docs/about-this-application/project-status.md"
+      }
+    ],
+    "App developers notes":
+    [
+      {
+        "name": "1. What you need to know",
+        "path": "help/docs/app-developers-notes/what-you-need-to-know.md"
+      },
+      {
+        "name" : "2. Loading a subset of controls",
+        "path" : "help/docs/app-developers-notes/loading-subset-of-controls.md"
+      },
+      {
+        "name" : "3. Lazy loading wrappers",
+        "path" : "help/docs/app-developers-notes/lazy-loading-wrappers.md"
+      }
+    ]
 }

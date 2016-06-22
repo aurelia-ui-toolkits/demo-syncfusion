@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-accordion id="eventAccordion" style="width: 500px" ej-on-create.trigger="create()" ej-on-before-activate.trigger="beforeActivate($event)" ej-on-activate.trigger="onActivate($event)" ej-on-before-inactivate.trigger="beforeInactivate($event)" ej-on-in-activate.trigger="inActivate($event)" ej-on-ajax-before-load.trigger="ajaxBeforeLoad()" ej-on-ajax-load.trigger="ajaxLoad()" ej-on-ajax-success.trigger="ajaxSuccess()" ej-on-ajax-error="ajaxError()">
+        <ej-accordion id="eventAccordion" style="width: 500px" e-on-create.trigger="create()" e-on-before-activate.trigger="beforeActivate($event)" e-on-activate.trigger="onActivate($event)" e-on-before-inactivate.trigger="beforeInactivate($event)" e-on-in-activate.trigger="inActivate($event)" e-on-ajax-before-load.trigger="ajaxBeforeLoad()" e-on-ajax-load.trigger="ajaxLoad()" e-on-ajax-success.trigger="ajaxSuccess()" e-on-ajax-error="ajaxError()">
             <h3><a href="#">ASP.NET</a></h3>
             <div>
                 Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.
@@ -25,7 +25,7 @@
        <h4>Event Trace</h4>
        <logger view-model.ref="logger"></logger>
        <div>
-           <button class="logger-button" ej-button="ej-text:clear" ej-on-click.trigger = "logger.clear()" ></button>
+           <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger = "logger.clear()" ></button>
        </div>
       </div>
 </template>

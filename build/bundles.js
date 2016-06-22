@@ -21,7 +21,8 @@ var aureliaBundle = [
   "aurelia-templating-router",
   "aurelia-loader-default",
   "aurelia-history-browser",
-  "aurelia-logging-console"
+  "aurelia-logging-console",
+  "aurelia-polyfills"
 ];
 
 var pluginsBundle = [

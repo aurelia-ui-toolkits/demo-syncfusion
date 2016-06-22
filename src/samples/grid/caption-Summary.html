@@ -1,0 +1,12 @@
+<template>
+    <div>
+        <ej-grid e-data-source.bind="OrdersList" e-allow-paging=true e-allow-sorting=true e-allow-grouping=true
+                 e-group-settings.bind="group" e-show-summary=true e-summary-rows.bind="summary" e-locale="en-US">
+            <ej-column e-field="OrderID" e-text-align="right"></ej-column>
+            <ej-column e-field="CustomerID" ></ej-column>
+            <ej-column e-field="ShipCountry" ></ej-column>
+            <ej-column e-field="EmployeeID" e-text-align="right"></ej-column>
+            <ej-column e-field="Freight" e-format="{0:C}" e-text-align="right"></ej-column>
+        </ej-grid>
+    </div>
+</template>

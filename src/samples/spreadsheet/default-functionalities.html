@@ -1,0 +1,12 @@
+<template>
+	<require from="./spreadsheet.css"></require>
+	
+	<div class ="e-main-panel">
+			<ej-spreadsheet id="Spreadsheet1" e-scroll-settings.bind = "scroll" e-import-settings.bind = "import"
+             e-export-settings.bind = "export" e-enable-pivot-table = "true" e-on-load-complete.trigger = "loadcomplete($event)"
+              e-on-open-failure.trigger = "openfailure($event)">
+			<ej-sheet e-range-settings.bind = "range">
+			</ej-sheet>
+		</ej-spreadsheet>
+	</div>
+</template>

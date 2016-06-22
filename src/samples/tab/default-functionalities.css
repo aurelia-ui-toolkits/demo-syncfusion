@@ -1,0 +1,11 @@
+#defaultTab .col-md-3{
+    width: auto;
+}
+@media (max-width: 540px) {
+    #defaultTab.e-tab .e-header li > a, .e-tab .e-header li > a > span:first-child {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 45px;
+    }
+}

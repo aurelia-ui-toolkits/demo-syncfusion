@@ -2,11 +2,11 @@
   "title": "Tooltip",
   "documentation":"http://help.syncfusion.com/js/api/ejtooltip",
   "samples": {
-    "basic-use": {
+    "default-functionalities": {
       "default" : true,
       "files": ["html", "js", "css"]
     },
-    "API": {
+    "API's": {
         "files": ["html", "js", "css"]
     },
     "events": {

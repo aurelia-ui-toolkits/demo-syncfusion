@@ -3,7 +3,7 @@ export class BasicUse {
     this.dataSource = this.getdata(new Date(2009, 0, 1), new Date(2010, 2, 1)).Open;
     this.legend = {visible: false};
     this.style = {borderWidth: 2};
-    this.primaryXAxis = {crosshairLabel: {visible: true}};
+    this.primaryXAxis = {labelFormat: 'MMM/dd', crosshairLabel: {visible: true}};
     this.primaryYAxis = {crosshairLabel: {visible: true}, range: {min: 80, max: 130, interval: 10}};
     this.crosshair = {visible: true};
     this.tooltip = {format: '#point.x#  :  #point.y#'};
@@ -37,24 +37,25 @@ export class BasicUse {
     startRange = Date.parse(data.newRange.start);
     endRange = Date.parse(data.newRange.end);
     data = this.getdata(new Date(startRange), new Date(endRange));
-    range.model.series[0].dataSource = data.Open;
-    range.model.series[0].xName = 'XValue';
-    range.model.series[0].yName = 'YValue';
+    range.model.dataSource = data.Open;
     $('#navigator').ejRangeNavigator('redraw');
-  }
-  onchartloaded(sender) {
-    let chartobj = $('#chart').data('ejChart');
-    if (chartobj !== null) {
-      chartobj.model.primaryXAxis.zoomPosition = sender.detail.zoomPosition;
-      chartobj.model.primaryXAxis.zoomFactor = sender.detail.zoomFactor;
-    }
-    $('#chart').ejChart('redraw');
   }
   onchartload(sender) {
     let data = this.getdata(new Date(2009, 0, 1), new Date(2010, 2, 1));
     sender.detail.model.series[0].dataSource = data.Open;
     sender.detail.model.series[0].xName = 'XValue';
     sender.detail.model.series[0].yName = 'YValue';
+  }
+  onchartloaded(sender) {
+    let chartobj = $('#chart').ejChart('instance');
+    let start = Date.parse(sender.detail.selectedRangeSettings.start);
+    let end = Date.parse(sender.detail.selectedRangeSettings.end);
+    let data = this.getdata(new Date(start), new Date(end));
+    chartobj.model.series[0].dataSource = data.Open;
+    chartobj.model.series[0].xName = 'XValue';
+    chartobj.model.series[0].yName = 'YValue';
+    chartobj.model.primaryXAxis.labelFormat = 'MMM/dd';
+    chartobj.redraw();
   }
   getdata(start, end) {
     let series1 = [];

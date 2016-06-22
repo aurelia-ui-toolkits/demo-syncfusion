@@ -3,6 +3,7 @@ import {Router} from 'aurelia-router';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import registry from './registry.json!';
 import jQuery from 'jquery';
+import 'bootstrap';
 
 @inject(Router, EventAggregator)
 export class Doc {
@@ -35,6 +36,7 @@ export class Doc {
 
   attached() {
     $('.collapse').collapse();
+    this.switchPage('1._introduction', 'about_this_application');
   }
 
   // - adds the page to route params

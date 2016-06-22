@@ -14,7 +14,7 @@
       "default" : false,
       "files": ["html", "js"]
     },
-    "Display-lnline": {
+    "Display-Inline": {
       "default" : false,
       "files": ["html", "js"]
     },
@@ -26,8 +26,9 @@
       "default" : false,
       "files": ["html", "js"]
     },
-    "API": {
+    "API's": {
       "default" : false,
+       "title" : "API's",
       "files": ["html", "js"]
     },
     "Events": {

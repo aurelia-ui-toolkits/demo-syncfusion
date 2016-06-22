@@ -1,0 +1,25 @@
+<template>
+<require from="./Common.css"></require>
+  <div class="row">
+      <div class="frame"><div>    
+          <label>Select DateTime</label> 
+          <input id="datetimepick" ej-date-time-picker="e-value.two-way:datetimeValue;e-enabled.bind:dtStatus;e-width.bind:'100%'" e-on-open.trigger="onOpen()" e-on-close.trigger="onClose()"></input>
+      </div>
+    </div>
+  </div>  
+ <div id="property-window" class="box wide">
+    <div class="row">
+       <div class="col-sm-2">         
+            <input type="checkbox" id="status" ej-toggle-button="e-size.bind:'medium';e-show-rounded-corner.bind:true;e-active-text.bind:'Enable';e-default-text.bind:'Disable'" e-on-change.trigger="onEnable($event)"></input>
+            <label for="status">Toggle</label> 
+       </div>
+       <div class="col-sm-2">        
+          <button id="getval" ej-button="e-text.bind:'Get Value';e-size.bind:'medium';" e-on-click.trigger="getValue()"></button>
+       </div>
+       <div class="col-sm-2">         
+            <input type="checkbox" id="show" ej-toggle-button="e-size.bind:'medium';e-show-rounded-corner.bind:true;e-active-text.bind:'Hide';e-default-text.bind:'Show';e-enabled.bind:btnStatus" e-on-create.trigger="ontglbtnCreate()"  e-on-change.trigger="onShow($event)"></input>
+            <label for="show">Toggle</label> 
+       </div>
+     </div>
+ </div>
+</template>

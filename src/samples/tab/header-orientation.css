@@ -1,0 +1,9 @@
+#directionTab {
+    width: 550px;
+    display: block;
+}
+@media (max-width: 700px) {
+    #directionTab {
+        width: auto !important;
+    }
+}

@@ -1,13 +1,10 @@
 <template>
-    <div class='container-fluid'>
+      <require from="./Common.css"></require>
         <table class='container-fluid'>
-            <tbody class='container-fluid'>
-                <tr class='row'>
-                    <th colspan="2"> TreeView With RTL </th>
-                </tr>
+            <tbody class='container-fluid e-rtl'>
                 <tr class='row'>                    
-                    <td colspan="2" style="overflow:auto">
-                        <ul id="treeView" ej-tree-view="ej-enable-RTL:true;ej-width:250px">
+                    <td colspan="2" style="width:250px; max-width:100%;">
+                        <ul id="treeView" ej-tree-view="e-enable-rtl:true;">
                             <li>
                                 كتب
                                 <ul>
@@ -62,5 +59,4 @@
                 </tr>                
             </tbody>
         </table> 
-    </div>                
 </template>

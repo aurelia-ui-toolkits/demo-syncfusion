@@ -2,11 +2,11 @@
 	"title": "Accordion",
 	"documentation": "http://help.syncfusion.com/js/api/ejaccordion",
 	"samples": {
-		"basic-use": {
+		"default-functionalities": {
 			"default": true,
-			"files": ["html", "js", "css"]
+			"files": ["html", "css"]
 		},
-        "API": {
+        "API's": {
             "files": ["html", "js"]
         },
         "events": {

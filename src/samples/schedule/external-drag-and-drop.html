@@ -1,8 +1,9 @@
 <template>
   <require from="./external-drag-and-drop.css"></require>
   <div>
+  <div class="col-md-2"> 
             <span class=""><b>Tutorials </b> </span>
-            <ul ej-tree-view="ej-allow-drag-and-drop:true;ej-width:170;ej-allow-drop-child:false;ej-allow-drop-sibling:false;e-allow-drag-and-drop-across-control:true;" ej-on-node-drag-start.trigger="onDragStart($event)" ej-on-node-dropped.trigger="onDropped($event)" id="treeViewDrag">
+            <ul ej-tree-view="e-allow-drag-and-drop:true;e-width:170;e-allow-drop-child:false;e-allow-drop-sibling:false;e-allow-drag-and-drop-across-control:true;" e-on-node-drag-start.trigger="onDragStart($event)" e-on-node-dropped.trigger="onDropped($event)" id="treeViewDrag">
               <li class="expanded" id="HTML">HTML
                 <ul>
                   <li>Introduction</li>
@@ -60,11 +61,11 @@
               </li>
             </ul>
           </div>
-          <div class="Schedule1">
+          <div class="col-md-9 Schedule1">
             <span class=""><b> Training Scheduler Panel</b> </br></span>
             <i>Note</i>: To Schedule classes, drag the topics from <b>Tutorials</b> and drop it over <b>Training Scheduler Panel</b>
-            <ej-schedule id="Schedule1" ej-width="100%" ej-height="525px" ej-cell-width="40px" ej-show-current-time-navigator="false"
-            ej-orientation="horizontal" ej-views.bind="views" ej-current-view="workweek" ej-group.bind="Group" ej-resources.bind="Resources" ej-appointment-settings.bind="AppointmentList" ej-current-date="04/03/2014">
+            <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-cell-width="40px" e-show-current-time-navigator="false"
+            e-orientation="horizontal" e-views.bind="views" e-current-view="workweek" e-group.bind="Group" e-resources.bind="Resources" e-appointment-settings.bind="AppointmentList" e-current-date="04/03/2014">
             </ej-schedule>
           </div>
         </div>
@@ -125,8 +126,8 @@
             </table>
         </form>
       <div>
-        <button type="submit" ej-button="ej-width:85px" ej-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
-        <button type="submit" ej-button="ej-width:85px" ej-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+        <button type="submit" ej-button="e-width:85px" e-on-click.trigger="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+        <button type="submit" ej-button="e-width:85px" e-on-click.trigger="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
       </div>
     </div>
 </template>

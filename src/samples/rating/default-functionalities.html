@@ -1,0 +1,75 @@
+<template>
+    <require from="./default-functionalities.css"></require>
+    <div>
+       <ej-tab id="moviesTab" style="width: 500px">
+					<ul>
+						<li><a href="#steelman">Man of Steel</a></li>
+						<li><a href="#woldwar">World War Z</a></li>
+						<li><a href="#unive">Monsters University</a></li>
+					</ul>
+					<div id="steelman">
+							<table>
+								<tr>
+									<td class="movies-img" valign="top">
+										<img src="images/rating/mos.png" alt="mos" />
+									</td>
+									<td valign="top">
+										<div>
+											<span class="movie-header">Man of Steel</span><br />
+											Rating :
+													<br />
+											<input id="mosRating" type="text" class="rating" ej-rating="e-value.bind:mosRatingValue" />
+											<span>Movie Info:</span>
+											<p>
+												A young boy learns that he has extraordinary powers and is not of this Earth.
+											</p>
+										</div>
+									</td>
+								</tr>
+							</table>
+					</div>
+					<div id="woldwar">
+						<table>
+							<tr>
+								<td class="movies-img" valign="top">
+									<img src="images/rating/wwz.png" alt="mos" />
+								</td>
+								<td valign="top">
+									<div>
+										<span class="movie-header">World War Z</span><br />
+										Rating :
+												<br />
+										<input id="wwzRating" type="text" class="rating" ej-rating="e-value.bind:wwwzRatingValue" />
+										<span>Movie Info:</span>
+										<p>
+											The story revolves around United Nations employee Gerry Lane (Pitt).
+										</p>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="unive">
+						<table>
+							<tr>
+								<td class="movies-img" valign="top">
+									<img src="images/rating/mu.png" alt="mos" />
+								</td>
+								<td valign="top">
+									<div>
+										<span class="movie-header">Monsters University</span><br />
+										Rating :
+												<br />
+										<input id="univRating" type="text" class="rating" ej-rating="e-value.bind:univRatingValue" />
+										<span>Movie Info:</span>
+										<p>
+											Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. 
+										</p>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+                </ej-tab> 
+    </div>
+</template>

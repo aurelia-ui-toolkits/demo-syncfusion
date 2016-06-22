@@ -6,6 +6,6 @@ export class TemplateDropDownList {
 
   constructor() {
     this.dataSource = this.empList;
-    this.template = '<div><img class="eimg" src="http://js.syncfusion.com/demos/web/content/images/Employees/${eimg}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>';
+    this.template = '<div><img class="eimg" src="images/Employees/${eimg}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>';
   }
 }

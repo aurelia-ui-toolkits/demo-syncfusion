@@ -21,11 +21,13 @@ export class Menu {
       this.childVisible = true;
       this.currentCategory = id;
       this.subCategory = Object.keys(this.dataSource[id]);
+      this.subCategoryLength = this.subCategory.length - 1;
       this.previousCategoryButtonId = id;
     } else if (this.currentCategory && this.dataSource[this.currentCategory][id]) {
       this.changeToggleState(this.previousControlButtonId, id);
       let moduleId = this.dataSource[this.currentCategory][id];
       if (moduleId) {
+        this.router.baseUrl = '/samples/';
         this.router.navigateToRoute(moduleId);
       }
       this.previousControlButtonId = id;

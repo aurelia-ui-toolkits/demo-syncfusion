@@ -8,7 +8,7 @@ export class PrintAndExport {
     }
     onComplete(args) {
       let obj = $('#Schedule1').data('ejSchedule');
-      obj.option('appointmentSettings.dataSource', $.parseJSON(args.detail.responseText));
+      obj.option('appointmentSettings.dataSource', ej.parseJSON(args.detail.responseText));
     }
     onExportClick(e) {
       let obj = $('#Schedule1').data('ejSchedule');

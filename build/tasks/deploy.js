@@ -14,16 +14,18 @@ gulp.task('deploy-gh-pages', function() {
     './jspm_packages/github/twbs/bootstrap@*/fonts/*',
     './jspm_packages/npm/font-awesome@*/**/*',
     './jspm_packages/npm/font-awesome*.js',
-	  'jspm_packages/npm/bluebird@*/js/browser/bluebird.min.js',
-	  'vendors/**/*',
-	  './jspm_packages/npm/jquery-validation*.js',
-	  './jspm_packages/npm/jquery-validation*/**/*',
+	'jspm_packages/npm/bluebird@*/js/browser/bluebird.min.js',
+	'vendors/**/*',
+	'./jspm_packages/npm/jquery-validation*.js',
+	'./jspm_packages/npm/jquery-validation*/**/*',
     './jspm_packages/github/PrismJS/prism*/themes/*.css',
     './jspm_packages/github/google/code-prettify*/loader/**/*',
     './jspm_packages/npm/babel-runtime*/**/*',
     './index.html',
-    './favicon.ico',
-    './config.js'
+    './error.html',
+    './images/favicon.ico',
+    './config.js',
+	'./web.config' // to include the mime type for  the md files
   ], { base: '.' })
     // .pipe(gulp.dest('./dist')); // for test purposes
    .pipe(ghPages()); // to publish as GitHub pages

@@ -2,11 +2,8 @@
     "title": "Grid",
     "documentation": "http://help.syncfusion.com/js/api/ejgrid",
     "samples": {
-        "basic-use": {
-            "default": true,
-            "files": [ "html", "js", "css" ]
-        },
         "Default Functionalities": {
+			"default": true,
             "files": [ "html", "js" ]
         },
         "remote-Data": {
@@ -18,26 +15,26 @@
         "row-Template": {
             "files": [ "html", "js", "css" ]
         },
-        "RTL": {
+		"cell-Edit-Type": {
             "files": [ "html", "js" ]
         },
-        "CaptionSummary": {
+		"multi-Sorting": {
+            "files": [ "html", "js" ]
+        },
+		"filtering-menu": {
+            "files": [ "html", "js" ]
+        },
+		"grouping": {
+            "files": [ "html", "js" ]
+        },
+        "caption-Summary": {
             "files": [ "html", "js" ]
         },
         "localization": {
             "files": [ "html", "js" ]
         },
-        "grouping": {
+		"RTL": {
             "files": [ "html", "js" ]
-        },
-        "multi-Sorting": {
-            "files": [ "html", "js" ]
-        },
-        "filtering-menu": {
-            "files": [ "html", "js" ]
-        },
-        "cell-Edit-Type": {
-            "files": [ "html", "js" ]
-        }
+        }      
     }
 }

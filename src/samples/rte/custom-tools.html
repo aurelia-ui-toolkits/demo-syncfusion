@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px" ej-rte="ej-tools-list.bind:toolsList;ej-width:100%;ej-min-width:150px;ej-tools.bind:tools" ej-on-create.trigger="create()">
+    <require from="./custom-tools.css"></require>
+    <div id="sampleArea">
+        <textarea id="rteSample" rows="10" cols="30" style="width: 740px;" ej-rte="e-tools-list.bind:toolsList;e-width:100%;e-min-width:150px;e-tools.bind:tools" e-on-create.trigger="create()">
                   &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
     &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
     client side. Customer easy to edit the contents and get the HTML content for
@@ -18,14 +19,15 @@
     efficient public methods and client side events.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Keyboard
     navigation support.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
             </textarea>
-            <ej-dialog id="cutomSourceCode" title="Paste you code and inset to RTE" ej-enable-resize="false" ej-enable-modal="true" ej-show-on-init="false" ej-width="auto" ej-position.bind="position">
+           
+            <ej-dialog id="cutomSourceCode" title="Paste you code and inset to RTE" e-enable-resize="false" e-containment="#sampleArea" e-enable-modal="true" e-show-on-init="false" e-width="auto">
                     <table>
                         <tr>
                             <td style="width: 100px">Select type :
                             </td>
                             <td>
                                 <div>
-                                    <select id="languageList" ej-drop-down-list="ej-selected-index:0">
+                                    <select id="languageList" ej-drop-down-list="e-selected-index:0">
                                         <option value="javascript">Java Script</option>
                                         <option value="html">HTML</option>
                                         <option value="css">CSS</option>
@@ -35,7 +37,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <textarea id="srcCode" style="width: 550px; height: 250px">
+                                <textarea id="srcCode" style="width: 550px;height: 200px;border-color: #bababa;">
                                             <div id="srcArea"></div>
                                 </textarea>
                             </td>

@@ -1,8 +1,9 @@
 ﻿<template>
 	<require from="./spreadsheet.css"></require>
 	<div class ="e-main-panel">
-		<ej-spreadsheet id="Spreadsheet1" ej-scroll-settings.bind = "scroll" ej-allow-formula-bar = "false" ej-show-ribbon = "false" ej-enable-context-menu = "false" ej-on-load-complete.trigger = "loadcomplete($event)">
-			<ej-sheet ej-range-settings.bind = "range">
+		<ej-spreadsheet id="Spreadsheet1" e-scroll-settings.bind = "scroll" e-allow-formula-bar = "false" e-show-ribbon = "false" 
+        e-enable-context-menu = "false" e-on-load-complete.trigger = "loadcomplete($event)">
+			<ej-sheet e-range-settings.bind = "range">
 			</ej-sheet>
 		</ej-spreadsheet>
 	</div>

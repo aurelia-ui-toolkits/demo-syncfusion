@@ -1,11 +1,10 @@
 <template>
     <div>
-        <ej-grid ej-data-source.bind="OrderList" ej-page-settings.bind="page" ej-allow-paging=true ej-allow-sorting=true ej-allow-multi-sorting=true ej-sort-settings.bind="sort">
-            <ej-column ej-field="OrderID" ej-header-text="Order ID" ej-is-primary-key=true ej-text-align="right" ej-width="90"></ej-column>
-            <ej-column ej-field="ShipCity" ej-header-text="Ship City" ej-width="100"></ej-column>
-            <ej-column ej-field="EmployeeID" ej-header-text="Employee ID" ej-text-align="right" ej-width="110"></ej-column>
-            <ej-column ej-field="Freight" ej-header-text="Freight" ej-text-align="right" ej-width="90" ej-format.bind="format"></ej-column>
-            <ej-column ej-field="CustomerID" ej-header-text="Customer ID" ej-width="120"></ej-column>
+        <ej-grid e-data-source.bind="OrderList" e-page-settings.bind="page" e-allow-paging=true e-allow-sorting=true e-allow-multi-sorting=true e-sort-settings.bind="sort">
+            <ej-column e-field="OrderID" e-header-text="Order ID" e-is-primary-key=true e-text-align="right" e-width="90"></ej-column>
+            <ej-column e-field="EmployeeID" e-header-text="Employee ID" e-text-align="right" e-width="110"></ej-column>
+            <ej-column e-field="Freight" e-header-text="Freight" e-text-align="right" e-width="90" e-format.bind="format"></ej-column>
+            <ej-column e-field="CustomerID" e-header-text="Customer ID" e-width="120"></ej-column>
         </ej-grid>
     </div>
 </template>
