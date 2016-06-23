@@ -18,4 +18,10 @@ export class DefaultFunctionalities {
       xlObj.XLRibbon.updateRibbonIcons();
     }
   }
+  openfailure(args) {
+    let xlObj = $("#Spreadsheet1").data("ejSpreadsheet");
+	let alertDlg = $("#" + xlObj._id + "_alertdlg");
+    xlObj._renderAlertDlgContent(alertDlg, "Alert", args.detail.statusText);
+    alertDlg.ejDialog("open");
+  }
 }

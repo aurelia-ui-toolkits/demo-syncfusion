@@ -9,11 +9,11 @@
 		"Resize": {
             "files": [ "html", "js"]
         },
-        "Custom ToolTip": {
+        "Custom-ToolTip": {
             "files": [ "html", "js"]
         },
 		
-        "Quick Access Toolbar": {
+        "Quick-Access-Toolbar": {
             "files": [ "html", "js"]
         }        
     }

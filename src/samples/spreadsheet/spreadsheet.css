@@ -1,3 +1,6 @@
 .e-main-panel {
 	height: 90vh;
 }
+.page-host {
+    overflow-y: hidden;
+}

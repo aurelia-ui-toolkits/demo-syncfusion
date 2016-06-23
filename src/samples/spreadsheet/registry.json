@@ -13,11 +13,7 @@
 	 "data-validation": {
       "default" : false,
       "files": ["html", "js"]
-	 },
-   "freeze-pane": {
-      "default" : false,
-      "files": ["html", "js"]
-	 },
+	},
    "import-export": {
       "default" : false,
       "files": ["html", "js"]
