@@ -9,7 +9,7 @@
     "OLAP": {
       "files": ["html", "js"]
     },
-    "chart Types": {
+    "chart-Types": {
       "files": ["html", "js"]
     }
   }

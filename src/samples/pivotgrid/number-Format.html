@@ -1,5 +1,5 @@
 <template>
-  <require from="./summary Type.css"></require>
+  <require from="./number-Format.css"></require>
   
     <div>
         <div style="width:80%"> 
@@ -11,23 +11,32 @@
         <input type="text" ej-drop-down-list="e-target-id.bind:target;e-value.bind:Amount" e-on-change.trigger="onChange($event)" id="selectAmount" />
         <div id="Amount">
             <ul>
-                <li>Sum</li>
-                <li>Average</li>
-                <li>Count</li>
-                <li>Min</li>
-                <li>Max</li>
+                <li>Decimal</li>
+                <li>Currency</li>
+                <li>Percentage</li>
+                <li>Number</li>
+                <li>Date</li>
+                <li>Time</li>
+                <li>Scientific</li>
+                <li>Accounting</li>
+                <li>Fraction</li>
             </ul>
         </div></br>
         <div style="margin: 30px 10px 10px 0px">Quantity</div>
         <input type="text" ej-drop-down-list="e-target-id.bind:target1;e-value.bind:Quantity" e-on-change.trigger="onChange($event)" id="selectQuantity" />
         <div id="Quantity">
             <ul>
-                <li>Sum</li>
-                <li>Average</li>
-                <li>Count</li>
-                <li>Min</li>
-                <li>Max</li>
+                <li>Decimal</li>
+                <li>Currency</li>
+                <li>Percentage</li>
+                <li>Number</li>
+                <li>Date</li>
+                <li>Time</li>
+                <li>Scientific</li>
+                <li>Accounting</li>
+                <li>Fraction</li>
             </ul>
+        </div>
         </div>       
 	</div>
 </template>
