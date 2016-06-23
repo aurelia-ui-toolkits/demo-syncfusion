@@ -9,13 +9,13 @@
     "exporting":{
       "files":["html","js"]
     },
-     "field-List":{
+     "field List":{
       "files":["html","js", "css"]
     },
-    "number-Format":{
+    "number Format":{
       "files":["html","js", "css"]
     },
-    "summary-Type":{
+    "summary Type":{
       "files":["html","js", "css"]
     }
   }
