@@ -30,7 +30,7 @@
     ```
 <br/>
 5. Install the aurelia-syncfusion-bridge and the css plugin
-`jspm install aurelia-syncfusion-bridge css`
+`jspm install npm:aurelia-syncfusion-bridge css`
 
 6. Register the `aurelia-syncfusion-bridge` plugin with Aurelia in your "main.js" or equivalent. The configuration function will be passed a builder object that you can use to configure which Syncfusion JavaScript controls you wish to use. You can use all the controls by calling the "useAll()" method.
   

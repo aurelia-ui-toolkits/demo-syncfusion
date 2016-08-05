@@ -1,0 +1,91 @@
+
+
+{
+
+  "name": "syncfusion-javascript",
+
+  "version": "14.2.28",
+
+  "description": "Npm package of Syncfusion.JavaScript.",
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/syncfusion/JavaScript-Widgets.git"
+
+  },
+
+  "keywords": [
+
+    "syncfusion",
+
+    "ej",
+
+    "essential",
+
+    "javascript"
+
+  ],
+
+  "author": "Syncfusion Inc",
+
+  "license": "SEE LICENSE IN README.md",
+
+  "dependencies": {
+
+    "jquery": ">=1.7.0 <3.0.0",
+
+    "jquery-validation": "*",
+
+    "jquery-easing": "*"
+
+  },
+
+  "bugs": {
+
+    "url": "https://github.com/syncfusion/JavaScript-Widgets/issues"
+
+  },
+
+  "homepage": "https://github.com/syncfusion/JavaScript-Widgets#readme",
+  
+  "files": [
+        "Scripts/",
+        "Content/"
+    ],
+    "jspm": {
+        "main": false,
+        "format": "amd",
+        "registry" : "npm",
+        "files": [
+            "Scripts",
+            "Content"
+        ],
+        "dependencies": {
+            "jquery": "*",
+            "jquery-easing": "*",
+            "jsrender": "*",
+            "jquery-validation": "*",
+            "jquery-validation-unobtrusive": "*"
+        },
+        "ignore": [
+          "Scripts/jquery.unobtrusive-ajax.min.js",
+          "Scripts/jquery.validate.unobtrusive.min.js",
+          "Scripts/jsrender.min.js",    
+          "Scripts/ej.widgets.all*.js",
+          "Scripts/ej.widgets.all.min.map",
+          "Scripts/common/ej.unobtrusive.min.js",
+          "Scripts/common/ej.unobtrusive.min.map",
+          "Scripts/common/ej.webform.min.js",
+          "Scripts/common/ej.webform.min.map",
+          "Scripts/common/ej.widget.angular.min.js",
+          "Scripts/common/ej.widget.angular.min.map",
+          "Scripts/common/ej.widget.ko.min.js",
+          "Scripts/common/ej.widget.ko.min.map",
+          "Scripts/web/ej.web.all*.js",
+          "Scripts/web/ej.web.all.min.map"
+       ]
+    }
+}
+
