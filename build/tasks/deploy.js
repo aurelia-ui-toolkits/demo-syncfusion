@@ -15,7 +15,7 @@ gulp.task('deploy-gh-pages', function() {
     './jspm_packages/npm/font-awesome@*/**/*',
     './jspm_packages/npm/font-awesome*.js',
 	'jspm_packages/npm/bluebird@*/js/browser/bluebird.min.js',
-	'vendors/**/*',
+	'jspm_packages/npm/syncfusion-javascript@*/**/*',
 	'./jspm_packages/npm/jquery-validation*.js',
 	'./jspm_packages/npm/jquery-validation*/**/*',
     './jspm_packages/github/PrismJS/prism*/themes/*.css',

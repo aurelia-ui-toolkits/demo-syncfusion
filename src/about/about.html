@@ -51,7 +51,7 @@
                             <ej-grid id="about_grid" e-data-source.bind="EmployeesList" e-page-settings.bind="page" e-allow-paging=t rue>
                                 <ej-column e-field="EmployeeImage" e-header-text="Employee Image" e-text-align="center" e-width="110">
                                     <ej-template>
-                                        <div><img style="width: 45px; height: 45px" src="images/grid/Employees/${EmployeeID}.png" /> </div>
+                                        <div><img style="width: 45px; height: 45px" src.bind="'images/grid/Employees/' + EmployeeID + '.png'" /> </div>
                                     </ej-template>
                                 </ej-column>
                                 <ej-column e-field="EmployeeID" e-header-text="Employee ID" e-text-align="right" e-width="90"></ej-column>

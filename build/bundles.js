@@ -22,7 +22,8 @@ var aureliaBundle = [
   "aurelia-loader-default",
   "aurelia-history-browser",
   "aurelia-logging-console",
-  "aurelia-polyfills"
+  "aurelia-polyfills",
+  "aurelia-event-aggregator"
 ];
 
 var pluginsBundle = [
