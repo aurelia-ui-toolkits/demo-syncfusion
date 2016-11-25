@@ -5,24 +5,24 @@ export class methods {
       this.width = '100%';
       this.height = '100%';
     }
-    hideShowToolbar(event){
+    hideShowToolbar(event) {
       let args = event.detail;
       let fileobj = $('#fileexplorer').ejFileExplorer('instance');
-      fileobj.option("showToolbar", !args.isChecked);
+      fileobj.option('showToolbar', !args.isChecked);
     }
-    hideShowFooter(event){
+    hideShowFooter(event) {
       let args = event.detail;
       let fileobj = $('#fileexplorer').ejFileExplorer('instance');
-      fileobj.option("showFooter", !args.isChecked);
+      fileobj.option('showFooter', !args.isChecked);
     }
-    hideShowTreeView(event){
+    hideShowTreeView(event) {
       let args = event.detail;
       let fileobj = $('#fileexplorer').ejFileExplorer('instance');
-      fileobj.option("showNavigationPane", !args.isChecked);
+      fileobj.option('showNavigationPane', !args.isChecked);
     }
-    hideShowContextMenu(event){
+    hideShowContextMenu(event) {
       let args = event.detail;
       let fileobj = $('#fileexplorer').ejFileExplorer('instance');
-      fileobj.option("showContextMenu", !args.isChecked);
+      fileobj.option('showContextMenu', !args.isChecked);
     }
 }

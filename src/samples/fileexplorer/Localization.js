@@ -7,8 +7,8 @@ export class Localization {
       this.target = 'localelist';
       this.localeValue = 'en-US';
       ej.FileExplorer.Locale['de-DE'] = {
-		EmptyResult: "Keine Artikel entsprechen Ihrer Suche nach",
-		EmptyFolder:"Dieser Ordner ist leer",
+        EmptyResult: 'Keine Artikel entsprechen Ihrer Suche nach',
+        EmptyFolder: 'Dieser Ordner ist leer',
         Back: 'rückwärts',
         Forward: 'Nach Vorne',
         Upward: 'nach oben',
@@ -101,8 +101,8 @@ export class Localization {
         }
       };
       ej.FileExplorer.Locale['ar-SA'] = {
-		EmptyResult: "لا توجد عناصر تطابق بحثك",
-		EmptyFolder:"هذا المجلد فارغ",
+        EmptyResult: 'لا توجد عناصر تطابق بحثك',
+        EmptyFolder: 'هذا المجلد فارغ',
         Back: 'الى الوراء',
         Forward: 'إلى الأمام',
         Upward: 'فوق',

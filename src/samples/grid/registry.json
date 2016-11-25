@@ -2,7 +2,7 @@
     "title": "Grid",
     "documentation": "http://help.syncfusion.com/js/api/ejgrid",
     "samples": {
-        "default-functionalities": {
+        "Default-Functionalities": {
 			"default": true,
             "files": [ "html", "js" ]
         },

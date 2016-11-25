@@ -9,8 +9,8 @@ export class TimeScale {
     }
 
     constructor() {
-		this.majorSlotTimings = 'majorslotlist';
-		this.minorSlotTimings = 'minorslotlist';
+      this.majorSlotTimings = 'majorslotlist';
+      this.minorSlotTimings = 'minorslotlist';
       this.TimeInterval = {
         minorSlotCount: 5,
         majorSlot: 60

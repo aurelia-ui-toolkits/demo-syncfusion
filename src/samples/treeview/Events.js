@@ -37,6 +37,6 @@ export class Events {
       this.logger.log('BeforeEdit event is fired for ' + $.trim(args.detail.currentElement.text()) + ' node.');
     }
     nodeEdit(args) {
-      this.logger.log($.trim(args.detail.oldText) +'Node has been edited to ' + $.trim(args.detail.newText));
+      this.logger.log($.trim(args.detail.oldText) + 'Node has been edited to ' + $.trim(args.detail.newText));
     }
 }
