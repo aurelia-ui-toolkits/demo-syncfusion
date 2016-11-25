@@ -1,0 +1,57 @@
+﻿<template>
+    <require from="./API.css"></require>
+    <div class="row">
+        <div class="frame">
+            <div>
+                <ej-file-explorer id="fileexplorer" e-path.bind="path"e-is-responsive=true e-width="100%" e-min-width="214px" e-ajax-action.bind="ajaxAction" e-width.bind="width" e-height.bind="height" e-layout="tile" style="display:block"></ej-file-explorer>
+            </div>
+        </div>
+    </div>
+   
+
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-md-3 top-margin">
+                <div>Toolbar </div>
+            </div>
+            <div class="col-md-2 top-margin">
+                <input type="checkbox" id="toolbar" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-default-text:Hide;e-active-text:Show;e-width.bind:width"
+                e-on-change.trigger="hideShowToolbar($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 top-margin">
+                <div>Footer </div>
+            </div>
+            <div class="col-md-2 top-margin">
+                <input type="checkbox" id="footer" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-default-text:Hide;e-active-text:Show;e-width.bind:width"
+                e-on-change.trigger="hideShowFooter($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 top-margin">
+                <div>TreeView </div>
+            </div>
+            <div class="col-md-2 top-margin">
+                <input type="checkbox" id="treeview" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-default-text:Hide;e-active-text:Show;e-width.bind:width"
+                e-on-change.trigger="hideShowTreeView($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 top-margin">
+                <div>ContextMenu </div>
+            </div>
+            <div class="col-md-2 top-margin">
+                <input type="checkbox" id="menu" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-width.bind:width"
+                e-on-change.trigger="hideShowContextMenu($event)" />
+            </div>
+        </div>
+       </div>
+    </div>
+
+    <style>
+        #propbutton{
+            margin-top: 10px;
+        }
+        </style>
+</template>

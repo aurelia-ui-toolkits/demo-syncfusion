@@ -1,0 +1,10 @@
+<template>
+  <require from="./rtl.css"></require>
+  
+  <div>
+    <ej-pivot-grid e-data-source.bind="pivotData" e-hyperlink-settings.bind="hyperLink" e-on-value-cell-hyperlink-click.trigger="valueCellClick()"
+      e-on-summary-cell-hyperlink-click.trigger="summaryCellClick()" e-on-column-header-hyperlink-click.trigger="columnCellClick()"
+      e-on-row-header-hyperlink-click.trigger="rowCellClick()">
+    </ej-pivot-grid>
+  </div>
+</template>

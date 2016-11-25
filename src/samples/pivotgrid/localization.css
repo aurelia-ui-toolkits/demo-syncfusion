@@ -1,0 +1,13 @@
+ej-pivot-grid {
+    display: block;
+    height: 300px;
+    width: 100%; 
+    overflow: auto;
+    float:left;
+    margin: 20px 0px 0px 20px;
+    position: relative !important;
+}
+.e-ddl{
+  width: 190px !important;
+  margin-top: 20px;
+}

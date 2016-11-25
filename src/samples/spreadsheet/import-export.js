@@ -3,11 +3,11 @@ export class ImportExport {
   constructor() {
     let filteredData = ej.DataManager(window.importData).executeLocal(ej.Query().take(20).select('Order ID', 'Customer ID', 'Employee ID', 'Ship Name', 'Ship City', 'Ship Address'));//eslint-disable-line new-cap
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: filteredData, startCell: 'A3', showHeader: 'true'}];
-    this.import = {importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};
-    this.export = { excelUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel',
-                    csvUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv',
-					          pdfUrl: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf' };
+    this.range = [{ dataSource: filteredData, startCell: 'A3' }];
+    this.import = {importMapper: 'http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import'};
+    this.export = {excelUrl: 'http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport',
+        csvUrl: 'http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport',
+        pdfUrl: 'http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport'};
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');
@@ -22,7 +22,7 @@ export class ImportExport {
       xlFormat.format({ 'style': { 'font-weight': 'bold' } }, 'A3:G3');
       xlFormat.createTable(formatObj, 'A3:F13');
       xlFormat.removeTable(1);
-      xlObj.XLCFormat.setCFRule({ 'action': 'lessthan', 'input1': '5', 'color': 'yellowft', 'range': 'C4:C13' });
+      xlObj.XLCFormat.setCFRule({ 'action': 'lessthan', 'inputs': ['5'], 'color': 'yellowft', 'range': 'C4:C13' });
       xlObj.setHyperlink('D8', { webAddr: 'http://www.google.com', text: xlObj.XLEdit.getPropertyValue(7, 3) }, 0);
       xlObj.setHyperlink('D10', { webAddr: 'http://www.yahoo.com', text: xlObj.XLEdit.getPropertyValue(9, 3) }, 0);
       xlObj.XLComment.setComment('D4', 'Free shipping for this order.', false);

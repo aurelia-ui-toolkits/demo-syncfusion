@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions"
+        <ej-chart id="container" e-on-load.trigger="onchartload($event)" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions"
                   e-primary-x-axis.bind="primaryXAxis" e-primary-y-axis.bind="primaryYAxis">
             <ej-series e-data-source.bind="data" e-x-name="xName" e-y-name="yName" e-name="Unit Sold" e-type="column" e-enable-animation="true"
                        e-tooltip.bind="tooltip" e-fill="#69D2E7">

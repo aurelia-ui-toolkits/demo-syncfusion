@@ -1,0 +1,13 @@
+<template>
+    <require from="./common.css"></require>
+
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='frame'>
+                <ej-pager e-page-size.bind=size e-total-pages.bind=totalPages e-total-records-count.bind=totalRecordsCount e-page-count.bind=pageCount e-on-click.trigger="onClick($event)" id="pager"> </ej-pager>
+            </div>
+            <div class="dtlabel">Selected Page: 1</div>
+        </div>
+    </div>
+
+</template>

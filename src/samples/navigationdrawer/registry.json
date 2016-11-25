@@ -4,7 +4,8 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "9c10deafe80e9838e04b6b3f9d27d67e"
     }
   }
 }

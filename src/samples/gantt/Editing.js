@@ -18,6 +18,7 @@
       allowEditing: true,
       allowAdding: true,
       allowDeleting: true,
+      allowIndent: true,
       editMode: 'cellEditing'
     };
 

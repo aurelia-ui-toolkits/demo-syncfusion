@@ -4,100 +4,61 @@
     "samples": {
         "default-functionalities": {
             "default": true,
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "5a2be8753286d8fc9641d1eee99a8183"
         },
         "remote-data": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "f4fb27843f16ed5d1a7dd2afd65bbfea"
         },
         "load-on-demand": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "d9152d731a38da7b7a03418a502136ee"
         },
         "custom-work-hours": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "615803358c5edb97cc1e4b5e95616608"
         },
         "resource-grouping": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "2426c561bdf94d30f1de5d465b244b01"
         },
         "time-scale": {
-            "files": [
-                "html",
-                "js"
-            ]
-        },
-        "print-and-export": {
-            "files": [
-                "html",
-                "js",
-                "css"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "e77dd8d2a50aeb49cd9e124391c8c258"
         },
         "cell-formatting": {
-            "files": [
-                "html",
-                "js",
-                "css"
-            ]
+            "files": [ "html", "js", "css" ],
+            "gist": "6b4a1a66adebf320a2835bf2105dc6af"
         },
         "external-drag-and-drop": {
-            "files": [
-                "html",
-                "js",
-                "css"
-            ]
+            "files": [ "html", "js", "css" ],
+            "gist": "320124c9ea77f3e23b091a6d2ccb301d"
         },
         "template": {
-            "files": [
-                "html",
-                "js",
-                "css"
-            ]
+            "files": [ "html", "js", "css" ],
+            "gist": "e964d575f2d0652cd15627fd02f532aa"
         },
         "localization": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "f688b93d7ce09b6c0220d97772467d7d"
         },
         "custom-window": {
-            "files": [
-                "html",
-                "js",
-                "css"
-            ]
+            "files": [ "html", "js", "css" ],
+            "gist": "2a66e8e66809f28284afe868dc99fa28"
         },
         "custom-view": {
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "b7c36ecb48d473c9c123af4c45712eaf"
         },
         "validation":{
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "d141afb9a6e6f6027cf31668d4656c6f"
         },
-        "api's": {
+        "api": {
             "title" : "API's",
-            "files": [
-                "html",
-                "js"
-            ]
+            "files": [ "html", "js" ],
+            "gist": "046b356f4d37b3810615f46850ccfe0b"
         }
     }
 }

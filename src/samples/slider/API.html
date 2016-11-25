@@ -1,0 +1,23 @@
+﻿<template>
+    <require from="./Common.css"></require>
+    <div class="row">
+        <div class="frame">
+            <div id="slider" ej-slider="e-enabled.bind:status;e-width.bind:width"></div>
+        </div>
+    </div>
+
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="e-text:Enable;e-size.bind:'medium';" e-on-click.trigger="enableButton()"></button>
+            </div>
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="e-text:Disable;e-size.bind:'medium';" e-on-click.trigger="DisableButton()"></button>
+            </div>
+            <div class="col-sm-2">
+                <button id="propbutton" ej-button="e-text:Get Value;e-size.bind:'medium';" e-on-click.trigger="GetValue()"></button>
+            </div>
+
+        </div>
+    </div>
+</template>

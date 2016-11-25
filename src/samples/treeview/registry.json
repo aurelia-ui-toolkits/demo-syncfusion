@@ -1,47 +1,60 @@
 {
   "title": "TreeView",
-  "documentation":"http://help.syncfusion.com/js/api/ejtreeview",
+  "documentation":"//help.syncfusion.com/js/api/ejtreeview",
   "samples": {
     "Default-Functionalities": {
        "default" : true,
-      "files": ["html"]
+        "files": [ "html" ],
+        "gist": "04e955ca1b7074f8f104a68f149cc769"
     },
 "Icons": {
-      "files": ["html", "css" ]
+    "files": [ "html", "css" ],
+    "gist": "ea2bc3ef61d83fef12e50e95e730eb35"
     }, 
 "Checkboxes": {
-      "files": ["html"]
+    "files": [ "html" ],
+    "gist": "7417539d4b23140bf5d7fb0885f22625"
     }, 
 "Node-Editing": {
-      "files": ["html"]
+    "files": [ "html" ],
+    "gist": "d33cca450bbd0848704636aa3a77e9c6"
     }, 
 "Drag-And-Drop": {
-      "files": ["html"]
+    "files": [ "html" ],
+    "gist": "0ae58e4925582f1a6f7533460336f72e"
     },
 "Data-Binding-Local": {
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "6abd2f0871c2d84a4ebb541652c3c628"
     }, 
 "Data-Binding-Remote": {
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "15a451756e938a6034e4aed7154205be"
     }, 
 "Load-On-Demand": {
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "dac83f74ca7fc6ffa107804b39ddb1f8"
     },
 "Context-Menu": {
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "3076edb919996ef536fea09c06f85abd"
     }, 
 "State-Maintenance": {
-      "files": ["html"]
+    "files": [ "html" ],
+    "gist": "d3c78275aabde744a91832d28af12d4d"
     }, 
-"API's": {
+"API": {
      "title" : "API's",
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "90214e22b0c5130dc41a442691303f71"
     }, 
 "Events": {
-      "files": ["html", "js" ]
+    "files": [ "html", "js" ],
+    "gist": "28118dc473c260a15a7e4a8a3f5861ca"
     }, 
 "RTL": {
-      "files": ["html"]
+    "files": [ "html" ],
+    "gist": "28f232c580d573afa3a8c5ad234d2937"
     }
   }
 }

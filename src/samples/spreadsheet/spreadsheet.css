@@ -4,3 +4,6 @@
 .page-host {
     overflow-y: hidden;
 }
+ej-spreadsheet {
+    display: block;
+}

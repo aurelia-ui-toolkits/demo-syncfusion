@@ -1,0 +1,105 @@
+<template>
+    <div>
+        <ej-accordion id="APIAccordion" style="width: 500px" e-on-create.trigger="create()">
+            <h3><a href="#">London</a></h3>
+            <div>
+                London is one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has
+                an excellent public transportation system that allows visitors to see all the fantastic sights without spending
+                a ton of money on a rental car.
+            </div>
+            <h3><a href="#">Paris</a></h3>
+            <div>
+                Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes
+                from every one of its beautiful corners.
+            </div>
+            <h3><a href="#">Rome</a></h3>
+            <div>
+                Rome is one of the world's most fascinating cities. The old adage that Rome was not built in a day — and that you won't see
+                it in one or even in three — is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+                But remember what the Romans say: "Even a lifetime isn't enough to see Rome."
+            </div>
+        </ej-accordion>
+    </div>
+    
+     <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Active Index
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <select name="selectIndex" class="e-ddl" id="optActiveChange" ej-drop-down-list="e-watermark-text:Select;e-width.bind:width" e-on-create.trigger="activeChangeDDL()" e-on-change.trigger="onActiveChange($event)">
+                                <option value="0">London</option>
+                                <option value="1">Paris</option>
+                                <option value="2">Rome</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            Disable Item
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <select name="disableItem" class="e-ddl" id="optDisableChange" ej-drop-down-list="e-watermark-text:Select;e-show-checkbox:true;e-width.bind:width" e-on-create.trigger="onDisableChangeDDL()" e-on-change.trigger="onDisableChange($event)">
+                                <option value="0">London</option>
+                                <option value="1">Paris</option>
+                                <option value="2">Rome</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Enable Item
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <select name="enableItem" class="e-ddl" id="optEnableChange" ej-drop-down-list="e-watermark-text:Select;e-show-checkbox:true;e-width.bind:width" e-on-create.trigger="enableChangeDDL()" e-on-change.trigger="onEnableChange($event)">
+                                <option value="0">London</option>
+                                <option value="1">Paris</option>
+                                <option value="2">Rome</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Enable / Disable All
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="btnEnableDisable" class="e-togglebtn" value="ShowHide" ej-toggle-button="e-default-text:Disable All;e-active-text:Enable All;e-width.bind:width" e-on-change.trigger="onEnableDisableAll($event)" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Show / Hide
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkShowHide" class="e-chkbox" value="ShowHide" checked="checked" ej-check-box e-on-change.trigger="onShowHide($event)" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Destroy
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkDestroy" class="e-togglebtn" ej-toggle-button="e-default-text:Destroy;e-active-text:Restore;e-width.bind:width" e-on-change.trigger="onDestroyRestore($event)" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Height Adjust Mode
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <select name="heightAdjust" class="e-ddl" id="optHeightAdjust" ej-drop-down-list="e-value:content;e-width.bind:width" e-on-change.trigger="onHeightAdjust($event)" >
+                                <option value="fill">Fill</option>
+                                <option value="content">Content</option>
+                                <option value="auto">Auto</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Close button
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkCloseBtn" class="e-togglebtn" ej-toggle-button="e-default-text:Show;e-active-text:Hide;e-width.bind:width" e-on-change.trigger="onShowHideCloseBtn($event)" />
+                        </div>
+                    </div>
+     </div>
+</template>

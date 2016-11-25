@@ -1,0 +1,13 @@
+{
+  "title": "Pager",
+  "documentation":"http://help.syncfusion.com/js/api/ejpager",
+  "samples": {
+    "default": {
+      "default" : true,
+      "files": ["html", "js"]
+    },
+    "events": {
+      "files": ["html", "js"]
+    }
+  }
+}

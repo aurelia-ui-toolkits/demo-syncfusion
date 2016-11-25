@@ -1,8 +1,9 @@
 <template>
     <require from="./rtl.css"></require>
-    <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
-        e-on-click.trigger="onOpen()"></button>
+
     <div class="control" style="height:500px;">
+            <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
+        e-on-click.trigger="onOpen()"></button>
         <ej-dialog id="rtlDialog" e-title="أودي Q3 محرك" e-enable-rtl="true" e-width="550" e-min-width="325" e-tooltip="tooltip"
             e-min-height="370" e-containment=".control" e-on-close.trigger="onDialogClose()">
             <h1>الاستماع Q3</h1>

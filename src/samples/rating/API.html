@@ -1,0 +1,65 @@
+<template>
+    <div>
+        <input id="apiRating" type="text" class="rating" ej-rating="e-value.bind:ratingValue" e-on-create.trigger="create()" />
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Set Value
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <select name="ddlSetValue" id="ddlRating" class="e-ddl" ej-drop-down-list="e-width.bind:width;e-watermark-text:Select;e-selected-index:0" e-on-create.trigger="dropdownCreate()" e-on-change.trigger="setRatingValue($event)">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">
+                            Get Current Value
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="button" id="btnGetValue" value="GetValue" class="e-btn" ej-button="e-width.bind:width" e-on-click.trigger="getValue($event)" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 top-margin">
+                            Reset
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="button" id="btnReset" class="e-btn" value="Reset" ej-button="e-width.bind:width" e-on-click.trigger="reset($event)" />
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">
+                            Reset Button
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkResetbtn" class="e-togglebtn" ej-toggle-button="e-width.bind:width;e-default-text:Hide;e-active-text:Show" e-on-change.trigger="showHideReset($event)" />
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">
+                            Rating
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkShowHideRating" class="e-togglebtn" ej-toggle-button="e-width.bind:width;e-default-text:Hide;e-active-text:Show" e-on-change.trigger="showHideRating($event)" />
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">
+                            Destroy
+                        </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="chkDestroy" class="e-togglebtn" ej-toggle-button="e-width.bind:width;e-default-text:Destroy;e-active-text:Restore" e-on-change.trigger="destroyRestore($event)" />
+                        </div>
+                    </div>
+    </div>
+</template>
+    

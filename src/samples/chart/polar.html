@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeriesOptions">
+        <ej-chart id="container" e-on-load.trigger="onchartload($event)" e-legend.bind="legend" e-size.bind="size" e-primary-y-axis.bind="primaryYAxis" e-common-series-options.bind="commonSeriesOptions">
             <ej-series e-data-source.bind="dataList" e-x-name="xName" e-y-name="yName2" e-name="Area" e-draw-type="Area" e-marker.bind="marker"
                        e-fill="#E94649">
             </ej-series>

@@ -1,0 +1,9 @@
+.api-progress-bar-frame {
+    width: 50%;
+}
+
+.api-progress-bar-txt {
+    font-size: 18px;
+    padding:10px;
+    text-align: center;
+}

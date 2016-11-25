@@ -4,16 +4,20 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "86789e6a68752e1d88e2de743eeb17cd"
     },
     "databinding-json":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "39b5985f3f34dfc79887cee8d6d1b751"
     },
     "image-with-content":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "cc7fb5a6277120670f75bf89c22c503f"
     },
     "thumbnail":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "fb7d67d67a1a95c978da523eef12260c"
     }
   }
 }

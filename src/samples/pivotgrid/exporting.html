@@ -1,9 +1,9 @@
 <template>
-  <require from="./basic-use.css"></require>
+  <require from="./relational.css"></require>
   <div>
     <ej-pivot-grid e-data-source.bind="pivotData">
     </ej-pivot-grid>
-    <div style="margin:25px 10px 10px 10px; float:left">Excel Export</div>
+    <div style="margin:25px 10px 10px 10px; float:left">Excel Export :</div>
     <button id="button" ej-button="e-text.bind:textValue" e-on-click.trigger="btnExportClick($event)" style="margin:15px 10px 10px 10px"></button>
   </div>
 </template>

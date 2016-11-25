@@ -4,13 +4,16 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "6d89f03925eeaec28e0d42d59ceceba1"
     },
     "integration":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "df6b0d6f2813b4d825dffa6ff0b7c328"
     },
     "nested-splitter":{
-       "files": ["html", "js","css"]
+       "files": ["html", "js","css"],
+      "gist": "8b3e562c0ad8d5db214455208e36b73a"
     }
   }
 }

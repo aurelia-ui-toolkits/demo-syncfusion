@@ -1,0 +1,13 @@
+#color-value{
+    width:130px;
+    height:34px;
+    text-indent: 10px;
+}
+.col-md-3 {
+    height: 50px;
+}
+ #color-value::-webkit-input-placeholder {
+   color: lightgray;
+   font-style: italic;
+   opacity:2;   
+}

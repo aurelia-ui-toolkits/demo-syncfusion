@@ -3,7 +3,7 @@ export class FreezePane {
   constructor() {
     let freezeData = ej.DataManager(window.freezeData).executeLocal(ej.Query().take(100).select('Supplier ID', 'Company Name', 'Contact Name', 'City', 'Contact Title', 'Postal Code', 'Country'));//eslint-disable-line new-cap
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: freezeData, startCell: 'A1', showHeader: 'true' }];
+    this.range = [{ dataSource: freezeData, startCell: 'A1' }];
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');

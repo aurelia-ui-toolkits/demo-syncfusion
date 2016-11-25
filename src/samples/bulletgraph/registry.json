@@ -4,13 +4,16 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"6bb5fd68d329de947b108a9b50b9b2e5"
     },
 	"local-data": {
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"1c263aefdac1b8ab3c695011e58bf2e5"
     },
 	"indicator": {
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"04ce8796d7e870daf4031622f9896ce4"
     }
   }
 }

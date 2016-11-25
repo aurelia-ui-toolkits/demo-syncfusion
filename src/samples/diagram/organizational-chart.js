@@ -1,7 +1,6 @@
 export class OrganizationalChart {
   constructor() {
     let addInfo = { orientation: 'vertical', type: 'alternate' };
-    //Initialize data source
     let data = [
       { 'Id': 'parent', 'Function': 'Project Management' },
       { 'Id': '1', 'Function': 'R&D Team', 'Phase': 'parent' },
@@ -24,7 +23,6 @@ export class OrganizationalChart {
       { 'Id': '18', 'Function': 'Support', 'Phase': '3' },
       { 'Id': '19', 'Function': 'Coordination', 'Phase': '3' }
     ];
-    //Binds Custom JSON with node
     function nodeTemplate(diagram, node) {
       node.labels[0].text = node.Function;
       node.fillColor = node.Color;
@@ -34,7 +32,6 @@ export class OrganizationalChart {
       if (node.Phase === '2') { node.fillColor = '#9264aa'; }
       if (node.Phase === '3') { node.fillColor = '#9264aa'; }
     }
-    //Customize subtree orientation
     function getLayoutInfo(diagram, node, options) {
       if (!options.hasSubTree) {
         options.orientation = node.addInfo.orientation;
@@ -42,31 +39,14 @@ export class OrganizationalChart {
       }
     }
     this.tool = ej.datavisualization.Diagram.Tool.ZoomPan;
-    this.layout = {
-      type: 'organizationalchart',
-      marginX: 3,
-      marginY: 3,
-      getLayoutInfo: getLayoutInfo
-    };
+    this.layout = { type: 'organizationalchart', marginX: 0, marginY: 50, getLayoutInfo: getLayoutInfo };
     this.defaultSettings = {
       node: {
         constraints: ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.PointerEvents,
-        addInfo: addInfo,
-        width: 100,
-        height: 40,
-        borderColor: 'black',
-        labels: [{
-          fontColor: '#ffffff'
-        }]
+        addInfo: addInfo, width: 100, height: 40, borderColor: 'black', labels: [{ fontColor: '#ffffff' }]
       },
       connector: {
-        lineColor: '#000000',
-        segments: [{
-          type: 'orthogonal'
-        }],
-        targetDecorator: {
-          shape: 'none'
-        },
+        lineColor: '#000000', segments: [{ type: 'orthogonal' }], targetDecorator: { shape: 'none' },
         constraints: ej.datavisualization.Diagram.ConnectorConstraints.None
       }
     };
@@ -83,5 +63,59 @@ export class OrganizationalChart {
     this.snapSettings = {
       snapConstraints: ej.datavisualization.Diagram.SnapConstraints.None
     };
+    this.hieryList = 'hieryList';
+    this.hieryListText = 'Top-Bottom';
+    this.hieryListTextvalue = 'value';
+    this.XWmark = 'Margin X';
+    this.XValue = 3;
+    this.XMinValue = -160;
+    this.XMaxValue = 10000;
+    this.YWmark = 'Margin Y';
+    this.YValue = 3;
+    this.YMinValue = -160;
+    this.YMaxValue = 10000;
+    this.HWmark = 'Horizontal Spacing';
+    this.HValue = 25;
+    this.HMinValue = 1;
+    this.HMaxValue = 100000;
+    this.VWmark = 'Vertical Spacing';
+    this.VValue = 35;
+    this.VMinValue = 1;
+    this.VMaxValue = 100000;
+  }
+  orientationChange(args) {
+    $('#diagram').ejDiagram({
+      layout: {
+        orientation: args.detail.value
+      }
+    });
+  }
+  MarginXChange(args) {
+    $('#diagram').ejDiagram({
+      layout: {
+        marginX: args.detail.value
+      }
+    });
+  }
+  MarginYChange(args) {
+    $('#diagram').ejDiagram({
+      layout: {
+        marginY: args.detail.value
+      }
+    });
+  }
+  HorizontalChange(args) {
+    $('#diagram').ejDiagram({
+      layout: {
+        horizontalSpacing: args.detail.value
+      }
+    });
+  }
+  VerticalChange(args) {
+    $('#diagram').ejDiagram({
+      layout: {
+        verticalSpacing: args.detail.value
+      }
+    });
   }
 }

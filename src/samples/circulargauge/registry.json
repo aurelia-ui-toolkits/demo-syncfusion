@@ -4,22 +4,28 @@
   "samples": {
     "basic-use": {
 	  "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"d0e01a44aa9c39ac84b00e04fe36f1f1"
     },
 	"clock": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"dec1c696c9820497ee680c4802143672"
     },
 	"half-circular": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"63e86bdadf33deced89d6855d8730f5d"
     },
 	"pointer-image": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"dde4ea43c54dea6a79bce9807bc4bd0a"
     },
 	"unit-label": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"f2ec14aaa1283101f8456b8674870c04"
     },
 	"user-interaction": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"b6b75846c66d35b5fad421653743c82d"
     }
   }
 }

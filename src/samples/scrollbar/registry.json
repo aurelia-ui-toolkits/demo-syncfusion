@@ -4,7 +4,8 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html","css"]
+      "files": ["html","css"],
+      "gist":"a55b27143bc56d1b0a05913cc52899f1"
     }    
   }
 }

@@ -1,0 +1,18 @@
+<template>
+    <require from="./common.css"></require>
+
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='frame'>
+                <ej-pager e-page-size.bind=size e-total-pages.bind=totalPages e-total-records-count.bind=totalRecordsCount e-page-count.bind=pageCount e-on-click.trigger="onClick($event)" id="pager"> </ej-pager>
+            </div>
+        </div>
+    </div>
+    <div id="Logger" class="box">
+        <h4>Event Trace</h4>
+        <logger view-model.ref="logger"></logger>
+        <div>
+            <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
+        </div>
+    </div>
+</template>

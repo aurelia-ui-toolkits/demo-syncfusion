@@ -2,7 +2,7 @@
 export class Datavalidation {
   constructor() {
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: window.validationData, startCell: 'A1'}];
+    this.range = [{ dataSource: window.validationData, startCell: 'A1', showHeader: false}];
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');

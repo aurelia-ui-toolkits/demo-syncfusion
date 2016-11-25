@@ -4,27 +4,34 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "af407207410a9f8220ee5c73eed32274"
     },
      "template": {
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "1a4a7905eaab0e0e89546c89ab82b8ed"
     },
    "multiple-values":{
-     "files": ["html", "js","css"]
+     "files": ["html", "js","css"],
+      "gist": "0fcd4d99d353d60cdacffcb676bb38e4"
    },
    "grouping":{
-       "files": ["html", "js","css"]
+       "files": ["html", "js","css"],
+      "gist": "6c027b2e02863f25cbdf510b3f5ba9c1"
    },
    "auto-fill":{
-     "files": ["html", "js","css"]
+     "files": ["html", "js","css"],
+      "gist": "e36faf480fa25b24263d4a4bbb588fa7"
    },
    "data-binding-remote-data":{
      "title" : "Data Binding - Remote",
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "75ddc61805f8d9378167c1d577707c67"
    },
    "data-binding-local-data":{
      "title": "Data Binding - Local",
-     "files": ["html", "js","css"]
+     "files": ["html", "js","css"],
+      "gist": "560e07e08db2009a5d061361c712985b"
    }
   }
 }

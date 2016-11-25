@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<template>
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="600px"
+                    e-layout.bind="layout"
+                    e-default-settings.bind="defaultSettings"
+                    e-node-template.bind="nodeTemplate"
+                    e-page-settings.bind="pageSettings"
+                    e-tool.bind="tool"
+                    e-snap-settings.bind="snapSettings"
+                    e-enable-context-menu="false"
+                    e-data-source-settings.bind="dataSourceSettings" e-on-create.trigger="create($event)">
+            <div>
+                <table id="htmlbinding" style="display: none">
+                    <thead>
+                        <tr>
+                            <th>
+                                Id
+                            </th>
+                            <th>
+                                Role
+                            </th>
+                            <th>
+                                ReportingPerson
+                            </th>
+                            <th>
+                                Color
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>parent</td>
+                            <td>Plant Manager</td>
+                            <td>null</td>
+                            <td>#0B4268</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Production Manager</td>
+                            <td>parent</td>
+                            <td>#D34A4A</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Administrative Officer</td>
+                            <td>parent</td>
+                            <td>#D34A4A</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Maintenance manager</td>
+                            <td>parent</td>
+                            <td>#D34A4A</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Control Room</td>
+                            <td>11</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Plant Operator</td>
+                            <td>11</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Foreman</td>
+                            <td>3</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Craft Personnel</td>
+                            <td>5</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Craft Personnel</td>
+                            <td>5</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Foreman</td>
+                            <td>4</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Craft Personnel</td>
+                            <td>8</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Electrical Supervisor</td>
+                            <td>2</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>111</td>
+                            <td>Mechanical Supervisor</td>
+                            <td>2</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Craft Personnel</td>
+                            <td>10</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Craft Personnel</td>
+                            <td>10</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Craft Personnel</td>
+                            <td>111</td>
+                            <td>#108D8D</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Craft Personnel</td>
+                            <td>111</td>
+                            <td>#108D8D</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </ej-diagram>
+    </div>
+
+
+</template>

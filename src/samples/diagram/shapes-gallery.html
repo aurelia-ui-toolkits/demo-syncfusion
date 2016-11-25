@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<template>
+    <require from="./property_editor.css"></require>
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="500px" e-nodes.bind="objects"
+                    e-connectors.bind="connectors" e-snap-settings.bind="snapSettings" e-page-settings.bind="pageSettings" e-default-settings.bind="defaultSettings"
+                    e-enable-context-menu="false">
+        </ej-diagram>
+    </div>
+
+    <div id="property-window" class="box wide">
+
+        <div class="row">
+            <div class="col-md-3">
+                <b>Shapes</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Shapes
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Basic Shapes" ej-drop-down-list="e-target-id.bind:target;e-text.bind:text;" id="shapes" e-on-select.trigger="select($event)" />
+                <div id="shapeList">
+                    <ul>
+                        <li value="basicshapes">Basic Shapes</li>
+                        <li value="flowshapes">Flow Shapes</li>
+                        <li value="bpmnshapes">BPMN Shapes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</template>

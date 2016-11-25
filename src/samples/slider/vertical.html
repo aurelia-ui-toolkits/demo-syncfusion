@@ -1,21 +1,20 @@
-﻿<template>
-     <require from="./Common.css"></require>
+<template>
+     <require from="./Vertical.css"></require>
     <div class="frame">
        <div class="control">
         <div id="slider" ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;e-value.bind:value"></div>
+           <span>Default</span>
        </div>
     <div class="control">
         <div id="rangeslider"  ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;
         e-slider-type:range;e-values.bind:values"></div>
+        <span>Range</span>
     </div>
 
     <div class="control">
         <div id="minrangeslider" ej-slider="e-orientation:vertical;e-width.bind:width;e-height.bind:height;
         e-slider-type:minrange;e-value.bind:value"></div>
+        <span>minRange</span>
     </div>
    </div>
-    <style>
-    
-    </style>
-    
 </template>

@@ -281,13 +281,6 @@ div#list_container.e-ddl-popup.e-scroller{
 .bottom-margin {
     margin-bottom: 15px;
 }
-/*sample Listbox customize*/
-.sample-list-box .e-listbox li {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 /** Responsive toolbar **/
 .toolbar-navigation .e-toolbar .e-icon.e-toolbar-res-arrow:before {
   margin-top: 10px;

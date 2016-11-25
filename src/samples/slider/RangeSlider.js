@@ -4,6 +4,6 @@
       this.minrange = ej.SliderType.MinRange;
       this.values = [40, 80];
       this.value = 20;
-      this.width = 300;
+      this.width = '100%';
     }
 }

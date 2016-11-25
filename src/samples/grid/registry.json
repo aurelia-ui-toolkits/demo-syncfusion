@@ -4,37 +4,47 @@
     "samples": {
         "default-Functionalities": {
 			"default": true,
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
         "remote-Data": {
             "files": [ "html", "js" ]
         },
         "column-Template": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
         "row-Template": {
-            "files": [ "html", "js", "css" ]
+            "files": [ "html", "js", "css" ],
+            "requires": ["scripts/templatelocaldata.js"]            
         },
 		"cell-Edit-Type": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
 		"multi-Sorting": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
 		"filtering-menu": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
 		"grouping": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
         "caption-Summary": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
         "localization": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         },
 		"RTL": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "requires": ["scripts/jsondata.js"]
         }      
     }
 }

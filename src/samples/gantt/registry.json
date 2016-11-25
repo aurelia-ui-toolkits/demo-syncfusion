@@ -4,34 +4,54 @@
     "samples": {
         "Default-Funtionalities": {
             "default": true,
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],			
+            "gist":"cfd02458c83718bc2f94e3f16fb392da",
+            "requires": ["gantt/Default-Sample.css"]
         },
         "Performance": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"1e52e34d881b67110c3c00526ee18316",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Self-Reference": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"6fcf4400e9824ccdcb4c9903a795ca6e",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Time-Scale-Extension": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"b7078fe41d6c230d8f813352bb0cb1cd",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Column-Chooser": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"87532eb95d7bff89b70b65ff210620ff",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Context-Menu": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"f650c00896b157a3ec98643503fcd984",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Editing": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"eb07ebc5ef6abcac3254a414388e975d",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Baseline": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"b9dc106127e81d763d1f476d638d5d04",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Resources": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"66d40fbfa79847fe359581acc95c1329",
+			"requires": ["gantt/Default-Sample.css"]
         },
         "Strip-Lines": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"89e1a6c8779ee0572dd5c2b5acf68515",
+			"requires": ["gantt/Default-Sample.css"]
         }
 
     }

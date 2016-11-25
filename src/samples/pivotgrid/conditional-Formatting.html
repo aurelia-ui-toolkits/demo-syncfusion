@@ -1,0 +1,15 @@
+<template>
+  <require from="./rtl.css"></require>
+  
+  <div>
+    <div style="width: 80%">
+    <ej-pivot-grid e-data-source.bind="pivotData" e-enable-conditional-formatting="true">
+    </ej-pivot-grid>
+    </div>
+    <div style="float:left; margin: 20px 0 0 20px;">
+    <div>Conditional Formatting :</div>
+    <button id="button" ej-button="e-text.bind:textValue1" e-on-click.trigger="ApplyChanges($event)" style="margin-top: 10px"></button>
+    <button id="button" ej-button="e-text.bind:textValue2" e-on-click.trigger="Reset($event)" style="margin-top: 10px"></button>
+    </div>
+  </div>
+</template>

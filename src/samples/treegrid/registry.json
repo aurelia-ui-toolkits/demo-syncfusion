@@ -4,31 +4,48 @@
     "samples": {
         "Default-Sample": {
             "default": true,
-            "files": [ "html", "js", "css" ]
+            "files": [ "html", "js"],
+			"gist": "8f1e630916b8eb959d5ad6723d63495c",
+			"requires": ["treegrid/Default-Sample.css"],
+            "requires": ["treegrid/data.js"]					
         },
-        "Self-Reference": {
-            "files": [ "html", "js" ]
+        "Self-Reference": {		
+            "files": [ "html", "js"],
+			"gist": "3e3969a914744a6b1c2464ab49d89e5c",
+			"requires": ["treegrid/Default-Sample.css"]	
         },
         "Editing": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js"],
+			"gist": "20eca1fca8377df0a04313dc20d2eba6",
+			"requires": ["treegrid/Default-Sample.css"]
         },
         "Column-Filtering": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js", "css"  ],
+			"gist": "f08a07ff6717b9cbffdb9f3f3dc2cdcf"
         },
         "Frozen-Column": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js", "css"  ],
+			"gist": "8bd3f816c73a9a31643c6b29449e081e"
         },
         "Context-Menu": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+			"gist": "1e89c8e633e1215b2c863ad3277805cb",
+			"requires": ["treegrid/Default-Sample.css"]	
         },
         "Sorting": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+			"gist": "a43d8d66a2298dbd69195e8259aadb74",
+			"requires": ["treegrid/Default-Sample.css"]	    
         },
          "Performance": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+			"gist": "733a6b670da670f7be443e674ace567e",
+			"requires": ["treegrid/Default-Sample.css"]	
         },   
         "Column-Chooser": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+			"gist": "4b7b3ede1209999cd6ee938fea1edbb9",
+			"requires": ["treegrid/Default-Sample.css"]	
         }       
 
     }

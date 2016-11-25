@@ -4,10 +4,12 @@
   "samples": {
     "default-functionalities": {
       "default" : true,
-      "files": ["html", "css"]
+      "files": ["html", "js", "css"],
+	  "gist": "ab3178aa95319f34568be810f90f31d1"
     },
     "template": {
-        "files": ["html", "js", "css"]
+        "files": ["html", "js", "css"],
+		"gist": "978b47535ef7f9e79be10af1baed46f6"
     }
   }
 }

@@ -1,0 +1,42 @@
+
+<template>
+    <style>
+        .ht-label1 {
+            color: Black;
+            font-size: 22px;
+            height: 25px;
+            font-weight: Normal;
+        }
+
+        .ht-label2 {
+            color: Black;
+            font-size: 16px;
+            margin-top: -2px;
+            height: 25px;
+            font-weight: normal;
+        }
+    </style>
+    <div>
+        <div style="border-width: 2px; opacity: 0.7;  text-align: center;">
+            <label class="ht-label1">Product Sales by Year</label><br />
+            <label class="ht-label2">(In Percentage)</label>
+        </div>
+        <ej-heat-map e-width="100%" id="heatmap"
+                     e-color-mapping-collection.bind="colorMappingCollection"
+                     e-is-responsive="true"
+                     e-items-source.bind="itemsSource"
+                     e-items-mapping.bind="itemsMapping"
+                     e-legend-collection.bind="legendCollection">
+        </ej-heat-map>
+    </div>
+    <div style="height: 15px; width: 100%;"></div>
+    <div>
+        <ej-heat-map-legend style="margin: 0 auto; text-align: center;" id="heatmap_legend"
+                            e-color-mapping-collection.bind="colorMappingCollection"
+                            e-is-responsive="true"
+                            e-height="50px"
+                            e-width="75%"
+                            e-showlabel="true">
+        </ej-heat-map-legend>
+    </div>
+</template>

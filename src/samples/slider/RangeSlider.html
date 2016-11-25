@@ -1,10 +1,16 @@
-﻿<template>
-     <require from="./Common.css"></require>
+<template>
+    <require from="./Common.css"></require>
     <div class="row">
-        <div id="slider"  ej-slider="e-slider-type:range;e-values.bind:values;e-width.bind:width;"></div>
+        <div class="frame">
+            <label>Range</label>
+            <div id="slider" ej-slider="e-slider-type:range;e-values.bind:values;e-width.bind:width;"></div>
+        </div>
     </div>
     <br />
-    <div class="row" >
-        <div id="slider"  ej-slider="e-slider-type:minrange;e-value.bind:value;e-width.bind:width;"></div>
+    <div class="row">
+        <div class="frame">
+            <label>minRange</label>
+            <div id="slider" ej-slider="e-slider-type:minrange;e-value.bind:value;e-width.bind:width;"></div>
+        </div>
     </div>
 </template>

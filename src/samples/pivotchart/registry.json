@@ -2,15 +2,18 @@
   "title": "PivotChart",
   "documentation":"http://help.syncfusion.com/js/api/ejpivotchart",
   "samples": {
-    "basic-use": {
+    "relational": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "a9ba4a6785382eab318c0ff2851d16e0"
     },
     "OLAP": {
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+      "gist": "9da34988665075717674bce7f129d49b"
     },
     "chart-Types": {
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+      "gist": "7241feccf889eb6c20cd1340985a8d5f"
     }
   }
 }

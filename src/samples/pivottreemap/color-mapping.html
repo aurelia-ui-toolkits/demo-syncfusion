@@ -1,0 +1,14 @@
+<template>
+  <require from="./color-mapping.css"></require>
+  
+  <div>
+    <ej-pivot-tree-map id="pivotTreeMapColor" e-data-source.bind="pivotData" e-on-render-success.trigger="renderFieldList($event)">
+    </ej-pivot-tree-map>
+  </div>
+  <!--Tooltip labels can be localized here-->
+  <script id="tooltipTemplate" type="application/jsrender">
+    <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
+      <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
+    </div>
+  </script>  
+</template>

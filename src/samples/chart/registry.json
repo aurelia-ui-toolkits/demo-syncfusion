@@ -4,48 +4,62 @@
   "samples": {
     "line": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"15053c8e35e734f58aeb14d3b82faca9"
     },
 	"column":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"67c7709c151ae8d11f3576fb99120db0"
 	},
 	"pie":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"f834bccbe275d9baec3ec4ef47357fe3"
 	},
 	"bar":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"bb61ba9f01c79bfd3e275e198e971734"
 	},
 	"polar":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"ded8cf11200e3bf70d1194123303c748"
 	},
 	"3d-column":{
 		"title" : "3D Column",
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"4e0750cff501d671816b6e31f691fa3f"
 	},
 	"3d-pie":{
 		"title" : "3D Pie",
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"c46c9d34ebb8d6eacc4b25abbc061179"
 	},
 	"pyramid":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"c285f7432ea718f478640d607af0a043"
 	},
 	"combination":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"b8a630c06ecc2f416e09cf3aba785f68"
 	},
 	"trackball":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"bcb64d177edc3e3fa53d9c0e986992d2"
 	},
 	"zooming":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"fc0bc89b34ee356444a9571e8bca5d8c"
 	},
 	"bubble":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"9e375d1a1daed9bdbc2eaf23491a7fbc"
 	},
 	"candle":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"1f69506e1b5bdbf39125e6b49ac8d0e2"
 	},
 	"live":{
-	   "files": ["html", "js"]
+	   "files": ["html", "js"],
+	   "gist":"f28befc0102db457238fa690632a31cc"
 	}
   }
 }

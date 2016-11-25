@@ -1,7 +1,7 @@
 <template>
   <require from="./default.css"></require>
   <div>
-     <ej-kanban e-data-source.bind="KanbanData" e-key-Field="Status" e-fields.bind="Field" e-card-settings.bind="CardSettings" e-allow-title="true" e-allow-selection="false" >
+     <ej-kanban id="Swimlane" e-data-source.bind="KanbanData" e-key-Field="Status" e-fields.bind="Field" e-card-settings.bind="CardSettings" e-allow-title="true" e-allow-selection="false" >
        
        <ej-kanban-column  e-header-text="Backlog" e-key="Open"></ej-kanban-column>
 	   <ej-kanban-column  e-header-text="In Progress" e-key="InProgress"></ej-kanban-column>

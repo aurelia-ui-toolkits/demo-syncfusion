@@ -10,7 +10,7 @@
                         e-show-rounded-corner.bind: roundedCorner;
                         e-content-type:textandimage;
                         e-image-position:imageleft;
-                        e-prefix-icon: e-mediaplay e-uiLight;
+                        e-prefix-icon:e-icon e-mediaplay e-uiLight;
                         e-width: 154px;
                         e-text: Play"
                                 e-on-create.trigger="logger.log('Button has been created')"
@@ -25,8 +25,8 @@
                         e-content-type:textandimage;
                         e-active-text: Pause;
                         e-default-text: Play;
-                        e-default-prefix-icon: e-mediaplay e-uiLight;
-                        e-active-prefix-icon: e-mediapause e-uiLight;
+                        e-default-prefix-icon:e-icon e-mediaplay e-uiLight;
+                        e-active-prefix-icon:e-icon e-mediapause e-uiLight;
                         e-width: 154px;"
                                e-on-create.trigger="logger.log('Toggle Button has been  created')"
                                e-on-click.trigger="logger.log('Toggle has been Button clicked')"

@@ -14,7 +14,7 @@ ej-map {
             p.small {line-height:50%;}
             p.big {line-height:110%;}
 
-            .tip {
+            .tip1 {
                     border: 1px solid #4D4D4D;
                     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
                     border-radius: 7px;
@@ -28,7 +28,7 @@ ej-map {
                     background: #4D4D4D;
                 }
 
-            .tip:before {
+            .tip1:before {
                 position: absolute;
                 display: inline-block;
                 border-top: 7px solid transparent;
@@ -40,7 +40,7 @@ ej-map {
                 content: '';
             }
 
-            .tip:after {
+            .tip1:after {
                 position: absolute;
                 display: inline-block;
                 border-top: 6px solid transparent;

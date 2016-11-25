@@ -4,35 +4,45 @@
     "samples": {
         "Default-Functionalities": {
             "default": true,
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"205deb7266bdf25a56875cf7d25945c0"
         },
         "Toggle-Buttons": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"39f6ddc76684227613ab48659464ea6e"
         },
         "Split-Buttons": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"d3d0a17e1f23a9a948645ab98c3debc2"
         },
         "Group-Button": {
-            "files": [ "html" ]
+            "files": [ "html" ],
+            "gist":"54d1bdb9d3bf8487d811c60f510fdcae"
         },
         "Repeat-Button": {
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"daef91bed7e174beee9f557d72d56c30"
         },
         "CheckBox": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"9ecfff89acbc159fe8538a897937bf5e"
         },
         "Radio-Buttons": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"cc1294f8306691d450c83f61310305ee"
         },
-        "API's": {
+        "API": {
             "title" : "API's",
-            "files": [ "html", "js" ]
+            "files": [ "html", "js" ],
+            "gist":"2feb10051e7d1ede5552a382954d3332"
         },
         "Events": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"cb0273fc45ebad8e48b1389c6f9c3dda"
         },
         "RTL": {
-            "files": [ "html", "js"]
+            "files": [ "html", "js"],
+            "gist":"b3220e78e46c2127d753d6e5048d563b"
         }
     }
 }

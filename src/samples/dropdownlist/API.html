@@ -1,0 +1,111 @@
+<template>
+    <div>
+        <input type="text" id="bookSelect" ej-drop-down-list="e-data-source.bind:dataSource;e-fields.bind:fields;e-watermark-text:Select a section" e-on-create.trigger="create()" />
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+            <div class="col-md-6 top-margin">Select an item by index</div>
+            <div class="col-md-6 top-margin">
+                <select name="selectIndex" class="e-ddl" id="optIndexChange" ej-drop-down-list="e-watermark-text:select..;e-width.bind:width" e-on-change.trigger="onActiveIndexChange($event)">
+                    <option value="0">1 Item</option>
+                    <option value="1">2 Item</option>
+                    <option value="2">3 Item</option>
+                    <option value="3">4 Item</option>
+                    <option value="4">5 Item</option>
+                    <option value="5">6 Item</option>
+                    <option value="6">7 Item</option>
+                    <option value="7">8 Item</option>
+                    <option value="8">9 Item</option>
+                    <option value="9">10 Item</option>
+                    <option value="10">11 Item</option>
+                    <option value="11">12 Item</option>
+                    <option value="12">13 Item</option>
+                    <option value="13">14 Item</option>
+                    <option value="14">15 Item</option>
+                    <option value="15">16 Item</option>
+                    <option value="16">17 Item</option>
+                    <option value="17">18 Item</option>
+                    <option value="18">19 Item</option>
+                    <option value="19">20 Item</option>
+                </select>
+            </div>
+            <div class="col-md-6 top-margin">Select an item by value</div>
+            <div class="col-md-6 top-margin">
+                <select name="selectIndex" class="e-ddl" id="optValueChange" ej-drop-down-list="e-watermark-text:select..;e-width.bind:width" e-on-change.trigger="onActiveValueChange($event)">
+                    <option value="Art">Art</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Biographies">Biographies</option>
+                    <option value="Business">Business</option>
+                    <option value="ComputerIT">ComputerIT</option>
+                    <option value="Comics">Comics</option>
+                    <option value="Cookery">Cookery</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Health">Health</option>
+                    <option value="Humanities">Humanities</option>
+                    <option value="Language">Language</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Memoirs">Memoirs</option>
+                    <option value="Management">Management</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Reference">Reference</option>
+                    <option value="Spirituality">Spirituality</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Sciences">Sciences</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">Select an item by text</div>
+            <div class="col-md-6 top-margin">
+                <select name="selectIndex" class="e-ddl" id="optTextChange" ej-drop-down-list="e-watermark-text:select..;e-width.bind:width" e-on-change.trigger="onActiveTextChange($event)">
+                    <option value="Art">Art</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Biographies">Biographies</option>
+                    <option value="Business">Business</option>
+                    <option value="ComputerIT">ComputerIT</option>
+                    <option value="Comics">Comics</option>
+                    <option value="Cookery">Cookery</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Health">Health</option>
+                    <option value="Humanities">Humanities</option>
+                    <option value="Language">Language</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Memoirs">Memoirs</option>
+                    <option value="Management">Management</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Reference">Reference</option>
+                    <option value="Spirituality">Spirituality</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Sciences">Sciences</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">TextBox Value</div>
+            <div class="col-md-6 top-margin">
+                <input type="button" id="Button8" name="check me" class="e-btn" value="Value" ej-button="e-width.bind:width" e-on-click.trigger="valueText($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">Disable\Enable</div>
+            <div class="col-md-6 top-margin">
+                <input type="checkbox" id="btnenabledisable" class="e-togglebtn" ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-width.bind:width" e-on-change.trigger="onEnableDisable($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">Filter Search </div>
+            <div class="col-md-6 top-margin">
+                <input type="checkbox" id="filterbutton" class="e-togglebtn" ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-width.bind:width" e-on-change.trigger="filterChange($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">Case-Sensitive Search </div>
+            <div class="col-md-6 top-margin">
+                <input type="checkbox" id="casesensitivebutton" class="e-togglebtn" ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-width.bind:width" e-on-change.trigger="casesensitiveChange($event)" />
+            </div>
+        </div>
+    </div>
+</template>

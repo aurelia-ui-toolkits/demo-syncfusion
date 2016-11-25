@@ -4,31 +4,45 @@
   "samples": {
     "default-functionalities": {
       "default" : true,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "d07a0ec4b9be446ac437de571f47583e",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
     },
 	 "conditional-format": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "f9fa29e19195f2fa84709bf31718f587",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
     },
 	 "data-validation": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "30e52dd9fd83ea11b0c7f85efbb31731",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
 	},
    "import-export": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "5164a18e771dd7dd5ac0a306825cbb39",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
 	 },
    "movie-list": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "02a673b16ef84756ac30017b48b90b55",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
 	 },
    "chart": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "4d423a58712f79fd2b7d0ff5a66805d0",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
 	 },
    "pivot": {
       "default" : false,
-      "files": ["html", "js"]
+      "files" : ["html", "js"],
+      "gist" : "38d3c167ff0b0a37fba6f38aca7e00fd",
+      "requires" : ["scripts/xljsondata.js", "spreadsheet/spreadsheet.css"]
 	 }
   }
 }

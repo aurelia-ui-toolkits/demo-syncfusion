@@ -34,8 +34,8 @@ export class CustomResourceDays {
           name: 'Rooms', allowMultiple: false,
           resourceSettings: {
             dataSource: [
-                        { text: 'ROOM1', id: 1, groupId: 1, color: '#cb6bb2' },
-                        { text: 'ROOM2', id: 2, groupId: 1, color: '#56ca85' }
+                        { text: 'ROOM 1', id: 1, groupId: 1, color: '#cb6bb2' },
+                        { text: 'ROOM 2', id: 2, groupId: 1, color: '#56ca85' }
             ],
             text: 'text', id: 'id', groupId: 'groupId', color: 'color'
           }
@@ -76,8 +76,8 @@ export class CustomResourceDays {
           name: 'Rooms', allowMultiple: false,
           resourceSettings: {
             dataSource: [
-                        { text: 'ROOM1', id: 1, groupId: 1, color: '#cb6bb2' },
-                        { text: 'ROOM2', id: 2, groupId: 1, color: '#56ca85'}
+                        { text: 'ROOM 1', id: 1, groupId: 1, color: '#cb6bb2' },
+                        { text: 'ROOM 2', id: 2, groupId: 1, color: '#56ca85'}
             ],
             text: 'text', id: 'id', groupId: 'groupId', color: 'color'
           }

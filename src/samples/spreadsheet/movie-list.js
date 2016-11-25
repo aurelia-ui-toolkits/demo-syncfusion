@@ -2,8 +2,8 @@ import '../scripts/xljsondata.js';
 export class MovieList {
   constructor() {
     this.scroll = { height: '100%', width: '100%', isResponsive: 'true' };
-    this.range = [{ dataSource: window.movieData, startCell: 'B3'}];
-    this.import = { importMapper: 'http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import'};
+    this.range = [{ dataSource: window.movieData, startCell: 'B3', showHeader: false}];
+    this.import = { importMapper: 'http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import'};
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');

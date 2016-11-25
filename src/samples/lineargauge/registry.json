@@ -4,22 +4,28 @@
   "samples": {
     "basic-use": {
 	  "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+	  "gist":"efbbce7f8760e19849e030c776e96ddf"
     },
 	"indicators": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"ccd12191b331911e8aa9e67c0410d8ba"
     },
 	"range": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"a0e8c4ba5820aa19e28d93dbd4af9e33"
     },
 	"thermometer": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"7a320cd1ffaffd57df49f53ed7721b61"
     },
 	"tooltip": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"3aa270977d62968641bd0ca6c15fcce1"
     },
 	"user-interaction": {
-	  "files": ["html", "js"]
+	  "files": ["html", "js"],
+	  "gist":"7216b4fd005cb5d1ef00430afb4e6d13"
     }
   }
 }

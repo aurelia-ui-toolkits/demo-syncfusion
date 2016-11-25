@@ -1,0 +1,87 @@
+<template>
+  <require from="./Common.css"></require>
+  <div>    
+      <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <table class="editors">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Kilometers</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="numeric" type="text" ej-numeric-textbox="e-value.bind:numericValue;e-width.bind:cwidth;e-enabled.bind:status;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Service Tax</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="percent" type="text" ej-percentage-textbox="e-value.bind:percentValue;e-width.bind:cwidth;e-enabled.bind:status;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Fare</label>
+                                    </td></tr> <tr>
+                                    <td>
+                                        <input id="currency" type="text" ej-currency-textbox="e-value.bind:currencyValue;e-width.bind:cwidth;e-enabled.bind:status;" />
+                                    </td>
+                                </tr>                               
+                            </tbody>
+                        </table>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div>   
+    <div id="property-window" class="box wide">     
+      <div class="row">
+       <div class="col-sm-2">         
+            <label>Enable / Disable</label> 
+       </div>
+       <div class="col-sm-2">         
+            <input type="checkbox" id="status" ej-toggle-button="e-size.bind:'small';e-show-rounded-corner.bind:true;e-active-text.bind:'Enable';e-default-text.bind:'Disable'" e-on-change.trigger="onEnable($event)"></input>
+            <label for="status">Toggle</label> 
+       </div>
+       <div class="col-sm-2">        
+        <label>IncrementStep</label>
+       </div>
+       <div class="col-sm-2">         
+           <input type="text" id="incrementStep" class="form-control input-sm" placeholder="IncrementStep" />
+       </div> 
+       <div class="col-sm-2">        
+        <label>Min Value</label>
+       </div>
+       <div class="col-sm-2">         
+           <input type="text" id="minValue" class="form-control input-sm" placeholder=" Min Value" />
+       </div>       
+     </div>    
+     
+     <div class="row">
+       <div class="col-sm-2">         
+            <label> Max Value</label> 
+       </div>
+       <div class="col-sm-2">         
+           <input type="text" id="maxValue" class="form-control input-sm" placeholder="Max Value" /> 
+       </div>
+       <div class="col-sm-2">        
+        <label>Decimal Value</label>
+       </div>
+       <div class="col-sm-2">         
+           <input type="text" id="decimalValue" class="form-control input-sm" placeholder="Decimal Value" />
+       </div> 
+       <div class="col-sm-3">        
+        <button ej-button="e-text.bind:'Apply';e-size.bind:'small';" e-on-click.trigger="onApply($event)" id="applyBtn" />
+       </div>        
+     </div>    
+     <div class="row">
+         <span id="error" style="color: red"></span>
+     </div> 
+  </div>
+</template>

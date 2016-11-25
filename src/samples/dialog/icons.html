@@ -1,9 +1,10 @@
 <template>
     <require from="./icons.css"></require>
     <div class="cols-sample-area" style="height:500px;position: relative">
-        <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
-            e-on-click.trigger="onOpen()"></button>
+       
         <div class="control dialogIcons">
+             <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
+            e-on-click.trigger="onOpen()"></button>
             <ej-dialog id="dialogIcon" e-title="Audi-R8" e-width="295" e-height="400" e-action-buttons.bind="actionButtons" e-enable-resize="false"
                 e-containment=".cols-sample-area" e-on-close.trigger="onDialogClose()">
                 <img src="images/dialog/r8-coupe.png" />

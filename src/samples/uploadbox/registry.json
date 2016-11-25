@@ -4,19 +4,24 @@
 	"samples": {
 		"default-functionalities": {
 			"default": true,
-			"files": ["html", "js", "css"]
+			"files": ["html", "js", "css"],
+			"gist": "6045267cb4290ad53c1450bcd8a01a03"
 		},
         "drag-and-drop": {
-            "files": ["html", "js", "css"]
+            "files": ["html", "js", "css"],
+			"gist": "d03867fac4d2e99413a3932d83e3aef1"
         },
         "file-input": {
-            "files": ["html", "js", "css"]
+            "files": ["html", "js", "css"],
+			"gist": "353de520f23ec2623576accdfff30f67"
         },        
-        "API's": {
-            "files": ["html", "js", "css"]
+        "API": {
+            "files": ["html", "js", "css"],
+			"gist": "ab51332c96740882665239d52f1ebf6f"
         },
         "events": {
-            "files": ["html", "js", "css"]
+            "files": ["html", "js", "css"],
+			"gist": "097b6a8a660e8433eb370d12c72736c3"
         }
 	}
 }

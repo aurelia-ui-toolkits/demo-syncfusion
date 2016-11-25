@@ -1,31 +1,89 @@
 {
-  "title": "Diagram",
-  "documentation":"http://help.syncfusion.com/js/api/ejdiagram",
-  "samples": {
-    "default-functionalities": {
-      "default" : true,
-      "files": ["html", "js"]
-    },
-    "swimlane":{
-        "files": ["html", "js"]
-    },
-    "overview":{
-        "files": ["html", "js"]
-    },
-    "hierarchical-tree":{
-         "files": ["html", "js"]
-    },
-    "organizational-chart":{
-        "files": ["html", "js"]
-    },
-    "uml-diagram":{
-         "files": ["html", "js"]
-    },
-    "circuit-diagram":{
-         "files": ["html", "js"]
-    },
-    "local-databinding":{
-        "files": ["html", "js"]
+    "title": "Diagram",
+    "documentation": "http://help.syncfusion.com/js/api/ejdiagram",
+    "samples": {
+        "default-functionalities": {
+            "default": true,
+            "files": [ "html", "js" ],
+            "gist": "d91e87876437c99ed7d7401989039ddb"
+        },
+        "swimlane": {
+            "files": [ "html", "js" ],
+            "gist":"4bbcd2555d95919e2489b790c1d1490a"
+        },
+        "overview": {
+            "files": [ "html", "js" ],
+            "gist":"3ccc591dadd6c1e75f3f0a865204f023"
+        },
+        "hierarchical-tree": {
+            "files": [ "html", "js" ],
+            "gist": "9516b64f180f91b928dc3e78d212390c",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "organizational-chart": {
+            "files": [ "html", "js" ],
+            "gist":"a332090257e265001306e05f0447c359"
+        },
+        "radial-tree": {
+            "files": [ "html", "js" ],
+            "gist":"91536511b8a48350006325709a341a47"
+        },
+        "uml-diagram": {
+            "files": [ "html", "js" ],
+            "gist":"49a0823d606f09ec9ccbe01c30481874"
+        },
+        "circuit-diagram": {
+            "files": [ "html", "js" ],
+            "gist":"47f18c066d4ff5eec85b141691208f50"
+        },
+        "local-databinding": {
+            "files": [ "html", "js" ],
+            "gist":"52ec02c1eca9a4a5762908b9cdae4067"
+        },
+        "shapes-gallery": {
+            "files": [ "html", "js" ],
+            "gist": "b35efbb1bca73fd62c8a1f96efbfe539",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "connectors": {
+            "files": [ "html", "js" ],
+            "gist": "ad49b154f31dda93c8a257ceb247c7ef",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "localization": {
+            "files": [ "html", "js" ],
+            "gist": "204f554fe86de11f41d55e61bf81f5a0",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "tooltip": {
+            "files": [ "html", "js" ],
+            "gist": "eba1eb7fb351f139c3f7f8b8e78ca135",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "symbol-palette": {
+            "files": [ "html", "js", "css" ],
+            "gist": "f324e3f3328e8b71edfe509858153b32",
+            "requires": [ "diagram/property_editor.css" ]
+        },
+        "team-orgchart": {
+            "files": [ "html", "js" ],
+            "gist":"5fa12068c73b91746b9398b1a2eb51fb"
+        },
+        "business-management": {
+            "files": [ "html", "js" ],
+            "gist":"8824a56acbec5f70cab1e1a492197444"
+        },
+        "university": {
+            "files": [ "html", "js" ],
+            "gist":"2ab23053ab8f2d122f4761bb3620e2e4"
+        },
+        "remote-data-binding": {
+            "files": [ "html", "js" ],
+            "gist":"236ed3b8f64cf20f1542841984de25d5"
+        },
+        "html-table": {
+            "files": [ "html", "js" ],
+            "gist":"3a929ba65dd8c9142f3884b88086a87c"
+        }
     }
-  }
 }
