@@ -4,19 +4,24 @@
 	"samples": {
 		"default-functionalities": {
 			"default": true,
-			"files": ["html", "js"]
+			"files": ["html", "js"],
+			"gist": "3eba5442fd8c43286a5187c4b6c7e51f"
 		},
         "checkbox": {
-            "files": ["html", "js"]
+            "files": ["html", "js"],
+			"gist": "cb98375ea9ec2bc2890ad69e93f067d9"
         },
-        "API's": {
-            "files": ["html", "js"]
+        "API": {
+            "files": ["html", "js"],
+			"gist": "613b87af3094cb524f1911d91101992f"
         },
         "events": {
-            "files": ["html", "js"]
+            "files": ["html", "js"],
+			"gist": "b2acc59f5b672a1cf820246d9118cdad"
         },
         "template": {
-            "files": ["html", "js", "css"]
+            "files": ["html", "js", "css"],
+			"gist": "ed3bd071a3d9bc42a747d46164417e77"
         }
 	}
 }

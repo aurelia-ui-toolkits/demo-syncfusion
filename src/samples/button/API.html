@@ -1,0 +1,100 @@
+<template>
+    <require from="./API.css"></require>
+        <table class='container-fluid'>
+            <tbody class='container-fluid'>           
+            <tr class='row'>
+                        <td class='col-md-4'> Button</td>
+                        <td class='col-md-4'>
+                            <button id="btn"
+                                    ej-button="e-size.bind: largeBtnValue;
+                            e-show-rounded-corner.bind: roundedCorner;
+                            e-enabled.bind: status;
+                        e-content-type:textandimage;
+                        e-image-position:imageleft;
+                        e-prefix-icon:e-icon e-mediaplay e-uiLight;
+                            e-width : 154px;
+                            e-text : Play;"></button>
+                        </td>
+                    </tr>
+                    <tr class='row'>
+                        <td class='col-md-4'> Toggle Button</td>
+                        <td class='col-md-4'>
+                            <input type="checkbox" id="ToggleBtn" ej-toggle-button="e-size.bind: largeBtnValue;
+                            e-show-rounded-corner.bind: roundedCorner;
+                            e-active-text : Pause;
+                            e-enabled.bind: status;
+                         e-content-type:textandimage;
+                        e-active-text: Pause;
+                        e-default-text: Play;
+                        e-default-prefix-icon:e-icon e-mediaplay e-uiLight;
+                        e-active-prefix-icon:e-icon e-mediapause e-uiLight;
+                            e-width : 154px;
+                            e-default-text : Play"></input>
+                            <label for="ToggleBtn">Toggle</label>
+                        </td>
+                    </tr>
+
+                    <tr class='row'>
+                        <td class='col-md-4'> Split Button</td>
+                        <td class='col-md-4 splttd'>
+                            <button id="splitBtn" ej-split-button="e-size.bind: largeBtnValue;
+                            e-show-rounded-corner.bind: roundedCorner;
+                            e-text : Play;
+                            e-width : 154px;
+                            e-arrow-position.bind: arrowPosition;
+                            e-enabled.bind: status;
+                            e-target-id : subMenu"></button>
+                            <ul id="subMenu">
+                                <li><span>Pause</span></li>
+                                <li><span>Resume</span></li>
+                                <li><span>Forward</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                <tr class='row'>
+                        <td class='col-md-4'> DropDown Button</td>
+                        <td class='col-md-4 splttd'>
+                            <button id="splitBtn" ej-split-button="e-size.bind: largeBtnValue;
+                            e-show-rounded-corner.bind: roundedCorner;
+                            e-text: Play;
+                            e-enabled.bind: status;
+                            e-width: 154px;
+                            e-arrow-position.bind: arrowPosition;
+                            e-target-id: subMenu;
+                            e-button-mode: dropdown;
+                            e-enable-rtl.bind: rtl"></button>
+                            <ul id="subMenu">
+                                <li><span>Pause</span></li>
+                                <li><span>Resume</span></li>
+                                <li><span>Forward</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>      
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-sm-3">   
+                <div>Enable / Disable </div>               
+            </div>
+            <div class="col-sm-2">          
+                <input type="checkbox" id="state" ej-toggle-button="e-size.bind: mediumBtnValue;
+                            e-show-rounded-corner.bind: roundedCorner;
+                            e-active-text: Enable;
+                            e-default-text: Disable" e-on-change.trigger="onChange($event)"></input>
+                            <label for="state">Toggle</label>
+            </div>   
+            <div class="col-sm-3" >
+                <div>Arrow Position </div>
+            </div>
+            <div class="col-sm-2">          
+                <select id="propbutton" ej-drop-down-list="e-text: Right" e-on-select.trigger="onArrowChange($event)">
+                        <option value="right">Right</option>
+                        <option value="left">Left</option>
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                    </select>
+            </div>      
+        </div>
+    </div>
+</template>

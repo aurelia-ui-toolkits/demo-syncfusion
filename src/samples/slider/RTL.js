@@ -1,6 +1,6 @@
 export class RTL {
     constructor() {
-      this.slidervalue = 40;
-      this.width = 300;
+      this.slidervalues = [40, 70];
+      this.width = '100%';
     }
 }

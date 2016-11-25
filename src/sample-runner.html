@@ -3,7 +3,8 @@
 
         <collapse-panel title.bind="sample.title">
          <div class="buttons" slot="buttons" style="display: inline;float: right;position:relative;top:-3px;">
-            <a href.bind="sample.documentation" style="text-decoration:none;vertical-align:middle:line-height:21px;"  target="_blank" ej-button="e-height:18">API</a>
+             <a href.bind="'https://gist.run/?id=' + sample.gist" show.bind="sample.gist" target="_blank" ej-button="e-height:18" style="text-decoration:none;vertical-align:middle:line-height:21px;">RUN</a>
+            <a href.bind="sample.documentation" show.bind="sample.documentation" style="text-decoration:none;vertical-align:middle:line-height:21px;"  target="_blank" ej-button="e-height:18">API</a>
           </div>
             <div id="exampleWrap">
                 <compose view-model.bind="sample.path"></compose>

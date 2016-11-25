@@ -1,7 +1,80 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <template>
-     <ej-diagram e-height="450px" e-tool.bind="tool" e-layout.bind="layout" 
-         e-default-settings.bind="defaultSettings" 
-         e-data-source-settings.bind="dataSourceSettings" e-node-template.bind="nodeTemplate" e-page-settings.bind="pageSettings" e-snap-settings.bind="snapSettings">
+    <ej-diagram id="diagram" e-height="450px" e-tool.bind="tool" e-layout.bind="layout"
+                e-default-settings.bind="defaultSettings"
+                e-data-source-settings.bind="dataSourceSettings" e-node-template.bind="nodeTemplate" e-page-settings.bind="pageSettings" e-snap-settings.bind="snapSettings">
     </ej-diagram>
+    <div id="property-window" class="box wide">
+
+        <div class="row">
+            <div class="col-md-3">
+                <b>Layout Settings</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Orientation
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Basic Shapes" ej-drop-down-list="e-target-id.bind:hieryList;e-text.bind:hieryListText;e-value.bind:hieryListTextvalue;"
+                       id="orientation" e-on-change.trigger="orientationChange($event)" />
+                <div id="hieryList">
+                    <ul>
+                        <li value="toptobottom">Top-Bottom</li>
+                        <li value="lefttoright">Left-Right</li>
+                        <li value="righttoleft">Right-Left</li>
+                        <li value="bottomtotop">Bottom-Top</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Margin X
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="marginX"
+                       ej-numeric-textbox="e-minValue.bind:XMinValue;e-maxValue.bind:XMaxValue;e-value.bind:XValue;"
+                       e-on-change.trigger="MarginXChange($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Margin Y
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="marginY"
+                       ej-numeric-textbox="e-minValue.bind:YMinValue;e-maxValue.bind:YMaxValue;e-value.bind:YValue;"
+                       e-on-change.trigger="MarginYChange($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b>Spacing</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Horizontal
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="horizontalSpacing"
+                       ej-numeric-textbox="e-minValue.bind:HMinValue;e-maxValue.bind:HMaxValue;e-value.bind:HValue;"
+                       e-on-change.trigger="HorizontalChange($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Vertical
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="verticalSpacing"
+                       ej-numeric-textbox="e-minValue.bind:VMinValue;e-maxValue.bind:VMaxValue;e-value.bind:VValue;"
+                       e-on-change.trigger="VerticalChange($event)" />
+            </div>
+        </div>
+
+    </div>
+
 </template>

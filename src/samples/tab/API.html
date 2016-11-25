@@ -1,0 +1,77 @@
+<template>
+    <div>
+        <ej-tab id="apiTab" style="width: 500px" e-on-create.trigger="create()">
+            <ul>
+                <li><a href="#javaScript">JavaScript</a></li>
+                <li><a href="#cSharp">C Sharp (C#)</a></li>
+                <li><a href="#vb">VB.Net</a></li>
+            </ul>
+            <div id="javaScript">
+                JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so
+                that client-side scripts could interact with the user, control the browser, communicate asynchronously, and
+                alter the document content that was displayed.[5] More recently, however, it has become common in both game
+                development and the creation of desktop applications.
+            </div>
+            <div id="cSharp">
+                C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led
+                by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.
+            </div>
+            <div id="vb">
+                The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line
+                VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.
+            </div>
+        </ej-tab>
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+            <div class="col-md-6 top-margin">
+                Disable Item
+            </div>
+            <div class="col-md-6 top-margin">
+                <select name="disableItem" class="e-ddl" id="optDisable" ej-drop-down-list="e-watermark-text:Select;e-width.bind:width"
+                e-on-create.trigger="disableDDL()" e-on-change.trigger="onDisableChange($event)">
+                    <option value="0">Item 1</option>
+                    <option value="1">Item 2</option>
+                    <option value="2">Item 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">
+                Enable Item
+            </div>
+            <div class="col-md-6 top-margin">
+                <select name="enableItem" class="e-ddl" id="optEnable" ej-drop-down-list="e-watermark-text:Select;e-width.bind:width" e-on-create.trigger="enableDDL()"
+                e-on-change.trigger="onEnableChange($event)">
+                    <option value="0">Item 1</option>
+                    <option value="1">Item 2</option>
+                    <option value="2">Item 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 top-margin">
+                Remove Tab
+            </div>
+            <div class="col-md-6 top-margin">
+                <select name="enableItem" class="e-ddl" id="optRemove" ej-drop-down-list="e-watermark-text:Select;e-width.bind:width" e-on-create.trigger="removeDDL()"
+                e-on-change.trigger="onRemoveChange($event)">
+                    <option value="0">Item 1</option>
+                    <option value="1">Item 2</option>
+                    <option value="2">Item 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-margin">
+                Destroy
+            </div>
+            <div class="col-md-6 top-margin">
+                <input type="checkbox" id="chkDestroy" class="e-togglebtn" ej-toggle-button="e-default-text:Destroy;e-active-text:Restore;e-width.bind:width"
+                e-on-change.trigger="onDestroyRestore($event)" />
+            </div>
+        </div>
+    </div>
+</template>

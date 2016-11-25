@@ -1,7 +1,7 @@
 export class Default {
     constructor() {
       this.slidervalue = 40;
-      this.width = 300;
+      this.width = '100%';
     }
 }
 

@@ -1,27 +1,32 @@
 {
   "title": "FileExplorer",
-  "documentation":"http://help.syncfusion.com/js/api/ejfileexplorer",
+  "documentation":"//help.syncfusion.com/js/api/ejfileexplorer",
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": [ "html", "js" ],
+      "gist": "21eb9ee798a6e86fc1b6bdee99904c3e"
     },
 	"Events" : {
 	   "default" : false,
-	   "files" : ["html" ,"js"]
+        "files": [ "html", "js" ],
+        "gist": "3410fdb6f2ef5019a8acdc12ead68b7c"
 	},
-	"API's" : {
+	"API" : {
 	 "default" : false ,
 	 "title" : "API's",
-	 "files" : ["html","js"]
+        "files": [ "html", "js" ],
+        "gist": "07e214661ae12f5238c4b09bf5a806bc"
 	 },
     "RTL" : {
     "default" : false,
-	"files" : ["html","js"]
+        "files": [ "html", "js" ],
+        "gist": "0ee4e8d80690729eb4d71f5a09e3dbcf"
   },
   "Localization" : {
     "default" : false,
-    "files" : ["html","js"]
+    "files": [ "html", "js" ],
+    "gist": "72341c75701699d68111e185e4dc20c7"
   }
 }
 }

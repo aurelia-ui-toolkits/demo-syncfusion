@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-primary-x-axis.bind="primaryXAxis"
+        <ej-chart id="container" e-on-load.trigger="onchartload($event)" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-primary-x-axis.bind="primaryXAxis"
                   e-primary-y-axis.bind="primaryYAxis">
             <ej-series e-data-source.bind="UnemploymentList" e-type="candle" e-x-name="xName" e-high="high" e-low="low" e-open="open"
                        e-close="close">

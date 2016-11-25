@@ -4,44 +4,57 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "4bdd12d5f4697c24877f93eb21e97ecd"
     },
      "icons": {
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "8a4554a9978ad17afd995070669cff4c"
     },
         "checkbox": {
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "1ba267335ff10c6654aa8bf49e744100"
     },
         "cascading": {
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "6a5565658de735419cd730c1c9a4e66b"
     },
     "data-binding-local":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "03e582a3d7e239e73cb0ae325b82ab9d"
     },
    "data-binding-remote":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "8b5c9e81f15ce8ec87aecd2a126d8409"
     },
     "drag-and-drop":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "ccf8d0ff0a4cfc7bb4644b4f436a4867"
     },
     "grouping":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "2f7d1158bb53c79cf258c8e363c453d6"
     },
     "multi-select":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "942410c0607cfde3f83ac8e4a59361f0"
     },
     "rtl":{
        "title":"RTL",
-       "files": ["html", "js","css"]
+       "files": ["html", "js","css"],
+      "gist": "8cf8582fd4e2026f8ffa50a4dbe62eb1"
     },
     "template":{
-       "files": ["html", "js","css"]
+       "files": ["html", "js","css"],
+      "gist": "89267fb70aa0b8ceb52b9a758cd60cc2"
     },
     "tooltip":{
-         "files": ["html", "js","css"]
+         "files": ["html", "js","css"],
+      "gist": "031874b6df83d813ad55800178c3295d"
     },
     "virtual-scrolling":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "5a3179ce4d7c0125bf744ba037809610"
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+    "title": "HeatMap",
+    "documentation": "http://help.syncfusion.com/js/api/ejheatmap",
+    "samples": {
+        "default-functionalities": {
+            "default": true,
+            "files": [ "html", "js" ],
+            "gist": "9b8cd93b75733fab2fb7ed541cbe47cf"
+        },
+        "table-binding": {
+            "files": [ "html", "js" ],
+            "gist": "1f46726e0c4349e10725447f9c5325d6"
+        },
+        "virtualization": {
+            "files": [ "html", "js" ],
+            "gist": "e778b58e1002c6140dd9c642c14ffd57"
+        }
+    }
+}

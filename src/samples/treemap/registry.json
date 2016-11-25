@@ -4,13 +4,16 @@
   "samples": {    
 	"flatCollection":{
 	   "default": true,
-	   "files": ["html", "js", "css"]
+	   "files": ["html", "js", "css"],
+	   "gist":"ec2095541da80f8ac245c555e632f08c"
 	},
 	"customization":{
-	   	   "files": ["html", "js", "css"]
+	   	   "files": ["html", "js", "css"],
+	   "gist":"f2905a629daa7a19581aa7fbd6bb4317"
 	},
 	"hierarchical":{	   
-	   "files": ["html", "js", "css"]
+	   "files": ["html", "js", "css"],
+	   "gist":"b1f5274367f8f245ecbe275f90f46cbe"
 	}
   }
 }

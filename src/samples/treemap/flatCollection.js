@@ -18,7 +18,7 @@ export class BasicUse {
     this.leafitemsettings = { showLabels: true, labelPath: 'Country'};
     this.legendsettings = { leftLabel: '20000000', width: 150, height: 20, rightLabel: '300000000', title: 'Population', mode: 'interactive', dockPosition: 'top', alignment: 'center'};
     this.rangecolormapping = [
-		{ from: 29671000, to: 315646000, color: '#fab665'}
+		{ from: 29671000, to: 315646000, gradientColors: ['#fde6cc', '#fab665']}
     ];
   }
 }

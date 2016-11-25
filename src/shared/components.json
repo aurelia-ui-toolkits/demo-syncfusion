@@ -65,6 +65,10 @@
         "Toolbar": {
             "status": "done",
             "moduleId": "toolbar"
+        },
+        "Pager": {
+            "status": "done",
+            "moduleId": "pager"
         }
     },
     "Layout": {
@@ -105,6 +109,10 @@
         "Diagram": {
             "status": "done",
             "moduleId": "diagram"
+        },
+        "HeatMap": {
+            "status": "done",
+            "moduleId": "heatmap"
         },
         "Gantt": {
             "status": "done",
@@ -199,6 +207,10 @@
         "RTE": {
             "status": "done",
             "moduleId": "rte"
+        },
+		 "Signautre": {
+            "status": "done",
+            "moduleId": "signature"
         }
     },
     "File Viewer": {
@@ -207,30 +219,22 @@
             "moduleId": "pdfviewer"
         }
     },
-    "Pivot Grid": {
-        "Relational": {
+    "Business Intellignece": {
+        "PivotGrid": {
             "status": "done",
             "moduleId": "pivotgrid"
         },
-        "OLAP": {
-            "status": "done",
-            "moduleId": "olap"
-        },
-        "Common": {
-            "status": "done",
-            "moduleId": "pivotgridcommon"
-        }
-    },
-    "Pivot Chart": {
         "PivotChart": {
             "status": "done",
             "moduleId": "pivotchart"
-        }
-    },
-	"Pivot Gauge": {
+        },
         "PivotGauge": {
             "status": "done",
             "moduleId": "pivotgauge"
+        },
+        "PivotTreeMap":{
+            "status": "done",
+            "moduleId": "pivottreemap"
         }
     },
     "Notification": {

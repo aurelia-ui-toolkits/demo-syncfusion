@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<template>
+    <require from="./symbol-palette.css"></require>
+    <require from="./property_editor.css"></require>
+    <div style="text-align:center;">
+        <ej-symbol-palette id="symbolpalette" e-diagram-id="diagram" e-width="300px" e-height="500px"
+                           e-palettes.bind="palettes"
+                           e-show-palette-item-text="true" e-selected-palette-name.bind="paletteName">
+        </ej-symbol-palette>
+    </div>
+    <div id="property-window" class="box wide">
+
+        <div class="row">
+            <div class="col-md-3">
+                <b>Symbol Palette</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Header Height
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="numeric" ej-numeric-textbox="e-minValue.bind:minValue;e-maxValue.bind:maxValue;e-value.bind:value;" e-on-change.trigger="changenumeric($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Item Text
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="itemtext" e-on-change.trigger="change($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Selected Palette
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Basic Shapes" ej-drop-down-list="e-target-id.bind:palettelist;e-text.bind:segmentText;e-value.bind:palettelistValue;" id="selectedpalette" e-on-change.trigger="palettechange($event)" />
+                <div id="palettelist">
+                    <ul>
+                        <li>Basic Shapes</li>
+                        <li>Flow Shapes</li>
+                        <li>Connectors</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b>Palette</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Header Visiblity
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="headervisibility" e-on-change.trigger="change($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Expandable
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="headerinteraction" e-on-change.trigger="change($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Palette Visiblilty
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="visiblepalette" e-on-change.trigger="change($event)" />
+            </div>
+        </div>
+    </div>
+
+</template>

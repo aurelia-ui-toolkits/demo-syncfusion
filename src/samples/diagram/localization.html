@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<template>
+    <require from="./property_editor.css"></require>
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="700px" e-nodes.bind="objects"
+                    e-connectors.bind="connectors" e-snap-settings.bind="snapSettings" e-page-settings.bind="pageSettings" e-default-settings.bind="defaultSettings"
+                    e-enable-context-menu="true" e-on-create.trigger="create($event)">
+        </ej-diagram>
+    </div>
+
+    <div id="property-window" class="box wide">
+        <div class="row">
+            <div class="col-md-3 aligntop">
+                Select Culture
+            </div>
+            <div class="col-md-3">
+
+                <input type="text" e-text="English" ej-drop-down-list="e-target-id.bind:target;e-text.bind:text;" id="language" e-on-select.trigger="Change($event)" />
+                <div id="languageList">
+                    <ul>
+                        <li value="en-US">English</li>
+                        <li value="de-DE">Deutsch</li>
+                        <li value="es-ES">Español</li>
+                    </ul>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</template>

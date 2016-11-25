@@ -1,0 +1,25 @@
+ej-pivot-grid#fieldList {
+    display: block;
+    height: 450px;
+    width: 50%; 
+    overflow: auto;
+    float:left;
+    margin: 20px 0px 0px 20px;
+    position: relative !important;
+}
+ej-pivot-schema-designer{
+    height: 650px;
+    width: 40% !important;
+    min-width:230px;
+    margin-top: 20px;
+    position: relative !important;
+}
+ej-pivot-grid#namedset {
+    display: block;
+    height: 350px;
+    width: 95%; 
+    overflow: auto;
+    float:left;
+    margin: 20px 0px 0px 20px;
+    position: relative !important;
+}

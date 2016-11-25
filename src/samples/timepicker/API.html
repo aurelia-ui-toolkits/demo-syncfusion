@@ -1,0 +1,32 @@
+<template>
+  <require from="./Common.css"></require>
+  <div class="row">
+     <div class="frame"><div> 
+        <label>Select Time</label>   
+        <input id="timepick" ej-time-picker="e-value.two-way:timeValue;e-enabled.bind:timeStatus;e-width.bind:'100%'" 
+        e-on-open.trigger="onOpen()" e-on-close.trigger="onClose()"></input>      
+     </div>
+   </div>
+  </div>  
+  <div id="property-window" class="box wide">
+       <div class="row">          
+            <div class="col-sm-2">
+                <input type="checkbox" id="status" ej-toggle-button="e-size.bind:'medium';e-show-rounded-corner.bind:true;
+                e-active-text.bind:'Enable';e-default-text.bind:'Disable'" e-on-change.trigger="onEnable($event)"></input>
+                <label for="status">Toggle</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="button" id="gettime" ej-button="e-text.bind:'Get Time';e-size.bind:'medium';" 
+                e-on-click.trigger="getTime()" />
+            </div>
+            <div class="col-sm-2">
+                <input type="button" id="updatetime" ej-button="e-text.bind:'Time Now';e-size.bind:'medium';" e-on-click.trigger="updateTime()" />
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" id="showHide" ej-toggle-button="e-size.bind:'medium';e-show-rounded-corner.bind:true;e-active-text.bind:'Hide';
+                e-default-text.bind:'Show';e-enabled.bind:btnStatus" e-on-create.trigger="onCreate()" e-on-change.trigger="onShow($event)"></input>
+                <label for="showHide">Toggle</label>
+            </div>           
+         </div>
+    </div>
+</template>

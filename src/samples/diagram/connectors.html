@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<template>
+    <require from="./property_editor.css"></require>
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="500px" e-nodes.bind="nodes"
+                    e-connectors.bind="connectors" e-snap-settings.bind="snapSettings" e-page-settings.bind="pageSettings"
+                    e-default-settings.bind="defaultSettings"
+                    e-enable-context-menu="false" e-on-create.trigger="create($event)">
+        </ej-diagram>
+    </div>
+
+    <div id="property-window" class="box wide">
+
+        <div class="row">
+            <div class="col-md-3">
+                <b>Connectors</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Segment
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Basic Shapes" ej-drop-down-list="e-target-id.bind:segmentTarget;e-text.bind:segmentText;e-value.bind:value;" id="segment" e-on-change.trigger="changeSegment($event)" />
+                <div id="segmentlistDiv">
+                    <ul>
+                        <li value="orthogonal">Orthogonal</li>
+                        <li value="straight">Straight</li>
+                        <li value="bezier">Bezier</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Corner Radius
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="cornerRadius" ej-numeric-textbox="e-minValue.bind:cornerMinValue;e-maxValue.bind:cornerMaxValue;e-value.bind:cornerValue;" e-on-change.trigger="changeCornerRadius($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Bridging
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="bridge" e-on-change.trigger="updateConnectors('bridge', 128)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Bridging Direction
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Basic Shapes" ej-drop-down-list="e-target-id.bind:directionlistDiv;e-text.bind:directionText;e-value.bind:value;" id="direction" e-on-change.trigger="changeBridgeDirection($event)" />
+                <div id="directionlistDiv">
+                    <ul>
+                        <li value="top">Top</li>
+                        <li value="bottom">Bottom</li>
+                        <li value="left">Left</li>
+                        <li value="right">Right</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b>Drag</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Connector
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="dragable" e-on-change.trigger="updateConnectors('bridge', 8)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Source
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="dragablesource" e-on-change.trigger="updateConnectors('bridge', 16)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Target
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="dragabletarget" e-on-change.trigger="updateConnectors('bridge', 32)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Segments
+            </div>
+            <div class="col-md-3">
+                <input ej-check-box="e-checked:true;" type="checkbox" id="dragablesegment" e-on-change.trigger="updateConnectors('bridge', 64)" />
+            </div>
+        </div>
+    </div>
+
+
+</template>

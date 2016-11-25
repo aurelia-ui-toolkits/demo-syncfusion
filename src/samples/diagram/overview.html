@@ -1,10 +1,11 @@
 <!DOCTYPE html >
 <template>
    <div style="float:left">
-        <ej-diagram id="diagram" e-width="700px" e-height="600px" e-nodes.bind="nodes" 
-            e-connectors.bind="connectors" e-page-settings.bind="pageSettings" e-default-settings.bind="defaultSettings" 
-            e-selected-items.bind="selectedItems" e-enable-auto-scroll="false">
-        </ej-diagram>
+       <ej-diagram id="diagram" e-width="700px" e-height="600px" e-nodes.bind="nodes"
+                   e-connectors.bind="connectors" e-page-settings.bind="pageSettings" e-default-settings.bind="defaultSettings"
+                   e-snap-settings.bind="snapSettings"
+                   e-selected-items.bind="selectedItems" e-enable-auto-scroll="false">
+       </ej-diagram>
    </div>
    <div style="float:left;">
        <ej-overview id="symbolpalette" e-source-id="diagram" e-width="300px" e-height="300px">

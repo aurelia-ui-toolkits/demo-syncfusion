@@ -16,7 +16,8 @@
         "NavigationDrawer": "navigationdrawer",
         "RadialMenu": "radialmenu",
         "FileExplorer": "fileexplorer",
-        "Toolbar": "toolbar"
+        "Toolbar": "toolbar",
+        "Pager": "pager"
     },
     "Layout": {
         "Splitter": "splitter",
@@ -31,6 +32,7 @@
         "Kanban Board": "kanban",
         "Barcode": "barcode",
         "Diagram": "diagram",
+		"HeatMap": "heatmap",
         "Map": "map",
         "TreeMap": "treemap",
         "Gantt": "gantt",
@@ -55,21 +57,17 @@
         "Uploadbox": "uploadbox",
         "Rating": "rating",
         "Slider": "slider",
-        "RTE": "rte"
+        "RTE": "rte",
+		"Signature" : "signature"
     },
     "File Viewer": {
         "PDF Viewer": "pdfviewer"
     },
-    "Pivot Grid": {
-        "Relational": "pivotgrid",
-        "OLAP": "olap",
-        "Common": "pivotgridcommon"
-    },
-    "Pivot Chart": {
-        "PivotChart": "pivotchart"
-    },
-    "Pivot Gauge": {
-        "PivotGauge": "pivotgauge"
+    "Business Intelligence" :{
+        "PivotGrid" : "pivotgrid",
+        "PivotChart" : "pivotchart",
+        "PivotGauge" : "pivotgauge",
+        "PivotTreeMap" : "pivottreemap"
     },
     "Notification": {
         "ProgressBar": "progressbar",

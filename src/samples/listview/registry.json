@@ -4,16 +4,20 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "f42bbc624e258d67fcd314b45377600f"
     },
     "check-list":{
-         "files": ["html", "js","css"]
+         "files": ["html", "js","css"],
+      "gist": "57abd54993a6172c66aea959d31dc2d1"
     },
     "data-binding-local":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "f22bea6f779d9aca9f3845ae388b0a2e"
     },
     "template":{
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "1462cef9212ec30229fe1db1d519bb9a"
     }
     
   }

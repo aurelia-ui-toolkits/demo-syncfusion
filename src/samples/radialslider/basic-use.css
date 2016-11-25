@@ -7,3 +7,6 @@
 .e-lv .e-list a{
     box-sizing: content-box;
 }
+.panel-body{
+	overflow-x: auto;
+}

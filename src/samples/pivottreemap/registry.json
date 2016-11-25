@@ -1,0 +1,15 @@
+{
+  "title": "PivotTreeMap",
+  "documentation":"http://help.syncfusion.com/js/api/ejpivottreemap",
+  "samples": {
+    "OLAP": {
+      "default" : true,
+      "files": ["html", "js","css"],
+      "gist": "8c70b9caa561434ab1dbea4671e23193"
+    },
+    "color-mapping": {
+      "files": ["html", "js"],
+      "gist": "59b9c96f788408529c5fd0570f3c00e0"
+    }
+  }
+}

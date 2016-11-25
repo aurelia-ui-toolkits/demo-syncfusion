@@ -1,0 +1,100 @@
+<template>
+  <require from="./API.css"></require>
+  <div class='container-fluid'>  
+    <table class='container-fluid'>
+      <tbody class='container-fluid'>
+        <tr class='row'>
+          <th colspan="2"> Choose Color </th>
+        </tr>
+        <tr class='row'>                    
+          <td class='col-md-4'>
+              <input id="colorPicker" ej-color-picker="e-value.two-way:colorValue;
+                e-enabled.bind: status;
+                e-opacity-value.bind: opacityValue;
+                e-show-preview.bind: preview;
+                e-enable-opacity.bind: enableOpacity;
+                e-show-recent-colors.bind: recentColor;
+                e-show-apply-cancel.bind: buttons"></input>   
+          </td>
+        </tr>                
+      </tbody>
+    </table>       
+  </div>
+  <div id="property-window" class="box wide">
+    <div class="row">
+      <div class="col-md-3">   
+        <div>Value </div>               
+      </div>
+      <div class="col-md-3">
+          <input id="color-value" type="text" class="e-textbox e-numeric e-js" placeholder="Enter value"  focusout.trigger='onValueChange($event)'/>
+      </div>   
+      <div class="col-md-3">   
+        <div>Preview </div>               
+      </div>
+      <div class="col-md-3">
+          <input type="checkbox" id="preview" ej-toggle-button="e-size.bind: largeBtnValue;
+                          e-show-rounded-corner: true;
+                          e-height: 34px;
+                          e-active-text: True;
+                          e-default-text: False" e-on-change.trigger="enablePreview($event)"></input>
+                          <label for="preview">Toggle</label>
+      </div>  
+      <div class="col-md-3">   
+        <div>Opacity </div>               
+      </div>
+      <div class="col-md-3">
+          <input type="checkbox" id="opacity" ej-toggle-button="e-size.bind: largeBtnValue;
+                          e-show-rounded-corner: true;
+                          e-height: 34px;
+                          e-active-text: Enable;
+                          e-default-text: Disable" e-on-change.trigger="enableOpacitySlider($event)"></input>
+                          <label for="opacity">Toggle</label>
+      </div>  
+      <div class="col-md-3">   
+        <div>Opacity Value </div>               
+      </div>
+      <div class="col-md-3">
+          <input id="opacityValue" type="text"  ej-numeric-textbox="e-show-spin-button:false;e-min-value: 0;e-max-value: 100;e-width: 130px;" e-on-change.trigger='onOpacityChange($event)'  />
+      </div>  
+      <div class="col-md-3">   
+        <div>Show Recent Color </div>               
+      </div>
+      <div class="col-md-3">
+          <input type="checkbox" id="recentColors" ej-toggle-button="e-size.bind: largeBtnValue;
+                          e-show-rounded-corner: true;
+                          e-height: 34px;
+                          e-active-text: False;
+                          e-default-text: True" e-on-change.trigger="enableRecentColors($event)"></input>
+                          <label for="recentColors">Toggle</label>
+      </div>  
+      <div class="col-md-3">   
+        <div>Enable / Disable </div>               
+      </div>
+      <div class="col-md-3">
+          <input type="checkbox" id="disablePicker" ej-toggle-button="e-size.bind: largeBtnValue;
+                          e-show-rounded-corner: true;
+                          e-height: 34px;
+                          e-active-text: Enable;
+                          e-default-text: Disable" e-on-change.trigger="onDisable($event)"></input>
+                          <label for="disablePicker">Toggle</label>
+      </div>      
+      <div class="col-md-3">   
+        <div>Show Buttons </div>               
+      </div>
+      <div class="col-md-3">
+          <input type="checkbox" id="buttons" ej-toggle-button="e-size.bind: largeBtnValue;
+                          e-show-rounded-corner: true;
+                          e-height: 34px;
+                          e-active-text: True;
+                          e-default-text: False" e-on-change.trigger="enableButtons($event)"></input>
+                          <label for="buttons">Toggle</label>
+      </div>  
+      <div class="col-md-3">   
+        <div>Get HexCode </div>               
+      </div>
+      <div class="col-md-3">
+          <button id="hexCode" ej-button="e-width: 130px" e-on-click.trigger='getValue()'>Value</button>
+      </div>       
+    </div>
+  </div>
+ </template>

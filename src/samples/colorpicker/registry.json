@@ -4,32 +4,39 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html"]
+      "files": ["html"],
+      "gist":"99495fb343f1d0f17bcf35240250522b"
     },    
     "Display-Inline": {
       "default" : false,
-      "files": ["html"]
+      "files": ["html"],
+        "gist":"d81dd7aa5c1352188f4312306d1f3eb5"
     },     
     "Presets": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"b3b7500898c8973f77468fd43709606c"
     },
      "Color-Palette": {
       "default" : false,
-      "files": ["html"]
+      "files": ["html"],
+         "gist":"5114dd8f5f378d78e597939e698d3605"
     },
      "Custom-Palette": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"b4f892ffe209c724b8b37c953994c4c6"
     },
-    "API's": {
+    "API": {
       "default" : false,
       "title" : "API's",
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"6d0b8c8356b39dfc5a994963329f5d10"
     },
     "Events": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"729f572841823c82f8ab53796f111606"
     }                                          
   }
 }

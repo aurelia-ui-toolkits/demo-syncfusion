@@ -1,0 +1,116 @@
+<template>
+    <require from="./API.css"></require>
+<div class="toolbar-api-cols-sample-area">
+                <div class="toolbar-api-frame">
+                    <div class="toolbar-api-control">
+                        <div id="toolbarMethods" ej-toolbar="" e-on-create.trigger="create()">
+                            <ul>
+                                <li id="Left" title="Left">
+                                    <div class="ToolbarItems LeftAlign_tool"></div>
+                                </li>
+                                <li id="Center" title="Center">
+                                    <div class="ToolbarItems CenterAlign_tool"></div>
+                                </li>
+                                <li id="Right" title="Right">
+                                    <div class="ToolbarItems RightAlign_tool"></div>
+                                </li>
+                                <li id="Justify" title="Justify">
+                                    <div class="ToolbarItems Justify_tool"></div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li id="Bold" title="Bold">
+                                    <div class="ToolbarItems Bold_tool"></div>
+                                </li>
+                                <li id="Italic" title="Italic">
+                                    <div class="ToolbarItems Italic_tool"></div>
+                                </li>
+                                <li id="StrikeThrough" title="Strike Through">
+                                    <div class="ToolbarItems StrikeThrough_tool"></div>
+                                </li>
+                                <li id="UndeLine" title="UnderLine">
+                                    <div class="ToolbarItems Underline_tool"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+                        <div class="col-md-6 top-margin">Select Item By ID</div>
+                        <div class="col-md-6 top-margin">
+                            <select name="selectIndex" class="e-ddl" id="optSelectId" ej-drop-down-list="e-width.bind:width;e-selected-item-index:0" e-on-change.trigger="onSelectChange($event)">
+                                <option value="none">None</option>
+                                <option value="Left">Left</option>
+                                <option value="Center">Center</option>
+                                <option value="Right">Right</option>
+                                <option value="Justify">Justify</option>
+                                <option value="Bold">Bold</option>
+                                <option value="Italic">Italic</option>
+                                <option value="StrikeThrough">StrikeThrough</option>
+                                <option value="UndeLine">UnderLine</option>
+                            </select>
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">Deselect Item By ID</div>
+                        <div class="col-md-6 top-margin">
+                            <select name="selectIndex" class="e-ddl" id="optDeselectId" ej-drop-down-list="e-width.bind:width;e-selected-item-index:0" e-on-change.trigger="onDeselectChange($event)">
+                                <option value="none">None</option>
+                                <option value="Left">Left</option>
+                                <option value="Center">Center</option>
+                                <option value="Right">Right</option>
+                                <option value="Justify">Justify</option>
+                                <option value="Bold">Bold</option>
+                                <option value="Italic">Italic</option>
+                                <option value="StrikeThrough">StrikeThrough</option>
+                                <option value="UndeLine">UnderLine</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">Disable Item By ID</div>
+                        <div class="col-md-6 top-margin">
+                            <select name="selectIndex" class="e-ddl" id="optDisableId" ej-drop-down-list="e-width.bind:width;e-selected-item-index:0" e-on-change.trigger="onDisableChange($event)">
+                                <option value="none">None</option>
+                                <option value="Left">Left</option>
+                                <option value="Center">Center</option>
+                                <option value="Right">Right</option>
+                                <option value="Justify">Justify</option>
+                                <option value="Bold">Bold</option>
+                                <option value="Italic">Italic</option>
+                                <option value="StrikeThrough">StrikeThrough</option>
+                                <option value="UndeLine">UnderLine</option>
+                            </select>
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="col-md-6 top-margin">Enable Item By ID</div>
+                        <div class="col-md-6 top-margin">
+                            <select name="selectIndex" class="e-ddl" id="optEnableId" ej-drop-down-list="e-width.bind:width;e-selected-item-index:0" e-on-change.trigger="onEnableChange($event)">
+                                <option value="none">None</option>
+                                <option value="Left">Left</option>
+                                <option value="Center">Center</option>
+                                <option value="Right">Right</option>
+                                <option value="Justify">Justify</option>
+                                <option value="Bold">Bold</option>
+                                <option value="Italic">Italic</option>
+                                <option value="StrikeThrough">StrikeThrough</option>
+                                <option value="UndeLine">UnderLine</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 top-margin">Disable/Enable All </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="enabledisable" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-width.bind:width;e-default-text:Disable;e-active-text:Enable" e-on-change.trigger="onEnableDisableAll($event)" />
+                        </div>
+                        <div class="col-md-6 top-margin">Show/Hide </div>
+                        <div class="col-md-6 top-margin">
+                            <input type="checkbox" id="showhide" class="e-togglebtn" value="checkuncheck" ej-toggle-button="e-width.bind:width;e-default-text:Hide;e-active-text:Show" e-on-change.trigger="onShowHide($event)" />
+                        </div>
+                    </div>
+        </div>
+</template>

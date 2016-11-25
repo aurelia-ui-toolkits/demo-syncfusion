@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ej-chart id="container" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions">
+        <ej-chart id="container" e-on-load.trigger="onchartload($event)" e-legend.bind="legend" e-size.bind="size" e-title.bind="title" e-common-series-options.bind="commonSeriesOptions">
             <ej-series e-data-source.bind="WebSiteVisitor" e-x-name="xName" e-y-name="yName" e-name="Website">
             </ej-series>
         </ej-chart>

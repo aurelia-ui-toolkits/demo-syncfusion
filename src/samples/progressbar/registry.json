@@ -4,13 +4,16 @@
   "samples": {
     "default-functionalities": {
       "default" : true,
-      "files": ["html", "js", "css"]
+      "files": ["html", "js", "css"],
+	  "gist": "303c8bea61e889c86215475cffdc9642"
     },
-    "API's": {
-        "files": ["html", "js", "css"]
+    "API": {
+        "files": ["html", "js", "css"],
+		"gist": "b25c51f1f490c8e46be420ca41e2b1a7"
     },
     "events": {
-        "files": ["html", "js", "css"]
+        "files": ["html", "js", "css"],
+		"gist": "a8993650ca733652647a6b3b2aa427e3"
     }   
   }
 }

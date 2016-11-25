@@ -1,0 +1,21 @@
+<template>
+    <require from="./API.css"></require>
+    <div class="api-progress-bar-frame">
+        <div class="api-progress-bar-control">
+            <div id="progressBar" ej-progress-bar="e-percentage.bind:percentage;e-height.bind:height" e-on-create.trigger="create()"></div>
+        </div>
+        <div class="api-progress-bar-txt"></div>
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+            <div class="col-md-12 top-margin">
+                <input type="checkbox" id="check21" class="e-togglebtn" ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-width.bind=width" e-on-click.trigger="changeState($event)" />
+                <label for="check21">Toggle</label>
+            </div>
+            <div class="col-md-12 top-margin">
+                <input type="button" id="getper" value="Get Percentage" ej-button="e-width.bind:width" e-on-click.trigger="onGetPercentage()" />
+            </div>
+        </div>
+    </div>
+</template>

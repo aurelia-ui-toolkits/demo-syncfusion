@@ -4,40 +4,49 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+      "gist":"b49d35bb48a9fd0ff94bc0f7a6b0718e"
     },
      "Date-Range": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"3a0877a277b5ea9fb3f9b461cde9200a"
     },
      "Date-Format": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"732016f11b5a5c7db44a971ad27a5c40"
     },
     "Display-Inline": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"f836b77e86ce03d49460012c49c2c7e3"
     },
      "Dates-In-Other-Months": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"8baa21aaf10e360348e68174e03e9cd5"
     },
     "Localization": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"61a502771ecf0ee02adfe795a6bc4c04"
     },
-    "API's": {
+    "API": {
       "default" : false,
        "title" : "API's",
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"04c647a25e40bbb042d39fd85c862017"
     },
     "Events": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"e6def16960dee01c14b8c145b55a0272"
     },
     "RTL": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"cd7fd713a37f80dbad915c4c28660a7d"
     }                                             
   }
 }

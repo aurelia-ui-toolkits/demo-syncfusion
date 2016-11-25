@@ -4,16 +4,20 @@
   "samples": {
     "default-functionalities": {
       "default" : true,
-      "files": ["html"]
+      "files": ["html", "js"],
+	  "gist": "c741e28c5d38cf1c745d3a0238fa8636"
     },    
-    "API's": {
-        "files": ["html", "js"]
+    "API": {
+        "files": ["html", "js"],
+		"gist": "6f52d461a71423af1cc27de3db6ec1ed"
     },
     "events": {
-        "files": ["html", "js"]
+        "files": ["html", "js"],
+		"gist": "02ee289a69d9c22634d22acff37b2f8d"
     },
     "context-menu": {
-        "files": ["html", "js", "css"]
+        "files": ["html", "js", "css"],
+		"gist": "a1feea23cd0db245ef269d8f4403bb59"
     }
   }
 }

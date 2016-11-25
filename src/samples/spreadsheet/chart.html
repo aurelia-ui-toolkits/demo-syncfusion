@@ -1,30 +1,26 @@
 <template>
 	<require from="./spreadsheet.css"></require>
 	<div class ="e-main-panel">
-		<ej-spreadsheet id="Spreadsheet1" e-scroll-settings.bind = "scroll" e-allow-formula-bar = "false" e-show-ribbon = "false" e-sheet-count = 11
+		<ej-spreadsheet id="Spreadsheet1" e-scroll-settings.bind = "scroll" e-allow-formula-bar = "false" e-show-ribbon = "false" e-sheet-count = 9
          e-row-count= 32 e-page-settings.bind = "page" e-on-load-complete.trigger = "loadcomplete($event)" 
 		e-on-action-begin.trigger = "actionbegin($event)">
 			<ej-sheet e-range-settings.bind = "range1" e-sheet-name = "2D Column">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range2" e-sheet-name = "2D & 3D Column">
+			<ej-sheet e-range-settings.bind = "range2" e-sheet-name = "3D Column">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range3" e-sheet-name = "3D Column">
+			<ej-sheet e-range-settings.bind = "range3" e-sheet-name = "2D Bar">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range4" e-sheet-name = "2D Bar">
+			<ej-sheet e-range-settings.bind = "range4" e-sheet-name = "3D Bar">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range5" e-sheet-name = "2D & 3D Bar">
+			<ej-sheet e-range-settings.bind = "range5" e-sheet-name = "Radar">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range6" e-sheet-name = "3D Bar">
+			<ej-sheet e-range-settings.bind = "range6" e-sheet-name = "Line">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range7" e-sheet-name = "Radar">
+			<ej-sheet e-range-settings.bind = "range7" e-sheet-name = "Area">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range8" e-sheet-name = "Line">
+			<ej-sheet e-range-settings.bind = "range8" e-sheet-name = "Pie">
 			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range9" e-sheet-name = "Area">
-			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range10" e-sheet-name = "Pie">
-			</ej-sheet>
-			<ej-sheet e-range-settings.bind = "range11" e-sheet-name = "Scatter">
+			<ej-sheet e-range-settings.bind = "range9" e-sheet-name = "Scatter">
 			</ej-sheet>
 		</ej-spreadsheet>
 	</div>

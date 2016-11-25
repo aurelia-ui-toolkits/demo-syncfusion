@@ -13,6 +13,7 @@ export class ViewCustomization {
           select: 'onChange', selectedItemIndex: 5
         });
         $('#Schedule1').ejSchedule({
+          currentDate: new Date(startDate),
           renderDates: {
             start: new Date(startDate),
             end: new Date(endDate)
@@ -22,6 +23,8 @@ export class ViewCustomization {
     }
     constructor() {
       this.Views = ['CustomView'];
+      this.Start = new Date(2014, 4, 7);
+      this.End = new Date(2014, 5, 10);
       this.dropDownData = ['Agenda', 'Month', 'Day', 'Week', 'WorkWeek', 'CustomView'];
       this.RenderDates = {
         start: '2014/4/7',

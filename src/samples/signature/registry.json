@@ -1,0 +1,10 @@
+{
+  "title": "Signature",
+  "documentation":"http://help.syncfusion.com/js/api/ejSignature",
+  "samples": {
+    "basic-use": {
+      "default" : true,
+      "files": ["html", "js","css"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<template>
+  <require from="./relational.css"></require>
+  <div>
+    <ej-pivot-schema-designer id="pivotschema" e-olap-settings.bind="olapSettings"></ej-pivot-schema-designer>
+    <ej-pivot-grid id="groupingBar" e-data-source.bind="pivotData" e-enable-grouping-bar="true" e-pivot-table-field-list-id.bind="PivotSchemaDesigner">
+    </ej-pivot-grid>
+  </div>
+</template>

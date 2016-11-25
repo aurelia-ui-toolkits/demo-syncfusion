@@ -66,6 +66,9 @@ callClientSideMethod(apiName) {
     _ejPdfViewer.goToNextPage();
     this.updatePageNavigation();
     break;
+  case 'download':
+    _ejPdfViewer.download();
+    break;
   default:
     break;
   }
@@ -162,13 +165,16 @@ showTooltipContent(event) {
   } else if (($(currentToolbarItem).hasClass('e-pdfviewer-fitwidth')) || ($(disabledItem).hasClass('e-pdfviewer-fitwidth'))) {
     TooltipPos = $('#magnificationDiv .e-pdfviewer-fitwidth')[0].getBoundingClientRect();
     toolTipText = 'Fit to Width';
+  } else if (($(currentToolbarItem).hasClass('e-pdfviewer-download')) || ($(disabledItem).hasClass('e-pdfviewer-download'))) {
+    TooltipPos = $('#toolbarDiv .e-pdfviewer-download')[0].getBoundingClientRect();
+    toolTipText = 'Download PDF document';
   }
 
   $('#toolTip_Content').html(toolTipText);
   $('#toolTip').css({ 'top': (TooltipPos.top + TooltipPos.height) + 5, 'left': (TooltipPos.left + (TooltipPos.width / 2)), 'display': 'block', 'position': 'fixed' });
 }
 hideTooltip() {
-  $('#toolTip').css('display', 'none');
+  $('#toolTip').remove();
 }
 textboxOnclick() {
   $('#currentPage').select();

@@ -1,5 +1,5 @@
 .e-pastetip{
-		   background-image: url("vendors/css/web/common-images/ribbon/paste.png");
+		   background-image: url("images/ribbon/paste.png");
 		   background-repeat:no-repeat;
 		   height:64px;
 		   width:64px
@@ -26,19 +26,19 @@
 	text-indent: 7px;
    }
 .e-blank{
-	  background-image: url("vendors/css/web/common-images/ribbon/blank.png");
+	  background-image: url("images/ribbon/blank.png");
 	 }
 	 .e-project{
-	  background-image: url("vendors/css/web/common-images/ribbon/Project.png");
+	  background-image: url("images/ribbon/Project.png");
 	 }
 	 .e-gantt{
-	  background-image: url("vendors/css/web/common-images/ribbon/Gantt.png");
+	  background-image: url("images/ribbon/Gantt.png");
 	 }
 	 .e-diet{
-	  background-image: url("vendors/css/web/common-images/ribbon/Diet.png");
+	  background-image: url("images/ribbon/Diet.png");
 	 }
 	 .e-sales{
-	  background-image: url("vendors/css/web/common-images/ribbon/Sales.png");
+	  background-image: url("images/ribbon/Sales.png");
 	 }
 	 .e-infopageicon{
 	  background-repeat:no-repeat;
@@ -46,19 +46,19 @@
       width: 198px;
 	 }
 	 .e-accuser{
-	  background-image: url("vendors/css/web/common-images/ribbon/User.jpg");
+	  background-image: url("images/ribbon/User.jpg");
 	 }
 	 .e-protect{
-	  background-image: url("vendors/css/web/common-images/ribbon/Protect.png");
+	  background-image: url("images/ribbon/Protect.png");
 	 }
 	 .e-browser{
-	  background-image: url("vendors/css/web/common-images/ribbon/Browser.png");
+	  background-image: url("images/ribbon/Browser.png");
 	 }
 	 .e-check{
-	  background-image: url("vendors/css/web/common-images/ribbon/Check.png");
+	  background-image: url("images/ribbon/Check.png");
 	 }
 	 .e-version{
-	  background-image: url("vendors/css/web/common-images/ribbon/Version.png");
+	  background-image: url("images/ribbon/Version.png");
 	 }
 	 .e-newpageicon{
 	  background-repeat:no-repeat;

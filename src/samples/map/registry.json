@@ -1,19 +1,21 @@
 {
-  "title": "Map",
-  "documentation":"http://help.syncfusion.com/js/api/ejmap",
-  "samples": {    
-	"dataMarkers":{
-	   "default": true,
-	   "files": ["html", "js","css"]
-	},
-  "heatMap":{	   
-	   "files": ["html", "js","css"]
-	},
-  "labels":{	   
-	   "files": ["html", "js","css"]
-	},
-  "selection":{	   
-	   "files": ["html", "js","css"]
-	}  
-  }
+    "title": "Map",
+    "documentation": "http://help.syncfusion.com/js/api/ejmap",
+    "samples": {
+        "dataMarkers": {
+            "default": true,
+            "files": [ "html", "js", "css" ],
+            "gist": "9027d6729d069c1cd59eb052bb55524d",
+            "requires": ["scripts/WorldMap.js"]
+        },
+        "heatMap": {
+            "files": [ "html", "js", "css" ]
+        },
+        "labels": {
+            "files": [ "html", "js", "css" ]
+        },
+        "selection": {
+            "files": [ "html", "js", "css" ]
+        }
+    }
 }

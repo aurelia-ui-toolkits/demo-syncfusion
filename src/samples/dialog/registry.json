@@ -4,20 +4,25 @@
   "samples": {
     "basic-use": {
       "default" : true,
-      "files": ["html", "js","css"]
+      "files": ["html", "js","css"],
+      "gist": "822f8e8b1df302a713eaf9d27e6a9551"
     },
     "icons":{
-      "files":["html","js","css"]
+      "files":["html","js","css"],
+      "gist": "7b0f669f08b778243e2e258e63906f2a"
     },
     "rtl":{
       "title":"RTL",
-      "files":["html","js","css"]
+      "files":["html","js","css"],
+      "gist": "462104ba34c96955979a0bd751912f3a"
     },
     "model-dialog":{
-      "files":["html","js","css"]
+      "files":["html","js","css"],
+      "gist": "5f9f5e72f71211bdf6d57a6117e4359c"
     },
     "multi-dialog":{
-       "files":["html","js","css"]
+       "files":["html","js","css"],
+      "gist": "1421ccec56e9af997eb37f9cebd429d1"
     }
   }
 }

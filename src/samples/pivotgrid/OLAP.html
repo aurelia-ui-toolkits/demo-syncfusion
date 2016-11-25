@@ -1,0 +1,8 @@
+<template>
+  <require from="./OLAP.css"></require>  
+  <div>
+    <ej-pivot-grid id="fieldList" e-data-source.bind="pivotData" e-pivot-table-field-list-id.bind="PivotSchemaDesigner">
+      </ej-pivot-grid>
+    <ej-pivot-schema-designer id="PivotSchemaDesigner1" e-olap-settings.bind="olapSettings"></ej-pivot-schema-designer> 
+  </div>
+</template>

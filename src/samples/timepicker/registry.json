@@ -4,24 +4,29 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+      "gist":"4dc57a1a06f9388a089401b8979ed739"
     },
     "Localization": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"4bf81ca21ab792cbaf2e188b9b362f62"
     },
-    "API's": {
+    "API": {
       "default" : false,
       "title" : "API's",
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"11c3e4b8e6855f62fffaf2b4b48dcbb7"
     },
     "Events": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"47eca4d2f7c83b984a5f6137009049bf"
     },
     "RTL": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"e28bc654f7f63e03864da62be61de4ce"
     }                                             
   }
 }

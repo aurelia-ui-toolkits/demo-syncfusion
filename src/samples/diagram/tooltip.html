@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<template>
+    <require from="./property_editor.css"></require>
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="450px" e-nodes.bind="nodes"
+                    e-connectors.bind="connectors" e-snap-settings.bind="snapSettings" e-page-settings.bind="pageSettings"
+                    e-default-settings.bind="defaultSettings"
+                    e-tooltip.bind="tooltip"
+                    e-enable-context-menu="false">
+        </ej-diagram>
+    </div>
+
+    <div id="property-window" class="box wide">
+
+        <div class="row">
+            <div class="col-md-3">
+                <b>Tooltip</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Position
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Object" ej-drop-down-list="e-target-id.bind:segmentTarget;e-text.bind:segmentText;e-value.bind:value;" id="tooltip" e-on-change.trigger="changeOptions($event)" />
+                <div id="options">
+                    <ul>
+                        <li value="Object">Object</li>
+                        <li value="Mouse">Mouse</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Margin
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="MarginRadius" ej-numeric-textbox="e-minValue.bind:MarginMinValue;e-maxValue.bind:MarginMaxValue;e-value.bind:MarginValue;" e-on-change.trigger="changeMargin($event)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b>Alignment</b>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Horizontal
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Object" ej-drop-down-list="e-target-id.bind:horizontalalignlist;e-text.bind:horizontalalignValue;e-value.bind:value;" id="horizontalalign" e-on-change.trigger="changeHorizontalAlign($event)" />
+                <div id="horizontalalignlist">
+                    <ul>
+                        <li value="center">Center</li>
+                        <li value="left">Left</li>
+                        <li value="right">Right</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 aligntop" style="margin-right:-25px;">
+                Vertical
+            </div>
+            <div class="col-md-3">
+                <input type="text" e-text="Object" ej-drop-down-list="e-target-id.bind:verticalalignlist;e-text.bind:verticalalignValue;e-value.bind:value;" id="verticalalign" e-on-change.trigger="changeVerticalAlign($event)" />
+                <div id="verticalalignlist">
+                    <ul>
+                        <li value="bottom">Bottom</li>
+                        <li value="top">Top</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/x-jsrender" id="mouseovertoolTipId">
+        <div style="background-color: #f4f4f4; color: black; border-width:1px;border-style: solid;border-color: #d3d3d3; border-radius: 8px;white-space: nowrap;">
+            <span style="margin: 10px;"> {{:Description}} </span>
+        </div>
+    </script>
+</template>

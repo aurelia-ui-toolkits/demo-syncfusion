@@ -1,8 +1,9 @@
 <template>
     <require from="./basic-use.css"></require>
-    <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
+  
+    <div class="control" style="height:500px;position:relative; overflow:hidden;">
+          <button id="btnOpen" class="e-btn" ej-button="e-text:Click to open dialog; size: medium, type: button, height: 30, width: 150"
         e-on-click.trigger="onOpen()"></button>
-    <div class="control" style="height:500px;">
         <ej-dialog id="basicDialog" e-title="Audi Q3 Drive" e-width="550" e-min-width="310" e-min-height="215" e-containment=".control"
             e-on-close.trigger="onDialogClose()">
 

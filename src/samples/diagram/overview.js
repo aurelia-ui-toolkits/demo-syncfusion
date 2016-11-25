@@ -1,4 +1,4 @@
-export class BasicUse {
+export class Overview {
   constructor() {
     let nodes = [];
     createNode(24, 23, 20, 'src/samples/diagram/images/cards_05.png');
@@ -75,20 +75,10 @@ export class BasicUse {
     function createNode(x, y, angle, src) {
       x += 51;
       y += 71;
-      nodes.push({
-        name: ej.datavisualization.Diagram.Util.randomId(),
-        offsetX: x, offsetY: y, rotateAngle: angle, type: 'image', source: src, borderColor: 'none'
-      });
+      nodes.push({ name: ej.datavisualization.Diagram.Util.randomId(), offsetX: x, offsetY: y, rotateAngle: angle, type: 'image', source: src, borderColor: 'none' });
     }
     this.nodes = nodes;
-    this.defaultSettings = {
-      node: {
-        width: 102,
-        height: 142
-      }
-    };
-    this.snapSettings = {
-      snapConstraints: ej.datavisualization.Diagram.SnapConstraints.None
-    };
+    this.defaultSettings = { node: { width: 102, height: 142 } };
+    this.snapSettings = { snapConstraints: ej.datavisualization.Diagram.SnapConstraints.None };
   }
 }

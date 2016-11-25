@@ -1,0 +1,30 @@
+<template>
+    <require from="./API.css"></require>
+    <div>
+        <div class="posupload">Select a file to upload </div>
+        <div class="uploadbox-api-control">
+            <ej-uploadbox id="UploadMethods" e-save-url.bind="save" e-remove-url.bind="remove" e-on-create.trigger="create()">
+            </ej-uploadbox>
+        </div>
+    </div>
+    <div id="property-window" class="box wide">
+        <h4>Properties</h4>
+        <div class="row">
+            <div class="col-md-6 top-margin">
+                Enable / Disable</div>
+            <div class="col-md-6 top-margin">
+                <input type="checkbox" id="btnchkunchk" class="e-togglebtn" value="checkuncheck"
+                 ej-toggle-button="e-default-text:Disable;e-active-text:Enable;e-size:normal;e-width:110px" 
+                 e-on-change.trigger="onCheckUncheckAll($event)" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 top-margin">Multiple Files Selection</div>
+            <div class="col-md-6 top-margin">
+
+                <input type="checkbox" id="check1" ej-check-box="e-checked:true" e-on-change.trigger="onCheck($event)" />
+            </div>
+        </div>
+    </div>
+</template>

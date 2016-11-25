@@ -4,25 +4,32 @@
 	"samples": {
 		"default-functionalities": {
 			"default": true,
-			"files": ["html"]
+			"files": ["html", "js"],
+			"gist": "7befed77a17a78c156c8244e9726b628"
 		},
 		"all-tools": {
-			"files": ["html", "js", "css"]
+			"files": ["html", "js", "css"],
+			"gist": "2a7e3bff015c8032ccca720cb66f0f2b"
 		},
 		"custom-tools": {
-			"files": ["html", "js", "css"]
+			"files": ["html", "js", "css"],
+			"gist": "c9dd53632154ee4a52cb1abc1a450b59"
 		},
-		"API's": {
-			"files": ["html", "js"]
+		"API": {
+			"files": ["html", "js"],
+			"gist": "21ecbd414ab68aa112fcfa348772c7ad"
 		},
 		"events": {
-			"files": ["html", "js"]
+			"files": ["html", "js"],
+			"gist": "6c772d78d5dd859b42921f5553ed50fc"
 		},
 		"file-and-image-browser": {
-			"files": ["html", "js"]
+			"files": ["html", "js"],
+			"gist": "d2ab1ab8b56bd1041ddeb150b1291f47"
 		},
 		"localization": {
-			"files": ["html", "js"]
+			"files": ["html", "js"],
+			"gist": "6dea668cc872a48b09c2bbb0ccf0006f"
 		}
 	}
 }

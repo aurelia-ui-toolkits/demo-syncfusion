@@ -4,32 +4,39 @@
   "samples": {
     "Default-Functionalities": {
       "default" : true,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+      "gist":"836e47bf8dced25f75118d5c06d2f9ab"
     },
      "Localization": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"8f30a408f85dcfd5fb8e86bbdaca69d1"
     },
-     "API's": {
+     "API": {
       "default" : false,
        "title" : "API's",
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"26d1922fc273190b6d5346dc6f825680"
     },
      "Drilldown-Support": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"ba00adb55c147ebc33cc6c79f0cafb12"
     },
      "Meridian-Support": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+         "gist":"eb5da62bc55a3a65520b01966e18f2bf"
     },
     "Events": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"516760f0b0b61de5bf8dc9bdd6f1f2d4"
     },
     "RTL": {
       "default" : false,
-      "files": ["html", "js"]
+      "files": ["html", "js"],
+        "gist":"de07b836f4e494f7c72d7978b8fb3277"
     }                                             
   }
 }

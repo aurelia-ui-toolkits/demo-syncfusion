@@ -1,9 +1,11 @@
 <template>
-     <require from="./Common.css"></require>
-    <div>
-        <div id="slider" ej-slider="e-value.bind:slidervalue;e-width.bind:width" e-on-create.trigger="logger.log('Slider has been created')" 
-        e-on-change.trigger="logger.log('Slider value changed.')" e-on-slide.trigger="logger.log('slider value changed')" e-on-start.trigger="logger.log('slider started ')" 
-        e-on-stop.trigger="logger.log('slider stopped')"></div>
+    <require from="./Common.css"></require>
+    <div class="row">
+        <div class="frame">
+            <div id="slider" ej-slider="e-value.bind:slidervalue;e-width.bind:width" e-on-create.trigger="logger.log('Slider has been created')"
+                 e-on-change.trigger="logger.log('Slider value changed.')" e-on-slide.trigger="logger.log('slider value changed')" e-on-start.trigger="logger.log('slider started ')"
+                 e-on-stop.trigger="logger.log('slider stopped')"></div>
+        </div>
     </div>
     <div id="Logger" class="box">
         <h4>Event Trace</h4>
@@ -12,4 +14,4 @@
             <button class="logger-button" ej-button="e-text:Clear" e-on-click.trigger="logger.clear()"></button>
         </div>
     </div>
- </template>
+</template>

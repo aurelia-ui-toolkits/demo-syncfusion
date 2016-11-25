@@ -12,10 +12,10 @@
         "card-Customization": {
             "files": [ "html", "js" ]
         },
-         "card-template": {
+         "card-Template": {
             "files": [ "html", "js" ]
         },
-        "column-constraints": { "files": ["html","js" ] },
+        "column-Constraints": { "files": ["html","js" ] },
         "context-Menu": {
             "files": [ "html", "js" ]
         },
