@@ -1,0 +1,64 @@
+
+
+{
+
+  "name": "syncfusion-ej-global",
+
+  "version": "15.1.33",
+
+  "description": "Npm package of localized texts of the Syncfusion Essential JavaScript widgets in various languages.",
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/syncfusion/ej-global.git"
+
+  },
+
+  "scripts": {
+
+   "prepublish": "xcopy i18n ej-global-all\\i18n /y /s /i & xcopy l10n ej-global-all\\l10n /y /s /i"
+
+  },
+
+  "keywords": [
+
+    "syncfusion",
+
+    "ej",
+
+    "essential",
+
+    "global"
+
+  ],
+
+  "author": "Syncfusion Inc",
+
+  "bugs": {
+
+    "url": "https://github.com/syncfusion/ej-global/issues"
+
+  },
+
+  "homepage": "https://github.com/syncfusion/ej-global#readme",
+  
+  "files": [
+        	"i18n/ej.culture.ar-AE.js",
+		"i18n/ej.culture.de-DE.js",
+		"i18n/ej.culture.en-US.js",
+		"i18n/ej.culture.es-ES.js",
+		"i18n/ej.culture.fr-FR.js",
+		"i18n/ej.culture.vi-VN.js",
+		"i18n/ej.culture.zh-CN.js",    
+		"l10n/ej.localetexts.ar-AE.min.js",
+		"l10n/ej.localetexts.de-DE.min.js",
+		"l10n/ej.localetexts.en-US.min.js",
+		"l10n/ej.localetexts.es-ES.min.js",
+		"l10n/ej.localetexts.fr-FR.min.js",
+		"l10n/ej.localetexts.vi-VN.min.js",
+		"l10n/ej.localetexts.zh-CN.min.js"
+    ]
+}
+
