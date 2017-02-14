@@ -1,0 +1,10 @@
+{
+  "title": "Sunburst",
+  "documentation":"http://help.syncfusion.com/js/api/ejsunburstchart",
+  "samples": {
+    "default": {
+      "default" : true,
+      "files": ["html", "js"]
+    }
+  }
+}

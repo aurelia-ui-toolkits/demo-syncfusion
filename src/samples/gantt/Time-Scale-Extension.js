@@ -22,9 +22,9 @@ export class ScheduleMode {
             endDate: '02/07/2014',
             subtasks: [
                            { taskID: 3, taskName: 'Plan timeline', startDate: '02/03/2014', endDate: '02/07/2014', duration: 5, progress: '100', resourceId: [1] },
-                           { taskID: 4, taskName: 'Plan budget', startDate: '02/03/2014', endDate: '02/07/2014', duration: 5, predecessor: '3', progress: '100', resourceId: [1] },
-                           { taskID: 5, taskName: 'Allocate resources', startDate: '02/03/2014', endDate: '02/07/2014', duration: 5, predecessor: '3', progress: '100', resourceId: [1] },
-                           { taskID: 6, taskName: 'Planning complete', startDate: '02/07/2014', endDate: '02/07/2014', duration: 0, predecessor: '4,5' }
+                           { taskID: 4, taskName: 'Plan budget', startDate: '02/03/2014', endDate: '02/07/2014', duration: 5, progress: '100', resourceId: [1] },
+                           { taskID: 5, taskName: 'Allocate resources', startDate: '02/03/2014', endDate: '02/07/2014', duration: 5, progress: '100', resourceId: [1] },
+                           { taskID: 6, taskName: 'Planning complete', startDate: '02/07/2014', endDate: '02/07/2014', duration: 0, predecessor: '3,4,5' }
             ]
           },
           {

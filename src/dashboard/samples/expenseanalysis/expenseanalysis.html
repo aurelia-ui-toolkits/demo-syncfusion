@@ -1,0 +1,127 @@
+<template>
+  <require from="./expenseanalysis.css"></require>
+  <div class="body expense-analysis">
+    <div class="sample-title">
+    </div>
+    <div class="container">
+      <div id="control-container">
+        <div class="text-title">
+        </div>
+        <div class="row imagetile">
+          <div class="col-md-5">
+            <table>
+              <tr>
+                <td>
+                  <div class="left-image">
+                  </div>
+                </td>
+                <td>
+                  <div class="expt">
+                    <div class="e-exptitle">
+                      <div repeat.for="emp of empData">
+                        <label class="${emp.classLabel}">
+                                                ${emp.id}
+                      </label>
+                        </br>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-7 e-values-td">
+            <div class="initborder">
+              <table class="e-values">
+                <tr>
+                  <td repeat.for="empExpense of employeeExpense" class="${empExpense.amt}">
+                    <p innerhtml="${empExpense.amount}" class="${empExpense._amt}"></p>
+                    <p class="${empExpense._text}">
+                      ${empExpense.text}
+                    </p>
+                    <p innerhtml="${empExpense.trans}" class="${empExpense._trans}">
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="chartgridtable">
+          <div id="control-panel" class="add-filter-panel">
+            <div class="row">
+              <div class="col-md-1 g">
+                <label class="sample-t">
+                                    Transactions</label>
+              </div>
+              <div class="col-md-8 g"></div>
+              <div class="col-md-3 g">
+                <table class="tab">
+                  <tr>
+                    <td>
+                      <input type="text" id="selectMonth" ej-drop-down-list="e-target-id:MonthList;e-value.bind:monthValue;e-height:30px;e-data-source.bind:monthData;e-select-item-by-text:January;e-width:150px;e-text.bind:txt; "
+                        e-on-select.trigger="changeMonth($event.detail)" />
+                    </td>
+                    <td>
+                      <div class="add-image" click.delegate="addButton($event)">
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="expensegridborder">
+            <div ej-waiting-popup="e-show-on-init.bind:showPopup;" class="col-xs-13 grid-container">
+              <ej-grid view-model.ref="expenseGrid" id="ExpenseGrid" e-data-source.two-way="gridData" e-columns.bind="column" e-page-settings.bind="gridPage"
+                e-edit-settings.bind="gridSettings" enable-row-hover=false e-allow-keyboard-navigation=true e-allow-paging=true
+                e-allow-sorting=true e-is-responsive=true e-enable-responsive-row="false">
+              </ej-grid>
+            </div>
+          </div>
+          <div class="chart-container">
+            <div class="col-xs-13 chart-inner">
+              <div class="samplesec">
+                <div class="samplename">
+                  <span>Expense Analysis Chart </span>
+                </div>
+                <div class="samplebody">
+                  <div class="samplecontent">
+                    <div class="chart-back-button">
+                      <button id="btnBack" show.bind="backBtn" ej-button="e-size:mini;" e-on-click.delegate="backButton($event.detail)">Back</button>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div id="ExpenseChart">
+                          <ej-chart view-model.ref="expenseChart" id="expensiveChart" e-is-responsive="true" e-series.bind="series" e-title.bind="chartTitle"
+                            e-legend.bind="chartLegend" e-on-series-rendering.delegate="seriesRender($event.detail)" e-on-animation-complete.delegate="completeAnimation($event.detail)"
+                            e-on-point-region-click.delegate="onclick($event.detail)" e-background- "transparent" e-enable-smart-labels="true">
+                          </ej-chart>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="spend-div">
+                          <table class="boxx" cellspacing="10">
+                            <tr repeat.for="expense of overallExpense">
+                              <td class="${expense.spent}">
+                                <p class="${expense.spent_text}">
+                                  ${expense .text}
+                                </p>
+                                <p innerhtml="${expense .amt}" class="${expense .spent_amt}">
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

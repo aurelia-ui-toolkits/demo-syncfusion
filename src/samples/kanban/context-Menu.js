@@ -2,7 +2,7 @@ import './KanbanJsonData';
 export class contextMenu
  {
   constructor() {
-    this.KanbanData = KanbanData;
+    this.contextKanbanData = contextKanbanData;
     this.Field = { primaryKey: 'Id', content: 'Summary', tag: 'Tags', color: 'Type', priority: 'RankId'};
     this.ContextMenu = {enable: true};
     this.EditSettings = {

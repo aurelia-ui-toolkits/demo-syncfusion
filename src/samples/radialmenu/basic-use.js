@@ -25,8 +25,8 @@ export class BasicUse {
     radialRadius = 150;
     radialDiameter = 2 * radialRadius;
     $('#defaultradialmenu').ejRadialMenu({ autoOpen: true });
-    iframeY = target.offset().top + e.detail.event.clientY;
-    iframeX = target.offset().left + e.detail.event.clientX;
+    iframeY = e.detail.event.clientY;
+    iframeX = e.detail.event.clientX;
     xPos = (iframeX > radialRadius ? iframeX - radialRadius : 0);
     yPos = (iframeY > radialRadius ? iframeY - radialRadius : 0);
     x = iframeX > (target.width() - radialRadius) ? (target.width() - radialDiameter) : xPos;

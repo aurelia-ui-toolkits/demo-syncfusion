@@ -33,6 +33,8 @@
             margin: auto;
             width: 100px;
             border: 1px solid #737373;
+			background-size: contain;
+  		    background-repeat: no-repeat;
         }
 
         .profileimage {
@@ -41,6 +43,8 @@
             border: 1px solid #b3b3b3;
             margin-right: 12px;
             width: 95px;
+			background-size: contain;
+  		    background-repeat: no-repeat;
         }
 
         #people td {
@@ -61,6 +65,8 @@
             height: 125px;
             margin: auto;
             width: 145px;
+		    background-size: contain;
+  		    background-repeat: no-repeat;
         }
 
         .locationimage {
@@ -69,6 +75,8 @@
             margin: auto;
             padding: 10px;
             width: 320px;
+			background-size: contain;
+  		    background-repeat: no-repeat;
         }
 
         .drawericon {
@@ -96,3 +104,6 @@
             font-size: 28px;
 			height: 26px;
         }
+		.row{
+			margin: 0;
+		}

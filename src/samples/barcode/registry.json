@@ -50,9 +50,14 @@
 	  "title" : "Code 128 B",
       "files": ["html"]
     },
-	
-	"code128c": {
-	  "title" : "Code 128 C",
+
+    "code128c": {
+      "title": "Code 128 C",
+      "files": [ "html" ]
+    },
+
+    "upcbarcode": {
+	  "title" : "UpcBarcode",
       "files": ["html"]
     },
 	

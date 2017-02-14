@@ -5,8 +5,8 @@
             font-size: 14px;
         }
 
-        .content {
-            padding: 15px;
+        .panecontent {
+            padding: 15px;			
         }
         .row [class*="cols-"]:first-child > div:first-child {
     margin: 0 auto;

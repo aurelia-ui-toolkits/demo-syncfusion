@@ -1,25 +1,25 @@
 export class QueryCellInfo {
-    onCreate(args) {
-      let items = [
-            { text: 'Public Event', value: 'Public Event' },
-            { text: 'Holiday', value: 'Holiday' },
-            { text: 'Maintenance', value: 'Maintenance' },
-            { text: 'Commercial Event', value: 'Commercial Event' },
-            { text: 'Family Event', value: 'Family Event' }];
-      $('#EventType').ejDropDownList({
-        dataSource: items,
-        height: 30,
-        width: 300,
-        popupHeight: 200,
-        popupWidth: 300
-      });
-      $("<tr><td class='e-leftfields e-textlabel'>Event Type:</td><td class='e-rightfields' colspan='3'></td></tr>").insertAfter('.Schedule1parrow');
-      $('.Schedule1parrow').next().find('.e-rightfields').append($('#EventType_wrapper'));
-    }
     onAppointmentWindowOpen(args) {
-      if (!ej.isNullOrUndefined(args.detail.appointment) && !ej.isNullOrUndefined(args.detail.appointment.EventType)) {
-        $('#EventType').ejDropDownList('option', 'value', args.detail.appointment.EventType);
-      }
+		if (this._appointmentAddWindow.find("#EventType").length == 0) {
+			let items = [
+				{ text: 'Public Event', value: 'Public Event' },
+				{ text: 'Holiday', value: 'Holiday' },
+				{ text: 'Maintenance', value: 'Maintenance' },
+				{ text: 'Commercial Event', value: 'Commercial Event' },
+				{ text: 'Family Event', value: 'Family Event' }
+			];
+			$("<tr><td class='e-leftfields e-textlabel'>Event Type:</td><td class='e-rightfields' colspan='3'><input type='text' id='EventType'/></td></tr>").insertAfter(this._appointmentAddWindow.find("." + this._id + "parrow"));
+			this._appointmentAddWindow.find("#EventType").ejDropDownList({
+                dataSource: items,
+                height: 30,
+                width: 300,
+                popupHeight: 200,
+                popupWidth: 300,
+            });
+		}
+		if (!ej.isNullOrUndefined(args.detail.appointment) && !ej.isNullOrUndefined(args.detail.appointment.EventType)) {
+			$('#EventType').ejDropDownList('option', 'value', args.detail.appointment.EventType);
+		}
     }
 
     check(event) {

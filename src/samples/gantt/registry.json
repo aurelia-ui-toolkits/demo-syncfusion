@@ -43,7 +43,7 @@
             "gist":"b9dc106127e81d763d1f476d638d5d04",
 			"requires": ["gantt/Default-Sample.css"]
         },
-        "Resources": {
+        "Resources-Allocation": {
             "files": [ "html", "js" ],
             "gist":"66d40fbfa79847fe359581acc95c1329",
 			"requires": ["gantt/Default-Sample.css"]

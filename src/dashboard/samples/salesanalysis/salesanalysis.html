@@ -1,0 +1,88 @@
+<template>
+    <require from="syncfusion-javascript/css/web/flat-azure-dark/ej.web.all.min.css!"></require>
+    <require from="./salesanalysis.css"></require>
+    <div class="body sales-analysis">
+        <div class="page">
+            <div class="salesheader">
+                <div class="overview">Sales Overview</div>
+            </div>
+            <div id="MainContent" class="main">
+                <div class="container">
+                    <div class="titleSale">
+                    </div>
+                    <div>
+                        <div class="title">
+                            <div class="titleProduct margin"> Marketing vs Revenue by Product Category</div>
+                        </div>
+                    </div>
+                    <div css.bind="containerSale" class="row gaugecontainer ${background}">
+                        <div repeat.for="gauge of circularGauge" class="ptiles col-xs-2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="${gauge.class}">
+                                            <div class='customlabel'>${gauge.id}</div>
+                                            <div id="${gauge.id}">
+                                                <ej-circular-gauge id='${gauge.id}' e-widget.bind="gauge.model" e-background-color="transparent" e-width=200 e-height=125
+                                                    e-animate=false e-scales.bind="scale[gauge.index]">
+                                                </ej-circular-gauge>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="triangleGauge">&#9650;</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row chartgridborder">
+                        <div class="chartgridcontainer">
+                            <div class="gridchart">
+                                <div class="col-md-6">
+                                    <div class="titleProduct mapwaiting ${background}" id="chartTitle">Sales by Product Category</div>
+                                    <div id='chartContent'>
+                                        <ej-chart id='chartContent' view-model.ref="chart" e-series.bind="series" e-is-responsive=true e-primary-x-axis.bind="xAxis"
+                                            e-primary-y-axis.bind="yAxis" e-size.bind="chartSize" e-theme="gradientdark" e-legend.bind="legend"
+                                            e-on-pre-render.delegate="beforeChartRender($event.detail)" e-on-axes-label-rendering.delegate="labelRendering($event.detail)">
+                                        </ej-chart>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="titleProduct mapwaiting ${background}" id="gridTitle">Sales by Country</div>
+                                    <div id="gridholder">
+                                        <div id='Grid'>
+                                            <ej-grid e-data-source.bind="dataSource" e-allow-scrolling=true e-scroll-settings.bind="scrollSettings" e-on-row-selected.delegate="gridRowSelected($event.detail)"
+                                                e-columns.bind="columns" e-on-action-complete.delegate="afterRender($event.detail)"
+                                                e-on-query-cell-info.delegate="queryCellInfo($event.detail)">
+                                            </ej-grid>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 image2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row rangeborder">
+                        <div class="rangecontainer">
+                            <div class="col-md-12">
+                                <div id='rangeChart'>
+                                    <ej-range-navigator id="rangeChart" e-enable-deferred-update=true e-tooltip-settings.bind="tooltipSettings" e-theme="gradientdark"
+                                        e-label-settings.bind="labelSettings" e-series-settings.bind="seriesSettings" e-series.bind="rangeSeries"
+                                        e-is-responsive=true e-navigator-style-settings.bind="navigatorStyleSettings" e-data-source.bind="rangeDataSource"
+                                        e-x-name="Date" e-y-name="SalesPrice" e-selected-range-settings.bind="selectedRangeSettings"
+                                        e-on-range-changed.delegate="rangeDateSelected($event.detail)">
+                                    </ej-range-navigator>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page footer"></div>
+            </div>
+        </div>
+    </div>
+</template>

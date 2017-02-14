@@ -1,9 +1,0 @@
-<template>
-  <require from="./basic-use.css"></require>
-  
-  <div>
-    <ej-pivot-grid e-data-source.bind="pivotData" e-enable-cell-selection="true" e-on-cell-selection.trigger="valueCellClick($event)">
-    </ej-pivot-grid>
-    <ej-chart id="container" e-load.bind="loadTheme" e-common-series-options.bind="commonSeries"></ej-chart>
-  </div>
-</template>

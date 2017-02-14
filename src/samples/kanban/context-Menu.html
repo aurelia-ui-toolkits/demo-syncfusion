@@ -3,7 +3,7 @@
 <template>
   <require from="./default.css"></require>
   <div>
-     <ej-kanban id="Contextmenu" e-data-source.bind="KanbanData" e-key-Field="Status" e-fields.bind="Field" e-edit-settings.bind="EditSettings" e-allow-title="true" e-context-menu-settings.bind="ContextMenu" >
+     <ej-kanban id="Contextmenu" e-data-source.bind="contextKanbanData" e-key-Field="Status" e-fields.bind="Field" e-edit-settings.bind="EditSettings" e-allow-title="true" e-context-menu-settings.bind="ContextMenu" >
        
        <ej-kanban-column  e-header-text="Backlog" e-key="Open"></ej-kanban-column>
 	   <ej-kanban-column  e-header-text="In Progress" e-key="InProgress"></ej-kanban-column>

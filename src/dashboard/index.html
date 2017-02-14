@@ -1,0 +1,26 @@
+<template>
+    <require from="./index.css"></require>
+    <div class="body dashboard">
+        <ul class="featuredsamples">
+            <li repeat.for="details of sampleDetails" class="listsampleimage">
+                <div class="lisampleimage">
+                    <a href="#/dashboard/samples/${details.URL}" target="_blank">
+                        <img class="imgstyle img1" src="${details.imageURL}" />
+                    </a>
+                </div>
+                <div class="litext">
+                    <span class="anchorclass aclass">${details.name}</span>
+                    <p>
+                        ${details.description}
+                    </p>
+                </div>
+                <div class="anchorclass  dashboardSamplebutton ">
+                    <a ej-button class="anchorclass " href="#/dashboard/samples/${details.URL}" target="_blank">
+                        <div><span class="view">VIEW SAMPLE</span></div>
+                    </a>
+                </div>
+                <span class="qrcode"><img class="qrimage" src="${details.qrURL}" /></span>
+            </li>
+        </ul>
+    </div>
+</template>
