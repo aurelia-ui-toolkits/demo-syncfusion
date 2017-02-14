@@ -11,7 +11,7 @@ export class Chart {
     this.range7 = [{ dataSource: window.chartData }];
     this.range8 = [{ dataSource: window.chartData }];
     this.range9 = [{ dataSource: window.chartData }];
-    this.page = { pageCount: 9 };
+    this.page = {pageCount: 9};
   }
   loadcomplete(args) {
     let xlObj = $('#Spreadsheet1').ejSpreadsheet('instance');

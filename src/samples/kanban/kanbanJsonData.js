@@ -10,3 +10,11 @@
 	 { Id: 8, Status: 'Close', Summary: 'Login page validation', Type: 'Story', Priority: 'Release Breaker', Tags: 'Validation,Fix', Estimate: 2.5, Assignee: 'Laura Callahan', ImgUrl: 'images/kanban/8.png', RankId: 2 },
 	 { Id: 9, Status: 'Testing', Summary: 'Fix the issues reported in Safari browser.', Type: 'Bug', Priority: 'Release Breaker', Tags: 'Fix,Safari', Estimate: 1.5, Assignee: 'Laura Callahan', ImgUrl: 'images/kanban/1.png', RankId: 2 },
 	 { Id: 10, Status: 'Close', Summary: 'Test the application in the IE browser.', Type: 'Story', Priority: 'Low', Tags: 'Testing,IE', Estimate: 5.5, Assignee: 'Andrew Fuller', ImgUrl: 'images/kanban/4.png', RankId: 3 }];
+ swimlaneKanbanData = $.extend(true, [], KanbanData);
+ editKanbanData = $.extend(true, [], KanbanData);
+ custKanbanData = $.extend(true, [], KanbanData);
+ contextKanbanData = $.extend(true, [], KanbanData);
+ filterKanbanData = $.extend(true, [], KanbanData);
+ defaultKanbanData = $.extend(true, [], KanbanData);
+ tempKanbanData = $.extend(true, [], KanbanData);
+ constraintKanbanData = $.extend(true, [], KanbanData);

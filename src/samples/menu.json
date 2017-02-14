@@ -38,6 +38,7 @@
         "Gantt": "gantt",
         "Chart": "chart",
 		"Sparkline": "sparkline",
+		"SunburstChart": "sunburstchart",
         "Circular Gauge": "circulargauge",
         "Linear Gauge": "lineargauge",
         "Digital Gauge": "digitalgauge",

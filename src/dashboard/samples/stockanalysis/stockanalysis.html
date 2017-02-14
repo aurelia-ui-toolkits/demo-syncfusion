@@ -1,0 +1,108 @@
+<template>
+  <require from="./stockanalysis.css"></require>
+  <div class="body stock-analysis">
+    <div class="stockanalysis">
+      <div class="samplecontent">
+        <div ref="sampleTitle" class="sampletitle container">
+          <div class="sampleimg">
+            <div class="leftHeader">
+              <img src="images/dashboard/stock/stock_logo.png" class="stockImg" />
+              <label css.bind="imageLabel" class="imgLabel">STOCK ANALYSIS</label>
+              <div css.bind="Tile" click.delegate="tilClick($event)" class="tile">
+                <img src="images/dashboard/stock/tile.png" class="stockImg1" />
+              </div>
+            </div>
+            <div css.bind="owner" class="ownerdetails">
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/dashboard/stock/person.png" />
+                  </td>
+                  <td class="ownname">Andrew Fuller<br />
+                    <span>My Watch List</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="chartdetail">
+            <div css.bind="stockStatus" element.ref="stock" class="stockstatus">
+              <div css.bind="stockRow" class="row">
+                <div repeat.for="stock of stockAnalysis" element.ref="ref" click.delegate="stockClick($event, ref)" id="${stock.id}" class="ptiles col-xs-2">
+                  <div>
+                    <table class="titletab">
+                      <tr>
+                        <td>
+                          <span class="ptext">${stock.id}</span>
+                        </td>
+                        <td id="${stock.wait}" ej-waiting-popup="e-show-on-init.bind:stock.popup"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="${stock.decrement}">
+                            ${stock.decrement_value}
+                          </div>
+                        </td>
+                        <td>
+                          <div class="${stock.down}">
+                            <div class="${stock.downarrow}"></div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="high">
+                          <div class="higharrow">
+                            <span>${stock.high_value}</span>
+                          </div>
+                        </td>
+                        <td class="low">
+                          <div class="lowarrow">
+                            <span>${stock.low_value}</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartbody">
+              <div class="stockdetails">
+                <div css.bind="row1" class="row1">
+                  <div id="hiloOpenClose" ej-waiting-popup="e-show-on-init.bind:showPopupHilo;" ej-waiting-popup.ref="hilo_wait">
+                    <ej-chart id="hilo_chart" view-model.ref="hiloChart" e-chart-area.bind="chartArea" e-primary-x-axis.bind="chart_xaxis" e-primary-y-axis.bind="chart_yaxis"
+                      e-common-series-options.bind="chart_common" e-series.bind="chart_series" e-background="transparent" e-is-responsive=true
+                      e-title.bind="chart_title" e-size.bind="chart_size" e-legend.bind="chart_legend" e-margin.bind="chart_margin"
+                      e-on-load.trigger="hiloChartLoad($event.detail)">
+                    </ej-chart>
+                  </div>
+                  <div id="colChart">
+                    <ej-chart view-model.ref="columnChart" id="column_chart" e-primary-x-axis.bind="col_xaxis" e-is-responsive=true e-primary-y-axis.bind="col_yaxis"
+                      e-series.bind="col_series" e-background="transparent" e-size.bind="col_size" e-legend.bind="col_legend"
+                      e-can-resize=true e-on-load.trigger="colChartLoad($event.detail)">
+                    </ej-chart>
+                  </div>
+                  <div class="yearlabel">
+                    <label repeat.for="year of changeYear" click.delegate="yearClick($event)" id="${year.id}" class="changeyear">${year.id}</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Tooltip" style="display: none;">
+<table id="tip">
+  <tr repeat.for="tip of toolTip">
+    <td>${tip.name}
+    </td>
+    <td class="vpoints">${tip.tipName}
+    </td>
+  </tr>
+</table>
+</div>
+</div>
+</template>

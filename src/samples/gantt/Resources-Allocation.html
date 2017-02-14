@@ -1,0 +1,23 @@
+<template>
+ <require from="./Default-Sample.css"></require>
+    <div>
+        <ej-gantt id="gantt"
+                  e-data-source.bind="ProjectData"
+                  e-task-id-mapping="TaskId"
+                  e-task-name-mapping="TaskName"
+                  e-start-date-mapping="StartDate"
+                  e-duration-mapping="Duration"
+                  e-progress-mapping="Progress"
+                  e-predecessor-mapping="Predecessor"
+                  e-resource-info-mapping="Resources"
+                  e-resource-name-mapping="Name"
+                  e-resource-id-mapping="Id"
+                  e-resources.bind="Resource"
+                  e-tree-column-index="1"
+                  e-is-responsive="true"
+                  e-child-mapping="Children"
+                  e-edit-settings.bind="editsettings"
+                  e-toolbar-settings.bind="toolbarsettings">
+        </ej-gantt>
+    </div>
+</template>

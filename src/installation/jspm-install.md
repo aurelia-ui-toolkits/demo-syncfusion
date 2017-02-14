@@ -17,17 +17,13 @@
       "*": "src/*",
       "github:*": "jspm_packages/github/*",
       "npm:*": "jspm_packages/npm/*",
-      "common/ej.*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.0.41/scripts/ej/common/ej.*.js",                           <----
-      "datavisualization/ej.*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.0.41/scripts/ej/datavisualization/ej.*.js",     <----
-      "ej.*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.0.41/scripts/ej/web/ej.*.js",                                     <----
-      "syncfusion-javascript/*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.0.41/*"                                     <----      
+      "syncfusion-javascript/*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.0.41/*"      <----      
     },
     "map": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1",
       "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.2",
-      "jquery": "npm:jquery@2.2.3",                                                     <----
-      "jquery.min": "npm:jquery@2.2.3",                                                 <----
+      "jquery": "npm:jquery@2.2.3",                                                     <----      
       "jquery-easing": "npm:jquery.easing@1.3.2",                                       <----
       "jquery-validation": "npm:jquery-validation@1.15.0",                              <----
       "jquery-validation-unobtrusive": "npm:jquery-validation-unobtrusive@3.2.6",       <----
@@ -37,7 +33,7 @@
    **Note:** Here we used the Syncfusion JavaScript Widgets source from `14.1.0.41`. You may have to update the version(`14.1.0.41`) of Syncfusion JavaScript Widgets source, when adding these mappings based on the source you are using. 
  
  
-4. Register the `aurelia-syncfusion-bridge` plugin with Aurelia in your "main.js" or equivalent. The configuration function will be passed a builder object that you can use to configure which Syncfusion JavaScript controls you wish to use. You can use all the controls by calling the "useAll()" method.
+4. Register the `aurelia-syncfusion-bridge` plugin with Aurelia in your **main.js** or equivalent. The configuration function will be passed a builder object that you can use to configure which Syncfusion JavaScript controls you wish to use. You can use all the controls by calling the **useAll()** method.
     
     ```
     export function configure(aurelia) {
@@ -59,3 +55,4 @@
    <br/>
 ### You are done!
 It is now possible to drop some custom-elements into your DOM. See the other pages on this website for detailed information on how to do this.
+<br/><br/>

@@ -60,7 +60,7 @@ export class BasicUse {
   ApplyChanges() {
     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
     if (gridObj.model.enableConditionalFormatting) {
-      gridObj.createConditionalDialog();
+      gridObj.openConditionalFormattingDialog();
     }
   }
   Reset() {

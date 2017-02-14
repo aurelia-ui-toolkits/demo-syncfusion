@@ -1,5 +1,12 @@
 ﻿export class Baseline {
   constructor() {
+    this.editsettings = {
+      allowEditing: true,
+      allowAdding: true,
+      allowDeleting: true,
+      allowIndent: true,
+      editMode: 'cellEditing'
+    };
     this.ProjectData = [
       {
         'TaskId': 1,

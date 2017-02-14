@@ -4,7 +4,7 @@
 
 1. Create a `vendors` folder in the root (at the same level as src or dist) 
 2. Download Synfusion Essential Studio for JavaScript from [here](https://www.syncfusion.com/downloads/javascript).
-3. Extract the `scripts` and `css` folders as `js` and `styles` into the `vendors` folder.
+3. Extract the `scripts` and `css` folders as `scripts/ej` and `css` into the `vendors` folder.
 4. Open `config.js` and add a couple of path mappings:
 
    ```   
@@ -12,9 +12,6 @@
       "*": "src/*",
       "github:*": "jspm_packages/github/*",
       "npm:*": "jspm_packages/npm/*",
-      "common/ej.*": "vendors/scripts/common/ej.*.js",                           <----
-      "datavisualization/ej.*": "vendors/scripts/datavisualization/ej.*.js",     <----
-      "ej.*": "vendors/scripts/web/ej.*.js",                                     <----
       "syncfusion-javascript/*": "src/root/vendors/*"                            <----       
     },
     "map": {
@@ -32,7 +29,7 @@
 5. Install the aurelia-syncfusion-bridge and the css plugin
 `jspm install npm:aurelia-syncfusion-bridge css`
 
-6. Register the `aurelia-syncfusion-bridge` plugin with Aurelia in your "main.js" or equivalent. The configuration function will be passed a builder object that you can use to configure which Syncfusion JavaScript controls you wish to use. You can use all the controls by calling the "useAll()" method.
+6. Register the `aurelia-syncfusion-bridge` plugin with Aurelia in your **main.js** or equivalent. The configuration function will be passed a builder object that you can use to configure which Syncfusion JavaScript controls you wish to use. You can use all the controls by calling the **useAll()** method.
   
   ```
     export function configure(aurelia) {

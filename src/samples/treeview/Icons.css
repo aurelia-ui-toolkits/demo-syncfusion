@@ -1,8 +1,8 @@
-#treeView .e-node-focus .mailicon, #treeView .e-active .mailicon {
+#treeView .e-active .mailicon {
     background-image: url("images/treeview/mailicons_white.png");
 }
 
-#treeView .mailicon, #treeView .e-editable .mailicon,#treeView .e-node-hover .mailicon {
+#treeView .mailicon, #treeView .e-editable .mailicon, #treeView .e-node-hover .mailicon,#treeView .e-node-focus.e-active .mailicon {
     background-image: url("images/treeview/mailicons.png");
 }
 

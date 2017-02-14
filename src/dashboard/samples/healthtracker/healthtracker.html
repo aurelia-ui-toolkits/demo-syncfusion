@@ -1,0 +1,213 @@
+<template>
+  <require from="./healthtracker.css"></require>
+  <require from="./smart-scroller"></require>
+  <div class="healthtracker dashboard">
+  <div class="healthtracker">
+    <div class="trackerheader">
+      <div class="sampleheader container">
+        <div class="col-xs-12">
+          <div class="title">
+            <img class="heartsym" src="images/dashboard/healthtracker/heart-img.png" />
+            <label class="healthtext">Health Tracker</label>
+          </div>
+          <div>
+            <div repeat.for="header of healthHeader" class="${header.board}">
+              <div class="${header.dashboard}">
+                <b>${header.text}</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="samplecontainer container">
+      <div class="row"></div>
+      <div id="heading row">
+        <div class="col-xs-6">
+          <br />
+          <img class="personpic" src="images/dashboard/healthtracker/person.png" />
+          <p class="persondet">
+            <b>Andrew Fuller</b><br /> 34 years / 175 cm
+          </p>
+          <img class="personsym" src="images/dashboard/healthtracker/personimg.png" />
+        </div>
+        <div class="col-xs-6">
+          <div class="bmiwight">
+            <div repeat.for="section of healthSection" class="${section.measurement}">
+              <label>${section.labelText}</label>
+              <div class="${section.measurementDiv}">
+                <b>${section.text}</b><br />
+                <label>${section.labelUnit}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row topspace">
+        <div class="col-md-12 titlecss">Today</div>
+      </div>
+      <div class="row" id="todayDetails" ej-waiting-popup="e-show-on-init.bind:showPopup">
+        <div class="col-md-6 ptiles">
+          <div repeat.for="gauge of circularGauge" class="${gauge.gaugeClass}">
+            <div id="${gauge.gaugeId}">
+              <ej-circular-gauge id="${gauge.gaugeId}" view-model.ref="gauge.model" e-frame.bind="type" e-width=230 e-height=155 e-distance-from-corner=-5
+                e-gauge-position="bottomcenter" e-is-responsive=false e-scales.bind="scale[gauge.index]">
+              </ej-circular-gauge>
+            </div>
+            <br />
+            <label ref="gauge.intakeRef" class="${gauge.intake}">${gauge.intakeText}</label>
+            <br />
+            <label ref="gauge.pendingRef" class="${gauge.pending}">${gauge.pendingText}</label>
+          </div>
+        </div>
+        <div class="col-md-6 ptiles">
+          <div repeat.for="chart of smallChart" class="${chart.chartContainer}">
+            <div class="chartimage" id="${chart.imageId}">
+              <div id="${chart.chartId}">
+                <ej-chart id="${chart.chartId}" e-series.bind="series[chart.index]" e-margin.bind="margin" e-size.bind="size" e-legend.bind="legend[chart.index]"
+                  e-annotations.bind="annotations[chart.index]" e-on-create.delegate="complete($event.detail)">
+                </ej-chart>
+              </div>
+              <br />
+              <label class="todaylabel">${chart.labelText}</label>
+              <br />
+              <label class="pending todaylabel">${chart.pendingText}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topspace row">
+        <div class="col-xs-6">
+          <label class="titlecss">Meal Summary</label>
+        </div>
+        <div class="addbutton col-xs-6" click.delegate="add($event)">
+          <label class="addlabel">Add Meal</label>
+          <img class="add" src="images/dashboard/healthtracker/Add.png" />
+        </div>
+      </div>
+      <div class="row" id="MealSummary">
+        <div class="col-md-6 ptiles">
+          <div class="chartimage1">
+            <div id="Chart">
+              <ej-chart id="Chart" view-model.ref="doughnutChart" e-series.bind="doughnutSeries" e-is-responsive=true e-size.bind="doughnutSize"
+                e-margin.bind="doughnutMargin" e-legend.bind="doughnutLegend">
+              </ej-chart>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ptiles">
+          <div id="Grid">
+            <ej-grid view-model.ref="Grid"  id="grid" e-show-summary=true e-enable-alt-row=false e-allow-keyboard-navigation=true e-edit-settings.bind="gridSettings"
+              e-columns.bind="gridColumn" e-grid-lines.bind="gridLines" e-is-responsive=true e-enable-responsive-row=false
+              e-on-action-complete.delegate="actionComplete($event.detail)" e-summary-rows.bind="gridSummary">
+            </ej-grid>
+          </div>
+        </div>
+      </div>
+      <div class="row topspace">
+        <div class="col-xs-6 titlecss loadondemand" smart-scroller="reach.call: renderControl($event);">
+          This Month
+        </div>
+      </div>
+      <div id="HistoryDetails" class="row" smart-scroller="reach.call: renderControl($event);">
+        <div repeat.for="chart of calorieChart" class="${chart.chartClass}">
+          <div id="${chart.chartId}">
+            <ej-chart id="${chart.chartId}" view-model.ref="chart.data" e-chart-area.bind="chartArea" e-primary-x-axis.bind="xAxis[chart.index]"
+              e-primary-y-axis.bind="yAxis[chart.index]" e-common-series-options.bind="commonSeries[chart.index]" e-series.bind="chartSeries[chart.index]"
+              e-init-series-render=false e-background="transparent" e-is-responsive=true e-size.bind="chartSize" e-title.bind="chartTitle[chart.index]">
+            </ej-chart>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 ptiles chart5">
+          <div id="MealDetails" class="mealintake">
+            <ej-chart id="MealDetails" view-model.ref="mealData" e-chart-area.bind="chartArea" e-primary-x-axis.bind="columnX" e-primary-y-axis.bind="columnY"
+              e-common-series-options.bind="commonSeries[0]" e-series.bind="columnSeries" e-init-series-render=false e-background="transparent"
+              e-is-responsive=true e-size.bind="chartSize" e-title.bind="columnTitle">
+            </ej-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="healthAddTemplate">
+      <table cellspacing="14px">
+        <tr>
+          <td>Food time:</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" class="timelist valid" id="Time" value="{{:Time}}" aria-required="true" />
+          </td>
+        </tr>
+        <tr>
+          <td>Food type:</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" class="foodlist ejinputtext valid" id="FoodName" value="{{:FoodName}}" aria-required="true" />
+          </td>
+        </tr>
+      </table>
+      <table cellspacing="14px">
+        <tr>
+          <td>Fat:</td>
+          <td>Carb:</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="Fat" value="{{:Fat}}" class="diatxt valid" aria-required="true" />
+          </td>
+          <td>
+            <input type="text" id="Carbohydrate" value="{{:Carbohydrate}}" class="diatxt valid" aria-required="true" />
+          </td>
+        </tr>
+        <tr>
+          <td>Protein:</td>
+          <td>Calorie:</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="Protein" value="{{:Protein}}" class="diatxt" aria-required="true" />
+          </td>
+          <td>
+            <input type="text" id="Calorie" value="{{:Calorie}}" class="diatxt" aria-required="true" />
+          </td>
+        </tr>
+        <tr>
+          <td id="validation">* All fields are mandatory</td>
+        </tr>
+      </table>
+    </div>
+    <div id="BurntTooltip" class="historytooltip">
+      <div id="stepTool"></div>
+      <div>
+        <label id="burntmonth">May #point.x#</label><br />
+        <label id="burntday">#point.y#</label><label class="burntlabel">  steps</label>
+      </div>
+    </div>
+    <div repeat.for="tool of toolTip" id="${tool.tooltipId}" class="historytooltip">
+      <div>
+        <div id="${tool.toolId}"></div>
+        <label class="tooltiplabel">May #point.x#</label>
+      </div>
+      <div class="${tool.labelClass}">
+        <label id="${tool.month}">${tool.text}</label><br />
+        <label id="${tool.day}">#point.y# g</label>
+      </div>
+    </div>
+    <div id="CalTooltip" class="historytooltip">
+      <div class="calldiv">
+        <span id="calday">#point.y# </span><span>cal</span>
+      </div>
+      <div class="monthdiv">
+        <span id="calmonth">May #point.x#</span>
+      </div>
+    </div>
+    <div repeat.for="template of annotationsTemplate" id="${template.id}" class="templateAnnotations">
+      <img class="template_image" src="${template.image}" />
+    </div>
+  </div>
+  </div>
+</template>

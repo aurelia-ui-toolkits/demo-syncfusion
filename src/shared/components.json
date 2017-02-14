@@ -134,6 +134,10 @@
             "status": "done",
             "moduleId": "sparkline"
         },
+		"SunburstChart": {
+            "status": "done",
+            "moduleId": "sunburstchart"
+        },
         "Circular Gauge": {
             "status": "done",
             "moduleId": "circulargauge"

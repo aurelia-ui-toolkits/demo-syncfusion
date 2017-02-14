@@ -1,0 +1,91 @@
+.dashboard *{
+    box-sizing: content-box;
+    font-size: 10px;
+}
+.featuredsamples {
+    display: table;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    list-style-position: outside;
+}
+.listsampleimage {
+    float: left;
+    height: 344px;
+    width: 316px;
+    padding: 30px 8px 32px 77px;
+}
+.lisampleimage {
+    height: 100%;
+}
+.litext {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: -128px;
+    margin-left: 20px;
+    height: auto;
+    color: #838383;
+    text-align: justify;
+    width: 155px;
+}
+.litext > .aclass {
+    color:rgb(41, 98, 147);
+    font-size: 13px;
+    font-weight: bold;
+    }
+.litext > p {
+    margin-top: 6px;
+    font-size: 12px;
+    cursor: default;
+}
+.qrcode {
+    bottom: 120px;
+    display: inline-block;
+    position: relative;
+    right: -189px;
+    float: left;
+}
+.qrcode .qrimage {
+    height: 104px;
+    width: 104px;
+    display: block;
+    border: 1px solid #AAAAAA;
+}
+.dashboardSamplebutton {
+    margin-left: 20px;
+    margin-top: -43px;
+}
+.imgstyle {
+    min-width: 316px;
+    min-height: 344px;
+    background-repeat: no-repeat;
+}
+.view{
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+.dashboardSamplebutton .anchorclass {
+        height: 20px !important;
+        border-radius: 0;
+        text-decoration: none;
+		padding: 0.1em .4em .3em;
+        background: linear-gradient(to bottom,#3277b2,#296293);
+}
+.anchorclass :hover *{
+        border-color: #cecece;
+        color: #333;
+}
+@media only screen and (max-width:818px)  {
+.dashboard {  
+    margin: 0px auto;
+    width:311px;
+}
+.listsampleimage {
+    height: 354px;
+    width: 100%;
+    padding: 0px;
+    padding-top: 36px;
+}}

@@ -29,6 +29,7 @@ export class BasicUse {
       enableAnimation: true,
       type: 'column'
     };
+    this.zooming = {enableScrollbar: true};
     this.loadTheme = 'loadTheme';
     this.primaryYAxis = {title: {text: 'Customer Count'}};
     this.size = {height: '460px', width: '950px'};

@@ -1,7 +1,7 @@
 ﻿export class Localization {
     constructor() {
-      this.path = 'http://mvc.syncfusion.com/ODataServices/FileBrowser/';
-      this.ajaxAction = 'http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction';
+      this.path = 'http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/';
+      this.ajaxAction = 'http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations';
       this.width = '100%';
       this.height = '100%';
       this.target = 'localelist';
@@ -9,6 +9,7 @@
       ej.FileExplorer.Locale['de-DE'] = {
         EmptyResult: 'Keine Artikel entsprechen Ihrer Suche nach',
         EmptyFolder: 'Dieser Ordner ist leer',
+        ProtectedFolder: 'Sie ist nicht die Berechtigung diesen Ordner zugreifen',
         Back: 'rückwärts',
         Forward: 'Nach Vorne',
         Upward: 'nach oben',
@@ -23,7 +24,7 @@
         Copy: 'Kopie',
         Paste: 'kleben',
         Details: 'Einzelheiten',
-        Searchbar: 'Searchbar',
+        Searchbar: 'Suchleiste',
         Open: 'geöffnet',
         Search: 'Suche',
         NewFolder: 'neuer Ordner',
@@ -105,6 +106,7 @@
       ej.FileExplorer.Locale['ar-SA'] = {
         EmptyResult: 'لا توجد عناصر تطابق بحثك',
         EmptyFolder: 'هذا المجلد فارغ',
+        ProtectedFolder: 'لم يكن لديك حاليا إذن للوصول إلى هذا المجلد',
         Back: 'الى الوراء',
         Forward: 'إلى الأمام',
         Upward: 'فوق',
@@ -136,7 +138,7 @@
         ContextMenuNewFolder: 'ملف جديد',
         ContextMenuDelete: 'حذف',
         ContextMenuRename: 'إعادة تسمية',
-        ContextMenuUpload: 'تحميل',
+        ContextMenuUpload: 'تنزيل',
         ContextMenuDownload: 'تحميل',
         ContextMenuCut: 'قطع',
         ContextMenuCopy: 'نسخة',

@@ -1,7 +1,7 @@
 import './KanbanJsonData';
 export class Editing {
   constructor() {
-    this.KanbanData = KanbanData;
+    this.editKanbanData = editKanbanData;
     this.Field = { primaryKey: 'Id', content: 'Summary', tag: 'Tags', color: 'Type', priority: 'RankId'};
     this.EditSettings = {
       editItems: [

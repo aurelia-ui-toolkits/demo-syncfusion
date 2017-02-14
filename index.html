@@ -24,6 +24,7 @@
       var ieVer = validateBrowser();
       if (ieVer != null && ieVer < 11)
         location.replace("error.html");
+    Function.prototype.call = function(t) { return this.apply(t, Array.prototype.slice.apply(arguments, [1])); }
     </script>
    <script src="jspm_packages/npm/bluebird@3.3.4/js/browser/bluebird.min.js"></script>
     <script src="jspm_packages/system.js"></script>

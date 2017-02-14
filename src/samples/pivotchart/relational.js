@@ -53,6 +53,7 @@ export class BasicUse {
         }
       ]
     };
+    this.zooming = {enableScrollbar: true};
     this.primaryYAxis = {title: {text: 'Amount'}};
     this.size = {height: '460px', width: '950px'};
     this.legend = {visible: true};
