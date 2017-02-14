@@ -1,1 +1,0 @@
-module.exports = require("npm:jquery-validation@1.15.1/dist/jquery.validate");

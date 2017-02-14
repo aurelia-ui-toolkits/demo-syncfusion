@@ -46,7 +46,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "font-awesome": "npm:font-awesome@4.6.3",
     "google/code-prettify": "github:google/code-prettify@master",
-    "jquery": "npm:jquery@2.1.4",
+    "jquery": "npm:jquery@2.2.4",
     "jquery-easing": "npm:jquery-easing@0.0.1",
     "jquery-validation": "npm:jquery-validation@1.15.0",
     "jquery-validation-unobtrusive": "npm:jquery-validation-unobtrusive@3.2.6",
@@ -103,7 +103,7 @@ System.config({
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
     "github:twbs/bootstrap@3.3.6": {
-      "jquery": "npm:jquery@2.1.4"
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:abbrev@1.0.7": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -339,21 +339,17 @@ System.config({
       "number-is-nan": "npm:number-is-nan@1.0.0"
     },
     "npm:jquery-easing@0.0.1": {
-      "jquery": "npm:jquery@3.1.1"
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:jquery-validation-unobtrusive@3.2.6": {
-      "jquery": "npm:jquery@3.1.1",
+      "jquery": "npm:jquery@2.2.4",
       "jquery-validation": "npm:jquery-validation@1.16.0"
     },
     "npm:jquery-validation@1.15.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:jquery-validation@1.15.1": {
-      "jquery": "npm:jquery@3.1.1",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:jquery-validation@1.16.0": {
-      "jquery": "npm:jquery@3.1.1",
+      "jquery": "npm:jquery@2.2.4",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:js-prettify@1.4.0": {
@@ -469,8 +465,8 @@ System.config({
       "ansi-regex": "npm:ansi-regex@2.0.0"
     },
     "npm:syncfusion-javascript@15.1.33": {
-      "jquery": "npm:jquery@3.1.1",
-      "jquery-validation": "npm:jquery-validation@1.15.1",
+      "jquery": "npm:jquery@2.2.4",
+      "jquery-validation": "npm:jquery-validation@1.16.0",
       "jquery-validation-unobtrusive": "npm:jquery-validation-unobtrusive@3.2.6",
       "jsrender": "npm:jsrender@0.9.83",
       "syncfusion-ej-global": "npm:syncfusion-ej-global@15.1.33"
@@ -524,7 +520,7 @@ System.config({
     }
   },
   "bundles": {
-    "app-build-322f76a1d9": [
+    "app-build-9c5b3966d9": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "about/ej-bridge-init.html!github:systemjs/plugin-text@0.0.4",
@@ -1162,10 +1158,8 @@ System.config({
       "npm:core-js@1.2.6/library/web/timers",
       "npm:jquery-easing@0.0.1",
       "npm:jquery-easing@0.0.1/dist/jquery.easing.1.3.umd",
-      "npm:jquery@2.1.4",
-      "npm:jquery@2.1.4/dist/jquery",
-      "npm:jquery@3.1.1",
-      "npm:jquery@3.1.1/dist/jquery",
+      "npm:jquery@2.2.4",
+      "npm:jquery@2.2.4/dist/jquery",
       "npm:jsrender@0.9.83",
       "npm:jsrender@0.9.83/jsrender",
       "npm:process@0.11.9",
